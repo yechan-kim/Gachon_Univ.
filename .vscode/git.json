@@ -1,0 +1,14 @@
+{
+    "version": "2.0.0",
+   "runner": "terminal",
+   "type": "shell",
+   "echoCommand": true,
+   "presentation" : { "reveal": "always" },
+    "tasks" : [
+        {
+            "label": "git",
+            "command": ["git status", "git add .", "git commit -m 'solved'", "git push", "git fetch", "git pull", "git status"],
+            "group": "test"
+        }
+    ]
+}

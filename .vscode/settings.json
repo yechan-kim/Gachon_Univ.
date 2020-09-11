@@ -1,0 +1,7 @@
+{
+    "git.alwaysShowStagedChangesResourceGroup": true,
+    "scm.alwaysShowActions": true,
+    "git.postCommitCommand": "push",
+    "git.fetchOnPull": true,
+    "git.autofetch": true
+}

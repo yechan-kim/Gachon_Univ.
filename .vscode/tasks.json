@@ -1,0 +1,41 @@
+{
+    "version": "2.0.0",
+    "runner": "terminal",
+    "type": "shell",
+    "echoCommand": true,
+    "presentation": {
+        "reveal": "always"
+    },
+    "tasks": [
+        {
+            "label": "run",
+            "command": [
+                "gcc ${fileDirname}/${fileBasenameNoExtension}.c -o ${fileDirname}/${fileBasenameNoExtension}.out\n",
+                "${fileDirname}/${fileBasenameNoExtension}.out\n",
+                "rm ${fileDirname}/${fileBasenameNoExtension}.out"
+            ],
+            "group": "test"
+        },
+        {
+            "type": "shell",
+            "label": "C/C++: gcc build active file",
+            "command": "/usr/bin/gcc",
+            "args": [
+                "-g",
+                "${file}",
+                "-o",
+                "${fileDirname}/${fileBasenameNoExtension}"
+            ],
+            "options": {
+                "cwd": "${workspaceFolder}"
+            },
+            "problemMatcher": [
+                "$gcc"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
+        }
+    ]
+}

@@ -1,14 +1,15 @@
-N, K = map(int, input().split(' '))
+import sys
+N, K = map(int, sys.stdin.readline().split(' '))
 
 L = []
 
 for i in range(0, N):
-    L.append(int(input()))
+    L.append(int(sys.stdin.readline()))
 
 retval = 0
-L = L[::-1]  # 역순정렬
-for i in L:
-    while (K >= i):
-        K -= i
-        retval += 1
+
+for i in L[::-1]:
+    retval += K // i
+    K = K % i
+
 print(retval)

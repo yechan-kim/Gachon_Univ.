@@ -8,9 +8,18 @@
     },
     "tasks": [
         {
-            "label": "run",
+            "label": "run_c",
             "command": [
                 "g++ ${fileDirname}/${fileBasenameNoExtension}.c -o ${fileDirname}/${fileBasenameNoExtension}.out\n",
+                "${fileDirname}/${fileBasenameNoExtension}.out\n",
+                "rm ${fileDirname}/${fileBasenameNoExtension}.out"
+            ],
+            "group": "test"
+        },
+        {
+            "label": "run_c++",
+            "command": [
+                "g++ ${fileDirname}/${fileBasenameNoExtension}.cpp -o ${fileDirname}/${fileBasenameNoExtension}.out\n",
                 "${fileDirname}/${fileBasenameNoExtension}.out\n",
                 "rm ${fileDirname}/${fileBasenameNoExtension}.out"
             ],

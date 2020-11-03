@@ -2,9 +2,9 @@ site = {}
 
 A, B = map(int, input().split(' '))
 
-for i in range(0, A):
-    C, D = map(str, input().split(' '))
+for i in range(A):
+    C, D = input().split(' ')
     site[C] = D
-for i in range(0, B):
-    E = str(input())
+for i in range(B):
+    E = input()
     print(site[E])

@@ -7,7 +7,7 @@ int main()
     {
         printf("정수를 입력하시오: ");
         scanf("%d", &x);
-        sum += x;;
+        sum += x;
     }
     printf("합계=%d\n", sum);
 

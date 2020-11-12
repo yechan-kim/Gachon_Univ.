@@ -5,6 +5,7 @@
     "git.fetchOnPull": true,
     "git.autofetch": true,
     "files.associations": {
-        "ostream": "cpp"
+        "ostream": "cpp",
+        "random": "c"
     }
 }

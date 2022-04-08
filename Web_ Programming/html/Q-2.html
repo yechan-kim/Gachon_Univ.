@@ -1,0 +1,40 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <form action="#" method="post">
+        <!-- # -> 데이터를 전송할 URL -->
+        First Name: <br>
+        <input type="text" name="First Name"><br>
+        Last Name: <br>
+        <input type="text" name="Last Name"><br>
+        Email: <br>
+        <input type="text" name="Email"><br>
+        Gender:
+        <input type="radio" name="Gender">Male</input>
+        <input type="radio" name="Gender">Female</input><br>
+        Favorite :
+        <input type="checkbox" name="Favorite">HTML</input>,
+        <input type="checkbox" name="Favorite">Java</input>,
+        <input type="checkbox" name="Favorite">PHP</input><br>
+        University : <select name=“University”>
+            <option value=“101”>Gachon University</option>
+            <option value=“102”>Kyungwon University</option>
+            <option value=“103”>Seoul National University</option>
+            <option value=“104”>Yonsei University</option>
+            <option value=“105”>Korea University</option>
+        </select><br>
+        Color: <input type="color" name="Color"><br>
+        <!-- HTML5 -> IE는 지원 안됨 -->
+        Date: <input type="text" name="Date" placeholder="연도-월-일"><br><br><br>
+        <input type="submit" value="Registration"></button>
+    </form>
+</body>
+
+</html>

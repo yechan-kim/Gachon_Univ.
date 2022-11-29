@@ -2,7 +2,7 @@ Learning_Project_2020-2/
 .vscode/
 연습장.*
 *.txt
-*.DS_Store
+**.DS_Store
 연습장
 *.db
-.DS_Store
+

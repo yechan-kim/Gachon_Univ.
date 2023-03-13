@@ -9,7 +9,7 @@
 
 using namespace std;
 
-int main()
+int main() 
 {
     // 선언
     const int CAPACITY = 50;

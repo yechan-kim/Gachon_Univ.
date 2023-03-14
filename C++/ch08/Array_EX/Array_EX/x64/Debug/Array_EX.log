@@ -1,0 +1,2 @@
+﻿  cppwinrt : error 대상 멀티바이트 코드페이지에 유니코드 문자의 매핑이 없습니다.
+C:\Users\GC\Desktop\김예찬\codes\ch08\Array_EX\packages\Microsoft.Windows.CppWinRT.2.0.210806.1\build\native\Microsoft.Windows.CppWinRT.targets(842,9): error MSB3073: ""C:\Users\GC\Desktop\김예찬\codes\ch08\Array_EX\packages\Microsoft.Windows.CppWinRT.2.0.210806.1\build\native\..\..\bin\"cppwinrt @"x64\Debug\Array_EX.vcxproj.cppwinrt_comp.rsp"" 명령이 종료되었습니다(코드: 1).

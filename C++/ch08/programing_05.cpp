@@ -8,12 +8,12 @@ int main()
 {
     // 배열 선언
     int CAPACITY = 10;
-    int array[CAPACITY];
+    int array[10];
 
     // rand 함수의 시드 변경 (컴파일할 때마다 값이 다르게 나오기 위함)
     srand(time(NULL));
 
-    // 배열 생성 
+    // 배열 생성
     for (int i = 0; i < CAPACITY; i++)
         array[i] = rand() % 100 + 1;
 
@@ -52,7 +52,7 @@ int main()
         }
     }
 
-    // maxf값 배열에서 제거  (배열은 크기가 동적으로 변하기 않기 때문에 CAPACITY를 1 감소해 배열의 가장 뒤에 있는 값은 미사용 -> CAPACITY == 8)
+    // max값 배열에서 제거  (배열은 크기가 동적으로 변하기 않기 때문에 CAPACITY를 1 감소해 배열의 가장 뒤에 있는 값은 미사용 -> CAPACITY == 8)
     for (int i = 0; i < CAPACITY; i++)
     {
         if (array[i] == max)

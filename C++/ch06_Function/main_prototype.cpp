@@ -2,7 +2,7 @@
 using namespace std;
 
 //함수 선언
-int addMul(int a, int b, int &rA, int &rB);
+void addMul(int a, int b, int &rA, int &rB);
 
 int main()
 {
@@ -25,11 +25,9 @@ int main()
 }
 
 //함수 정의
-int addMul(int a, int b, int& rA, int& rB)
+void addMul(int a, int b, int& rA, int& rB)
 {
     //입력받은 변수의 합과 곲을 계산(return-by-reference)
     rA = a + b;
     rB = a * b;
-
-    return 0;
 }

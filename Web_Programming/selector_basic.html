@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>CSS3 Selectior Basic</title>
+    <style>
+        h1 {
+            color: red;
+            background-color: orange;
+        }
+
+        p {
+            color: blue;
+        }
+
+        .select {
+            color: red;
+        }
+
+        input[type="text"] {
+            background: red;
+        }
+
+        input[type="password"] {
+            background: blue;
+        }
+
+        li:first-child > a {
+            color: red;
+        }
+
+        /* li>a:first-child {
+            color: red;
+         } */
+        /*리스트의 전체 적용 */
+
+        p:nth-child(2) {font-size: 1.0em;}
+        p:nth-child(3) {font-size: 1.0em;}
+        p:nth-child(4) {font-size: 1.5em;}
+        p:nth-child(5) {font-size: 2.0em;}
+
+        body{
+            background-image: url("https://via.placeholder.com/1920x1080")
+        }
+        
+    </style>
+</head>
+
+<body>
+    <h1>CSS 선택자 기본</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+    <p>Nunc nisl turpis, aliquet et gravida non, facilisis a sem.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+    <br>
+
+    <ul>
+        <li class="select">사과</li>
+        <li>바나나</li>
+        <li class="select">오렌지</li>
+        <li>감</li>
+    </ul>
+    <br>
+
+    <form>
+        <input type="text" name="id" placeholder="아이디">
+        <input type="password" name="pw" placeholder="비밀번호">
+    </form>
+    <br>
+
+    <ul>
+        <li><a href="#">주의사항</a></li>
+        <li><a href="#">주의사항</a></li>
+        <li><a href="#">주의사항</a></li>
+        <li><a href="#">주의사항</a></li>
+        <li><a href="#">주의사항</a></li>
+    </ul>
+    <br>
+
+</body>
+
+</html>

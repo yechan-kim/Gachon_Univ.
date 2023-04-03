@@ -79,7 +79,8 @@
         "ratio": "cpp",
         "stack": "cpp",
         "variant": "cpp",
-        "filesystem": "cpp"
+        "filesystem": "cpp",
+        "버퍼.C": "cpp"
     },
     "C_Cpp.errorSquiggles": "Disabled"
 }

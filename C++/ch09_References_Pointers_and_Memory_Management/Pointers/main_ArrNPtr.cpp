@@ -7,8 +7,6 @@ int main()
 
 	cout << "sizeof(A) = " << sizeof(A) << endl << endl;
 
-	int *p = A;
-
 	/*① 배열명을 사용한 index표현, i로 대입
 	  ②  배열명을 사용한 포인터표현, i*i로 대입
 	  ③  배열명을 저장한 포인터변수를 사용한 포인터표현, i*i*i로 대입
@@ -24,15 +22,18 @@ int main()
 		*(A + i) = i * i;
 	printArray(A, 10);
 
+		int *p = A;
+	cout<< "p: " << p << endl;
 	cout << "3. 배열명을 저장한 포인터변수를 사용한 포인터 표현" << endl;
 	for (int i = 0; i < 10; i++)
 		*(p + i) = i * i * i;
-	printArray(A, 10);
+	cout<< "after3_p: " << p << endl;
+	printArray(p, 10);
 
 	cout << "4. 배열명을 저장한 포인터변수를 사용한 index 표현" << endl;
 	for (int i = 0; i < 10; i++)
 		p[i] = i * i * i * i ;
-	printArray(A, 10);
+	printArray(p, 10);
 
 	return 0;
 }

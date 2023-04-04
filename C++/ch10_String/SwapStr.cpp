@@ -1,4 +1,5 @@
 #include <iostream>
+#include <cstring>
 #include <string>
 
 using namespace std;
@@ -39,7 +40,9 @@ int main()
         swap_string(A, B);
 
         cout << "swap_string 콜 후" << endl;
-        cout << "처음 문자열은 " << A << endl << "두번째 문자열은 " << B << endl << "-----------------------\n"; //"\n"은 endl과 같은 역할을 한다.
+        cout << "처음 문자열은 " << A << endl
+             << "두번째 문자열은 " << B << endl
+             << "-----------------------\n"; //"\n"은 endl과 같은 역할을 한다.
 
         string Astr = A;
         string Bstr = B;
@@ -47,7 +50,9 @@ int main()
         swap_string_cpp(Astr, Bstr);
 
         cout << "swap_string_cpp 콜 후" << endl;
-        cout << "처음 문자열은 " << Astr << endl << "두번째 문자열은 " << Bstr << endl << "-----------------------\n"; //"\n"은 endl과 같은 역할을 한다.
+        cout << "처음 문자열은 " << Astr << endl
+             << "두번째 문자열은 " << Bstr << endl
+             << "-----------------------\n"; //"\n"은 endl과 같은 역할을 한다.
     }
 
     return 0;
@@ -67,11 +72,17 @@ void swap_string(char *cpp1, char *cpp2)
     // cpp1 = cpp2;
     // cpp2 = tp;
 
-    // working version
+    // working version -> vs code 에서는 MAX매개변수를 삭제해야 작동
     char tp[MAX];
     strcpy(tp, MAX, cpp1);
     strcpy(cpp1, MAX, cpp2);
     strcpy(cpp2, MAX, tp);
+
+    // //working in vs code
+    // char tp[MAX];
+    // strcpy(tp, cpp1);
+    // strcpy(cpp1, cpp2);
+    // strcpy(cpp2, tp);
 }
 
 void swap_string_cpp(string &s1, string &s2)

@@ -1,14 +1,12 @@
 #include <iostream>
-
 using namespace std;
-
-int *int_arr_return(int size);
-int main()
-{
+int* int_arr_return(int num);
+int main() {
 	int size;
 	cout << "몇 개의 정수를 입력하시겠습니까?:  ";
 	cin >> size;
-	int *ip = int_arr_return(size);
+	//int* ip = new int[size];
+	int* ip = int_arr_return(size);
 
 	cout << "정수를 입력하시오: ";
 	for (int i = 0; i < size; i++)
@@ -34,8 +32,8 @@ int main()
 	return 0;
 }
 
-int *int_arr_return(int size)
+int* int_arr_return(int num)
 {
-	int *ip = new int[size]; // dynamic memory allocation
-	return ip;
+	int* p = new int[num]; // dynamic memory allocation
+	return p;
 }

@@ -28,7 +28,15 @@ int main()
     return 0;
 }
 
-void swap_str(char *str1, char *str2)
+// void swap_str(char *str1, char *str2)
+// {
+//     char tp[MAX];
+//     strcpy_s(tp, MAX, str1);
+//     strcpy_s(str1, MAX, str2);
+//     strcpy_s(str2, MAX, tp);
+// }
+
+void swap_str(char *str1, char *str2) // for vscode
 {
     char tp[MAX];
     strcpy(tp, str1);

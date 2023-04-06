@@ -17,7 +17,7 @@ void error(const char* message)
 	exit(1);
 }
 
-// 공백 상태 검출 함수
+// 초기화
 void init_queue(QueueType* q)
 {
 	q->front = q->rear = 0;

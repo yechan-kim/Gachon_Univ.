@@ -6,57 +6,77 @@ using namespace std;
 
 const int MAX = 100;
 
-// ¹®ÀÚ¿­ÀÇ ½º¿Ò
-void swap_string(char* cpp1, char* cpp2);
+// ë¬¸ìì—´ì˜ ìŠ¤ì™‘
+void swap_string(char *cpp1, char *cpp2);
+void swap_string_cpp(string &str_A, string &str_B);
 
 int main()
 {
-	char A[MAX], B[MAX]; //cstyle string
+    char A[MAX], B[MAX]; // cstyle string
 
-	cout << "Ã³À½ ¹®ÀÚ¿­: ";
-	cin.getline(A, MAX); //sapce Çã¿ë
+    cout << "ì²˜ìŒ ë¬¸ìì—´: ";
+    cin.getline(A, MAX); // sapce í—ˆìš©
 
-	cout << "µÎ¹øÂ° ¹®ÀÚ¿­: ";
-	cin.getline(B, MAX);
+    cout << "ë‘ë²ˆì§¸ ë¬¸ìì—´: ";
+    cin.getline(B, MAX);
 
-	cout << "A: " << (void*)A << endl; //ÁÖ¼Ò Ãâ·Â
-	cout << "B: " << (void*)B << endl;
+    cout << "A: " << (void *)A << endl; // ì£¼ì†Œ ì¶œë ¥
+    cout << "B: " << (void *)B << endl;
 
-	swap_string(A, B);
+    swap_string(A, B);
 
-	cout << "swap_string Äİ ÈÄ" << endl;
-	cout << "Ã³À½ ¹®ÀÚ¿­Àº " << A << endl 
-		<< "µÎ¹øÂ° ¹®ÀÚ¿­Àº " << B << endl
-		<< "-----------------------\n"; //"\n"Àº endl°ú °°Àº ¿ªÇÒÀ» ÇÑ´Ù.
+    cout << "swap_string ì½œ í›„" << endl;
+    cout << "ì²˜ìŒ ë¬¸ìì—´ì€ " << A << endl
+         << "ë‘ë²ˆì§¸ ë¬¸ìì—´ì€ " << B << endl
+         << "-----------------------\n"; //"\n"ì€ endlê³¼ ê°™ì€ ì—­í• ì„ í•œë‹¤.
 
-	//cstyleÀÇ ¹®ÀÚ¿­ A,B¸¦ c++ style ¹®ÀÚ¿­À» ¸¸µé¾î ½º¿ÒÇÑ´Ù. (°úÁ¦!)
-	return 0;
+    // cstyleì˜ ë¬¸ìì—´ A,Bë¥¼ c++ style ë¬¸ìì—´ì„ ë§Œë“¤ì–´ ìŠ¤ì™‘í•œë‹¤. (ê³¼ì œ!)
+    string strgA = A;
+    string strgB = B;
+
+    swap_string_cpp(strgA, strgB);
+
+    cout << "swap_string_cpp ì½œ í›„" << endl;
+    cout << "ì²˜ìŒ ë¬¸ìì—´ì€ " << strgA << endl
+         << "ë‘ë²ˆì§¸ ë¬¸ìì—´ì€ " << strgB << endl
+         << "-----------------------\n"; //"\n"ì€ endlê³¼ ê°™ì€ ì—­í• ì„ í•œë‹¤.
+
+    return 0;
 }
 
-void swap_string(char* cpp1, char* cpp2)
+void swap_string(char *cpp1, char *cpp2)
 {
-	cout << "swap_string Äİ" << endl;
-	cout << "cpp1: " << (void*)cpp1 << endl; //ÁÖ¼ÒÃâ·Â
-	cout << "cpp2: " << (void*)cpp2 << endl;
+    cout << "swap_string ì½œ" << endl;
+    cout << "cpp1: " << (void *)cpp1 << endl; // ì£¼ì†Œì¶œë ¥
+    cout << "cpp2: " << (void *)cpp2 << endl;
 
-	cout << "&cpp1: " << &cpp1 << endl; //°ª Ãâ·Â
-	cout << "&cpp2: " << &cpp2 << endl;
+    cout << "&cpp1: " << &cpp1 << endl; // ê°’ ì¶œë ¥
+    cout << "&cpp2: " << &cpp2 << endl;
 
-	// //not working version, local º¯¼ö¸¸ º¯°æ
-	// char *tp;
-	// tp = cpp1;
-	// cpp1 = cpp2;
-	// cpp2 = tp;
+    // //not working version, local ë³€ìˆ˜ë§Œ ë³€ê²½
+    // char *tp;
+    // tp = cpp1;
+    // cpp1 = cpp2;
+    // cpp2 = tp;
 
-	 // working version -> vs code ¿¡¼­´Â strcpyÇÔ¼ö »ç¿ë.
-	 char tp[MAX];
-	 strcpy_s(tp, MAX, cpp1);
-	 strcpy_s(cpp1, MAX, cpp2);
-	 strcpy_s(cpp2, MAX, tp);
+    // // working version -> vs code ì—ì„œëŠ” strcpyí•¨ìˆ˜ ì‚¬ìš©.
+    // char tp[MAX];
+    // strcpy_s(tp, MAX, cpp1);
+    // strcpy_s(cpp1, MAX, cpp2);
+    // strcpy_s(cpp2, MAX, tp);
 
-	////working in vs code
-	//char tp[MAX];
-	//strcpy(tp, cpp1);
-	//strcpy(cpp1, cpp2);
-	//strcpy(cpp2, tp);
+    // working in vs code
+    char tp[MAX];
+    strcpy(tp, cpp1);
+    strcpy(cpp1, cpp2);
+    strcpy(cpp2, tp);
+}
+
+void swap_string_cpp(string &str_A, string &str_B)
+{
+    cout << "swap_string_cpp ì½œ" << endl;
+
+    string tp = str_A;
+    str_A = str_B;
+    str_B = tp;
 }

@@ -8,7 +8,7 @@ const int MAX = 101;
 
 // 문자열의 스왑
 void swap_string(char *cpp1, char *cpp2);
-void swap_string_cpp(string &s1, string &s2);
+void swap_string_cpp(string &s1, string &s2)
 
 int main()
 {

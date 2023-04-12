@@ -80,7 +80,8 @@
         "stack": "cpp",
         "variant": "cpp",
         "filesystem": "cpp",
-        "버퍼.C": "cpp"
+        "버퍼.C": "cpp",
+        "__verbose_abort": "cpp"
     },
     "C_Cpp.errorSquiggles": "Disabled"
 }

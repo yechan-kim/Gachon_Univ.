@@ -26,6 +26,19 @@
             "group": "test"
         },
         {
+            "label": "run_c++_OOP",
+            "command": [
+                "g++ ${fileDirname}/${fileBasenameNoExtension}.cpp -c\n",
+                "g++ ${fileDirname}/${fileBasenameNoExtension}_main.cpp -c\n",
+                "g++ -o application ${fileBasenameNoExtension}.o ${fileBasenameNoExtension}_main.o\n",
+                "./application\n",
+                "rm ${fileBasenameNoExtension}.o\n",
+                "rm ${fileBasenameNoExtension}_main.o\n",
+                "rm application"
+            ],
+            "group": "test"
+        },
+        {
             "type": "shell",
             "label": "C/C++: g++ build active file",
             "command": "/usr/bin/g++",

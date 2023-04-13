@@ -80,7 +80,9 @@
         "stack": "cpp",
         "variant": "cpp",
         "filesystem": "cpp",
-        "버퍼.C": "cpp"
+        "버퍼.C": "cpp",
+        "리스트를_하나로_결합하는_함수.C": "cpp",
+        "*.c\\": "cpp"
     },
     "C_Cpp.errorSquiggles": "Disabled"
 }

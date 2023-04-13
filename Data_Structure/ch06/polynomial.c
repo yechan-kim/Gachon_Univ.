@@ -59,7 +59,7 @@ void poly_add(ListType* plist1, ListType* plist2, ListType* plist3)
 	ListNode* b = plist2->head;
 	int sum;
 
-	while (a && b) {
+	while (a && b) { //a또는b가 NULL이 나올때 까지 실행
 		if (a->expon == b->expon) {   // a의 차수 > b의 차수
 			sum = a->coef + b->coef;
 			if (sum != 0) insert_last(plist3, sum, a->expon);

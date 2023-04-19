@@ -1,5 +1,4 @@
 #include <stdio.h>
-#pragma warning(disable: 4996)
 
 #define MAX(a,b) (((a)>(b))?(a):(b))
 #define MAX_DEGREE 101

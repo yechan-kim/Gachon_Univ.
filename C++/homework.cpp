@@ -22,9 +22,9 @@ public:
     int getId() const;
     int getBalance() const;
     char *getName() const;
-    void setId(int value);
-    void setBalance(int value);
-    void setName(char value[MAX]);
+    void setId(int val);
+    void setBalance(int val);
+    void setName(char val[MAX]);
 
     // val 만큼 입금
     void inMoney(int val);
@@ -69,17 +69,17 @@ char *Account::getName() const
     strcpy(temp, name);
     return temp;
 }
-void Account::setId(int value)
+void Account::setId(int val)
 {
-    id = value;
+    id = val;
 }
-void Account::setBalance(int value)
+void Account::setBalance(int val)
 {
-    balance = value;
+    balance = val;
 }
-void Account::setName(char name[MAX])
+void Account::setName(char val[MAX])
 {
-    strcpy(this->name, name);
+    strcpy(this->name, val);
 }
 
 void Account::inMoney(int val)
@@ -106,15 +106,19 @@ int main()
     c.setBalance(300);
     c.setName("honggildong");
 
-    cout << "ID: " << a.getId() << ", Balance: " << a.getBalance() << ", Name: " << a.getName() << endl;
+    cout << endl << "ID: " << a.getId() << ", Balance: " << a.getBalance() << ", Name: " << a.getName() << endl;
+    delete[] a.getName();
     cout << "ID: " << b.getId() << ", Balance: " << b.getBalance() << ", Name: " << b.getName() << endl;
-    cout << "ID: " << c.getId() << ", Balance: " << c.getBalance() << ", Name: " << c.getName() << endl;
+    delete[] b.getName();
+    cout << "ID: " << c.getId() << ", Balance: " << c.getBalance() << ", Name: " << c.getName() << endl << endl;
+    delete[] c.getName();
 
     a.inMoney(100);
     a.outMoney(50);
 
     cout << "1번 통장의 입출금 정산이 완료되었습니다." << endl;
-    cout << "ID: " << a.getId() << ", Balance: " << a.getBalance() << ", Name: " << a.getName() << endl;
+    cout << "ID: " << a.getId() << ", Balance: " << a.getBalance() << ", Name: " << a.getName() << endl << endl;
+    delete[] a.getName();
 
     return 0;
 }

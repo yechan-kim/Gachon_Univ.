@@ -51,8 +51,9 @@ double Point::distance(int numx, int numy)
 }
 
 Point::Point(int num1, int num2)
-    : x(num1), y(num2)
 {
+    x=num1;
+    y=num2;
     cout << "매개변수가 있는 생성자가 호출 되었습니다." << endl;
 }
 
@@ -71,7 +72,7 @@ int main()
 
     cout << "객체의 좌표의 거리를 구하고자 하는 점의 x와 y값을 순서대로 입력하세요: ";
     cin >> x >> y;
-    printf("%f\n", p.distance(x, y));
+    cout << "객체의 좌표와의 거리는 " << p.distance(x, y) << "입니다." << endl;
 
     return 0;
 }

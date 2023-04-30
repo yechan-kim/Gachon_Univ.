@@ -39,8 +39,9 @@ void Person::setAge(int value)
 }
 
 Person::Person(string v_name, int v_age)
-    : name(v_name), age(v_age)
 {
+    name=v_name;
+    age=v_age;
     cout << "매개변수가 있는 생성자가 호출 되었습니다." << endl;
 }
 
@@ -55,7 +56,7 @@ int main()
 
     cout << "Name: " << p.getName() << ", Age: " << p.getAge() << endl;
 
-    p.setName("leedonghyun");
+    p.setName("honggildong");
     p.setAge(24);
 
     cout << "Name: " << p.getName() << ", Age: " << p.getAge() << endl;

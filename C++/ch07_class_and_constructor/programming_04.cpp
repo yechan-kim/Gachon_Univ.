@@ -1,4 +1,8 @@
+#include <iostream>
+#include <string>
 #include "programming_04.h"
+
+using namespace std;
 
 string Person::getName() const
 {
@@ -21,8 +25,9 @@ void Person::setAge(int value)
 }
 
 Person::Person(string v_name, int v_age)
-    : name(v_name), age(v_age)
 {
+    name = v_name;
+    age = v_age;
     cout << "매개변수가 있는 생성자가 호출 되었습니다." << endl;
 }
 

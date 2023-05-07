@@ -1,4 +1,7 @@
+#include <iostream>
 #include "programming_01.h"
+
+using namespace std;
 
 int One::getX() const
 {
@@ -11,8 +14,9 @@ int One::getY() const
 }
 
 One::One(int X, int Y)
-    : x(X), y(Y)
 {
+    x = X;
+    y = Y;
     cout << "매개변수가 있는 생성자가 호출되었습니다." << endl;
 }
 

@@ -1,4 +1,8 @@
+#include <iostream>
+#include <string>
 #include "programming_04.h"
+
+using namespace std;
 
 int main()
 {
@@ -6,7 +10,7 @@ int main()
 
     cout << "Name: " << p.getName() << ", Age: " << p.getAge() << endl;
 
-    p.setName("leedonghyun");
+    p.setName("honggildong");
     p.setAge(24);
 
     cout << "Name: " << p.getName() << ", Age: " << p.getAge() << endl;

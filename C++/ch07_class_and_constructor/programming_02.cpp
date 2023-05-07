@@ -1,4 +1,7 @@
+#include <iostream>
 #include "programming_02.h"
+
+using namespace std;
 
 int Two::getX() const
 {
@@ -19,6 +22,8 @@ void Two::setA(char value)
 Two::Two(int value1, char value2)
     : x(value1), a(value2)
 {
+    x = value1;
+    a = value2;
     cout << "매개변수가 있는 생성자가 호출 되었습니다." << endl;
 }
 

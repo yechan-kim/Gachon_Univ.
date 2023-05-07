@@ -1,7 +1,8 @@
-#include <iostream>
 #include <string>
-
 using namespace std;
+
+#ifndef PROGRAMMING_04_H
+#define PROGRAMMING_04_H
 
 class Person
 {
@@ -17,3 +18,4 @@ public:
     Person(string v_name, int v_age);
     ~Person();
 };
+#endif

@@ -1,6 +1,5 @@
-#include <iostream>
-
-using namespace std;
+#ifndef PROGRAMMING_02_H
+#define PROGRAMMING_02_H
 
 class Two
 {
@@ -16,3 +15,4 @@ public:
     Two(int value1, char value2);
     ~Two();
 };
+#endif

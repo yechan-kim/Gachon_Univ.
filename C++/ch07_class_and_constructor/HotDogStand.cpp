@@ -1,4 +1,5 @@
 #include <iostream>
+
 using namespace std;
 
 class HotDogStand
@@ -9,77 +10,79 @@ private:
 
 public:
     void setId(int id);
-    HotDogStand(int id, int sold);
-    ~HotDogStand();
+    int getSold();
     void JustSold();
-    int get_hot_dogs_sold();
+    HotDogStand();
+    ~HotDogStand();
 
 private:
-    static int total_hot_dogs_sold;
+    static int total_sold;
 
 public:
-    static int get_total_hot_dogs_sold()
-    {
-        return total_hot_dogs_sold;
-    }
+    static int getTotal_sold();
 };
 
-int HotDogStand::total_hot_dogs_sold = 0;
+int HotDogStand::total_sold = 0;
 
-void setId(int id)
+int HotDogStand::getTotal_sold()
+{
+    return total_sold;
+}
+
+void HotDogStand::setId(int id)
 {
     this->id = id;
 }
 
-HotDogStand::HotDogStand(int id, int sold)
+int HotDogStand::getSold()
 {
-    this->id = id;
-    this->sold = sold;
-}
-
-HotDogStand::~HotDogStand()
-{
-    cout << "decon" << endl;
+    return sold;
 }
 
 void HotDogStand::JustSold()
 {
     sold++;
-    total_hot_dogs_sold++;
+    total_sold++;
 }
 
-int HotDogStand::get_hot_dogs_sold()
+HotDogStand::HotDogStand()
 {
-    return sold;
+    id = 0;
+    sold = 0;
 }
 
-int HotDogStand::get_total_hot_dogs_sold()
+HotDogStand::~HotDogStand()
 {
-    return total_hot_dogs_sold;
 }
 
 int main()
 {
     int count;
-    count << "Stand count(3~10): ";
-    cin << count;
+
+    cout << "Stand count(3~10): ";
+    cin >> count;
+
     HotDogStand *sList = new HotDogStand[count];
     for (size_t i = 0; i < count; i++)
         sList[i].setId(i);
 
-    stand1.JustSold();
-    stand1.JustSold();
-    cout << "Hot dog stand " << stand1.get_id() << " sold " << stand1.get_hot_dogs_sold() << " hot dogs" << endl;
+    char ID;
+    while (true)
+    {
+        cout << "ID : ";
+        cin >> ID;
+        if (ID == 'q')
+            break;
+        else
+            sList[ID - 48].JustSold(); // '0'==48 이므로 '0'-48 == 0
+    }
 
-    stand2.JustSold();
-    cout << "Hot dog stand " << stand2.get_id() << " sold " << stand2.get_hot_dogs_sold() << " hot dogs" << endl;
+    for (int i = 0; i < count; i++)
+        cout << "Stand " << i << " sold " << sList[i].getSold() << endl;
 
-    stand3.JustSold();
-    stand3.JustSold();
-    stand3.JustSold();
-    cout << "Hot dog stand " << stand3.get_id() << " sold " << stand3.get_hot_dogs_sold() << " hot dogs" << endl;
+    cout << "Total sold = " << HotDogStand::getTotal_sold() << endl;
 
-    cout << "Total hot dogs sold by all hot dog stands: " << HotDogStand::get_total_hot_dogs_sold() << endl;
+    delete[] sList;
 
     return 0;
 }

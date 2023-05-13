@@ -67,16 +67,8 @@ DA::~DA()
     cout << "decon" << endl;
 }
 // client
-int func1(DA d); // == DA d(obj3)
-int func2(DA &d);
 int main()
 {
-    DA obj3(10); // con with parameter
-    cout << "Pass-By-Value" << endl;
-    int m = func1(obj3); // deep copy con call
-    cout << "Pass-By-Reference" << endl;
-    int k = func2(obj3); // any con not call
-    cout << m << endl;
     cout << "몇개의 정수를 입력하겠소?: ";
     int n;
     cin >> n;
@@ -87,7 +79,7 @@ int main()
         cout << "입력: ";
         int num;
         cin >> num;
-        obj1.setArrElement(i,num);
+        obj1.setArrElement(i, num);
     }
     cout << "역순으로 출력" << endl;
     for (int i = n - 1; i >= 0; i--)
@@ -99,14 +91,4 @@ int main()
         cout << obj2.getArrElement(i) << " ";
     cout << endl;
     return 0;
-}
-int func1(DA d)
-{
-    cout << "in func1()" << endl;
-    return d.getSize();
-}
-int func2(DA &d)
-{
-    cout << "in func2()" << endl;
-    return d.getSize();
 }

@@ -12,7 +12,7 @@ private:
 
 public:
     Person();
-    Person(char *name, char *phone, int age);
+    Person(const char *name, const char *phone, int age);
     Person(const Person &p);
     ~Person();
     void ShowData();
@@ -26,7 +26,7 @@ Person::Person()
     cout << "매개변수가 없는 생성자" << endl;
 }
 
-Person::Person(char *name, char *phone, int age)
+Person::Person(const char *name, const char *phone, int age)
 {
     strcpy(this->name, name);
     strcpy(this->phone, phone);

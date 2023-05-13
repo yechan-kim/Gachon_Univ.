@@ -73,8 +73,10 @@ int main()
         cin >> ID;
         if (ID == 'q')
             break;
+        else if (ID - 48 > count - 1) // ID out of range excludes count (including total count)
+            cout << "This ID you entered is out of the 'stand count' range you entered. This count is excluded from the count." << endl;
         else
-            sList[ID - 48].JustSold(); // '0'==48 이므로 '0'-48 == 0
+            sList[ID - 48].JustSold(); // '0' == 48, so '0'-48 == 0
     }
 
     for (int i = 0; i < count; i++)

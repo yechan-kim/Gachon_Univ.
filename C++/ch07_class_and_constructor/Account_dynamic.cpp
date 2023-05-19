@@ -1,5 +1,5 @@
 #include <iostream>
-#include "Account_sep.h"
+#include "Account_dynamic.h"
 
 using namespace std;
 

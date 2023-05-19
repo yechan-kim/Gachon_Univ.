@@ -1,5 +1,5 @@
-#ifndef ACCOUNT_SEP_H
-#define ACCOUNT_SEP_H
+#ifndef ACCOUNT_DYNAMIC_H
+#define ACCOUNT_DYNAMIC_H
 
 const int NAME_LEN = 20;
 

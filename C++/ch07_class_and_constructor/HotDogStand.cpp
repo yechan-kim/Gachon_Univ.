@@ -63,7 +63,7 @@ int main()
     cin >> count;
 
     HotDogStand *sList = new HotDogStand[count];
-    for (size_t i = 0; i < count; i++)
+    for (int  i = 0; i < count; i++)
         sList[i].setId(i);
 
     char ID;

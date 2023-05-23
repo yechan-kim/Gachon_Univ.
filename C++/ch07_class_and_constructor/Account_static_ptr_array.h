@@ -1,5 +1,5 @@
-#ifndef ACCOUNT_STATIC_H
-#define ACCOUNT_STATIC_H
+#ifndef ACCOUNT_STATIC_PTR_ARRAY_H
+#define ACCOUNT_STATIC_PTR_ARRAY_H
 
 const int NAME_LEN = 20;
 

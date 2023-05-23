@@ -9,10 +9,12 @@ private:
     int month;
     int day;
     int year;
-    public:
-        Date(int month, int day, int year);
-        Date(const Date &obj);
-        ~Date();
-        void print() const;
+
+public:
+    Date();
+    Date(int month, int day, int year);
+    Date(const Date &d);
+    ~Date();
+    void print() const;
 };
 #endif

@@ -26,6 +26,12 @@ Rect::Rect(int a, int b, int c, int d)
     bottomRight.SetY(d);
     cout << "Rect 매개변수 있는 생성자 호출" << endl;
 }
+Rect::Rect(const Rect &r)
+{
+    topLeft = r.topLeft;
+    bottomRight = r.bottomRight;
+    cout << "Rect 복사 생성자 호출" << endl;
+}
 Rect::~Rect()
 {
     cout << "Rect 소멸자 호출" << endl;

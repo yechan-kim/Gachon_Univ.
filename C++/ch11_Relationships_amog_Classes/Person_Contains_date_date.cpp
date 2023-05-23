@@ -7,8 +7,15 @@
 
 using namespace std;
 
+// 매개변수가 없는 생성자
+Date::Date()
+{
+    this->month = 0;
+    this->day = 0;
+    this->year = 0;
+    cout << "Date클래스 con w/o parameter" << endl;
+}
 // 매개변수가 있는 생성자
-
 Date::Date(int month, int day, int year)
 {
     this->month = month;
@@ -35,11 +42,11 @@ Date::Date(int month, int day, int year)
 }
 
 // 복사 생성자
-Date::Date(const Date &obj)
+Date::Date(const Date &d)
 {
-    this->month = obj.month;
-    this->day = obj.day;
-    this->year = obj.year;
+    this->month = d.month;
+    this->day = d.day;
+    this->year = d.year;
     cout << "Date클래스 copy con" << endl;
 }
 

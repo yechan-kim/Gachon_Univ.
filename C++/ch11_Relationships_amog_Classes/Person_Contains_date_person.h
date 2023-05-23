@@ -8,12 +8,15 @@
 // Person 클래스의 정의
 class Person
 {
-    private:
-        long identity;
-        Date birthDate;
-    public:
-        Person(long identity, const Date &birthDate);
-        ~Person();
-        void print() const;
+private:
+    long identity;
+    Date BirthDate;
+
+public:
+    Person();
+    Person(long identity, const Date &bd);
+    Person(const Person &p);
+    ~Person();
+    void print() const;
 };
 #endif

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Event Basic</title>
+    <script src="https://code.jquery.com/jquery-3.7.0.js"></script>
+    <script>
+        // 이벤트를 연결
+        $(document).ready(function () {
+            // 이벤트를 연결
+            $('a').click(function () {
+                // 출력
+                alert('click');
+
+                // 기본 이벤트를 제거
+                event.preventDefault();
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <a href="http://hanb.co.kr">Hanbit Media</a>
+</body>
+
+</html>

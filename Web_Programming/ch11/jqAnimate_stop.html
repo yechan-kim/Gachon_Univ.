@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Animation Basic</title>
+    <script src="https://code.jquery.com/jquery-3.7.0.js"></script>
+    <script>
+        // 이벤트를 연결
+        $(document).ready(function () {
+            // 변수를 선언
+            var clearQueue = false;
+            var goToEnd = false;
+
+            // 이벤트를 연결
+            $('#clearQueue').click(function () { // stop을 누르는 지점에서 정지
+                clearQueue = $(this).prop('checked');
+            });
+
+            $('#goToEnd').click(function () { // animation이 끝나는 지점에서 정지
+                goToEnd = $(this).prop('checked');
+            });
+
+            $('#stopButton').click(function () {
+                $('#box').stop(clearQueue, goToEnd);
+            });
+
+            // 스타일을 변경
+            $('#box').css({
+                width: 100,
+                height: 100,
+                background: 'red'
+            })
+
+            // 타이머를 연결
+            setInterval(function () {
+                $('#box').animate({
+                    width: 200,
+                }, 1000).delay(1000).animate({
+                    width: 100,
+                    height: 100
+                }, 1000);
+            }, 3000);
+        });
+    </script>
+</head>
+
+<body>
+    <!-- 입력양식 -->
+    <label>claerQueue</label>
+    <input id="clearQueue" type="checkbox">
+    <br>
+    <label>goToEnd</label>
+    <input id="goToEnd" type="checkbox">
+    <br>
+    <button id="stopButton">Stop</button>
+    <!-- 에니메이션 -->
+    <div id="box"></div>
+</body>
+
+</html>

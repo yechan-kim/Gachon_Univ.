@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Animate Basic</title>
+    <script src="https://code.jquery.com/jquery-3.7.0.js"></script>
+    <script>
+        // 이벤트를 연결
+        $(document).ready(function () {
+            // 이벤트를 연경
+            $('h1').hover(function () {
+                // 색상을 변경, Mouse_enter_event_listener
+                $(this).css({
+                    background: 'red',
+                    color: 'white'
+                });
+            }, function () {
+                // 색상을 제거, Mouse_leave_event_listener
+                $(this).css({
+                    background: '',
+                    color: ''
+                });
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <h1>Click</h1>
+</body>
+
+</html>

@@ -29,17 +29,17 @@ Sales::Sales(const Sales &s)
     cout << "Sales copy con" << endl;
 }
 
-gitSales::~Sales()
+Sales::~Sales()
 {
     cout << "Sales virtual decon" << endl;
 }
 
-string Sales::GetName()
+string Sales::GetName() const
 {
     return name;
 }
 
-int Sales::GetPay()
+int Sales::GetPay() const
 {
-    return basePay + salesRevenue * 0.15;
+    return Employee::GetPay() + basePay + salesRevenue * 0.15;
 }

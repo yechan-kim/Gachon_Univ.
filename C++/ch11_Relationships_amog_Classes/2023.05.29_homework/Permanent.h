@@ -14,8 +14,8 @@ public:
     Permanent();
     Permanent(string name, int salary);
     Permanent(const Permanent &p);
-    virtual ~Permanent();
-    string GetName();
-    int GetPay();
+    ~Permanent();
+    string GetName() const;
+    int GetPay() const;
 };
 #endif

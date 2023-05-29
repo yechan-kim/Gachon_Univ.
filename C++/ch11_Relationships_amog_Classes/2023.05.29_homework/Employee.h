@@ -15,7 +15,7 @@ public:
     Employee(string name);
     Employee(const Employee &e);
     virtual ~Employee();
-    string GetName();
-    int GetPay();
+    virtual string GetName() const;
+    virtual int GetPay() const;
 };
 #endif

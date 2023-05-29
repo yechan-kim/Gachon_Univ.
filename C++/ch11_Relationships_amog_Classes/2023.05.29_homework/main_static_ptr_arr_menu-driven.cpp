@@ -129,4 +129,6 @@ void CleanUp(Employee **E, int &CurrentIndex)
         delete E[i];
         E[i] = nullptr;
     }
+    delete[] E;
+    E = NULL;
 }

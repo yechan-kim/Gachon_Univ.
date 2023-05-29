@@ -17,8 +17,8 @@ public:
     Sales();
     Sales(string name, int basePay, int salesRevenue);
     Sales(const Sales &s);
-    virtual ~Sales();
-    string GetName();
-    int GetPay();;
+    ~Sales();
+    string GetName() const;
+    int GetPay() const;
 };
 #endif

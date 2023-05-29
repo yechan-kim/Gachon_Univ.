@@ -17,8 +17,8 @@ public:
     Temporary();
     Temporary(string name, int hours, int hourlyWage);
     Temporary(const Temporary &t);
-    virtual ~Temporary();
-    string GetName();
-    int GetPay();
+    ~Temporary();
+    string GetName() const;
+    int GetPay() const;
 };
 #endif

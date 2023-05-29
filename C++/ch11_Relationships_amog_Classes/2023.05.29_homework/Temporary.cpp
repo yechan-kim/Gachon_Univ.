@@ -34,12 +34,12 @@ Temporary::~Temporary()
     cout << "Temporary virtual decon" << endl;
 }
 
-string Temporary::GetName()
+string Temporary::GetName() const
 {
     return name;
 }
 
-int Temporary::GetPay()
+int Temporary::GetPay() const
 {
-    return hours * hourlyWage;
+    return Employee::GetPay() + hours * hourlyWage;
 }

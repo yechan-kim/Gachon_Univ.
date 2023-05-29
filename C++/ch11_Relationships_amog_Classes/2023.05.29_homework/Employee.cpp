@@ -27,12 +27,12 @@ Employee::~Employee()
     cout << "Employee virtual decon" << endl;
 }
 
-string Employee::GetName()
+string Employee::GetName() const
 {
     return name;
 }
 
-int Employee::GetPay()
+int Employee::GetPay() const
 {
     return 0;
 }

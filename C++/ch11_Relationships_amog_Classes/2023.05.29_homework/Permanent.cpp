@@ -31,12 +31,12 @@ Permanent::~Permanent()
     cout << "Permanent virtual decon" << endl;
 }
 
-string Permanent::GetName()
+string Permanent::GetName() const
 {
     return name;
 }
 
-int Permanent::GetPay()
+int Permanent::GetPay() const
 {
-    return salary;
+    return Employee::GetPay() + salary;
 }

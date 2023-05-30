@@ -13,6 +13,7 @@ void printMenu();
 void MakePermanent(Employee **E, int &CurrentIndex);
 void MakeTemporary(Employee **E, int &CurrentIndex);
 void MakeSales(Employee **E, int &CurrentIndex);
+void Fire(Employee **E, int &CurrentIndex);
 void Inquire(Employee **E, int &CurrentIndex);
 void CleanUp(Employee **E, int &CurrentIndex);
 enum
@@ -20,6 +21,7 @@ enum
     MAKEPERMANENT = 1,
     MAKETEMPORARY,
     MAKESALES,
+    FIRE,
     INQUIRE,
     EXIT
 };
@@ -46,6 +48,9 @@ int main()
         case MAKESALES:
             MakeSales(E, index);
             break;
+        case FIRE:
+            Fire(E, index);
+            break;
         case INQUIRE:
             Inquire(E, index);
             break;
@@ -63,12 +68,13 @@ int main()
 
 void printMenu()
 {
-    cout << "--------------MENU--------------" << endl;
+    cout << "------------MENU------------" << endl;
     cout << "1. 정규직 고용" << endl;
     cout << "2. 계약직 고용" << endl;
     cout << "3. 영업직 고용" << endl;
-    cout << "4. 고용된 직원 정보 전체 조회" << endl;
-    cout << "5. 프로그램 종료" << endl;
+    cout << "4. 직원 해고" << endl;
+    cout << "5. 직원 정보 전체 조회" << endl;
+    cout << "6. 프로그램 종료" << endl;
 }
 
 void MakePermanent(Employee **E, int &CurrentIndex)
@@ -114,6 +120,28 @@ void MakeSales(Employee **E, int &CurrentIndex)
     }
     else
         cout << "더이상 고용을 할 수 없습니다. (최대 100명 고용가능)" << endl;
+}
+
+void Fire(Employee **E, int &CurrentIndex)
+{
+    string name;
+    int i, j;
+    cout << "해고할 직원의 이름을 입력해 주새요.: ";
+    cin >> name;
+    for (i = 0; i < CurrentIndex; i++)
+    {
+        if (E[i]->GetName() == name)
+        {
+            delete E[i];
+            for(j=i; j<CurrentIndex-1; j++)
+                E[j] = E[j+1];
+            E[CurrentIndex - 1] = nullptr;
+            CurrentIndex--;
+            break;
+        }
+    }
+    if (i == CurrentIndex)
+        cout << "해당 직원을 찾을 수 없습니다." << endl;
 }
 
 void Inquire(Employee **E, int &CurrentIndex)

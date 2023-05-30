@@ -1,7 +1,7 @@
 #include <iostream>
 using namespace std;
 
-// ÀÏ¹İÀûÀÎ 'µµÇü'À» »óÂ¡ÇÏ´Â Å¬·¡½º
+// ì¼ë°˜ì ì¸ 'ë„í˜•'ì„ ìƒì§•í•˜ëŠ” í´ë˜ìŠ¤
 class Shape
 {
 public:
@@ -9,9 +9,9 @@ public:
 	virtual void Draw();
 	Shape();
 	Shape(double x, double y);
-	virtual ~Shape() //¹İµå½Ã virtual. ¾øÀ¸¸é baseÀÇ ¼Ò¸êÀÚ¸¸½ÇÇàµÊ
+	virtual ~Shape() // ë°˜ë“œì‹œ virtual. ì—†ìœ¼ë©´ baseì˜ ì†Œë©¸ìë§Œì‹¤í–‰ë¨
 	{
-		cout << "Shape ¼Ò¸êÀÚ½ÇÇàÁß" << endl;
+		cout << "Shape ì†Œë©¸ìì‹¤í–‰ì¤‘" << endl;
 	};
 
 protected:
@@ -35,40 +35,40 @@ void Shape::Move(double x, double y)
 	_y = y;
 }
 
-void Shape::Draw() 
+void Shape::Draw()
 {
 	cout << "[Shape] Position = ( " << _x << ", " << _y << ")\n";
 }
 
-// »ç°¢ÇüÀ» »óÂ¡ÇÏ´Â Å¬·¡½º
+// ì‚¬ê°í˜•ì„ ìƒì§•í•˜ëŠ” í´ë˜ìŠ¤
 class Rectangle : public Shape
 {
 public:
-	void Draw() ;
+	void Draw();
 	void Resize(double width, double height);
 
 	Rectangle();
 	Rectangle(double x, double y, double width, double height);
 	~Rectangle()
 	{
-		cout  << "Rect ¼Ò¸êÀÚ ½ÇÇàÁß.." << endl;
+		cout << "Rect ì†Œë©¸ì ì‹¤í–‰ì¤‘.." << endl;
 	}
+
 protected:
 	double _width;
 	double _height;
-
 };
 
 Rectangle::Rectangle()
-	:Shape()
+	: Shape()
 {
 	_width = _height = 100.0f;
 }
 
 Rectangle::Rectangle(double x, double y, double width, double height)
-: Shape(x, y)
+	: Shape(x, y)
 {
-	Resize( width, height);
+	Resize(width, height);
 }
 
 void Rectangle::Draw()
@@ -83,7 +83,7 @@ void Rectangle::Resize(double width, double height)
 	_height = height;
 }
 
-// ¿øÀ» »óÂ¡ÇÏ´Â Å¬·¡½º
+// ì›ì„ ìƒì§•í•˜ëŠ” í´ë˜ìŠ¤
 class Circle : public Shape
 {
 public:
@@ -94,7 +94,7 @@ public:
 	Circle(double x, double y, double radius);
 	~Circle()
 	{
-		cout << "Circle ¼Ò¸êÀÚ ½ÇÇàÁß.." << endl;
+		cout << "Circle ì†Œë©¸ì ì‹¤í–‰ì¤‘.." << endl;
 	}
 
 protected:
@@ -102,15 +102,15 @@ protected:
 };
 
 Circle::Circle()
-	:Shape()
+	: Shape()
 {
 	_radius = 100.0f;
 }
 
 Circle::Circle(double x, double y, double radius)
-: Shape(x, y)
+	: Shape(x, y)
 {
-	SetRadius( radius);
+	SetRadius(radius);
 }
 
 void Circle::Draw()
@@ -124,9 +124,9 @@ void Circle::SetRadius(double radius)
 	_radius = radius;
 }
 
-void MoveToOrigin( Shape* p )
+void MoveToOrigin(Shape *p)
 {
-	p->Move( 0, 0 );
+	p->Move(0, 0);
 	p->Draw();
 }
 
@@ -139,34 +139,31 @@ int main()
 	c.Draw();
 	Rectangle r(10, 20, 100, 200);
 	r.Draw();
-	//MoveToOrigin(&c);
-	//c.Draw();
-	//MoveToOrigin(&r);
-	//r.Draw();
-	
-	// µµÇüµéÀ» ´ãÀ» ¹è¿­À» ÁØºñÇÑ´Ù
-	Shape* shapes[5] = {NULL}; //°´Ã¼Æ÷ÀÎÅÍ ¹è¿­
+	// MoveToOrigin(&c);
+	// c.Draw();
+	// MoveToOrigin(&r);
+	// r.Draw();
 
-	// °¢ Å¸ÀÔÀÇ °´Ã¼¸¦ »ı¼ºÇØ¼­ ¹è¿­¿¡ º¸°üÇÑ´Ù.
-	shapes[0] = new Circle( 100, 100, 50);
-	shapes[1] = new Rectangle( 300, 300, 100, 100);
-	shapes[2] = new Rectangle( 200, 100, 50, 150);
+	// ë„í˜•ë“¤ì„ ë‹´ì„ ë°°ì—´ì„ ì¤€ë¹„í•œë‹¤
+	Shape *shapes[5] = {NULL}; // ê°ì²´í¬ì¸í„° ë°°ì—´
+
+	// ê° íƒ€ì…ì˜ ê°ì²´ë¥¼ ìƒì„±í•´ì„œ ë°°ì—´ì— ë³´ê´€í•œë‹¤.
+	shapes[0] = new Circle(100, 100, 50);
+	shapes[1] = new Rectangle(300, 300, 100, 100);
+	shapes[2] = new Rectangle(200, 100, 50, 150);
 	shapes[3] = new Circle(100, 300, 150);
-	shapes[4] = new Rectangle( 200, 200, 200, 200);
+	shapes[4] = new Rectangle(200, 200, 200, 200);
 
-	// ¹è¿­ÀÇ º¸°üµÈ ¸ğµç °´Ã¼¸¦  ±×¸°´Ù.
+	// ë°°ì—´ì˜ ë³´ê´€ëœ ëª¨ë“  ê°ì²´ë¥¼  ê·¸ë¦°ë‹¤.
 	for (int i = 0; i < 5; ++i)
 		shapes[i]->Draw();
 
-	// ¹è¿­ÀÇ º¸°üµÈ ¸ğµç °´Ã¼¸¦ ¼Ò¸ê½ÃÅ²´Ù.
+	// ë°°ì—´ì˜ ë³´ê´€ëœ ëª¨ë“  ê°ì²´ë¥¼ ì†Œë©¸ì‹œí‚¨ë‹¤.
 	for (int i = 0; i < 5; ++i)
 	{
 		delete shapes[i];
 		shapes[i] = NULL;
 	}
 
-
-
 	return 0;
 }
-

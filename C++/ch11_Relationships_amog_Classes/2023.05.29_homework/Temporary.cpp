@@ -31,7 +31,7 @@ Temporary::Temporary(const Temporary &t)
 
 Temporary::~Temporary()
 {
-    cout << "Temporary virtual decon" << endl;
+    cout << "Temporary decon" << endl;
 }
 
 string Temporary::GetName() const

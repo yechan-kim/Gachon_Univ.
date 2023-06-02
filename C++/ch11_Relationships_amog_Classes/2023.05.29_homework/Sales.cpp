@@ -31,7 +31,7 @@ Sales::Sales(const Sales &s)
 
 Sales::~Sales()
 {
-    cout << "Sales virtual decon" << endl;
+    cout << "Sales decon" << endl;
 }
 
 string Sales::GetName() const

@@ -28,7 +28,7 @@ Permanent::Permanent(const Permanent &p)
 
 Permanent::~Permanent()
 {
-    cout << "Permanent virtual decon" << endl;
+    cout << "Permanent decon" << endl;
 }
 
 string Permanent::GetName() const

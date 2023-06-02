@@ -24,7 +24,7 @@ Employee::Employee(const Employee &e)
 
 Employee::~Employee()
 {
-    cout << "Employee virtual decon" << endl;
+    cout << "Employee decon" << endl;
 }
 
 string Employee::GetName() const

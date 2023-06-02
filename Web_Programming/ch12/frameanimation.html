@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Frame Animation</title>
+    <script>
+        window.onload = function () {
+            // 변수 선언
+            var count = 0;
+            var image = document.getElementById('image');
+            var frames = [
+                '달리기그림/0.png', '달리기그림/1.png', '달리기그림/2.png', '달리기그림/3.png', '달리기그림/4.png',
+                '달리기그림/5.png', '달리기그림/6.png', '달리기그림/7.png', '달리기그림/8.png', '달리기그림/9.png',
+                '달리기그림/10.png', '달리기그림/11.png', '달리기그림/12.png', '달리기그림/13.png', '달리기그림/14.png',
+            ];
+            // 타이머 반복을 시작
+            setInterval(function () {
+                image.src = frames[count % frames.length];
+                count = count + 1;
+            }, 1000 / 20);
+        };
+    </script>
+</head>
+
+<body>
+    <img id="image">
+</body>
+
+</html>

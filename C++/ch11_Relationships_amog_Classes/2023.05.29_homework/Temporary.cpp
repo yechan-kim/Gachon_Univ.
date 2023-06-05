@@ -41,5 +41,5 @@ string Temporary::GetName() const
 
 int Temporary::GetPay() const
 {
-    return Employee::GetPay() + hours * hourlyWage;
+    return hours * hourlyWage;
 }

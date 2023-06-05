@@ -38,5 +38,5 @@ string Permanent::GetName() const
 
 int Permanent::GetPay() const
 {
-    return Employee::GetPay() + salary;
+    return salary;
 }

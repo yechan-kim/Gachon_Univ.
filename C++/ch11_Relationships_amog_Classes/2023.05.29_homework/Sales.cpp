@@ -41,5 +41,5 @@ string Sales::GetName() const
 
 int Sales::GetPay() const
 {
-    return Employee::GetPay() + basePay + salesRevenue * 0.15;
+    return (int)(basePay + (double)salesRevenue * 0.15);
 }

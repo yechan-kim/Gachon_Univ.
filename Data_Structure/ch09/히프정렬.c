@@ -16,7 +16,7 @@ typedef struct
 // 생성 함수
 HeapType *create()
 {
-    return (HeapType *)malloc(sizeof(HeapType));
+        return (HeapType *)malloc(sizeof(HeapType));
 }
 // 초기화 함수
 void init(HeapType *h)

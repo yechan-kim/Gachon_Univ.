@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>jQuery DOM</title>
+    <script src="https://code.jquery.com/jquery-3.7.0.js"></script>
+    <script>
+        // 이벤트를 연결
+        $(document).ready(function () {
+            // 10회 반복
+            for (var i = 0; i < 10; i++) {
+                // 문서 객체를 생성
+                var $dynamic = $('<h1>Create Document Object + ' + i + '</h1>').css({
+                    backgroundColor: 'black',
+                    color: 'red'
+                });
+
+                // 문서 객체를 추가
+                $('body').append($dynamic);
+            }
+        });
+    </script>
+</head>
+
+<body>
+</body>
+
+</html>

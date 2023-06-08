@@ -1,0 +1,666 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>메이플스토리 직업별 공략</title>
+
+    <script src="https://code.jquery.com/jquery-3.7.0.js"></script>
+    <!-- 폴다운 메뉴 -->
+    <script>
+        $(document).ready(function () {
+            $('.outer-menu-item').hover(function () {
+                $(this).find('.inner-menu').stop().slideDown();
+            }, function () {
+                $(this).find('.inner-menu').stop().slideUp();
+            });
+        });
+    </script>
+    <!-- 에니메이션 -->
+    <script>
+        $(document).ready(function () {
+            // 변수를 선언합니다.
+            var width = $('[data-role="slider"]').attr("data-width");
+            var height = $('[data-role="slider"]').attr("data-height");
+            var count = $('[data-role="slider"] div.item').length;
+
+            // 스타일을 적용
+            $('[data-role="slider"]').css({
+                position: "relative",
+                overflow: "hidden",
+                width: width,
+                height: height
+            }).find(".container").css({
+                position: "absolute",
+                width: width * count,
+                overflow: "hidden"
+            }).find(".item").css({
+                float: "left",
+                width: width,
+                height: height,
+                justifycontent: "center",
+                alignitems: "center"
+            });
+
+            // 변수를 선언합니다.
+            var currentPage = 0;
+            var changePage = function () {
+                $('[data-role="slider"] > .container').animate({
+                    left: -currentPage * width
+                }, 500, function () {
+                    // 애니메이션 완료 후 3초 대기
+                    setTimeout(function () {
+                        // 다음 페이지로 이동
+                        if (currentPage < count - 1) {
+                            currentPage++;
+                        } else {
+                            currentPage = 0;
+                        }
+                        changePage();
+                    }, 1500);
+                });
+            };
+
+            // 초기 슬라이더 실행
+            changePage();
+        });
+    </script>
+    <!-- 1. 초기화하기 -->
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: '메이플스토리 OTF', '메이플스토리 TTF';
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        li {
+            list-style: none;
+        }
+    </style>
+
+    <!-- 기본 클래스 -->
+    <style>
+        .pull-left {
+            float: left;
+        }
+    </style>
+
+    <!-- 2. 페이지 구성하기 -->
+    <style>
+        body {
+            width: 80%;
+            margin: 0 auto;
+            background: #E6E6E6;
+        }
+
+        #page-wrapper {
+            background: white;
+            margin: 40px 0;
+            padding: 10px 20px;
+            box-shadow: 0 2px 6px rgba(100, 100, 100, 0.3);
+            position: relative;
+            min-height: 100vh;
+        }
+
+        hgroup>*>a {
+            color: black;
+            text-decoration: none;
+        }
+    </style>
+
+    <!-- 3. 헤더 구성하기 -->
+    <style>
+        #main-header {
+            padding: 40px 50px;
+        }
+
+        .master-title {
+            font-size: 30px;
+            color: #181818;
+        }
+
+        .master-description {
+            font-size: 15px;
+            font-weight: 500;
+            color: #383838;
+        }
+    </style>
+
+    <!-- 4. 네비게이션 및 폴다운 메뉴 구성하기 -->
+    <style>
+        #main-navigation {
+            border-top: 1px solid #C8C8C8;
+            border-bottom: 1px solid #C8C8C8;
+            margin-bottom: 20px;
+            height: 40px;
+        }
+
+        .outer-menu-item {
+            float: left;
+            position: relative;
+        }
+
+        .outer-menu-item:hover {
+            background: black;
+            color: white;
+        }
+
+        .menu-title {
+            display: block;
+            height: 30px;
+            width: 100px;
+            line-height: 30px;
+            text-align: center;
+            padding: 5px 20px;
+        }
+
+        .inner-menu {
+            display: none;
+            position: absolute;
+            top: 40px;
+            left: 0;
+            width: 100%;
+            background: white;
+            box-shadow: 0 2px 6px rgba(5, 5, 5, 0.9);
+            z-index: 1000;
+            text-align: center;
+        }
+
+        .inner-menu-item>a {
+            display: block;
+            padding: 5px 10px;
+            color: black;
+        }
+
+        .inner-menu-item>a:hover {
+            background: black;
+            color: white;
+        }
+    </style>
+
+    <!-- 5. 본문 추가하기-->
+    <style>
+        #content {
+            overflow: hidden;
+        }
+
+        #main {
+            margin: auto;
+        }
+
+        #main-section {
+            float: left;
+            width: 710;
+        }
+
+        #main-aside {
+            float: right;
+            width: 200px;
+        }
+
+        .item>h1 {
+            color: black;
+            text-decoration: none;
+            text-align: center;
+        }
+
+        .item>img {
+            display: block;
+            margin: 0 auto;
+            height: 600px;
+            width: auto;
+        }
+    </style>
+
+    <!-- 6. 푸터 -->
+    <style>
+        #main-footer {
+            width: 100%;
+            bottom: 0px;
+            position: relative;
+        }
+    </style>
+
+</head>
+
+<body>
+    <!-- 전체를 감싸는 테그 -->
+    <div id="" page-wrapper">
+        <!-- 헤더 -->
+        <header id="main-header">
+            <hgroup>
+                <h1 class="master-title"><a href="main.html"><img
+                            src="https://ssl.nexon.com/s2/game/maplestory/renewal/common/logo.png" alt="메이플스토리"></a>
+                </h1>
+                <h2 class="master-description"><a href="main.html">직업별 공략</a></h2>
+            </hgroup>
+        </header>
+        <!-- 네비게이션 -->
+        <nav id="main-navigation">
+            <div class="pull-left">
+                <ul class="outer-menu">
+
+                    <li class="outer-menu-item">
+                        <span class="menu-title">모험가</span>
+                        <ul class="inner-menu">
+                            <li class="inner-menu-item"><a href="히어로.html">히어로</a></li>
+                            <li class="inner-menu-item"><a href="팔라딘.html">팔라딘</a></li>
+                            <li class="inner-menu-item"><a href="다크나이트.html">다크나이트</a></li>
+                            <li class="inner-menu-item"><a href="아크메이지(불,독).html">아크메이지(불,독)</a></li>
+                            <li class="inner-menu-item"><a href="아크메이지(썬,콜).html">아크메이지(썬,콜)</a></li>
+                            <li class="inner-menu-item"><a href="비숍.html">비숍</a></li>
+                            <li class="inner-menu-item"><a href="보우마스터.html">보우마스터</a></li>
+                            <li class="inner-menu-item"><a href="신궁.html">신궁</a></li>
+                            <li class="inner-menu-item"><a href="패스파인더.html">패스파인더</a></li>
+                            <li class="inner-menu-item"><a href="나이트로드.html">나이트로드</a></li>
+                            <li class="inner-menu-item"><a href="섀도어.html">섀도어</a></li>
+                            <li class="inner-menu-item"><a href="듀얼블레이드.html">듀얼블레이드</a></li>
+                            <li class="inner-menu-item"><a href="바이퍼.html">바이퍼</a></li>
+                            <li class="inner-menu-item"><a href="캡틴.html">캡틴</a></li>
+                            <li class="inner-menu-item"><a href="캐논슈터.html">캐논슈터</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="outer-menu-item">
+                        <span class="menu-title">시그너스 기사단</span>
+                        <ul class="inner-menu">
+                            <li class="inner-menu-item"><a href="소울마스터.html">소울마스터</a></li>
+                            <li class="inner-menu-item"><a href="미하일.html">미하일</a></li>
+                            <li class="inner-menu-item"><a href="플레임위자드.html">플레임위자드</a></li>
+                            <li class="inner-menu-item"><a href="윈드브레이커.html">윈드브레이커</a></li>
+                            <li class="inner-menu-item"><a href="나이트워커.html">나이트워커</a></li>
+                            <li class="inner-menu-item"><a href="스트라이커.html">스트라이커</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="outer-menu-item">
+                        <span class="menu-title">영웅</span>
+                        <ul class="inner-menu">
+                            <li class="inner-menu-item"><a href="아란.html">아란</a></li>
+                            <li class="inner-menu-item"><a href="에반.html">에반</a></li>
+                            <li class="inner-menu-item"><a href="루미너스.html">루미너스</a></li>
+                            <li class="inner-menu-item"><a href="메르세데스.html">메르세데스</a></li>
+                            <li class="inner-menu-item"><a href="팬텀.html">팬텀</a></li>
+                            <li class="inner-menu-item"><a href="은월.html">은월</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="outer-menu-item">
+                        <span class="menu-title">레지스탕스</span>
+                        <ul class="inner-menu">
+                            <li class="inner-menu-item"><a href="블레스터.html">블레스터</a></li>
+                            <li class="inner-menu-item"><a href="베틀메이지.html">베틀메이지</a></li>
+                            <li class="inner-menu-item"><a href="와일드헌터.html">와일드헌터</a></li>
+                            <li class="inner-menu-item"><a href="매카닉.html">매카닉</a></li>
+                            <li class="inner-menu-item"><a href="제논.html">제논</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="outer-menu-item">
+                        <span class="menu-title">데몬</span>
+                        <ul class="inner-menu">
+                            <li class="inner-menu-item"><a href="데몬슬레이어.html">데몬슬레이어</a></li>
+                            <li class="inner-menu-item"><a href="데몬어벤져.html">데몬어벤져</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="outer-menu-item">
+                        <span class="menu-title">노바</span>
+                        <ul class="inner-menu">
+                            <li class="inner-menu-item"><a href="카이저.html">카이저</a></li>
+                            <li class="inner-menu-item"><a href="카인.html">카인</a></li>
+                            <li class="inner-menu-item"><a href="카데나.html">카데나</a></li>
+                            <li class="inner-menu-item"><a href="엔젤릭버스터.html">엔젤릭버스터</a></li>
+                        </ul>
+                    </li>
+                    <li class="outer-menu-item">
+                        <span class="menu-title">레프</span>
+                        <ul class="inner-menu">
+                            <li class="inner-menu-item"><a href="아델.html">아델</a></li>
+                            <li class="inner-menu-item"><a href="일리움.html">일리움</a></li>
+                            <li class="inner-menu-item"><a href="칼리.html">칼리</a></li>
+                            <li class="inner-menu-item"><a href="아크.html">아크</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="outer-menu-item">
+                        <span class="menu-title">아니마</span>
+                        <ul class="inner-menu">
+                            <li class="inner-menu-item"><a href="라라.html">라라</a></li>
+                            <li class="inner-menu-item"><a href="호영.html">호영</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="outer-menu-item">
+                        <span class="menu-title">초월자</span>
+                        <ul class="inner-menu">
+                            <li class="inner-menu-item"><a href="제로.html">제로</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="outer-menu-item">
+                        <span class="menu-title">키네시스</span>
+                        <ul class="inner-menu">
+                            <li class="inner-menu-item"><a href="키네시스.html">키네시스</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <!-- 본문 -->
+        <div id="main" data-role="slider" data-width="900" data-height="700">
+            <div class="container">
+                <a href="히어로.html">
+                    <div class="item">
+                        <img src="https://i.namu.wiki/i/zDNcjVX2np2jblIrp1Sx1sT1gz0we1wE0th_-CygtaPyuO7W4sJ7Srq5its8u7xPyS_eaUHbAE5Wg-qzPIiOn4tONftgFQpREx7SlMqKPOoT7sOurafyczIeQWfx7dHaeX-GkXEfleFmM2Lt_MqboeEfurhZfO7b7Sr6oHJZfsU.webp"
+                            alt="히어로">
+                        <h1>모험가 전사 히어로</h1>
+                    </div>
+                </a>
+                <a href="팔라딘.html">
+                    <div class="item">
+                        <img src="https://i.namu.wiki/i/zDNcjVX2np2jblIrp1Sx1vQ519cQqKmKJ0aABtqHNkM5gzfNkYGNpoWrk8p6b2JL5qLH6BrXvaHIlZSNsYVdBWbiHcJ15n2trfIc9uCV5jsdwojLMdlpfUaNT9ZF97amLIc9PSlOp_z5Th3DUyKxhTRFGbnhOORi0b6yd1FktN4.webp"
+                            alt="팔라딘">
+                        <h1>모험가 전사 팔라딘</h1>
+                    </div>
+                </a>
+                <a href="다크나이트.html">
+                    <div class="item">
+                        <img src="https://i.namu.wiki/i/zDNcjVX2np2jblIrp1Sx1vL03UlL0n6Y1NdTPe7wkiC8Ag2b8CfBiHq0LbFFoPheYeK0x4aTABS8h9mcgaRu7hguLwA-CQfPhwaFQbF8ShRTlDEV3m9EX_1WQSbKRaVXTlgPFhCUoprlc7CkGow8aj7frWTzyje4n8ifwIj5lRc.webp"
+                            alt="다크나이트">
+                        <h1>모험가 전사 다크나이트</h1>
+                    </div>
+                </a>
+                <a href="아크메이지(불,독).html">
+                    <div class="item">
+                        <img src="https://i.namu.wiki/i/zDNcjVX2np2jblIrp1Sx1ucS8nqmbpai_IFZgldXw6K0HiIs3N1VDjAoOMqjFPwXzAI4eR8c6sL68VQ6LchAkkBRab-8MUUWBvdoqGM-zjO5msmfye0BM1Hgo7x_xuuPU46COP7BnYt3k3tBjjR-Tq7WieafaffKTlLgzFIPvFA.webp"
+                            alt="아크메이지(불,독)">
+                        <h1>모험가 마법사 아크메이지(불,독)</h1>
+                    </div>
+                </a>
+                <a href="아크메이지(썬,콜).html">
+                    <div class="item">
+                        <img src="https://i.namu.wiki/i/zDNcjVX2np2jblIrp1Sx1vax_saYW08I2tISQ6XEzqrptSjyPtsLUBoZVlXPQaNLqMC1sJ92kU_GxhSRWak4R02mgp2p5UuupCEwz8bjKpaE1vU5NfaBr6H47udKbHBqLrTeWepRRWPAnzYrbB381QZPPmGOf_v091poPcdIe5A.webp"
+                            alt="아크메이지(썬,콜)">
+                        <h1>모험가 마법사 아크메이지(썬,콜)</h1>
+                    </div>
+                </a>
+                <a href="비숍.html">
+                    <div class="item">
+                        <img src="https://i.namu.wiki/i/zDNcjVX2np2jblIrp1Sx1klm6DCvRnD1luczcWPpx0uddRrNxu6CrayQjg7z0HAQsctxNF4zjOIBtzmuYuzALLaXU6lxV0je6e-5EVa4YjQ55-Z36f-jt71-o96CpHGx0GrH_2JBqKIxAJxLtN_n1Q-SEJdq88js-JctBdJ4940.webp"
+                            alt="비숍">
+                        <h1>모험가 마법사 비숍</h1>
+                    </div>
+                </a>
+                <a href="보우마스터.html">
+                    <div class="item">
+                        <img src="https://i.namu.wiki/i/zDNcjVX2np2jblIrp1Sx1t4FCy_skCOkUIVs__712Dn8ysfHtNEKC2Mb9Ug9-bfN-ervM9DWzuKMQvASV_0U9WG6dYxVZLJYJ1sufYFafB6HisxTzzTNtwQwnpaQbADnuDkUOzbsT7XLQNSwzjHbIWKCCI2pzYAIJ9i-wP4UFWg.webp"
+                            alt="보우마스터">
+                        <h1>모험가 궁수 보우마스터</h1>
+                    </div>
+                </a>
+                <a href="신궁.html">
+                    <div class="item">
+                        <img src="https://i.namu.wiki/i/zDNcjVX2np2jblIrp1Sx1vyNsXLQ-agZT7T6CXGmaT-BAM6tqgViusTTWj_XBdt-SFa9-1A2-6J2ggLfPmq91Rk8c-VwUxA9Rrf-8uNADN8VImtyOKh9Rr6WwCaUE1EOJi1TZO3RiSNfc2Vv8RaMvAtUCcwv6lY6Sngwhcy-eEI.webp"
+                            alt="신궁">
+                        <h1>모험가 궁수 신궁</h1>
+                    </div>
+                </a>
+                <a href="패스파인더.html">
+                    <div class="item">
+                        <img src="https://i.namu.wiki/i/zDNcjVX2np2jblIrp1Sx1hYmLnjtPVUOYFYjhR93aG5MrsOQUhJ5RlPTWD77DjkIFTU3E1RRIgZ8WhTapqzqrpkqoLQsqMLS-G6n5nDXSzshx8DdrMvO3Y4IfBw8Uq6XefP9f1zFziPcmZUJ6MbGJjGTiLoChPo4IR2jizT-5kQ.webp"
+                            alt="패스파인더">
+                        <h1>모험가 궁수 패스파인더</h1>
+                    </div>
+                </a>
+                <a href="바이퍼.html">
+                    <div class="item">
+                        <img src="https://i.namu.wiki/i/zDNcjVX2np2jblIrp1Sx1h3BOJervgr-eeURIoquYwEw9HHVU-58_CZB40AMpVqVOZX-wjspwTYfwYogDhUmEhwWZO7sIRPypsy3s5neBxjK3OupUjlHaByFAFi6zDY8c62Jus7aN7lT5y8QZg5yM4SRvLBsmmk9kUBtdQhSeYw.webp"
+                            alt="바이퍼">
+                        <h1>모험가 해적 바이퍼</h1>
+                    </div>
+                </a>
+                <a href="캡틴.html">
+                    <div class="item">
+                        <img src="https://i.namu.wiki/i/zDNcjVX2np2jblIrp1Sx1oleWVHRnK6FRMZivENwzpZ-UqeIX1jIKqnSgG1nEMDP_x1-IeNYqOJnVCmkmYVqNNQypSSUXCG6nEZMt0MM3R1l88knSsI76EbYo3kHxMJ_CyrCZI0Os4Y9CiQUXH9iHV5EJPR3AGanOGHpdEnvP2k.webp"
+                            alt="캡틴">
+                        <h1>모험가 해적 캡틴</h1>
+                    </div>
+                </a>
+                <a href="캐논슈터.html">
+                    <div class="item">
+                        <img src="https://i.namu.wiki/i/zDNcjVX2np2jblIrp1Sx1liZhi4Nj-6o52mIY8Mu_OelrjkRH4SCKerDnzSkcJwb_yUmV6V6T-TmMLVJt5y-VMZlRsF34nPQs26I_6U7AJzwZbeA0JVBzQ8xRNl7vuCqeNkWQ4nz-pE76H4AtUOyoFbO1b778X8QcIIs2lthqnc.webp"
+                            alt="캐논슈터">
+                        <h1>모험가 해적 캐논슈터</h1>
+                    </div>
+                </a>
+                <a href="소울마스터.html">
+                    <div class="item">
+                        <img src="https://i.namu.wiki/i/zDNcjVX2np2jblIrp1Sx1uOBI-9JMxXGEKpWMDnJiUpRJk8OmJKBhOmfGWd0iNJ1MdUGw6bEEc7prCWhzkNwDazUCIxYRKAKbxERLTcDSpU5qCo77mqK_gR-rmB-gXoOz9BiKasmOeLLaeTjyDcFleJuubfZKlba5aj1e8pLeCU.webp"
+                            alt="소울마스터">
+                        <h1>시그너스 기사단 전사 소울마스터</h1>
+                    </div>
+                </a>
+                <a href="미하일.html">
+                    <div class="item">
+                        <img src="https://i.namu.wiki/i/zDNcjVX2np2jblIrp1Sx1tplIL2qITdUOodBQhw2lZ99yTfmtk0zMlPuSiWRSRAp3cCKzaPsexKuv84CX1Bx3ou943-3eWf9DvRVF2w_Kd1qaXdmikNxiA9gJYcAW8FNqLJzA6H7iN304oupvWF0_dQTPPbRTXFpPyj5q9UuAMM.webp"
+                            alt="미하일">
+                        <h1>시그너스 기사단 전사 미하일</h1>
+                    </div>
+                </a>
+                <a href="플레임위자드.html">
+                    <div class="item">
+                        <img src="https://i.namu.wiki/i/zDNcjVX2np2jblIrp1Sx1v2c7kFzhd4RGEyYjuKp-D7016mw_ZYrTTbEa64wMiqJeZtOcdbjuG9bCxmKYrsYGUFxHFmqRKibjDn8KFVDONL-bn0CHXa8nYmXIPWYV6uNE84XivHVbi6KQvTYHK798xaj3v7d5wgAmV4nhyvaazU.webp"
+                            alt="플레임위자드">
+                        <h1>시그너스 기사단 마법사 플레임위자드</h1>
+                    </div>
+                </a>
+                <a href="윈드브레이커.html">
+                    <div class="item">
+                        <img src="https://i.namu.wiki/i/zDNcjVX2np2jblIrp1Sx1nOUYFqyibL3wUWNClLXOo3u3xcVBxDcAMVmkI2o9qJsnNENzD53ZdsmWcsrKZwJ2EVtFg_oMkng0nocCPFHbC-lg-jF82BTXD1dd9io1EBR_OmWYG1x3I3S7DqIHIlA8GHslggLZX9PvuTPscdkmqo.webp"
+                            alt="윈드브레이커">
+                        <h1>시그너스 기사단 궁수 윈드브레이커</h1>
+                    </div>
+                </a>
+                <a href="나이트워커.html">
+                    <div class="item">
+                        <img src="https://i.namu.wiki/i/zDNcjVX2np2jblIrp1Sx1hSyx8yx4Ig_XrIRKfVPE7dYQeW3aE-8Pf0iwwUkfiahgBqcaA0rgh5hk1VwF7va0-VFSkbJeZhvYMrzSSh1xolboGK8FGPlRF0nhzZ6uxgS2ZqKY0GpY09u-IPyH6uPcLl55wuNfGd-YhOovgN6BbU.webp"
+                            alt="나이트워커">
+                        <h1>시그너스 기사단 도적 나이트워커</h1>
+                    </div>
+                </a>
+                <a href="스트라이커.html">
+                    <div class="item">
+                        <img src="https://i.namu.wiki/i/zDNcjVX2np2jblIrp1Sx1pTetYVCeWsN63c_fcNyhhYJU4ouxE-6yhIgKpm1UsIsDPDGOeZygzsgNB7saorhwgxlSuL9c55Okjhjo8QpYqiIRB3BJTkGbF-xrw882BQVGfkdAsZ_DK1hxJWSIn9IC69iXke5lEAUq2fbtaimuWI.webp"
+                            alt="스트라이커">
+                        <h1>시그너스 기사단 해적 스트라이커</h1>
+                    </div>
+                </a>
+                <a href="아란.html">
+                    <div class="item">
+                        <img src="https://i.namu.wiki/i/zDNcjVX2np2jblIrp1Sx1qLrmE3lVbUw6iI28WFcALhSXqekcqgp5qTg_m-mbJV-sg7m8-QXjKogt-40qAi4krdtIjjutFxUEyqnc9SNV8XMVzNAFGYWm6lM0is468mqjAAITexRLdSeXyK-lQ4N2faWDD_aFEkgfEMdMSSWYws.webp"
+                            alt="아란">
+                        <h1>영웅 전사 아란</h1>
+                    </div>
+                </a>
+                <a href="에반.html">
+                    <div class="item">
+                        <img src="https://i.namu.wiki/i/zDNcjVX2np2jblIrp1Sx1gKIVSEvZOGgeuSlfgpzGiQWMx2RUmhw_EKz4q1y4_GY7N22kZC5uJrmoMp83s2eo7kHlHZ2YcCX_9xXaz6W6VQsnDYnjUdMikwURubQruCL-Gzb9Bl_VGcNxyQo3Aw0WvFoxHpZytVio5eGoVIyrC8.webp"
+                            alt="에반">
+                        <h1>영웅 마법사 에반</h1>
+                    </div>
+                </a>
+                <a href="루미너스.html">
+                    <div class="item">
+                        <img src="https://i.namu.wiki/i/zDNcjVX2np2jblIrp1Sx1qlxD8ITPJFelo-vOX28i7Bk_aEK-7bcLimAx4H3FDJnRQ1LDJfKYxn82tspBk-xiM30BoynmUXWo3JBY-EIsHTbuZ96DuD1HNxv1ttlnPJ0MUfU_9lVGsJfKeZ8Xe-KH2oz9fmiaWPzWp39bfyfRm4.webp"
+                            alt="루미너스">
+                        <h1>영웅 마법사 루미너스</h1>
+                    </div>
+                </a>
+                <a href="메르세데스.html">
+                    <div class="item">
+                        <img src="https://i.namu.wiki/i/zDNcjVX2np2jblIrp1Sx1r4IooWtVUNnRBULbyzZMe4QUSQJVa0UD5jUPvjrY22clQ5-dkm27B28fH_XOBL81IDAl9UXQHEwbAOY8js4B6OubRBOX45gNHunQ7H0HqbUofP8noRE7e3U55Q_JcZM2oKzfve5GlrtREw1YwCOLhc.webp"
+                            alt="메르세데스">
+                        <h1>영웅 궁수 메르세데스</h1>
+                    </div>
+                </a>
+                <a href="팬텀.html">
+                    <div class="item">
+                        <img src="https://i.namu.wiki/i/zDNcjVX2np2jblIrp1Sx1nZnn8XZdKWFP6mble8BRPppd-ktACVwDJhR3QzrBSSm7kgTr6AFtXMzntP7oPj0sUyT_ZttlLuQ2U227VIaU_LLlXSSlA_xp2sUyrueo32ahyb9xWOMhQW22j3bRv1wZ87XmJwZu8Lc9kz85BeGYfQ.webp"
+                            alt="팬텀">
+                        <h1>영웅 도적 팬텀</h1>
+                    </div>
+                </a>
+                <a href="은월.html">
+                    <div class="item">
+                        <img src="https://i.namu.wiki/i/zDNcjVX2np2jblIrp1Sx1gAui7rnHx5jBXS2sIP3IwFeIAC-87bbcRUE9t4aEbHWzfT0yHqLm2fIAWdn1Uj31cgd_6KetnTcXLnmkyPuIsBCbFxz9CLV0tgB494oHZrciOpttFw5cOW5GB6te2YWN4ShyqaZMCJnEvgUlKXoKPo.webp"
+                            alt="은월">
+                        <h1>영웅 해적 은월</h1>
+                    </div>
+                </a>
+                <a href="블레스터.html">
+                    <div class="item">
+                        <img src="https://i.namu.wiki/i/zDNcjVX2np2jblIrp1Sx1gGqFBpkDBFuW1JI4pu47Oy5CDW9uS373XbbFj1e_ybhOUZb9pkP5EFJTd4jLGRRVDf3tTN8z34pWLesth33GrLLib8wHI6_sZZ04bw5N0VYmwSYwxzSOJujjWSvWbWEZ4p55Vj7As-ccFL4C7MuizM.webp"
+                            alt="블레스터">
+                        <h1>레지스탕스 전사 블레스터</h1>
+                    </div>
+                </a>
+                <a href="배틀메이지.html">
+                    <div class="item">
+                        <img src="https://i.namu.wiki/i/zDNcjVX2np2jblIrp1Sx1kRoFv1torFZkiKzrxyoVdZZnDwBJlpbWUvY-P9RWGsWeHI1CCNGwklLni6t2nush-WNSJ9l0uPTd0No0YaDLCOkVzi406vRD67nh9pc4NcBIJk0qeyJ2oIBldj_JhozR4BtHUF1AHzuR0-TXiIIGCg.webp"
+                            alt="배틀메이지">
+                        <h1>레지스탕스 마법사 배틀메이지</h1>
+                    </div>
+                </a>
+                <a href="와일드헌터.html">
+                    <div class="item">
+                        <img src="https://i.namu.wiki/i/zDNcjVX2np2jblIrp1Sx1qGkVGZrqR2B1t3wISj1866Akuqn8wERldbNGy2mT_67odcN26GRu6ETXBnhST-R-EEXfOL88dN8RMz8SP7F7151lCXEiTtFgzya6Bd1AaoYbCUC2xl3MPzU3JIULVglUbwNqjLCoFQQoIUW_GWvR2k.webp"
+                            alt="와일드헌터">
+                        <h1>레지스탕스 궁수 와일드헌터</h1>
+                    </div>
+                </a>
+                <a href="메카닉.html">
+                    <div class="item">
+                        <img src="https://i.namu.wiki/i/zDNcjVX2np2jblIrp1Sx1g2f0smzicUw11_xhvgjADufdbqZysNrImORtHB1yeWWSUDE0PcO_GXYVxEmaD44n_eXqph_p2Y-WS8ZkEDy6dY0Y7uT6_sYy0ELytevJAB5Ot3NmsuQ2v5ByLBc7ga3Vaivg9dEwmTZ7X0if7DR_Xs.webp"
+                            alt="메카닉">
+                        <h1>레지스탕스 해적 메카닉</h1>
+                    </div>
+                </a>
+                <a href="제논.html">
+                    <div class="item">
+                        <img src="https://i.namu.wiki/i/zDNcjVX2np2jblIrp1Sx1h5rBDt_pUIT_7yn7Mxj7H8bevWtfrvsnRjQC1BvdalCSWBlJhpNJ2cyScK8wnBhj3UYVF4zGNNVGsK6PCGiqk3C94eKoffK9_MOv2nHFh0WY1AlOjOHYVKFSura0H6xvwC0hYr5GbFQ-ab8HlM0BOU.webp"
+                            alt="제논">
+                        <h1>레지스탕스 도적 & 해적 제논</h1>
+                    </div>
+                </a>
+                <a href="데몬슬레이어.html">
+                    <div class="item">
+                        <img src="https://i.namu.wiki/i/zDNcjVX2np2jblIrp1Sx1kfUgALN2hCd761P9PCyhZJhb1qhv-Mh4gP2d0AmnH6cJWaMFqS5eoKKUgtBmWTYn3_CwcoVEMc5Hns3KFyk7XhV67aj3L02Ut5k8WPk2HyIy1jPwLi4GE1jqjpIPOSl9XQJM1dnviiRDHd0sqDd-8k.webp"
+                            alt="데몬슬레이어">
+                        <h1>데몬슬레이어</h1>
+                    </div>
+                </a>
+                <a href="데몬어벤져.html">
+                    <div class="item">
+                        <img src="https://i.namu.wiki/i/zDNcjVX2np2jblIrp1Sx1tZE1Wv6qK7btEMlVf4Bz-dKA3M5eF8Qxkh4Ul2I4DIkutQIi7oHgn2AfRKwlxkGgJRUucUSSthiHSS4Lrz9F8M8sW1eJNrA0r9NYocw8UA4eGXqNu9A7iNJqtc_KM8zlw171eR58Xr8SdYpHDUSZZ0.webp"
+                            alt="데몬어벤져">
+                        <h1>데몬어벤져</h1>
+                    </div>
+                </a>
+                <a href="카이저.html">
+                    <div class="item">
+                        <img src="https://i.namu.wiki/i/zDNcjVX2np2jblIrp1Sx1gqkWqJxruv3PfgcE9vEeISvZbnpDpETMG4nP_C2u4GNEudDHHIlWKrU6j6KWdTZnXu2IKDOGXaNHOVlZuuPR-tm0HcpmDHyAOxSYG2iqP9FLcVGdiZxZx2lSuocj6QbGtctQVAbCAn-OvXElPXYYxc.webp"
+                            alt="카이저">
+                        <h1>노바 전사 카이저</h1>
+                    </div>
+                </a>
+                <a href="카인.html">
+                    <div class="item">
+                        <img src="https://i.namu.wiki/i/zDNcjVX2np2jblIrp1Sx1pDE-Icuj2y3yU0sd77D6S0NG7j19gKGq3Eym_jFB-fmbDvmb772hQIVrnE4lwTMDG7jvfMzGu8aLoUVZQlAKIIaYqnsG6TYSoso8YTUJcD8iLZ38_WZ5DvC2nc9mLXvGedWNQaxrfce-mw2dSHv2ZY.webp"
+                            alt="카인">
+                        <h1>노바 궁수 카인</h1>
+                    </div>
+                </a>
+                <a href="카데나.html">
+                    <div class="item">
+                        <img src="https://i.namu.wiki/i/zDNcjVX2np2jblIrp1Sx1jjYKN0XOpLn3sB9G0g_vSC_wmjkAmQp4I0Plkg2F80L9AMRDF7MHlxeFkDonPHJIJdWsyCancBsVNL1VFYZpnJfVek9wDjUEy3FMipbWfDgxNzK4WW5ATzvqynTwQwL0JuXZmiC6lbsOgH7_iGUN3s.webp"
+                            alt="카데나">
+                        <h1>노바 도적 카데나</h1>
+                    </div>
+                </a>
+                <a href="엔젤릭버스터.html">
+                    <div class="item">
+                        <img src="https://i.namu.wiki/i/zDNcjVX2np2jblIrp1Sx1oydp_jy5zSpXymW3ISSHMtDCzPPs3cQAA1-MJvugKtJsoeLMi2ScjjPhoDxk9enVp-rHd53bxhO2r_QFZEQCbAYoNpWjkr1vS9O5IcwAcSmClXbFE0Px6V-SirxNspafmg1m13DUasf1z13n3EcAnY.webp"
+                            alt="엔젤릭버스터">
+                        <h1>노바 해적 엔젤릭버스터</h1>
+                    </div>
+                </a>
+                <a href="아델.html">
+                    <div class="item">
+                        <img src="https://i.namu.wiki/i/zDNcjVX2np2jblIrp1Sx1rredwsPLBy2U46kU0c87pdskPEd1zlRZYVFEnhjFhRn8vAdlWaF1wXXYdpy-YUpa1auajMNm_auU6NNeOyGLpRgGU1BJxH0Y4MzOhg6cw6kgSOqCg_DNPow4GDsEgWs-M_73G5w1VS2Jp6ZBvzzNjU.webp"
+                            alt="아델">
+                        <h1>레프 전사 아델</h1>
+                    </div>
+                </a>
+                <a href="일리움.html">
+                    <div class="item">
+                        <img src="https://i.namu.wiki/i/zDNcjVX2np2jblIrp1Sx1jJnfyoQsWgiclVWcQFfD-uALsdWMTLFyDWuXC-M3UEsKrQIwlSr-OoURvmkrmh0zG_9bI9D4Oeg16v8GalHtwvoUItIUNV0KlLRxROVCA2jFs_O0CWEZJXz5Wj7p_sTgr3bvwyhF4c84D8uoF52CFk.webp"
+                            alt="일리움">
+                        <h1>레프 마법사 일리움</h1>
+                    </div>
+                </a>
+                <a href="칼리.html">
+                    <div class="item">
+                        <img src="https://i.namu.wiki/i/zDNcjVX2np2jblIrp1Sx1l8dwFa5yKtekMnbwpq25a4tAsVtUEsrn3yzbnU-oICkrNUxr4EdyvorKt6fV7oiwJrmRVFr8tEWjeYIfOOwPIHyGOkefGJU0YhlukUt3jsrFbh1zeZi9PtB7EpksY-Kcvk2Uoz1YZksV1puVECto7M.webp"
+                            alt="칼리">
+                        <h1>레프 도적 칼리</h1>
+                    </div>
+                </a>
+                <a href="아크.html">
+                    <div class="item">
+                        <img src="https://i.namu.wiki/i/zDNcjVX2np2jblIrp1Sx1lc206YfOFMX5ubF6cxjpFqfox8ybSDVNTPAmo2V6YbYA5Jion58ND0VYqzA-W5ulGQj2KCMgfyK6mrQIX8AIm-A4rziRAirbCYUgtOE5z8VXjvOwSD2TNHfuZthhAlBrI4PbgvOABPYm4wwP9LEOQw.webp"
+                            alt="아크">
+                        <h1>레프 해적 아크</h1>
+                    </div>
+                </a>
+                <a href="라라.html">
+                    <div class="item">
+                        <img src="https://i.namu.wiki/i/zDNcjVX2np2jblIrp1Sx1p8SET-MjqTI_m9ncFqCoTvquuHdBdAym6RzFybMpqBfVOi_NA3Z2-Z1LExkNYzC_SsyFDwen14SKwL3t0OOfrpmQijqHhQMRNbpju9Buwzh0nxEovbYkQYW_n7alvRtuq__2qcy7WaYDbiZ6nMqMqY.webp"
+                            alt="라라">
+                        <h1>아니마 마법사 라라</h1>
+                    </div>
+                </a>
+                <a href="호영.html">
+                    <div class="item">
+                        <img src="https://i.namu.wiki/i/zDNcjVX2np2jblIrp1Sx1kCrrM3XyrvUpS-KJKMJ9fMBKBjqoxUme2ygqUJv-NcaUAEt8iRjDdP4tOnyZKJ-lBteg5odSNY8LmmGm6owj9yQ8ED1eCxnd4txwP7QzLD3wSmg0QKC9bIy_tarOzno-V3y65c57WaqTYtbzkW9M6c.webp"
+                            alt="호영">
+                        <h1>아니마 도적 호영</h1>
+                    </div>
+                </a>
+                <a href="제로.html">
+                    <div class="item">
+                        <img src="제로.png" alt="제로"> <!-- 인터넷에 자료 없음 -->
+                        <h1>초월자 전사 제로</h1>
+                    </div>
+                </a>
+                <a href="키네시스.html">
+                    <div class="item">
+                        <img src="https://i.namu.wiki/i/zDNcjVX2np2jblIrp1Sx1sS9gCPlnllj64EERC1AB5pQsESvjudpzOOQd6wtYVuDpotbsqber7Yhg600NG0ZDrXBW2eSG7YXciGBNgb_DFW9WdtngGQdrBGUs3YSXsRZTWFDKSJ6LOq2NO4OVPjYV12g6Aa2489PtWE9DF1oiEU.webp"
+                            alt="키네시스">
+                        <h1>키네시스</h1>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <!-- 푸터 -->
+        <footer id="main-footer">
+            <span>ⓒ These photograph are protected by NEXON Korea Corporation with all rights reserved.</span>
+        </footer>
+    </div>
+</body>
+
+</html>

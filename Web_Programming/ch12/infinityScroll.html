@@ -20,7 +20,7 @@
             // 이벤트 연결
             $(window).scroll(function () {
                 // 변수를 선언
-                var scrollHeight = $(document).scrollTop() + $(document).height();
+                var scrollHeight = $(window).scrollTop() + $(window).height();
                 var documentHeight = $(document).height();
 
                 // 검사합니다.

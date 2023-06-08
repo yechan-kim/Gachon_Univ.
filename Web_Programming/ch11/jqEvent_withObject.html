@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>jQuery Basic</title>
+    <script src="https://code.jquery.com/jquery-3.7.0.js"></script>
+    <script>
+        // 이벤트를 연결
+        $(document).ready(function () {
+            // 스타일 변경 및 이벤트를 연결
+            $('#box').css({
+                width: 100,
+                height: 100,
+                backgroundColor: 'orange'
+            }).on({
+                click: function () {
+                    $(this).css('backgroundColor', 'red');
+                },
+                mouseenter: function () {
+                    $(this).css('backgroundColor', 'blue');
+                },
+                mouseleave: function () {
+                    $(this).css('backgroundColor', 'orange');
+                }
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <div id="box"></div>
+</body>
+
+</html>

@@ -1,7 +1,5 @@
 #include <stdio.h>
 #include<stdlib.h> 
-#define _CRT_SECURE_NO_WARNINGS
-#pragma warning(disable:4996)
 #define MAX_SIZE 1000
 #define MAX(a, b) (a)
 // AVL 트리 노드 정의

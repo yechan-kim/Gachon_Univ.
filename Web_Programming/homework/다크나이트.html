@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>다크나이트 공략</title>
+    <link rel="stylesheet" href="Style.css"> <!-- 외부 스타일 시트 -->
+    <script src="https://code.jquery.com/jquery-3.7.0.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('.outer-menu-item').hover(function () {
+                $(this).find('.inner-menu').stop().slideDown();
+            }, function () {
+                $(this).find('.inner-menu').stop().slideUp();
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <!-- 전체를 감싸는 테그 -->
+    <div id="page-wrapper">
+        <!-- 헤더 -->
+        <header id="main-header">
+            <hgroup>
+                <h1 class="master-title"><a href="main.html"><img src="image/로고.png" alt="메이플스토리"></a>
+                </h1>
+                <h2 class="master-description"><a href="main.html">직업별 공략</a></h2>
+            </hgroup>
+        </header>
+        <!-- 네비게이션 -->
+        <nav id="main-navigation">
+            <div class="pull-left">
+                <ul class="outer-menu">
+
+                    <li class="outer-menu-item">
+                        <span class="menu-title">모험가</span>
+                        <ul class="inner-menu">
+                            <li class="inner-menu-item"><a href="히어로.html">히어로</a></li>
+                            <li class="inner-menu-item"><a href="팔라딘.html">팔라딘</a></li>
+                            <li class="inner-menu-item"><a href="다크나이트.html">다크나이트</a></li>
+                            <li class="inner-menu-item"><a href="아크메이지(불,독).html">아크메이지(불,독)</a></li>
+                            <li class="inner-menu-item"><a href="아크메이지(썬,콜).html">아크메이지(썬,콜)</a></li>
+                            <li class="inner-menu-item"><a href="비숍.html">비숍</a></li>
+                            <li class="inner-menu-item"><a href="보우마스터.html">보우마스터</a></li>
+                            <li class="inner-menu-item"><a href="신궁.html">신궁</a></li>
+                            <li class="inner-menu-item"><a href="패스파인더.html">패스파인더</a></li>
+                            <li class="inner-menu-item"><a href="나이트로드.html">나이트로드</a></li>
+                            <li class="inner-menu-item"><a href="섀도어.html">섀도어</a></li>
+                            <li class="inner-menu-item"><a href="듀얼블레이드.html">듀얼블레이드</a></li>
+                            <li class="inner-menu-item"><a href="바이퍼.html">바이퍼</a></li>
+                            <li class="inner-menu-item"><a href="캡틴.html">캡틴</a></li>
+                            <li class="inner-menu-item"><a href="캐논슈터.html">캐논슈터</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="outer-menu-item">
+                        <span class="menu-title">시그너스 기사단</span>
+                        <ul class="inner-menu">
+                            <li class="inner-menu-item"><a href="소울마스터.html">소울마스터</a></li>
+                            <li class="inner-menu-item"><a href="미하일.html">미하일</a></li>
+                            <li class="inner-menu-item"><a href="플레임위자드.html">플레임위자드</a></li>
+                            <li class="inner-menu-item"><a href="윈드브레이커.html">윈드브레이커</a></li>
+                            <li class="inner-menu-item"><a href="나이트워커.html">나이트워커</a></li>
+                            <li class="inner-menu-item"><a href="스트라이커.html">스트라이커</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="outer-menu-item">
+                        <span class="menu-title">영웅</span>
+                        <ul class="inner-menu">
+                            <li class="inner-menu-item"><a href="아란.html">아란</a></li>
+                            <li class="inner-menu-item"><a href="에반.html">에반</a></li>
+                            <li class="inner-menu-item"><a href="루미너스.html">루미너스</a></li>
+                            <li class="inner-menu-item"><a href="메르세데스.html">메르세데스</a></li>
+                            <li class="inner-menu-item"><a href="팬텀.html">팬텀</a></li>
+                            <li class="inner-menu-item"><a href="은월.html">은월</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="outer-menu-item">
+                        <span class="menu-title">레지스탕스</span>
+                        <ul class="inner-menu">
+                            <li class="inner-menu-item"><a href="블레스터.html">블레스터</a></li>
+                            <li class="inner-menu-item"><a href="베틀메이지.html">베틀메이지</a></li>
+                            <li class="inner-menu-item"><a href="와일드헌터.html">와일드헌터</a></li>
+                            <li class="inner-menu-item"><a href="매카닉.html">매카닉</a></li>
+                            <li class="inner-menu-item"><a href="제논.html">제논</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="outer-menu-item">
+                        <span class="menu-title">데몬</span>
+                        <ul class="inner-menu">
+                            <li class="inner-menu-item"><a href="데몬슬레이어.html">데몬슬레이어</a></li>
+                            <li class="inner-menu-item"><a href="데몬어벤져.html">데몬어벤져</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="outer-menu-item">
+                        <span class="menu-title">노바</span>
+                        <ul class="inner-menu">
+                            <li class="inner-menu-item"><a href="카이저.html">카이저</a></li>
+                            <li class="inner-menu-item"><a href="카인.html">카인</a></li>
+                            <li class="inner-menu-item"><a href="카데나.html">카데나</a></li>
+                            <li class="inner-menu-item"><a href="엔젤릭버스터.html">엔젤릭버스터</a></li>
+                        </ul>
+                    </li>
+                    <li class="outer-menu-item">
+                        <span class="menu-title">레프</span>
+                        <ul class="inner-menu">
+                            <li class="inner-menu-item"><a href="아델.html">아델</a></li>
+                            <li class="inner-menu-item"><a href="일리움.html">일리움</a></li>
+                            <li class="inner-menu-item"><a href="칼리.html">칼리</a></li>
+                            <li class="inner-menu-item"><a href="아크.html">아크</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="outer-menu-item">
+                        <span class="menu-title">아니마</span>
+                        <ul class="inner-menu">
+                            <li class="inner-menu-item"><a href="라라.html">라라</a></li>
+                            <li class="inner-menu-item"><a href="호영.html">호영</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="outer-menu-item">
+                        <span class="menu-title">초월자</span>
+                        <ul class="inner-menu">
+                            <li class="inner-menu-item"><a href="제로.html">제로</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="outer-menu-item">
+                        <span class="menu-title">키네시스</span>
+                        <ul class="inner-menu">
+                            <li class="inner-menu-item"><a href="키네시스.html">키네시스</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <!-- 본문 -->
+        <div id="content">
+            <!-- 본문 좌측 영역 -->
+            <section id="main-section">
+                <article>
+                    <div class="article-header">
+                        <h1 class="article-title">다크나이트(Dark Knight)</h1>
+                    </div>
+                    <div class="article-body">
+                        <img id="c_image" src="image/다크나이트.webp" alt="다크나이트">
+                        <h1 id="title">장점</h1>
+                        <p>
+                            <strong>탄탄한 기본 스펙</strong><br>
+                            기본 최종 데미지가 43%나 되고, 다크 레조넌스를 무한정 유지하기만 하면 162.44%지
+                            받을 수 있다. 크리티컬 확률도 (하이퍼 스킬 포함) 기본 75%에, 대인전 주력기인 궁니르 디센트에는 추가 방무까지 붙어있다. 즉 기본 스펙만 보면 없는 게 없다.
+                            <br><br>
+                            <strong>안정적인 공격 구조</strong><br>
+                            다크나이트의 스킬 구성은 180초 극딜 주기가 돌아오기 전까지 재사용 대기시간이 짧은 스킬들로 그 공백을 메꾸는 식으로 짜여 있다. 그래서 극딜과 평딜 간의
+                            격차가 비교적 적고, 재사용 대기시간을 고정 수치로 감소시키는 옵션, 즉 쿨감모와의 궁합이 좋다. 또한 비홀더 임팩트는 범위도 넓고 아무조건없는 즉발 설치
+                            스킬이라서 전 직업중에서 맞추는 난이도가 가장 낮은편이다.
+                            <br><br>
+                            <strong>쉬운 코어 강화 난이도</strong><br>
+                            강화 코어는 비홀더, 궁그닐 디센트, 다크 임페일로 끝난다. 즉 3스킬 2중 2코 구성이라 스킬 코어를 끼울 자리가 널널하다. 대체로 225레벨이면 강화 코어
+                            2개+전용 스킬 코어 4개를 포함한 필수 코어는 다 끼워놓을 수 있다.
+                            <br><br>
+                            <strong>뛰어난 생존력</strong><br>
+                            로드 오브 다크니스(2%), 다크 서스트(9%), 피어스 사이클론(연격 1%, 막타 10%) 등에 매 공격 판정마다 HP를 일정 비율로 회복하는 기능이
+                            붙었다. 이로 인해 죽지만 않는다면 받은 피해를 금방 회복하게 된다. 물론 설령 죽더라도 리인카네이션으로 무적을 받아 되살아나는데다, 얼만큼 지속시킬지를
+                            사전에 결정하기 때문에 유연성도 좋다. 게다가 무적의 지속시간은 버프 지속시간 증가 효과의 영향을 받아 증가한다. 작정하면 리인카네이션 풀로 1분 이상 무적을
+                            유지할 수 있는 셈이다.
+                            <br><br>
+                            <strong>쉬운 조작 난이도</strong><br>
+                            복잡한 테크닉을 요구하지도 않고 유틸도 다양하며 몸도 튼튼하고 즉사기를 막아주는 스킬이 많아서 컨트롤이 쉽다. 덕분에 질리기도 빨리 질리지만 라이트하게 게임을
+                            즐기고 싶어하는 유저에게는 추천할 만한 직업이다.
+                            <br><br>
+                            <strong>쉬운 코어 강화 난이도</strong><br>
+                            팔라딘의 주요 강화 코어는 디바인 차지, 블래스트, 디바인 저지먼트/디바인 스티그마, 생츄어리로 4개에 불과하며 약식으로 생츄어리를 제외할 경우 단 3개만
+                            강화하면 끝이다. 최근 직업이 거의 모든 스킬을 사용하도록 설계되어 강화할 스킬이 많다는 것을 고려하면 코어 슬롯의 부담도 적고, 코어 젬스톤에 드는 비용도
+                            적다.
+                        </p>
+                        <br>
+                        <br>
+                        <h1 id="title">단점</h1>
+                        <p>
+                            <strong>유연하지 못한 무적기의 가동 방식</strong><br>
+                            무적이 있어도 일단 죽어야 발동된다 건 사실 페널티다. 요컨대 능동적이지 못하다. 보스전 경험이 풍부하고 컨트롤이 좋은
+                            유저일수록 어느 시점에 어떤 패턴이 들어올지를 정확하게 파악하고 대처하거나, 이를 역이용해서 기회로 삼는다. 그러나 다크나이트는 어떤 패턴이 들어오든 일단
+                            죽고 나서 리인카로 넘겨야 하니, 안정성은 차치하더라도 무적 낭비가 심하다. 그렇다고 해서 평딜에 써야 할 다크 스피어나, 극딜에 써야 할 다크니스 오라를
+                            패턴 넘기겠답시고 피해 경감기로 남발할 수도 없는 노릇이다. 또한 사망 여부와 관계없이 피격 자체가 위험한 패턴에는 무용지물이 되어버린다. 게다가 보스 전투는
+                            숙련될수록 패턴 피격 횟수와 데스카운트 낭비는 줄어들기 때문에 리인카네이션의 활용도가 떨어지는 모순에 빠지게 된다.
+                            <br><br>
+                            <strong>낮은 기동력</strong><br>
+                            좌우는 워리어 리프, 상향은 어퍼 차지로 끝난다. 추가 이동기는 전무하고, 돌진기는 돌진이 있지만 지표면에서만 사용할 수 있다. 보스전은 어떻게든 붙어있기만
+                            하면 된다 쳐도, 사냥은 아니다. 레벨이 높아질수록 넓어지는 필드를 장악하려면 바쁘게 뛰어다녀야 하는데, 기동성이 부족하니 사냥 효율이 저하된다.
+                            <br><br>
+                            <strong>긴 예열이 필요한 극딜 구조</strong><br>
+                            정확히는 다크니스 오라의 문제다. 다크니스 오라는 지속 시간 동안 생명력 스택을 쌓으며 버티다가 재발동시켜서 일시에 터뜨리는
+                            식으로 운용한다. 그러나 피어스 사이클론을 필두로 한 극딜에는 오라가 애물단지다. 요컨대 어느 시점에 극딜을 쏟아부을지를 짐작하고 다크니스 오라 스택을 먼저
+                            쌓아놓는 게 우선인데, 그렇게 쓰면 오라의 재사용 대기시간이 유달리 따로 돌게 된다. 그뿐만 아니라 극딜 타이밍이 조금이라도 늦어지면 오라 막타를 터뜨리지
+                            못한 채 오라가 증발하는 돌발상황이 발생하기 일쑤다.
+                            <br><br>
+                            <strong>애매한 버프 지속시간 증가 옵션의 효용성</strong><br>
+                            리마스터 전에는 리인카네이션 풀/하프/쿼터의 선택이 없었고, 새크리파이스가 없으면 궁니르 디센트도 난사할 수 없었다. 그래서 버프 지속시간 증가 옵션으로
+                            새크리+리인카의 지속시간을 무조건 길게 뽑는 게 미덕이었다. 하지만 리마스터 이후로는 리인카의 지속시간을 선택할 수 있게 됐고, 궁니르 디센트의 재사용
+                            대기시간도 사라졌다. 그런데 문제는 새크리파이스가 다크 레조넌스로 변경되면서 새크리파이스의 단점인 비홀더와의 연관성까지 가져왔다는 것이다. 어빌리티는
+                            보공으로, 유니온은 크뎀/보공/방무로 옮겨야 할 판국인데, 다크 레조넌스를 보고 벞지를 너무 챙겨도, 너무 챙기지 않아도 화력이 감소하는 불안정성이
+                            생겨버렸다. 심지어 벞지 옵션을 얼마나 챙겨야 하는지에 대한 의견도 제각기 다르다. 대체로 극딜 타이밍에만 레조넌스를 쓰는 쪽은 벞지에 들어갈 자원을 다른 쪽으로
+                            돌리고,
+                            상시 유지를 원하는 쪽은 못해도 50% 가량은 챙기려고 하는 경향이 있는데, 레조넌스는 비홀더로 인한 공격 판정에 영향을 받아 재사용 대기시간이 감소한다.
+                            잡몹 패턴에 임팩트 쓰는 식으로는 잘 감소하지만, 완벽한 1:1이면 벞지 보정 없이 무한정 유지하기도 쉽지 않다. 그래서 어떤 보스 레이드를 주로 가느냐에
+                            따라 의견도 제각기 다르다.
+                            <br><br>
+                            <strong>특정 옵션에 대한 높은 의존도</strong><br>
+                            다크나이트는 쿨감 의존도가 심하다. 보스전도 화력 측면에서 다크 스피어의 비중이 늘어나기에 그렇지만, 특히 사냥에서는 4~5초 쿨감뚝을 쓰면 리젠 타이밍마다
+                            각종 광범위 공격기를 편하게 난사할 수 있다. 거꾸로 말해서 쿨감뚝 없이 다크나이트를 키우려면 사냥이건 보스건 효율성이 저해된다. 상술한 벞지 문제까지 합치면
+                            메카닉과 메르세데스 육성은 선택이 아닌 필수다. 그래서 다크나이트를 본캐로 키우려면 그 진입장벽부터 넘어야 한다.
+                            <br><br>
+                            <strong>낮은 사냥 편의성과 효율성</strong><br>
+                            쿨감뚝을 구한 후도 문제다. 주력기인 다크 임페일은 전체적인 범위가 좁고, 비홀더 쇼크는 추가 투사체가 대각선으로 나가기 때문에 십자 범위가 빈다. 다크
+                            신시서스는 시작부터 마무리까지 경직이 크고, 다크 스피어는 상하 범위가 부실하다. 여기에 기동성도 발목을 잡으니 사냥 한계치가 심히 뒤떨어진다.
+                            <br><br>
+                            <strong>지나친 근접전 강요</strong><br>
+                            다크 스피어는 전천후 만능 스킬이지만, 던지기 전에 꼬나든 창날에 화력의 대부분이 집중되어 있다. 그래서 궁니르 디센트보다도 더한 근접전이 강요되는데,
+                            보스전에서 거리를 벌리지 못한다는 사실이 얼마나 큰 불편함인지는 굳이 언급할 필요가 없다.
+                        </p>
+                        <br>
+                        <br>
+                        <h1 id="title">사냥 운용</h1>
+                        <p>
+                            5차 전직 이전엔 비홀더 쇼크, 다크 신서시스, 5차 전직 후에는 추가로 다크 스피어, 비홀더 임팩트, 블리츠 실드를 이용한 광역기 위주의 사냥을 한다. 다크
+                            임페일은 원킬컷이 낮고 경직도도 짧지만 범위가 그리 넓지 않고 모전 특유의 저열한 기동성이 임페일 위주의 사냥에 제동을 걸기 때문이다. 대신 물스공인 덕분에
+                            공용 스킬인 블리츠 실드, 에르다 샤워, 스인미의 실전 데미지가 높아 사냥에 기용 가능한 광역기가 많다.
+                            <br><br>
+                            다만 불편한 기동과 지나친 광역기 의존도에 더해 광역기마다 가지고 있는 하자 때문에 고레벨 구간으로 갈수록 사냥 피로도가 급격히 오른다. 특히 비홀더 임팩트의
+                            긴 사용 주기로 인해 사냥 빌드가 최소 3젠 1세트로 구성되면서 소위 말하는 뇌빼기 사냥이 불가능할 정도의 피로도를 보인다. 빌드를 포기하고 막무가내로 사냥을
+                            할 경우 낮은 기동성과 주력기 성능으로 인해 처참해지는 마릿수는 덤이다.
+                            <br><br>
+                            아케인리버에서 그란디스로 이동하면서 점점 넓어지는 사냥터를 감당하기 어려워지는데, 이때부터는 쿨감뚝으로 광역기 가동률을 올려서 해결하게 된다. 쿨감 4초
+                            이상이 되면 비홀더 임팩트의 2젠 사용이 가능해지고, 5초 이상이 되면 핵심 스킬인 다크 스피어와 비홀더 쇼크를 매 젠마다 사용할 수 있어서 사냥의 질이
+                            달라진다. 다만 사냥을 위해서 구비하기에는 쿨감뚝의 가격이 너무 높다는 점이 문제로 꼽힌다.
+                        </p>
+                        <br>
+                        <br>
+                        <h1 id="title">보스전 운용</h1>
+                        <p>
+                            평딜은 궁니르 디센트를 사용하다가 다크 스피어와 비홀더 스킬로 근접 누킹을 하는 것으로 매우 단순하다. 극딜은 조금 까다로운 편인데, 극딜을 시작하기
+                            15초~25초 전에 다크니스 오라를 켜고 보스에게 근접해 꾸준히 스택을 쌓아야 한다. 40초의 짧은 지속시간으로 인해 풀스택 막타를 터트릴 수 있는 타이밍은
+                            보통 10초보다 짧아서, 보스가 사라지거나 파티의 바인드 타이밍이 늦어질 경우 그대로 극딜기가 날아갈 수 있기 때문에 상황을 잘 보고 사용 타이밍을 재야
+                            한다. 리인카네이션은 쿼터를 사용하다가 마지막 발동 때 풀 모드로 바꿔서 사용하는 것이 일반적이며, 보스에 따라 하프나 풀을 섞어서 사용하는 경우도 있다.
+                        </p>
+                        <br>
+                        <br>
+                        <h1 id="title">어빌리티</h1>
+                        <p>
+                            <strong>보스 몬스터 공격 시 데미지 증가</strong><br>
+                            1순위 어빌리티. 리마스터 이후 다크나이트는 궁니르 디센트에 붙어있던 재사용 대기시간이 삭제됐고, (구)새크리파이스를 계승한 다크 레조넌스의 유지 난도와,
+                            의존도 또한 현저히 낮아졌다. 게다가 다크나이트의 데미지 증가 수치는 없는 것에 가깝고, 그 대신 최종 데미지의 수치가 높기 때문에 보공의 효율이 뛰어나다.
+                            <br><br>
+                            <strong>버프 지속시간 증가</strong><br>
+                            2순위 어빌리티. 엔버 링크, 다크 레조넌스, 리인카네이션의 무적 시간 및 재사용 대기시간 감소를 위한 처치-공격 스택의 지속 시간을 늘려주기 때문에,
+                            보스전에서 안정적이고, 유틸에 최적화된 어빌리티다. 모험가 리마스터 이후로는 1번째 줄(레전드리 50%) 보다는 2번째 줄(유니크 38%)에 자주 사용되는
+                            추세이다. 그래도 유니온 8000, 감성 100레벨 전까지는 1번째 줄로 사용해도 무난하다.
+                            <br><br>
+                            <strong>재사용 대기시간 미적용</strong><br>
+                            2순위 어빌리티. 2번째 줄에서 벞지(최대 38%)와 재사용(최대 10%) 중에 취향에 따라 선택하면 된다. 기본적으로 유니온 8000 이상 및 몬스터
+                            라이프를 꾸준히 하는 등, 기본적인 벞지 스펙을 갖춘 유저에게 선호되는 옵션이다. 참고로 재사용 10% 기준, 약 1% 정도의 최종 데미지를 챙길 수 있으며,
+                            재사용이 적용되는 스킬은 비홀더 쇼크, 비홀더스 리벤지, 다크 레조넌스, 엔버 링크, 영웅의 메아리, 용사의 의지 등이 있다.
+                            <br><br>
+                            <strong>상태 이상에 걸린 대상 공격 시 데미지 증가</strong><br>
+                            2순위 어빌리티. 흔히 말하는 다크나이트의 어빌리티라면 보벞상이나, 보재상인데, 이 둘에는 상추뎀을 무조건 쓴다. 첫째 줄 보공 다음으로 어느 어빌리티에나
+                            쓰이는 필수적인 옵션이다.
+                            <br><br>
+                            <strong>크리티컬 확률 증가</strong><br>
+                            3순위 어빌리티. 다크나이트는 기본 크확 55%에 리인카네이션-크리티컬 레이트까지 합하면 75%라 추가 크확의 의존도가 낮다. 게다가 나이트로드 유니온(4%~5%),
+                            신궁 유니온(4%~5%), 쓸만한 샤프 아이즈(10%), 쓸만한 컴뱃 오더스(1%)까지 더하면 기본으로 94~96%의 크확을 갖고 있기에 바꾸는 게 좋다.
+                            <br><br>
+                            <strong>아이템/메소 획득 확률 증가</strong><br>
+                            3순위 어빌리티. 광부용 어빌리티지만, 다크나이트의 사냥 효율은 딱 평균 수준이라 효용성이 낮다. 그나마 보스전을 노린다면 아획을 사용해도 좋지만, 대체로
+                            2~3번째 줄에나 쓰이기 때문에 유니크 최고 수치인 15%를 보긴 어렵다.
+                        </p>
+                        <br>
+                        <br>
+                        <h1 id="title">코어강화</h1>
+                        <p>
+                            <strong>1순위</strong><br>
+                            궁니르 디센트, 다크 임페일, 비홀더
+                            <br><br>
+                            <strong>2순위</strong><br>
+                            다크 신서시스, 리프 어택/돌진/어퍼 차지, 파이널 어택
+                        </p>
+                    </div>
+                </article>
+            </section>
+
+            <!-- 본문 우측 영역 -->
+            <aside id="main-aside">
+                <div class="aside-list">
+                    <h3>모험가</h3>
+                    <ul>
+                        <li><a href="히어로.html">히어로</a></li>
+                        <li><a href="팔라딘.html">팔라딘</a></li>
+                        <li><a href="다크나이트.html">다크나이트</a></li>
+                        <li><a href="아크메이지(불,독).html">아크메이지(불,독)</a></li>
+                        <li><a href="아크메이지(썬,콜).html">아크메이지(썬,콜)</a></li>
+                        <li><a href="비숍.html">비숍</a></li>
+                        <li><a href="보우마스터.html">보우마스터</a></li>
+                        <li><a href="신궁.html">신궁</a></li>
+                        <li><a href="패스파인더.html">패스파인더</a></li>
+                        <li><a href="나이트로드.html">나이트로드</a></li>
+                        <li><a href="섀도어.html">섀도어</a></li>
+                        <li><a href="듀얼블레이드.html">듀얼블레이드</a></li>
+                        <li><a href="바이퍼.html">바이퍼</a></li>
+                        <li><a href="캡틴.html">캡틴</a></li>
+                        <li><a href="캐논슈터.html">캐논슈터</a></li>
+                    </ul>
+                </div>
+            </aside>
+        </div>
+    </div>
+    <!-- 푸터 -->
+    <footer id="main-footer">
+        <span>ⓒ These photographs and fonts are protected by NEXON Korea Corporation with all rights reserved.</span>
+    </footer>
+</body>
+
+</html>

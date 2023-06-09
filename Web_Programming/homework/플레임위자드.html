@@ -1,0 +1,345 @@
+<!-- data source https://namu.wiki/w/%EB%B3%B4%EC%9A%B0%EB%A7%88%EC%8A%A4%ED%84%B0 -->
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>플레임위자드 공략</title>
+    <link rel="stylesheet" href="Style.css"> <!-- 외부 스타일 시트 -->
+    <script src="https://code.jquery.com/jquery-3.7.0.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('.outer-menu-item').hover(function () {
+                $(this).find('.inner-menu').stop().slideDown();
+            }, function () {
+                $(this).find('.inner-menu').stop().slideUp();
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <!-- 전체를 감싸는 테그 -->
+    <div id="page-wrapper">
+        <!-- 헤더 -->
+        <header id="main-header">
+            <hgroup>
+                <h1 class="master-title"><a href="main.html"><img src="image/로고.png" alt="메이플스토리"></a>
+                </h1>
+                <h2 class="master-description"><a href="main.html">직업별 공략</a></h2>
+            </hgroup>
+        </header>
+        <!-- 네비게이션 -->
+        <nav id="main-navigation">
+            <div class="pull-left">
+                <ul class="outer-menu">
+
+                    <li class="outer-menu-item">
+                        <span class="menu-title">모험가</span>
+                        <ul class="inner-menu">
+                            <li class="inner-menu-item"><a href="히어로.html">히어로</a></li>
+                            <li class="inner-menu-item"><a href="팔라딘.html">팔라딘</a></li>
+                            <li class="inner-menu-item"><a href="다크나이트.html">다크나이트</a></li>
+                            <li class="inner-menu-item"><a href="아크메이지(불,독).html">아크메이지(불,독)</a></li>
+                            <li class="inner-menu-item"><a href="아크메이지(썬,콜).html">아크메이지(썬,콜)</a></li>
+                            <li class="inner-menu-item"><a href="비숍.html">비숍</a></li>
+                            <li class="inner-menu-item"><a href="보우마스터.html">보우마스터</a></li>
+                            <li class="inner-menu-item"><a href="신궁.html">신궁</a></li>
+                            <li class="inner-menu-item"><a href="패스파인더.html">패스파인더</a></li>
+                            <li class="inner-menu-item"><a href="나이트로드.html">나이트로드</a></li>
+                            <li class="inner-menu-item"><a href="섀도어.html">섀도어</a></li>
+                            <li class="inner-menu-item"><a href="듀얼블레이드.html">듀얼블레이드</a></li>
+                            <li class="inner-menu-item"><a href="바이퍼.html">바이퍼</a></li>
+                            <li class="inner-menu-item"><a href="캡틴.html">캡틴</a></li>
+                            <li class="inner-menu-item"><a href="캐논슈터.html">캐논슈터</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="outer-menu-item">
+                        <span class="menu-title">시그너스 기사단</span>
+                        <ul class="inner-menu">
+                            <li class="inner-menu-item"><a href="소울마스터.html">소울마스터</a></li>
+                            <li class="inner-menu-item"><a href="미하일.html">미하일</a></li>
+                            <li class="inner-menu-item"><a href="플레임위자드.html">플레임위자드</a></li>
+                            <li class="inner-menu-item"><a href="윈드브레이커.html">윈드브레이커</a></li>
+                            <li class="inner-menu-item"><a href="나이트워커.html">나이트워커</a></li>
+                            <li class="inner-menu-item"><a href="스트라이커.html">스트라이커</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="outer-menu-item">
+                        <span class="menu-title">영웅</span>
+                        <ul class="inner-menu">
+                            <li class="inner-menu-item"><a href="아란.html">아란</a></li>
+                            <li class="inner-menu-item"><a href="에반.html">에반</a></li>
+                            <li class="inner-menu-item"><a href="루미너스.html">루미너스</a></li>
+                            <li class="inner-menu-item"><a href="메르세데스.html">메르세데스</a></li>
+                            <li class="inner-menu-item"><a href="팬텀.html">팬텀</a></li>
+                            <li class="inner-menu-item"><a href="은월.html">은월</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="outer-menu-item">
+                        <span class="menu-title">레지스탕스</span>
+                        <ul class="inner-menu">
+                            <li class="inner-menu-item"><a href="블레스터.html">블레스터</a></li>
+                            <li class="inner-menu-item"><a href="베틀메이지.html">베틀메이지</a></li>
+                            <li class="inner-menu-item"><a href="와일드헌터.html">와일드헌터</a></li>
+                            <li class="inner-menu-item"><a href="매카닉.html">매카닉</a></li>
+                            <li class="inner-menu-item"><a href="제논.html">제논</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="outer-menu-item">
+                        <span class="menu-title">데몬</span>
+                        <ul class="inner-menu">
+                            <li class="inner-menu-item"><a href="데몬슬레이어.html">데몬슬레이어</a></li>
+                            <li class="inner-menu-item"><a href="데몬어벤져.html">데몬어벤져</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="outer-menu-item">
+                        <span class="menu-title">노바</span>
+                        <ul class="inner-menu">
+                            <li class="inner-menu-item"><a href="카이저.html">카이저</a></li>
+                            <li class="inner-menu-item"><a href="카인.html">카인</a></li>
+                            <li class="inner-menu-item"><a href="카데나.html">카데나</a></li>
+                            <li class="inner-menu-item"><a href="엔젤릭버스터.html">엔젤릭버스터</a></li>
+                        </ul>
+                    </li>
+                    <li class="outer-menu-item">
+                        <span class="menu-title">레프</span>
+                        <ul class="inner-menu">
+                            <li class="inner-menu-item"><a href="아델.html">아델</a></li>
+                            <li class="inner-menu-item"><a href="일리움.html">일리움</a></li>
+                            <li class="inner-menu-item"><a href="칼리.html">칼리</a></li>
+                            <li class="inner-menu-item"><a href="아크.html">아크</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="outer-menu-item">
+                        <span class="menu-title">아니마</span>
+                        <ul class="inner-menu">
+                            <li class="inner-menu-item"><a href="라라.html">라라</a></li>
+                            <li class="inner-menu-item"><a href="호영.html">호영</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="outer-menu-item">
+                        <span class="menu-title">초월자</span>
+                        <ul class="inner-menu">
+                            <li class="inner-menu-item"><a href="제로.html">제로</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="outer-menu-item">
+                        <span class="menu-title">키네시스</span>
+                        <ul class="inner-menu">
+                            <li class="inner-menu-item"><a href="키네시스.html">키네시스</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <!-- 본문 -->
+        <div id="content">
+            <!-- 본문 좌측 영역 -->
+            <section id="main-section">
+                <article>
+                    <div class="article-header">
+                        <h1 class="article-title">플레임위자드(Flame Wizard)</h1>
+                    </div>
+                    <div class="article-body">
+                        <img id="c_image" src="image/플레임위자드.webp" alt="플레임위자드">
+                        <h1 id="title">장점</h1>
+                        <p>
+                            <strong>준수한 사냥 능력</strong><br>
+                            플위의 사냥능력은 원킬 시 효율이 매우 좋아지는 주력기를 비롯해 여러 가지의 광역기, 설치기, 사출기, 소환수 등이 있어 사냥은 상당히 좋은 편이다. 또한 오비탈,
+                            블비탈을 비롯한 대부분의 스킬이 지속적으로 타격을 가하기 때문에 남는 몹 처리에도 유리한 스킬셋을 보유하고 있다. 주력기인 오비탈의 단점을 상쇄 혹은 극대화
+                            시켜줄만한 스킬을 여럿 가지고 있기 때문에 평균 이상의 사냥효율을 낼 수 있으며 인플서와 디스차지 라이온, 익스팅션으로 길뚫기도 매우 쉽게 할 수 있다. 또한
+                            자유롭게 설치 및 위치지정이 가능한 파이어 블링크 역시 좋은 사냥능력에 한몫을 한다. 다만 오비탈은 원킬컷이 매우 높기 때문에 주력기로 사냥할 경우 상당히 높은
+                            스펙이 요구된다.
+                            <br><br>
+                            <strong>준수한 유틸리티</strong><br>
+                            유틸은 매우 좋은 편으로 무적기의 가동률이 높고 자체 헤도라 불리는 본 피닉스도 있으며, 상태이상을 막아주는 플레임 베리어와 위치 지정형 이동기 파이어 블링크 그리고
+                            파티유틸인 여우의 장난 디버프와 버닝리젼도 있다. 극딜기인 인피니티 플레임서클 역시 스택형과 공중체공의 유틸리티로 사냥 및 여러 보스에서 이득을 볼 수 있다.
+                            <br><br>
+                        <p style="padding: 0 0 0 10px;">
+                            <strong>강력한 개인 유틸</strong><br>
+                            무적기 카타클리즘, 상태이상 방어기 플레임 배리어, 유사무적기 에테리얼 폼, 사망 방지기 본 피닉스를 가지고 있다. 여러가지 개인 유틸을 가지고 있음에도 성능또한
+                            준수하다. 이 때문에 다양한 상황에서 능동적으로 방어할 수 있으며 위협적인 상황을 쉽게 넘길 수 있다. 또한 본 피닉스 역시 쿨다운과 지속시간이 1800초인데 버프
+                            지속시간에 영향받아서 쿨다운을 미리 돌려놓고 보스전에서 2번 활용하는 플레이도 가능하다. 또한 상태이상 방어스킬 역시 준수한 가동률을 가지고 있어 극딜중 움직이지
+                            못한다는 큰 단점을 상쇄할 수 있다.
+                            <br><br>
+                            <strong>위치 지정형 이동기</strong><br>
+                            공중에서 사용하진 못하지만 피하지 못한 상황이 온다 해도 파이어 블링크로 도망치면 되므로 경우에 따라 텔레포트, 돌진기보다 더 좋은 성능을 보일 수 있다. 꼭 회피가
+                            아니더라도 보스에게 빠르게 이동, 블비탈을 유도하는 용도 등 딜링 용도로도 쓸 수 있다.
+                            <br><br>
+                            <strong>파티 유틸의 존재</strong><br>
+                            여우의 장난 디버프와 버닝리젼으로 총 최종데미지 10%, 데미지 60%, 공격속도 1단계를 파티원에게 줄 수 있다. 유저 수가 적으면서 파티유틸이 있는 직업 특성상
+                            스펙이 미달되지 않는 이상 파티에서 환영받는다.
+                        </p><br>
+                        <strong>높은 극딜기의 범용성</strong><br>
+                        인피니티 플레임서클은 12초마다 1초간 키다운 할 수 있는 스택형 극딜기로 움직이지 못하는 대신 극딜을 나누어 박을 수 있다. 이 때문에 파티격에선 극딜주기로 인해 손해볼
+                        일이 없고 시전중 패턴회피하려면 수동으로 끊을 수밖에 없지만 플레임 베리어, 바인드, 넓은 자체 스킬 범위로 어느정도 단점이 상쇄되며 끊어도 나중에 다시 쓰면 그만이다.
+                        또한 범위도 넓고 데미지도 높기 때문에 사냥기로서도 훌륭한 성능을 보이고 있다. 또한 체공이 필요한 경우 혹은 일부 보스의 경우 딜 넣을겸 슈스텐 유틸로도 활용이 가능하다.
+                        활용난이도가 다소 높지만 그만큼 높은 범용성을 가진 스킬.
+                        <br><br>
+                        <strong>긴 딜링 사거리</strong><br>
+                        사거리 역시 매우 긴 편으로 주력기인 오비탈 플레임은 물론 타 딜링기 역시 보스와 멀리 떨어져 있어도 타격이 가능하다. 플레임 디스차지는 적당한 거리에 있으면 자동으로
+                        타격해주며 인페르노라이즈 역시 멀리있는 적까지 공격이 가능하여 스우 밀격같은 패턴으로부터 비교적 안전하게 딜링이 가능하다. 물론 오비탈류 스킬의 y축 범위가 애매하고
+                        지속적으로 공격해야된다는게 단점.
+                        </p>
+                        <br>
+                        <br>
+                        <h1 id="title">단점</h1>
+                        <p>
+                            <strong>지극히 낮은 체력과 전 직업 최하위권의 내구도</strong><br>
+                            마법사 직업군은 체력이 적지만, 플레임위자드는 그 중에서도 유난히 약하다. 순수+스킬 HP는 45개 전 직업 중 45위(꼴찌)로, 100레벨이 넘어도 체력이
+                            2000을 넘기지 못한다. 패시브 매직 가드로 전체 데미지의 85%를 MP가 보호해도 애초에 체력이 적은 데다 마법사라 방어력도 부실해서 조금만 맞아도 체력이 팍팍
+                            줄어든다. 잠재능력이나 어빌리티 등에 체력을 조금이라도 긁어모으고 부캐가 많은 경우 유니온 시스템의 공격대 점령 효과까지 합쳐 2000~3000 정도로 체력을 늘릴
+                            수 있지만 신규 유저라면 그마저도 없으니 체력 관리가 난감하다. 게다가 유니온을 HP에 주는 것도 크뎀, 보공, 방무를 일정량 포기해야 하기 때문에 매우
+                            비효율적이다. 이로써 일어나는 단점은 의문사. 기본적으로 마나를 팍팍 쓰는 플위인지라 마나가 금방 떨어지는데, 이걸 모르고 계속 사용하다 몬스터 몸빵에 맞아 죽는
+                            어이없는 일이 종종 발생한다, 플위는 다른 마법사 직업들과 달리 피해 감소나 피해 흡수 관련 패시브 스킬이 전혀 없고 조건부 한정으로 설치기 스킬 뿐이라 효율이
+                            떨어진다. 그 외에 소울마스터나 미하일을 140까지 육성하여 공격대원 효과로 추가 체력 2000을 얻는 방법도 있다. 아니면 장비에 붙은 HP 추옵들도 조금이나마
+                            도움이 된다. 또한 보스레이드 중에서도 나타나는 문제인데 워낙 물몸이라 피격데미지가 있고 물약 제한이 존재하는 시그너스나 스우 3페이즈, 각성 데미안 2페이즈 같은
+                            보스에게 몸빵당하면 체력이 훅 까인다.
+                            신의 도시 세르니움과 호텔 아르크스에서는 이 단점이 더욱 두드러지는데, 어센틱 포스를 일정 수치 이상 달성시키지 못하면 몬스터로부터 받는 피격 데미지가 무척 아프게
+                            들어와서 한 대만 맞아도 비득할 위험이 있다.
+                            <br><br>
+                            <strong>높은 사냥 원킬컷</strong><br>
+                            플레임위자드의 주된 사냥방식은 블레이징 익스팅션으로 맵을 휩쓸고 오비탈 플레임으로 몬스터를 쓸어담는 것인데 이 두 가지 스킬의 퍼뎀이 타직업에 비해 매우 낮은
+                            편이다. 때문에 플위의 원킬컷은 일반적인 타 직업의 2배 정도 되는 비정상적인 수치를 보인다. 문제는 이 스킬들이 4차 주력 스킬 이라는 점이다. 더군다나 하이퍼
+                            스킬에 흔하디 흔한 리인포스도 없으니 퍼댐을 올릴 수 있는 방법은 매트릭스 강화 하나 뿐이다. 보통 원킬컷이 비정상적으로 높은 직업군들은 4차 주력 사냥기가 있지만
+                            플위는 그런 것도 없다. 다시 말해서 빠른 기동성과 넓은 범위의 스킬을 조합하여 몬스터의 리젠 전에 최대한 많은 몬스터를 쓸어담는게 트렌드인 메이플스토리의 사냥
+                            환경에서, 몬스터의 체력은 점점 늘어가기만 하는데, 플위는 스킬의 취사선택을 하는 것도, 원래 주력 스킬의 딜레이 감소나 범위 증가 등의 기적을 기대하는 것도
+                            불가능하다. 사실상 플레임위자드를 키우고자 할때 고민하게 만드는 또 하나의 원인이자 고자본 전용 캐릭터라는 인식을 만들어낸 원흉인 셈.
+                            리마스터로 사자 모드 오비탈 플레임은 일반 몬스터 공격시 데미지 40%라는 버프를 받았기에 원킬컷이 약간 완화되었다.
+                            <br><br>
+                            <strong>높은 사냥 피로도</strong><br>
+                            오비탈의 독특한 범위 때문에 일단 컷만 나면 마릿수 자체는 대부분의 직업보다 많은 수의 마릿수를 잡을 수 있는 것은 맞다. 하지만 이는 아주 잘 고안된 빌드를 가지고
+                            한시도 집중력을 잃지 않고 사냥했을 때 이야기인 것이 문제이다. 오비탈은 분명 굉장한 범위를 커버할 수 있는 사냥 주력기임에 틀림없으나, 이는 유저의 컨트롤에
+                            달렸다. 예를 들어 이동 도중 앞으로 날리는 것과 뒤로 날리는 것의 차이를 비교해 보면, 뒤로 날리는 것이 관성 때문에 훨씬 압도적으로 넓은 범위를 커버할 수 있게
+                            된다. X축만 커버하면 되는 경우에는 이동 방향의 뒤쪽으로 날리면 간단하다. 하지만 y축을 고려하면 정말 골치아파지는데, 직선으로 올라가는 것도 아니고, 내려올 때는
+                            이동한 만큼 따라서 대각선으로 내려온다. 이는 커버할 수 있는 범위 증가로 이어지긴 하지만 맞는가 안맞는가는 실력이 좋으면서 집중하기까지 한 것이 아니라면 장담할 수
+                            없다. 또한 윗 방향키를 누르다가 중간에 맵에 있는 로프에 걸리면 멈춰버리기도 하며 몹의 크기도 신경써야 해서, 맵을 잘 고르면 되긴 하지만 아무튼 신경쓸 거리가
+                            늘어나게 된다. 따라서 y축 커버 가능 범위가 넓음에도 피로도가 잔뜩 쌓인다. 게다가 빌드마다 가끔씩 정확한 타이밍에 맞게 방향을 바꿔가며 던져야 하거나,
+                            파이어블링크 또는 숨겨진 포탈을 이용해 오비탈을 던지자마자 이동하는 등의 테크닉을 사용하기도 하는데 이 또한 완벽한 위치 선정 및 스킬 딜레이를 고려해야 하는 경우도
+                            생기곤 해서 여러모로 편안히 사냥하기엔 적합하지 않은 직업이며, 그래도 마릿수 많이 먹을 수 있는 가능성이 있는게 낫지 않냐고 하기엔 경우에 따라선 난이도 때문에
+                            제대로된 사냥이 불가능한 경우에 이르기도 해서 명백한 단점으로 볼 수 있다.
+                            <br><br>
+                            <strong>까다로운 운용법</strong><br>
+                            높은 범용성, 좋은 유틸성, 준수한 사냥능력 등 좋은 장점이 많으나 이는 그만큼 단점이 많단 이야기로 써야되는 스킬및 신경써야될 요소가 은근히 많으며 후술할 기동성
+                            문제까지 더하여 어렵지 않은 스킬구성임에도 플레이하기 까다로운 모습을 보여준다.
+                            <br><br>
+                        <p style="padding: 0 0 0 10px;">
+                            <strong>유연하지 않은 기동성</strong><br>
+                            유틸리티가 좋지만 이는 무적기에 관한 방어형 유틸에 대한 이야기다. 더블 점프를 제외한 이동기는 파이어 블링크 하나뿐이고, 그마저 공중에서 사용이 불가능하며, 이로
+                            인해 화력 공백이 필연적으로 수반된다. 또한 더블점프 직업군이고 점프 거리도 매우 길며 돌진기와 텔레포트 스킬도 없다. 무적기 중 이동기 사용도 불가능하므로 유틸이
+                            좋은 대신 활용 난도가 높다.
+                            <br><br>
+                            <strong>지속적인 공격을 강제로 요구하는 스킬 구조</strong><br>
+                            플레임 디스차지와 인페르노라이즈를 사용하려면 스택을 쌓아야 하는데 조건이 상당히 까다롭다. 플레임 디스차지는 25회 직접공격을 가해야 1스택이 쌓이는데 허수아비에게
+                            오비탈만 날려도 3스택이 한계일 정도로 저열하며, 인페르노라이즈를 위한 여우의 장난 디버프를 쌓으려면 오비탈로 50회만큼 타격해야 된다. 문제는 현 보스 메타 및
+                            상술한 기동성 문제로 인하여 평딜기를 지속적으로 넣을 수가 없다.
+                            <br><br>
+                            <strong>애매한 스킬 후 딜레이</strong><br>
+                            이러한 점은 보스에서 종종 체감 할 수 있는데 예를 들어, 보스 중 플레임위자드의 지속적인 딜 상향을 위해서 사용하는 [버닝 리전]이라는 스킬을 사용하게 되면, 버프
+                            설치와 동시에 딜레이로 인한 경직이 발생하게 된다. 이러한 경직으로 보스 패턴에 대한 대처가 불가한 상황이 발생하며, 그렇다고 보스 패턴을 피하기 위해 스킬을
+                            사용하지 않을 수도 없는 노릇이다. 이러한 경직을 보이는 스킬은 [버닝 리전] 외에도 [블레이징 익스팅션]과 같은 소환 스킬에서도 발생하며, 이러한 애매한 경직을
+                            좋아하지 않는 유저에게는 플레임위자드가 많이 불편 할 수 있다.
+                        </p>
+                        </p>
+                        <br>
+                        <br>
+                        <h1 id="title">사냥 운용</h1>
+                        <p>
+                            반비탈 컷의 가능 여부에 따라 크게 갈린다. 오비탈 플레임은 화염 구체가 투사될 때 1번, 시전자에게로 돌아올 때 1번 타격하여 총 2번 타격한다. 이 2번이 모두
+                            적중해야 필드 몬스터가 사망하면 원비탈 또는 한비탈 컷, 2번 타격 중에 1번만으로 사망하면 반비탈 컷이라고 한다. 아케인 리버부터 반비탈 컷이 가능한 플위는 가히
+                            사냥터를 휩쓸고 다닌다고 할 정도로 막강한 사냥 능력을 자랑한다.
+                            <br><br>
+                            그러나 문제는 이 반비탈 컷의 허들이 높다는 데에 있다. 일반 몬스터를 대상으로 데미지 증가 효과를 받는다지만, 그걸 감안해도 오비탈 플레임의 퍼뎀은 타격당
+                            600%대에 불과하다. 이는 타 직업의 '투사체'와 맞먹을 정도로 낮은 수치이며, 고강도의 자본 투자 외의 해결책은 없다. 그나마 최종 데미지 수치가 높아서 스펙
+                            자체는 비교적 쉽게 높일 수 있지만, 성장을 지향하는 유저에게는 불가피한 최대 난제가 된다.
+                            <br><br>
+                            다만 사냥 중에 무작정 오비탈 플레임만 쓰는 것은 아니다. 블레이징 익스팅션은 썬콜의 아이스 오브를 근간으로 하면서도 오브보다 넓은 범위로 전이되는 특성으로 인해
+                            설치기로서 제 역할을 다한다. 또한 인페르노라이즈와 카타클리즘이라는 광범위 공격 스킬도 있고, 5차 이후로는 블레이징 오비탈 플레임, 라이온-디스차지, 인피니티
+                            플레임 서클 등 성능 좋은 광범위 공격 스킬들이 추가된다. 따라서 반비탈 스펙을 구비할 때까지는 해당 스킬들로 버텨도 사냥 효율이 그리 낮지는 않다.
+                        </p>
+                        <br>
+                        <br>
+                        <h1 id="title">보스전 운용</h1>
+                        <p>
+                            플위는 키네시스, 라라와 더불어 마법사 직업군 중 단 셋 뿐인 더블 점프 사용자이다. 여기에는 다음과 같은 장단점이 있다.
+
+                            <br><br>
+                            <strong>장점</strong><br>
+                        <ul>
+                            <li>* 기동성이 뛰어나다. 텔레포트로 이동할 수 있는 거리보다 훨씬 먼 거리를 이동할 수 있어 날아다니다시피 할 수 있다.</li>
+                            <li>* 키보드 핫키에 텔레포트를 할애할 필요가 없다. 단순히 점프 키만 두 번 누르면 되기 때문이다.</li>
+                            <li>* 반반의 어스퀘이크, 스우 2~3페이즈의 장판과 같은 지면 기반 패턴에 대응할 때 유리하다. 배메의 텔레포트 ver. 2와 공유하는 장점.</li>
+                        </ul>
+                        <br><br>
+                        <strong>단점</strong><br>
+                        <ul>
+                            <li>* 정밀 동작성이 부족하다. 텔레포트는 지정된 위치에 즉시 정지하는 반면, 더블 점프는 착지 후에 미끄러지면서 패턴에 걸릴 위험이 있다. 당연히 움직임을
+                                제어하는
+                                정도 또한 텔레포트에 밀린다.</li>
+                            <li>* 위상 변화로 인한 피격 무시 효과가 없다. 텔레포트는 캐릭터의 위상을 변화시켜 점에서 점으로 즉시 이동하기에, 점과 점 사이에는 다른 점이 존재하지
+                                않는다.
+                                하지만 더블 점프는 시간에 따라 위상이 변하기 때문에 점과 점 사이에 다른 점이 엄연히 존재하여 피격당할 수 있다. 이는 파이어 블링크로 보완해야 한다.
+                            </li>
+                        </ul>
+                        </p>
+                        <br>
+                        <br>
+                        <h1 id="title">어빌리티</h1>
+                        <p>
+                            <strong>보스 공격력 증가</strong><br>
+                            버닝 리전을 상시 유지하기 위해선 버프 지속시간 증가 수치가 필요하지만, 극한으로 끌어올릴 필요는 없다.
+                            <br><br>
+                            <strong>버프 스킬의 지속 시간 증가</strong><br>
+                            버닝 리전이 이 옵션의 영향을 받아 지속시간이 증가하므로, 3~40%는 있는 게 좋다.
+                            <br><br>
+                            <strong>크리티컬 확률 증가</strong><br>
+                            플위는 자체 크확이 35%로 낮기 때문에 여기서 크확이 나온다면 하이퍼 스탯이나 반지, 유니온, 링크 스킬중 하나를 아낄 수 있다.
+                            <br><br>
+                            <strong>상태 이상에 걸린 적 공격 시 데미지 증가</strong><br>
+                        </p>
+                        <br>
+                        <br>
+                        <h1 id="title">코어강화</h1>
+                        <p>
+                            <strong>1순위</strong><br>
+                            오비탈 플레임, 블레이징 익스팅션, 피닉스 드라이브
+                            <br><br>
+                            <strong>2순위</strong><br>
+                            인페르노라이즈, 카타클리즘
+                        </p>
+                    </div>
+                </article>
+            </section>
+
+            <!-- 본문 우측 영역 -->
+            <aside id="main-aside">
+                <div class="aside-list">
+                    <h3>시그너스 기사단</h3>
+                    <ul>
+                        <li><a href="소울마스터.html">소울마스터</a></li>
+                        <li><a href="미하일.html">미하일</a></li>
+                        <li><a href="플레임위자드.html">플레임위자드</a></li>
+                        <li><a href="윈드브레이커.html">윈드브레이커</a></li>
+                        <li><a href="나이트워커.html">나이트워커</a></li>
+                        <li><a href="스트라이커.html">스트라이커</a></li>
+                    </ul>
+                </div>
+            </aside>
+        </div>
+    </div>
+    <!-- 푸터 -->
+    <footer id="main-footer">
+        <span>ⓒ These photographs and fonts are protected by NEXON Korea Corporation with all rights reserved.</span>
+    </footer>
+</body>
+
+</html>

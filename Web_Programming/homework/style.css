@@ -1,0 +1,199 @@
+/* 1. 초기화하기 */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: '메이플스토리 OTF', '메이플스토리 TTF', '메이플스토리', 'Maplestory OTF', 'Maplestory TTF', 'Maplestory';
+    /* 메이플스토리 폰트 설치 필 */
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+/* 기본 클래스 */
+.pull-left {
+    float: left;
+}
+
+/* 2. 페이지 구성하기 */
+body {
+    width: 90%;
+    height: 100%;
+    margin: 0 auto;
+    background: #E6E6E6;
+}
+
+#page-wrapper {
+    background: white;
+    margin: 20px 0 ;
+    padding: 0 20px;
+    box-shadow: 0 2px 6px rgba(100, 100, 100, 0.3);
+}
+
+hgroup>*>a {
+    color: black;
+    text-decoration: none;
+}
+
+/* 3. 헤더 구성하기 */
+#main-header {
+    padding: 20px 30px;
+}
+
+.master-title {
+    font-size: 30px;
+    color: #181818;
+}
+
+.master-description {
+    font-size: 15px;
+    font-weight: 500;
+    color: #383838;
+}
+
+/* 4. 네비게이션 및 폴다운 메뉴 구성하기 */
+#main-navigation {
+    border-top: 1px solid #C8C8C8;
+    border-bottom: 1px solid #C8C8C8;
+    margin-bottom: 20px;
+    height: 40px;
+}
+
+.outer-menu-item {
+    float: left;
+    position: relative;
+}
+
+.outer-menu-item:hover {
+    background: black;
+    color: white;
+}
+
+.menu-title {
+    display: block;
+    height: 30px;
+    width: 100px;
+    line-height: 30px;
+    text-align: center;
+    padding: 5px 20px;
+}
+
+.inner-menu {
+    display: none;
+    position: absolute;
+    top: 40px;
+    left: 0;
+    width: 100%;
+    background: white;
+    box-shadow: 0 2px 6px rgba(5, 5, 5, 0.9);
+    z-index: 1000;
+    text-align: center;
+}
+
+.inner-menu-item>a {
+    display: block;
+    padding: 5px 10px;
+    color: black;
+}
+
+.inner-menu-item>a:hover {
+    background: black;
+    color: white;
+}
+
+/* 5. 본문 추가하기(중앙 내용) */
+#content {
+    overflow: hidden;
+}
+
+#main {
+    margin: auto;
+}
+
+#main-section {
+    float: left;
+    width: 93%;
+}
+
+#main-aside {
+    float: right;
+    width: 7%;
+}
+
+#title {
+    font-size: 25px;
+}
+
+strong {
+    font-size: 15px;
+}
+
+#c_image {
+    display: block;
+    margin: 0 auto;
+    height: 500px;
+    width: auto;
+}
+
+.item>h1 {
+    color: black;
+    text-decoration: none;
+    text-align: center;
+}
+
+.item>img {
+    display: block;
+    margin: 0 auto;
+    height: 600px;
+    width: auto;
+}
+
+/* 6. 본문 추가하기(본문 포스트 위쪽) */
+article {
+    padding: 0 10px 20px 10px;
+    border-bottom: 1px solid #C8C8C8;
+}
+
+.article-header {
+    padding: 20px 0;
+}
+
+.article-title {
+    font-size: 40px;
+    font-weight: bold;
+    padding-bottom: 10px;
+}
+
+.article-body {
+    font-size: 14px;
+}
+
+/* 7. 본문 추가하기(사이드 메뉴) */
+.aside-list {
+    margin: 10px 0 30px 0;
+}
+
+.aside-list>h3 {
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.aside-list li a {
+    margin-left: 8px;
+}
+
+.aside-list li a {
+    margin-left: 8px;
+    font-size: 13px;
+    color: #6C6C6C;
+}
+
+#main-footer {
+    width: 100%;
+    bottom: 0px;
+    position: relative;
+}

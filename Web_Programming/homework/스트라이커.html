@@ -1,0 +1,264 @@
+<!-- data source https://namu.wiki/w/%EB%B3%B4%EC%9A%B0%EB%A7%88%EC%8A%A4%ED%84%B0 -->
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>스트라이커 공략</title>
+    <link rel="stylesheet" href="Style.css"> <!-- 외부 스타일 시트 -->
+    <script src="https://code.jquery.com/jquery-3.7.0.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('.outer-menu-item').hover(function () {
+                $(this).find('.inner-menu').stop().slideDown();
+            }, function () {
+                $(this).find('.inner-menu').stop().slideUp();
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <!-- 전체를 감싸는 테그 -->
+    <div id="page-wrapper">
+        <!-- 헤더 -->
+        <header id="main-header">
+            <hgroup>
+                <h1 class="master-title"><a href="main.html"><img src="image/로고.png" alt="메이플스토리"></a>
+                </h1>
+                <h2 class="master-description"><a href="main.html">직업별 공략</a></h2>
+            </hgroup>
+        </header>
+        <!-- 네비게이션 -->
+        <nav id="main-navigation">
+            <div class="pull-left">
+                <ul class="outer-menu">
+
+                    <li class="outer-menu-item">
+                        <span class="menu-title">모험가</span>
+                        <ul class="inner-menu">
+                            <li class="inner-menu-item"><a href="히어로.html">히어로</a></li>
+                            <li class="inner-menu-item"><a href="팔라딘.html">팔라딘</a></li>
+                            <li class="inner-menu-item"><a href="다크나이트.html">다크나이트</a></li>
+                            <li class="inner-menu-item"><a href="아크메이지(불,독).html">아크메이지(불,독)</a></li>
+                            <li class="inner-menu-item"><a href="아크메이지(썬,콜).html">아크메이지(썬,콜)</a></li>
+                            <li class="inner-menu-item"><a href="비숍.html">비숍</a></li>
+                            <li class="inner-menu-item"><a href="보우마스터.html">보우마스터</a></li>
+                            <li class="inner-menu-item"><a href="신궁.html">신궁</a></li>
+                            <li class="inner-menu-item"><a href="패스파인더.html">패스파인더</a></li>
+                            <li class="inner-menu-item"><a href="나이트로드.html">나이트로드</a></li>
+                            <li class="inner-menu-item"><a href="섀도어.html">섀도어</a></li>
+                            <li class="inner-menu-item"><a href="듀얼블레이드.html">듀얼블레이드</a></li>
+                            <li class="inner-menu-item"><a href="바이퍼.html">바이퍼</a></li>
+                            <li class="inner-menu-item"><a href="캡틴.html">캡틴</a></li>
+                            <li class="inner-menu-item"><a href="캐논슈터.html">캐논슈터</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="outer-menu-item">
+                        <span class="menu-title">시그너스 기사단</span>
+                        <ul class="inner-menu">
+                            <li class="inner-menu-item"><a href="소울마스터.html">소울마스터</a></li>
+                            <li class="inner-menu-item"><a href="미하일.html">미하일</a></li>
+                            <li class="inner-menu-item"><a href="플레임위자드.html">플레임위자드</a></li>
+                            <li class="inner-menu-item"><a href="윈드브레이커.html">윈드브레이커</a></li>
+                            <li class="inner-menu-item"><a href="나이트워커.html">나이트워커</a></li>
+                            <li class="inner-menu-item"><a href="스트라이커.html">스트라이커</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="outer-menu-item">
+                        <span class="menu-title">영웅</span>
+                        <ul class="inner-menu">
+                            <li class="inner-menu-item"><a href="아란.html">아란</a></li>
+                            <li class="inner-menu-item"><a href="에반.html">에반</a></li>
+                            <li class="inner-menu-item"><a href="루미너스.html">루미너스</a></li>
+                            <li class="inner-menu-item"><a href="메르세데스.html">메르세데스</a></li>
+                            <li class="inner-menu-item"><a href="팬텀.html">팬텀</a></li>
+                            <li class="inner-menu-item"><a href="은월.html">은월</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="outer-menu-item">
+                        <span class="menu-title">레지스탕스</span>
+                        <ul class="inner-menu">
+                            <li class="inner-menu-item"><a href="블레스터.html">블레스터</a></li>
+                            <li class="inner-menu-item"><a href="베틀메이지.html">베틀메이지</a></li>
+                            <li class="inner-menu-item"><a href="와일드헌터.html">와일드헌터</a></li>
+                            <li class="inner-menu-item"><a href="매카닉.html">매카닉</a></li>
+                            <li class="inner-menu-item"><a href="제논.html">제논</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="outer-menu-item">
+                        <span class="menu-title">데몬</span>
+                        <ul class="inner-menu">
+                            <li class="inner-menu-item"><a href="데몬슬레이어.html">데몬슬레이어</a></li>
+                            <li class="inner-menu-item"><a href="데몬어벤져.html">데몬어벤져</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="outer-menu-item">
+                        <span class="menu-title">노바</span>
+                        <ul class="inner-menu">
+                            <li class="inner-menu-item"><a href="카이저.html">카이저</a></li>
+                            <li class="inner-menu-item"><a href="카인.html">카인</a></li>
+                            <li class="inner-menu-item"><a href="카데나.html">카데나</a></li>
+                            <li class="inner-menu-item"><a href="엔젤릭버스터.html">엔젤릭버스터</a></li>
+                        </ul>
+                    </li>
+                    <li class="outer-menu-item">
+                        <span class="menu-title">레프</span>
+                        <ul class="inner-menu">
+                            <li class="inner-menu-item"><a href="아델.html">아델</a></li>
+                            <li class="inner-menu-item"><a href="일리움.html">일리움</a></li>
+                            <li class="inner-menu-item"><a href="칼리.html">칼리</a></li>
+                            <li class="inner-menu-item"><a href="아크.html">아크</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="outer-menu-item">
+                        <span class="menu-title">아니마</span>
+                        <ul class="inner-menu">
+                            <li class="inner-menu-item"><a href="라라.html">라라</a></li>
+                            <li class="inner-menu-item"><a href="호영.html">호영</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="outer-menu-item">
+                        <span class="menu-title">초월자</span>
+                        <ul class="inner-menu">
+                            <li class="inner-menu-item"><a href="제로.html">제로</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="outer-menu-item">
+                        <span class="menu-title">키네시스</span>
+                        <ul class="inner-menu">
+                            <li class="inner-menu-item"><a href="키네시스.html">키네시스</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <!-- 본문 -->
+        <div id="content">
+            <!-- 본문 좌측 영역 -->
+            <section id="main-section">
+                <article>
+                    <div class="article-header">
+                        <h1 class="article-title">스트라이커(Striker)</h1>
+                    </div>
+                    <div class="article-body">
+                        <img id="c_image" src="image/스트라이커.webp" alt="스트라이커">
+                        <h1 id="title">장점</h1>
+                        <p>
+                            <strong>뛰어난 기동성</strong><br>
+                            이단점프에 윗점프까지 되는 엘리멘탈 쉬프트, 텔레포트식 이동기 섬광, 전방 이동기 파도, 승천+뇌성까지 이동 공격 스킬이 4개 존재하며, 엘리멘탈 쉬프트+승천으로
+                            아란마냥 트리플 점프가 가능하다. 게다가 대부분의 스킬들은 연계가 가능하기 때문에 위 네 개의 스킬을 연계하면 바이퍼, 블래스터 다음가는 X축 기동성을 갖는다.
+                            사냥에 있어서는 섬광이 몬스터를 유도하는 스킬이기 때문에 윗점프 없이도 2층을 순식간에 드나들 수 있다.
+                            <br><br>
+                            <strong>쉬운 코어 강화 난이도</strong><br>
+                            연계기라는 직업 특성을 생각해보면 의외라고 생각할 수도 있지만 사실 스트라이커의 공격 스킬은 10개이고, 그중에서 사냥용과 보스용이 분리되어 있기에 코어칸 부담이
+                            덜하고, 오히려 3줄 유효옵을 띄우기가 굉장히 쉽기에 코어 강화 난이도는 쉬운 편에 속한다. 단점이 있다면 갈아야할 코어가 부족해 5차스킬 코어를 만드는데 애로사항이
+                            있다는 정도.
+                            <br><br>
+                            <strong>주력기의 넓은 공격 범위 및 상당히 낮은 원킬컷</strong><br>
+                            주력기인 벽력과 섬멸의 공격 범위가 상당히 넓다. 특히 보스주력기 겸 사냥기인 벽력의 데미지가 사냥기로써는 정말 출중하기에, 유니온 육성을 목적으로 키울때 템을 정말
+                            대충 끼워주어도 원킬을 낼정도의 위력이 나온다. 뛰어난 기동성과 시너지 효과를 발휘하여 사냥 능력이 아르카나까지는 좋은 편이다. 아르카나까지 라고 서술한 이유는 아래
+                            단점 항목에 후술. 보스전의 경우 보스가 이리저리 움직여도 범위가 넓어 제자리에서 맞추기 쉬우며 뇌신창격의 존재 덕분에 누적 피해량도 상당하다.
+                            <br><br>
+                            <strong>준수한 기본 능력치</strong><br>
+                            스트라이커는 비숍의 자력 크확 100%나 데벤져, 히어로의 무지막지한 방무처럼 특정 스펙이 두드러지게 뛰어난 수준은 아니지만, 모든 스펙 측면에서 최소한 기본치는
+                            확보되어있다. 방무는 뇌전 버프로만 45%를 확보하며, 크확은 기본 35%로 좀 낮지만 크뎀은 무려 45%다. 뎀증과 최종뎀증도 적절한 수준. 누구나 따로 갖춰야
+                            하는 보공 정도만 채워주면 된다.
+                        </p>
+                        <br>
+                        <br>
+                        <h1 id="title">단점</h1>
+                        <p>
+                            <strong>적지 않은 뇌전 풀스택 의존도</strong><br>
+                            엘리멘탈: 라이트닝의 뇌전이 스택 중첩식 버프고, 중요 버프인 질풍/태풍은 뇌전 스택당 데미지 버프에 풀스택에서 시전시 스킬 데미지 보너스가 있어 뇌전 풀스택을 써야
+                            딜 손실이 없다. 5차 전직에 들어서 교아탄도 뇌전 2스택을 소모하며 풀스택에서 시전시 스킬 데미지 보너스가 있어 풀스택을 강요하며 이로인해 하이퍼 스킬인 천지개벽
+                            버프가 없을땐 질풍/태풍과 교아탄을 연계로 사용할시 딜 손실이 일어난다. 리마스터 후 뇌전 버프 소모 시 일정 시간 동안 뇌전 버프가 증가시키는 능력치와 동일한
+                            양만큼 능력치를 증가시키는 보정 버프가 적용되게 되었다지만 풀스택 데미지 증가라는 조건부가 붙어 여전히 스택 의존도는 적지 않다.
+                            <br><br>
+                            <strong>고레벨 던전에서의 떨어지는 사냥능력</strong><br>
+                            스트라이커는 유니온 양산용으로도 육성이 될 만큼 사냥능력이 준수하지만, 어디까지나 아르카나까지만 좋은 사냥능력을 자랑한다. 모라스처럼 넓은 맵 위주의 사냥터부터는
+                            답이 없는 수준. 필드가 상당히 넓어 기존의 승천-뇌성이나 벽력만으로는 감당할 수가 없는데 마땅한 보조 스킬이 없으니 울며 겨자먹기로 몸으로 때우는 것이 현실.
+                            <br><br>
+                            <strong>낮은 내구도와 높은 MP 소모량으로 인한 물약난</strong><br>
+                            근접 격투가라는 이미지와는 다르게 패시브로 HP 증가량이 고작 20%밖에 되지 않으며, 피격 데미지 감소는 극갑과 자극을 합친 -30%가 끝이고, 방어력을 올려 주는
+                            효과는 아예 없다. 또한 MP는 아예 패시브로 올라가지 않으며 그런 주제에 주력기인 벽력과 섬멸은 MP를 각각 75, 60씩 잡아먹는다. 다른 스킬이라고 예외는
+                            아니어서, 주기적으로 쓸 축뢰, 신뇌합일, 교아탄은 각각 MP를 80, 900, 500씩 날려보내며, 뇌신창격도 발동 시 MP가 500이나 날아간다. 그나마 내구도의
+                            경우 아케인 리버 지역이라면 요구 포스량의 1.5배를 채워서 피격 데미지를 1로 줄이는 수라도 있지만, MP 소모량은 정말로 답이 없다. 이러다 보니 HP은 HP대로
+                            MP는 MP대로 끼리끼리 줄어드는 현상이 육성 과정에서 빈번하게 발생하며, 그만큼 물약도 많이 깨지게 된다. 펫 자동 물약은 필수나 다름없으며, 육성 과정에서 제로,
+                            모험가 해적, 카이저의 링크 스킬, 아란과 에반의 유니온 효과는 필연적으로 달아줘야 숨통이 트이는 수준이다.
+                            <br><br>
+                            <strong>최하위권 극딜 능력</strong><br>
+                            수많은 패치가 이루어지고 리마스터까지 받았음에도 극딜보단 평딜 강화에 가까운 스킬이 많아 스트라이커의 극딜은 여전히 좋다고 하기 어렵다. 그나마 AWAKE 패치때
+                            나온 창뇌연격이 극딜기에 가까운 스킬이지만, 본섭 출시 당시 핫픽스를 가장한 너프를 당했고 자체 퍼뎀이 높은 것도 아니라서 여전히 극딜은 하위권이다.
+                        </p>
+                        <br>
+                        <br>
+                        <h1 id="title">사냥 운용</h1>
+                        <p>
+                            크게 벽력과 승천+뇌성 연계로 갈린다. 벽력은 상향 범위가 넓어서 복층 구조에서 활약한다. 특히 벽력의 경직을 파도 캔슬로 삭제할 수 있기 때문에, 익숙해진다면 제법
+                            넓은 필드에서도 최적화된 빌드를 창안할 수 있다. 그리고 승뇌 연계는 좌우로 긴 사냥터에서 빠르게 움직이면서 몹을 쓸어내기에 적합하다. 여기에 신뇌합일의 연쇄 번개,
+                            전방 광범위 공격기인 교아탄 등으로 보조하는 게 5차 전직 이후 스트라이커의 사냥 패턴이다.
+                            <br><br>
+                            그러나 스트라이커는 사냥 측면에서 지형 조건을 많이 탄다. 사출기가 전혀 없기 때문에 아무리 스펙을 끌어올려도 승뇌나 벽력으로 정직하게 때리고 있어야 하며, 이마저도
+                            지형이 중간에 끊기면 버벅대거나 추락하기 일쑤다. 결국 필드가 넓어지는 모라스 이후부터는 효율이 다소 떨어진다.
+                        </p>
+                        <br>
+                        <br>
+                        <h1 id="title">보스전 운용</h1>
+                        <p>
+                            주력기는 벽력-섬멸 연타를 기준으로 하며, 여기에 쿨마다 나가는 뇌신창격과 짧쿨 누킹기인 교아탄, 데미지 증가 버프이자 딜링기인 태풍을 넣어준다.
+                            <br><br>
+                            극딜 시엔 신뇌합일과 시드링을 올리고 창뇌연격을 쓰고, 이후엔 다시 벽섬+뇌신창격+교아탄과 태풍 버프를 유지해주면 끝이다.
+                        </p>
+                        <br>
+                        <br>
+                        <h1 id="title">어빌리티</h1>
+                        <p>
+                            스트라이커는 어빌리티 의존도가 낮다. 그나마 고려할 만한 크확조차 다른 곳에서 채우면 그만이다. 광부라면 아획도 괜찮지만, 스킬 구조 때문에 광부로 사용하기에는
+                            적합하지 않다. 따라서 보공 20%를 노리는 것이 가장 낫다.
+                        </p>
+                        <br>
+                        <br>
+                        <h1 id="title">코어강화</h1>
+                        <p>
+                            <strong>필수</strong><br>
+                            섬멸, 벽력, 질풍/태풍, 파도/해파
+                            <br><br>
+                            <strong>선택</strong><br>
+                            해신강림
+                        </p>
+                    </div>
+                </article>
+            </section>
+
+            <!-- 본문 우측 영역 -->
+            <aside id="main-aside">
+                <div class="aside-list">
+                    <h3>시그너스 기사단</h3>
+                    <ul>
+                        <li><a href="소울마스터.html">소울마스터</a></li>
+                        <li><a href="미하일.html">미하일</a></li>
+                        <li><a href="플레임위자드.html">플레임위자드</a></li>
+                        <li><a href="윈드브레이커.html">윈드브레이커</a></li>
+                        <li><a href="나이트워커.html">나이트워커</a></li>
+                        <li><a href="스트라이커.html">스트라이커</a></li>
+                    </ul>
+                </div>
+            </aside>
+        </div>
+    </div>
+    <!-- 푸터 -->
+    <footer id="main-footer">
+        <span>ⓒ These photographs and fonts are protected by NEXON Korea Corporation with all rights reserved.</span>
+    </footer>
+</body>
+
+</html>

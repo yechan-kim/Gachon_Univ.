@@ -1,0 +1,286 @@
+<!-- data source https://namu.wiki/w/%EB%B3%B4%EC%9A%B0%EB%A7%88%EC%8A%A4%ED%84%B0 -->
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>미하일 공략</title>
+    <link rel="stylesheet" href="Style.css"> <!-- 외부 스타일 시트 -->
+    <script src="https://code.jquery.com/jquery-3.7.0.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('.outer-menu-item').hover(function () {
+                $(this).find('.inner-menu').stop().slideDown();
+            }, function () {
+                $(this).find('.inner-menu').stop().slideUp();
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <!-- 전체를 감싸는 테그 -->
+    <div id="page-wrapper">
+        <!-- 헤더 -->
+        <header id="main-header">
+            <hgroup>
+                <h1 class="master-title"><a href="main.html"><img src="image/로고.png" alt="메이플스토리"></a>
+                </h1>
+                <h2 class="master-description"><a href="main.html">직업별 공략</a></h2>
+            </hgroup>
+        </header>
+        <!-- 네비게이션 -->
+        <nav id="main-navigation">
+            <div class="pull-left">
+                <ul class="outer-menu">
+
+                    <li class="outer-menu-item">
+                        <span class="menu-title">모험가</span>
+                        <ul class="inner-menu">
+                            <li class="inner-menu-item"><a href="히어로.html">히어로</a></li>
+                            <li class="inner-menu-item"><a href="팔라딘.html">팔라딘</a></li>
+                            <li class="inner-menu-item"><a href="다크나이트.html">다크나이트</a></li>
+                            <li class="inner-menu-item"><a href="아크메이지(불,독).html">아크메이지(불,독)</a></li>
+                            <li class="inner-menu-item"><a href="아크메이지(썬,콜).html">아크메이지(썬,콜)</a></li>
+                            <li class="inner-menu-item"><a href="비숍.html">비숍</a></li>
+                            <li class="inner-menu-item"><a href="보우마스터.html">보우마스터</a></li>
+                            <li class="inner-menu-item"><a href="신궁.html">신궁</a></li>
+                            <li class="inner-menu-item"><a href="패스파인더.html">패스파인더</a></li>
+                            <li class="inner-menu-item"><a href="나이트로드.html">나이트로드</a></li>
+                            <li class="inner-menu-item"><a href="섀도어.html">섀도어</a></li>
+                            <li class="inner-menu-item"><a href="듀얼블레이드.html">듀얼블레이드</a></li>
+                            <li class="inner-menu-item"><a href="바이퍼.html">바이퍼</a></li>
+                            <li class="inner-menu-item"><a href="캡틴.html">캡틴</a></li>
+                            <li class="inner-menu-item"><a href="캐논슈터.html">캐논슈터</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="outer-menu-item">
+                        <span class="menu-title">시그너스 기사단</span>
+                        <ul class="inner-menu">
+                            <li class="inner-menu-item"><a href="소울마스터.html">소울마스터</a></li>
+                            <li class="inner-menu-item"><a href="미하일.html">미하일</a></li>
+                            <li class="inner-menu-item"><a href="플레임위자드.html">플레임위자드</a></li>
+                            <li class="inner-menu-item"><a href="윈드브레이커.html">윈드브레이커</a></li>
+                            <li class="inner-menu-item"><a href="나이트워커.html">나이트워커</a></li>
+                            <li class="inner-menu-item"><a href="스트라이커.html">스트라이커</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="outer-menu-item">
+                        <span class="menu-title">영웅</span>
+                        <ul class="inner-menu">
+                            <li class="inner-menu-item"><a href="아란.html">아란</a></li>
+                            <li class="inner-menu-item"><a href="에반.html">에반</a></li>
+                            <li class="inner-menu-item"><a href="루미너스.html">루미너스</a></li>
+                            <li class="inner-menu-item"><a href="메르세데스.html">메르세데스</a></li>
+                            <li class="inner-menu-item"><a href="팬텀.html">팬텀</a></li>
+                            <li class="inner-menu-item"><a href="은월.html">은월</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="outer-menu-item">
+                        <span class="menu-title">레지스탕스</span>
+                        <ul class="inner-menu">
+                            <li class="inner-menu-item"><a href="블레스터.html">블레스터</a></li>
+                            <li class="inner-menu-item"><a href="베틀메이지.html">베틀메이지</a></li>
+                            <li class="inner-menu-item"><a href="와일드헌터.html">와일드헌터</a></li>
+                            <li class="inner-menu-item"><a href="매카닉.html">매카닉</a></li>
+                            <li class="inner-menu-item"><a href="제논.html">제논</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="outer-menu-item">
+                        <span class="menu-title">데몬</span>
+                        <ul class="inner-menu">
+                            <li class="inner-menu-item"><a href="데몬슬레이어.html">데몬슬레이어</a></li>
+                            <li class="inner-menu-item"><a href="데몬어벤져.html">데몬어벤져</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="outer-menu-item">
+                        <span class="menu-title">노바</span>
+                        <ul class="inner-menu">
+                            <li class="inner-menu-item"><a href="카이저.html">카이저</a></li>
+                            <li class="inner-menu-item"><a href="카인.html">카인</a></li>
+                            <li class="inner-menu-item"><a href="카데나.html">카데나</a></li>
+                            <li class="inner-menu-item"><a href="엔젤릭버스터.html">엔젤릭버스터</a></li>
+                        </ul>
+                    </li>
+                    <li class="outer-menu-item">
+                        <span class="menu-title">레프</span>
+                        <ul class="inner-menu">
+                            <li class="inner-menu-item"><a href="아델.html">아델</a></li>
+                            <li class="inner-menu-item"><a href="일리움.html">일리움</a></li>
+                            <li class="inner-menu-item"><a href="칼리.html">칼리</a></li>
+                            <li class="inner-menu-item"><a href="아크.html">아크</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="outer-menu-item">
+                        <span class="menu-title">아니마</span>
+                        <ul class="inner-menu">
+                            <li class="inner-menu-item"><a href="라라.html">라라</a></li>
+                            <li class="inner-menu-item"><a href="호영.html">호영</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="outer-menu-item">
+                        <span class="menu-title">초월자</span>
+                        <ul class="inner-menu">
+                            <li class="inner-menu-item"><a href="제로.html">제로</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="outer-menu-item">
+                        <span class="menu-title">키네시스</span>
+                        <ul class="inner-menu">
+                            <li class="inner-menu-item"><a href="키네시스.html">키네시스</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <!-- 본문 -->
+        <div id="content">
+            <!-- 본문 좌측 영역 -->
+            <section id="main-section">
+                <article>
+                    <div class="article-header">
+                        <h1 class="article-title">미하일(Mihile)</h1>
+                    </div>
+                    <div class="article-body">
+                        <img id="c_image" src="image/미하일.webp" alt="미하일">
+                        <h1 id="title">장점</h1>
+                        <p>
+                            <strong>압도적인 생존 관련 유틸리티</strong><br>
+                            (성공률이 높다는 가정 하에) 가동률 높은 무적기인 로얄 가드, 자신이 입는 피해의 경우에는 어드밴스드 소울 실드, 빛의 수호로 최대 HP의 비례하여 입는 피해를
+                            적게 받을 수 있다. 보호막류 스킬로 라이트 오브 커리지도 존재한다. 파티원의 경우에는 소울 링크, 라이트 오브 커리지, 로 아이아스를 통해 보호막을 부여하거나 입는
+                            피해를 줄이는 방식으로 보호할 수 있다. 일부 보스의 패턴들은 회피할 수 없으나 메이플 내에서 팔라딘과 둘 뿐인 탱커 포지션을 맡는다는 점에서 의미가 있다. 게다가
+                            이 스킬들에는 데미지를 상승시키는 부가 효과도 있어 딜 상승에도 도움이 된다. 조금만 더 주의깊게 사용하면 파티원 보호와 화력 지원에도 공헌할 수 있다.
+                            <br><br>
+                            <strong>5쉬운 코어 강화 난이도</strong><br>
+                            시그너스 기사단의 공통 장점. V 매트릭스로 기존 스킬들을 강화할 때 미하일의 강화 코어는 1~4차 스킬 통틀어서 9개로 적은 편이며 핵심적으로 강화해야 될 스킬은
+                            샤이닝 크로스, 인스톨 쉴드/소울 마제스티, 로얄 가드로, 총 3개이다.2순위 강화 코어인 파이널 어택, 데들리 차지, 샤이닝 체이스/버티컬 샤이닝 체이스를
+                            강화한다고 해도 9스킬 중 6스킬 강화로, 전직업 평균인 2중첩 4코어에서 벗어나지 않는다. 오히려 총 스킬 갯수가 적고, 3중 5코어로 강화를 하다가 넘어가는
+                            방법도 존재하여, 다른 직업에 비해 들어가는 비용이 적다. 스킬 코어의 경우에도 사냥에 미치는 영향이 적으므로, 유동적으로 강화가 가능하며 강화 코어와 달리 사냥
+                            원킬컷에 영향이 적으므로 우선순위가 낮다. 게다가 자체 풀공속이기에 쓸윈부도 필요없어서 강화 코어를 적은 칸으로 쉽게 강화한 후, 좋은 5차 스킬들을 채울 수 있다.
+                            <br><br>
+                            <strong>5여제의 기도 효과로 인한 레벨 반감 미적용</strong><br>
+                            미하일은 0차 스킬 “여제의 기도” 효과로 20레벨 이상 차이의 몬스터에게도 제대로 데미지가 들어간다. 윌 이후의 고레벨 보스전에 있어서 레벨 차이로 인한 데미지
+                            반감 때문에 레벨업도 중요한 스펙업 중 하나라는 취급을 받는 상황에서 미하일은 레벨 반감을 신경쓰지 않아도 된다. 검은 마법사 기준 255레벨 미하일은 동레벨
+                            타직업군 보다 최종 데미지 60%를 더 챙겨가는 셈이다. 물론 재사용 대기시간 감소나 초기화 효과가 먹히지 않는다는 점은 감수해야 한다.
+                        </p>
+                        <br>
+                        <br>
+                        <h1 id="title">단점</h1>
+                        <p>
+                            <strong>어려운 보스전 운용 난이도</strong><br>
+                            미하일의 주력기이자 존재의의인 로얄 가드는 광범위 사냥 및 보스전 패턴 회피에 지대한 이득을 제공하지만, 약 0.24~0.5초 일찍 사용해야 하는 까다로운 조건을
+                            지니고 있다. 때문에 로얄가드는 미하일 육성의 진입장벽이 된다. 게다가 일단 '피격되어야' 발동되는 스킬이기 때문에 타이밍을 제대로 맞추지 못하여 가드에 실패한다면
+                            피격 데미지를 입고 가드 딜은 들어가지 않는데다가 심지어 약간의 경직까지 추가되어 리스크가 매우 크다.
+                            <br><br>
+                            <strong>설치기의 위치 선정 문제</strong><br>
+                            4차 스킬 인스톨 실드의 지속시간은 60초지만 재사용 대기시간이 30초라 아무 때나 위치를 바꿀 수 없어서, 처음부터 위치 선정을 신중하게 정할 문제가 있다. 수시로
+                            위치를 이동하는 보스전에서는 중앙에 설치하면 조금이라도 해결이 되지만 넓은 맵에서는 미리 위치를 선정해도 스킬의 범위 이탈로 딜 로스가 일어난다.
+                            <br><br>
+                            <strong>피로도 높은 사냥</strong><br>
+                            로얄가드는 넓은 범위와 압도적인 원킬컷과 공격력 버프로 인해 사냥에서도 중요한 위치를 점하지만, 반격이라는 특성 때문에 눈치껏 잘 들이받아야 한다. 게다가 클라우
+                            솔라스는 로얄 가드의 스택에 따라 범위와 데미지가 영향을 받기에 로얄가드를 배제한 사냥이 사실상 어렵다. 혹여나 사냥기인 샤이닝 크로스로 원킬이 난다고 해도
+                            로얄가드의 범위와 클라우 솔라스의 범위를 커버하지 못하기 때문에, 사냥 효율을 감안한다면 필수적으로 로얄가드를 써야 한다.
+                            <br><br>
+                            <strong>개인 생존에 치중된 생존기</strong><br>
+                            생존에 지대한 영향을 미치는 5차 생존기인 로 아이아스는 방어를 성공할 때 마다 내구도가 차감되는 형식의 스킬로, 여러 파티원들을 구제하려면 지속시간이 지나기 전에
+                            파괴될 것을 감안해야 한다. 소울 링크도 적용 범위가 애매해서 파티원들을 반강제로 집결시키기 때문에 오히려 개인을 위한 스킬로 봐야 한다. 이런 이유로 파티원의
+                            생존을 돕는 탱커인 팔라딘과 비교했을 때 보스 파티에서 소외되는 경향이 크다. 물론 로얄 가드로 인해 미하일 개인의 생존력은 예전이나 지금이나 최강 수준이지만,
+                            그래봤자 안 죽는 건 본인과 보스이고 죽는 건 본인을 제외한 파티원들이 될 수 있다.
+                            <br><br>
+                            <strong>전무한 육성 시너지</strong><br>
+                            정확히는 부캐로서의 단점이다. 링크 스킬인 빛의 수호는 한시적으로 상태이상 내성이 증가하는, 슬롯만 차지하는 애물단지다. 그리고 유니온 공격대원 효과는 소울마스터와
+                            같은 HP 고정 수치 증가인데, 이 역시 데벤져와 물몸 직업 외에는 마찬가지로 효용이 없다. 일반적으로 링크 스킬과 유니온 공격대원은 둘 중 하나가 제한적으로나마
+                            사용될 여지가 있지만, 미하일은 둘 다 낙제점이다.
+                        </p>
+                        <br>
+                        <br>
+                        <h1 id="title">사냥 운용</h1>
+                        <p>
+                            샤이닝 크로스, 데들리 차지, 5중첩 로얄 가드를 주력으로 사용한다. 로얄 가드에 굳이 5중첩이라고 조건을 붙인 것은, 4중첩 이하 로얄 가드의 공격 범위가 넓다고
+                            하기 힘든 수준이기 때문이다. 그리고 5차 전직 이후 습득하는 클라우 솔라스의 범위도 로얄 가드의 중첩 수에 비례해 증가하므로, 결국 5중첩을 잘 유지하기 위해 각종
+                            반격 수단에 익숙해지는 것이 범위 사냥의 핵심이 된다.
+                            <br><br>
+                            로얄 가드 중첩의 지속시간은 기본 20초지만, 중첩 수는 한번에 사라지지 않고 5-4-3-2-1 순으로 점점 감소한다. 즉 4중첩 상태까지 내려와도 한 번만 발동하면
+                            5중첩이 다시 쌓이므로, 이론상 5중첩을 쌓은 상태에서 40초 안에 다시 로얄 가드를 발동하기만 하면 중첩을 유지할 수 있다. 물론 중첩 수가 많아질수록 반격 허가
+                            시간이 눈에 띄게 감소한다는 점을 염두에 두어야 하고, 클라우 솔라스의 경우 로얄 가드 4스택과 5스택의 차이만큼 범위가 달라지므로 클솔-가드 콤보로 사냥을 할 경우
+                            20초 안에 계속 갱신을 해주어야 한다.
+                        </p>
+                        <br>
+                        <br>
+                        <h1 id="title">보스전 운용</h1>
+                        <p>
+                            로얄 가드의 무적 가동률은 최대 약 67%에 달한다. 따라서 보스전의 공격 패턴과 타이밍을 잘 파악하고 있다는 전제 하에 안정적으로 화력을 투사할 수 있다. 그러나
+                            아무리 숙달되어서 타이밍을 잘 맞힐 자신이 있다 해도, 리스크가 덜한 패턴만 골라서 로얄 가드로 반격하는 식의 안정성 있는 플레이가 권장된다. 물론 보스마다 패턴이
+                            다르고 판정도 제각각인 경우가 허다하므로, 이를 잘 파악하고 이해하기 위해선 연습을 통해 반격 타이밍을 숙달시키고 실전에 돌입하는 것이 제일 중요하다. 메이플에서는
+                            소리, 이펙트, 판정이 서로 맞지 않는 경우가 많으니 보스마다 판정을 파악해야한다.
+                        </p>
+                        <br>
+                        <br>
+                        <h1 id="title">어빌리티</h1>
+                        <p>
+                            <strong>보스 몬스터 공격 시 데미지 증가</strong><br>
+                            미하일은 어빌리티 자유도가 높은 편이지만 대무분의 직업들과 마찬가지로 많은 미하일 유저들이 첫번째 줄 옵션으로 사용한다.
+                            <br><br>
+                            <strong>크리티컬 확률</strong><br>
+                            미하일의 크리티컬 확률은 40%이다. 여기에 팬텀의 링크 스킬을 전수받으면 55%가 되고 크리티컬 확률 15%를 띄우면 70%가 된다. 미하일은 상태이상에 걸린
+                            적에게 크리티컬 확률이 20% 추가로 증가되는 스킬이 있으므로 크확 70%에 쓸샾을 사용해 80%로 만들어주면 보스에게 크리티컬 확률이 100%가 된다. 다만 유니온
+                            등 크리티컬을 올릴 수단은 많으므로 크리티컬 확률 옵션에 크게 목숨을 걸 필요는 없다. 하지만 사냥시에도 크리티컬 확률까지 챙기거나 팬텀 링크를 사용하지 않을
+                            유저들에겐 2~3번째 줄에 추천하는 옵션이다.
+                            <br><br>
+                            <strong>상태이상시 적에게 주는 데미지 증가</strong><br>
+                            암흑상태이상을 100% 확률로 걸 수 있는 미하일은 이 어빌리티도 좋은 선택지 중 하나이다. 사실상 확정적으로 딜증가를 가져오기 때문. 다만 합적용이라 다른 선호
+                            어빌리티보다는 효율이 떨어져 주로 2~3번째 줄에 뽑게 된다.
+                            <br><br>
+                            <strong>N% 확률로 재사용 대기시간이 미적용</strong><br>
+                            사냥과 보스에서 모두 많은 도움을 줄 수 있다. 2022년 1월 밸런스 패치로 무적 시간 동안에도 가드 발동이 가능해지면서 사냥 시 가드 발동이 매우 쉬워졌고
+                            보스에서는 가드에 재사용이 터질 경우 다시 발동이 가능하여 기존보다 효율이 올라갔다.
+                            <br><br>
+                            <strong>아이템 드롭률 혹은 메소 획득량 증가</strong><br>
+                            아케인 리버 이후 드랍하는 메소의 수치도 무시 못하게 되었고 무엇보다 젬스톤과 물방울석 등 돈이 되는 아이템과 관련되어 주가가 오른 옵션이다. 최대치인 20%가
+                            뜬다면 저자본 유저들은 첫째줄에 띄워도 나쁘지 않은 옵션이다.
+                        </p>
+                        <br>
+                        <br>
+                        <h1 id="title">코어강화</h1>
+                        <p>
+                            <strong>1순위</strong><br>
+                            로얄 가드/오펜시브 디펜스, 샤이닝 크로스, 인스톨 실드/소울 마제스티
+                            <br><br>
+                            <strong>2순위</strong><br>
+                            데들리 차지, 파이널 어택, 샤이닝 체이스/버티컬 샤이닝 체이스
+                        </p>
+                    </div>
+                </article>
+            </section>
+
+            <!-- 본문 우측 영역 -->
+            <aside id="main-aside">
+                <div class="aside-list">
+                    <h3>시그너스 기사단</h3>
+                    <ul>
+                        <li><a href="소울마스터.html">소울마스터</a></li>
+                        <li><a href="미하일.html">미하일</a></li>
+                        <li><a href="플레임위자드.html">플레임위자드</a></li>
+                        <li><a href="윈드브레이커.html">윈드브레이커</a></li>
+                        <li><a href="나이트워커.html">나이트워커</a></li>
+                        <li><a href="스트라이커.html">스트라이커</a></li>
+                    </ul>
+                </div>
+            </aside>
+        </div>
+    </div>
+    <!-- 푸터 -->
+    <footer id="main-footer">
+        <span>ⓒ These photographs and fonts are protected by NEXON Korea Corporation with all rights reserved.</span>
+    </footer>
+</body>
+
+</html>

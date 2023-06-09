@@ -1,0 +1,304 @@
+<!-- data source https://namu.wiki/w/%EB%B3%B4%EC%9A%B0%EB%A7%88%EC%8A%A4%ED%84%B0 -->
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>캡틴 공략</title>
+    <link rel="stylesheet" href="Style.css"> <!-- 외부 스타일 시트 -->
+    <script src="https://code.jquery.com/jquery-3.7.0.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('.outer-menu-item').hover(function () {
+                $(this).find('.inner-menu').stop().slideDown();
+            }, function () {
+                $(this).find('.inner-menu').stop().slideUp();
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <!-- 전체를 감싸는 테그 -->
+    <div id="page-wrapper">
+        <!-- 헤더 -->
+        <header id="main-header">
+            <hgroup>
+                <h1 class="master-title"><a href="main.html"><img src="image/로고.png" alt="메이플스토리"></a>
+                </h1>
+                <h2 class="master-description"><a href="main.html">직업별 공략</a></h2>
+            </hgroup>
+        </header>
+        <!-- 네비게이션 -->
+        <nav id="main-navigation">
+            <div class="pull-left">
+                <ul class="outer-menu">
+
+                    <li class="outer-menu-item">
+                        <span class="menu-title">모험가</span>
+                        <ul class="inner-menu">
+                            <li class="inner-menu-item"><a href="히어로.html">히어로</a></li>
+                            <li class="inner-menu-item"><a href="팔라딘.html">팔라딘</a></li>
+                            <li class="inner-menu-item"><a href="다크나이트.html">다크나이트</a></li>
+                            <li class="inner-menu-item"><a href="아크메이지(불,독).html">아크메이지(불,독)</a></li>
+                            <li class="inner-menu-item"><a href="아크메이지(썬,콜).html">아크메이지(썬,콜)</a></li>
+                            <li class="inner-menu-item"><a href="비숍.html">비숍</a></li>
+                            <li class="inner-menu-item"><a href="보우마스터.html">보우마스터</a></li>
+                            <li class="inner-menu-item"><a href="신궁.html">신궁</a></li>
+                            <li class="inner-menu-item"><a href="패스파인더.html">패스파인더</a></li>
+                            <li class="inner-menu-item"><a href="나이트로드.html">나이트로드</a></li>
+                            <li class="inner-menu-item"><a href="섀도어.html">섀도어</a></li>
+                            <li class="inner-menu-item"><a href="듀얼블레이드.html">듀얼블레이드</a></li>
+                            <li class="inner-menu-item"><a href="바이퍼.html">바이퍼</a></li>
+                            <li class="inner-menu-item"><a href="캡틴.html">캡틴</a></li>
+                            <li class="inner-menu-item"><a href="캐논슈터.html">캐논슈터</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="outer-menu-item">
+                        <span class="menu-title">시그너스 기사단</span>
+                        <ul class="inner-menu">
+                            <li class="inner-menu-item"><a href="소울마스터.html">소울마스터</a></li>
+                            <li class="inner-menu-item"><a href="미하일.html">미하일</a></li>
+                            <li class="inner-menu-item"><a href="플레임위자드.html">플레임위자드</a></li>
+                            <li class="inner-menu-item"><a href="윈드브레이커.html">윈드브레이커</a></li>
+                            <li class="inner-menu-item"><a href="나이트워커.html">나이트워커</a></li>
+                            <li class="inner-menu-item"><a href="스트라이커.html">스트라이커</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="outer-menu-item">
+                        <span class="menu-title">영웅</span>
+                        <ul class="inner-menu">
+                            <li class="inner-menu-item"><a href="아란.html">아란</a></li>
+                            <li class="inner-menu-item"><a href="에반.html">에반</a></li>
+                            <li class="inner-menu-item"><a href="루미너스.html">루미너스</a></li>
+                            <li class="inner-menu-item"><a href="메르세데스.html">메르세데스</a></li>
+                            <li class="inner-menu-item"><a href="팬텀.html">팬텀</a></li>
+                            <li class="inner-menu-item"><a href="은월.html">은월</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="outer-menu-item">
+                        <span class="menu-title">레지스탕스</span>
+                        <ul class="inner-menu">
+                            <li class="inner-menu-item"><a href="블레스터.html">블레스터</a></li>
+                            <li class="inner-menu-item"><a href="베틀메이지.html">베틀메이지</a></li>
+                            <li class="inner-menu-item"><a href="와일드헌터.html">와일드헌터</a></li>
+                            <li class="inner-menu-item"><a href="매카닉.html">매카닉</a></li>
+                            <li class="inner-menu-item"><a href="제논.html">제논</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="outer-menu-item">
+                        <span class="menu-title">데몬</span>
+                        <ul class="inner-menu">
+                            <li class="inner-menu-item"><a href="데몬슬레이어.html">데몬슬레이어</a></li>
+                            <li class="inner-menu-item"><a href="데몬어벤져.html">데몬어벤져</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="outer-menu-item">
+                        <span class="menu-title">노바</span>
+                        <ul class="inner-menu">
+                            <li class="inner-menu-item"><a href="카이저.html">카이저</a></li>
+                            <li class="inner-menu-item"><a href="카인.html">카인</a></li>
+                            <li class="inner-menu-item"><a href="카데나.html">카데나</a></li>
+                            <li class="inner-menu-item"><a href="엔젤릭버스터.html">엔젤릭버스터</a></li>
+                        </ul>
+                    </li>
+                    <li class="outer-menu-item">
+                        <span class="menu-title">레프</span>
+                        <ul class="inner-menu">
+                            <li class="inner-menu-item"><a href="아델.html">아델</a></li>
+                            <li class="inner-menu-item"><a href="일리움.html">일리움</a></li>
+                            <li class="inner-menu-item"><a href="칼리.html">칼리</a></li>
+                            <li class="inner-menu-item"><a href="아크.html">아크</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="outer-menu-item">
+                        <span class="menu-title">아니마</span>
+                        <ul class="inner-menu">
+                            <li class="inner-menu-item"><a href="라라.html">라라</a></li>
+                            <li class="inner-menu-item"><a href="호영.html">호영</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="outer-menu-item">
+                        <span class="menu-title">초월자</span>
+                        <ul class="inner-menu">
+                            <li class="inner-menu-item"><a href="제로.html">제로</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="outer-menu-item">
+                        <span class="menu-title">키네시스</span>
+                        <ul class="inner-menu">
+                            <li class="inner-menu-item"><a href="키네시스.html">키네시스</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <!-- 본문 -->
+        <div id="content">
+            <!-- 본문 좌측 영역 -->
+            <section id="main-section">
+                <article>
+                    <div class="article-header">
+                        <h1 class="article-title">캡틴(Captain)</h1>
+                    </div>
+                    <div class="article-body">
+                        <img id="c_image" src="image/캡틴.webp" alt="캡틴">
+                        <h1 id="title">장점</h1>
+                        <p>
+                            <strong>높은 크리티컬 관련 능력치</strong><br>
+                            자체 크리티컬 확률만 75%로, 비숍과 패스파인더, 나이트로드, 하이퍼 찍은 다크나이트와 함께 공동 1위이다. 크리티컬 데미지도 기본 55%에 달하여 최대 125%인
+                            카데나, 기본 60%인 엔젤릭버스터 다음가는 높은 수치를 가진다. 덕분에 쓸만한 샤프 아이즈와 어빌리티 등의 약간의 추가 크확만 있다면 확정 크리티컬(100%)을
+                            확보하기가 쉬운 편에 속한다. 또한 확정 크리티컬을 구비한 이후에는 뛰어난 크리티컬 데미지로 화력 상승을 크게 체감할 수 있다.
+                            <br><br>
+                            <strong>안정적인 극딜 성능</strong><br>
+                            극딜기 노틸러스 어썰트와 보조 극딜기인 데스 트리거의 압축이 잘 되어있는 편이고, 노틸러스 어썰트는 무적이 붙어 극딜 안정성도 뛰어나다. 주기도 각각 180초와
+                            45초라서 프레이(180초)나 소울 컨트랙트(엔버 링크, 90초), 대다수 직업의 극딜 주기와도 맞아떨어져 파티에서 보스 딜러로 채용될 때 극딜 주기로 인한 불이익도
+                            없다. 모험가 리마스터 후 헤드샷이 상당한 상향을 받고 넥타가 소환수 강화 버프기로 리뉴얼되는 등 상기한 두 스킬을 뺀 화력 역시 보완되었다.
+                            <br><br>
+                            <strong>최상위권 화력의 평딜</strong><br>
+                            리마스터 이전에도 다양한 소환수와 헤드샷을 필두로 한 캡틴의 평딜은 준수한 편이었는데, 리마스터 패치로 소환수의 딜을 소폭 너프시키고 헤드샷을 대폭 상향시키면서
+                            캡틴의 이론상 평딜은 최상위 수준까지 상승하게 되었다. 특유의 난잡한 딜 사이클도 상당 부분 해결된 지금은 비슷한 화력 수준의 평딜 직업들이 쉼없는 캔슬, 강제
+                            이동, 긴 후딜레이 등과 같은 제약에 고통받는 데 비해 캡틴은 컨트롤 난이도도 높지 않은 편.
+                            <br><br>
+                            <strong>높은 데미지 및 보공 효율</strong><br>
+                            크리티컬 데미지 %가 높고, 최종 데미지도 컨티뉴얼 에이밍 + 퀵 드로우의 효과로 높게 뽑을 수있다. 데미지 %가 매우 낮은 대신 크뎀, 최종뎀으로 딜을 하는 캡틴의
+                            특성상 확보하기 매우 어려운 크리티컬 데미지%의 효율이 낮은 대신, 아이템이나 어빌리티, 하이퍼 스탯 등으로 쉽게 확보할 수 있는 데미지%와 보스 데미지%의 효율이
+                            굉장히 높다.
+                            <br><br>
+                            <strong>우수한 생존 유틸리티</strong><br>
+                            캡틴은 윙즈의 독보적인 윗점 성능과 활공기능, 백스탭샷의 미세한 기동능력, 파이렛 리프의 긴 점프거리를 가지고 있어 기동성이 우수하고 이를 바탕으로 수월한 패턴
+                            대응이 가능하다. 여기에 퍼실레이드의 슈퍼 스탠스와 30초쿨의 무적기 데드아이, 급속회복 언위어링 넥타에 극딜기 노틸러스 어썰트에도 무적이 있어 생존 유틸리티도
+                            상당히 우수하다. 심지어 상태이상을 최대 두 번까지 방어할 수 있는 스킬 서먼 크루도 있는데, 일반적인 상태 이상 방어기보다 막을 수 있는 패턴이 더 많고 가동률
+                            측면에서도 독자적인 장점을 갖추고 있는 등 굉장히 우수한 성능을 자랑한다. 덕분에 캡틴의 생존력은 매우 뛰어난 편에 속한다.
+                            <br><br>
+                            <strong>주력기의 낮은 원킬컷</strong><br>
+                            캡틴의 주력 사냥기인 퍼실레이드는 퍼뎀이 2596%로, 모든 모험가 직업군의 주력 사냥기 중 원킬컷이 제일 낮다. 모든 직업군들과 비교해봐도 웬만한 스킬들은 명함도
+                            내밀지 못하는 수준의 높은 데미지 기대값을 가진다. 캡틴의 퍼실레이드와 비교할만한 원킬컷을 가진 스킬은 키네시스의 얼티메이트 - 싸이킥 불릿, 스트라이커의 벽력,
+                            엔젤릭버스터의 프라이멀 로어 정도이다. 팬텀이 훔쳐갈 경우 원킬컷이 매우 낮아지고, 템셋팅에 대한 부담이 덜해져 종종 훔쳐갈 정도로 딜량 기대값 하나만큼은 정말 높은
+                            주력기이다.
+                        </p>
+                        <br>
+                        <br>
+                        <h1 id="title">단점</h1>
+                        <p>
+                            <strong>매우 어려운 코어 강화 난이도와 부족한 코어 슬롯</strong><br>
+                            캡틴이 당면한 가장 큰 문제점. V 매트릭스의 혜택을 전혀 받지 못해서 타 직업보다 상대적인 열위가 두드러진다. 캡틴의 코어 강화 난도는 종합적으로 2위로 평가된다.
+                            퍼뎀 붙은 스킬은 모조리 강화대상인데, 코어 통합이 되지않아 요구 코어 젬스톤의 양은 5위이다. 또한 질보다 양인 캡틴 스킬 특성상 5차 스킬과 강화코어만으로도 코어
+                            슬롯을 엄청 잡아먹는데다 바인드를 비롯한 여러가지 공용 스킬들도 성능 향상에 적지 않은 영향을 미치므로 이까지 고려하면 슬롯이 부족한 레벨대에는 몇몇 코어는
+                            장착하지도 못한다. 그나마 강화 코어는 캡틴 디그니티와 래피드 파이어, 헤드 샷 정도면 반 이상은 먹고 들어가니 급하다면 이 정도로 충분하다.
+                            <br><br>
+                            <strong>스킬 범위 문제</strong><br>
+                            일반적인 게임의 총잡이 캐릭터를 생각하면 안된다. 대인 주력기인 래피드 파이어 또한 하이퍼 스킬로 사거리를 필수적으로 늘리지 않으면 보스의 근거리 공격에 쉽게 노출될
+                            가능성이 있다. 핸드캐논을 사용하는 캐논슈터나 석궁을 쓰는 신궁은 처참한 Y축 범위 대신 긴 X축을 가졌으나, 캡틴의 스킬은 Y축과 X축 모두 애매하다. 광역기
+                            스킬들도 불릿 파티나 데드아이를 제외하면 범위가 괴상하게 설정되어 있어 사냥에서 불편한 점이 많다. 전함 노틸러스는 위쪽 범위보다 아래쪽 범위가 더 넓고, 스트레인지
+                            봄과 노틸러스 어썰트의 몸체공격은 아래쪽 몬스터를 전혀 때릴 수 없으며, 데스 트리거는 아래에서 위로 전이되려는 경향이 강하여 광역기마다 최적의 시전 장소가 모두
+                            다르다.
+                            <br><br>
+                            <strong>(세르니움 이후) 낮은 사냥 한계치</strong><br>
+                            소환수가 필드의 각 부분을 관리하는 식의 사냥이다 보니, 원킬컷이 기하급수적으로 높아지는 세르니움부터는 퍼실레이드와 각종 광범위 공격기로 버텨야 한다. 그러나
+                            가짓수만 많았지, 하나같이 범위와 재사용 대기시간 보정이 부족하기 때문에 효율은 차치하더라도 사냥 피로도가 높아진다.
+                        </p>
+                        <br>
+                        <br>
+                        <h1 id="title">사냥 운용</h1>
+                        <p>
+                            주력 다수 공격기인 퍼실레이드의 원킬컷은 낮다. 하지만 그것만으로는 필드를 다 휘어잡을 수 없는 만큼, 소환수의 원킬컷을 맞춰 필드 점유율을 높이는 것이 가장 큰
+                            과제다. 따라서 설치형 소환수인 시즈 봄버와 배틀쉽 봄버의 운용이 중요하다. 또한 중간중간 전함 노틸러스와 스트레인지 봄, 5차 스킬인 불릿 파티나 데드아이 등으로
+                            필드를 정리해야 하니 보스전만큼은 아니지만 손이 바쁜 직업이라고 할 수 있다. 그래도 준 광역기 스킬들이 다수 포진되어 있어서 사냥 난이도는 그렇게 어렵지 않다.
+                        </p>
+                        <br>
+                        <br>
+                        <h1 id="title">보스전 운용</h1>
+                        <p>
+                            <strong>평딜</strong><br>
+                            캡틴 평딜의 주축은 래피드 파이어, 헤드 샷, 각종 소환수와 5차 스킬들이다. 그 중에서도 본체의 평딜은 컨티뉴얼 에이밍의 디버프가 적용된 보스를 대상으로 래피드
+                            파이어+헤드 샷/스트레인지 봄/데스 트리거/데드아이 정도로 압축된다. 평상시에는 헤드 샷을, 잡몹 처리에는 스트레인지 봄이나 데스 트리거를 쓴다. 데드아이는 무적
+                            때문에 아껴 써야 하지만, 조건만 맞으면 단일 대상 누킹에 주로 쓰인다.
+                            소환수는 서먼 크루, 시즈 봄버, 배틀쉽 봄버 2기가 있다. 서먼 크루는 소환수 자체 화력보다는 상태 이상 방어나 소환되었을 때의 추가 능력치에 초점을 두고, 시즈
+                            봄버와 배틀쉽 봄버는 각각 회전포대와 고정포대로서 기능한다.
+                            <br><br>
+                            <strong>극딜</strong><br>
+                            컨티뉴얼 에이밍 디버프가 적용된 적을 대상으로, 노틸러스 어썰트와 데스 트리거를 쏟아부으면 된다. 이에 추가적으로 헤드 샷의 대폭 상향으로 바인드 극딜의 시작과 끝에
+                            헤드 샷을 우겨넣는것이 중요해졌다. 물론 그 이전에 소환수나 퀵 드로우 여부는 물론이고, 에픽 어드벤처, 파이렛 플래그, 시드링, 메이플월드 여신의 축복, 소울
+                            컨트랙트(엔버 링크), 오버 드라이브, 언위어링 넥타 등 각종 버프 스킬이 다 걸려 있는지도 확인해야 한다. 소환수를 미리 준비해두기만 하였다면 적은 편인 극딜
+                            버프수와 후딜레이, 노틸러스 어썰트의 무적기로 인해 극딜 안전성은 높은 편. 만약 파티 레이드라면 대중적인 주기이자 비숍 스킬인 프레이에 맞춘 180 주기에 맞춰
+                            사용하기 용이하다.
+                        </p>
+                        <br>
+                        <br>
+                        <h1 id="title">어빌리티</h1>
+                        <p>
+                            <strong>보스 몬스터 공격 시 데미지 증가</strong><br>
+                            통칭 보공. 모든 직업에게 무난한 어빌리티라, 캡틴이라고 예외는 아니다. 오히려 캡틴은 기본 보총뎀이 상시 15%에 불과해서 효율이 좋다.
+                            <br><br>
+                            <strong>재사용 대기시간 미적용</strong><br>
+                            통칭 쿨무시 혹은 쿨초기화. 보스전 주력기인 헤드 샷의 비중을 늘리기 위해 채택한다. 보총합 수치가 4~500%대로 너무 높아서 보공의 효율이 떨어지는 고스펙이라면
+                            상술한 보공 20%를 2~3번째로 내리거나, 아예 빼고서라도 쓸 여지가 생긴다. 이때 헤드 샷을 연속으로 쓰느라 퀵 드로우의 발동 확률이 현저히 낮아지는 현상이
+                            발생하지만, 운이 좋으면 4~5연속으로도 헤드 샷을 박을 수 있다. 즉 신경쓰일 정도로 큰 손해는 아니다.
+                            <br><br>
+                            <strong>상태 이상에 걸린 적 공격 시 데미지 증가</strong><br>
+                            통칭 상추뎀. 컨티뉴얼 에이밍이 디버프 스킬로 판정된다. 그래서 일반적으로는 추가 보공으로 취급된다.
+                            <br><br>
+                            <strong>메소/아이템 획득 확률 증가</strong><br>
+                            통칭 메획/아획. 광부용 어빌리티.
+                            <br><br>
+                            <strong>공격력 증가</strong><br>
+                            상술한 어빌리티 중 아무 것도 맞추지 못했다면 잠시 쓸 만하다. 물론 다른 어빌리티에 비해 효율은 현저히 떨어지므로, 어디까지나 잠시 쓰고 버리는 정도다.
+                        </p>
+                        <br>
+                        <br>
+                        <h1 id="title">코어강화</h1>
+                        <p>
+                            <strong>사냥용</strong><br>
+                            퍼실레이드, 전함 노틸러스, 스트레인지 봄
+                            <br><br>
+                            <strong>보스용</strong><br>
+                            헤드 샷, 래피드 파이어, 캡틴 디그니티
+                            <br><br>
+                            <strong>소환수</strong><br>
+                            배틀쉽 봄버, 서먼 크루, 시즈 봄버
+                        </p>
+                    </div>
+                </article>
+            </section>
+
+            <!-- 본문 우측 영역 -->
+            <aside id="main-aside">
+                <div class="aside-list">
+                    <h3>모험가</h3>
+                    <ul>
+                        <li><a href="히어로.html">히어로</a></li>
+                        <li><a href="팔라딘.html">팔라딘</a></li>
+                        <li><a href="다크나이트.html">다크나이트</a></li>
+                        <li><a href="아크메이지(불,독).html">아크메이지(불,독)</a></li>
+                        <li><a href="아크메이지(썬,콜).html">아크메이지(썬,콜)</a></li>
+                        <li><a href="비숍.html">비숍</a></li>
+                        <li><a href="보우마스터.html">보우마스터</a></li>
+                        <li><a href="신궁.html">신궁</a></li>
+                        <li><a href="패스파인더.html">패스파인더</a></li>
+                        <li><a href="나이트로드.html">나이트로드</a></li>
+                        <li><a href="섀도어.html">섀도어</a></li>
+                        <li><a href="듀얼블레이드.html">듀얼블레이드</a></li>
+                        <li><a href="바이퍼.html">바이퍼</a></li>
+                        <li><a href="캡틴.html">캡틴</a></li>
+                        <li><a href="캐논슈터.html">캐논슈터</a></li>
+                    </ul>
+                </div>
+            </aside>
+        </div>
+    </div>
+    <!-- 푸터 -->
+    <footer id="main-footer">
+        <span>ⓒ These photographs and fonts are protected by NEXON Korea Corporation with all rights reserved.</span>
+    </footer>
+</body>
+
+</html>

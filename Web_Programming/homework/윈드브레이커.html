@@ -1,0 +1,282 @@
+<!-- data source https://namu.wiki/w/%EB%B3%B4%EC%9A%B0%EB%A7%88%EC%8A%A4%ED%84%B0 -->
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>윈드브레이커 공략</title>
+    <link rel="stylesheet" href="Style.css"> <!-- 외부 스타일 시트 -->
+    <script src="https://code.jquery.com/jquery-3.7.0.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('.outer-menu-item').hover(function () {
+                $(this).find('.inner-menu').stop().slideDown();
+            }, function () {
+                $(this).find('.inner-menu').stop().slideUp();
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <!-- 전체를 감싸는 테그 -->
+    <div id="page-wrapper">
+        <!-- 헤더 -->
+        <header id="main-header">
+            <hgroup>
+                <h1 class="master-title"><a href="main.html"><img src="image/로고.png" alt="메이플스토리"></a>
+                </h1>
+                <h2 class="master-description"><a href="main.html">직업별 공략</a></h2>
+            </hgroup>
+        </header>
+        <!-- 네비게이션 -->
+        <nav id="main-navigation">
+            <div class="pull-left">
+                <ul class="outer-menu">
+
+                    <li class="outer-menu-item">
+                        <span class="menu-title">모험가</span>
+                        <ul class="inner-menu">
+                            <li class="inner-menu-item"><a href="히어로.html">히어로</a></li>
+                            <li class="inner-menu-item"><a href="팔라딘.html">팔라딘</a></li>
+                            <li class="inner-menu-item"><a href="다크나이트.html">다크나이트</a></li>
+                            <li class="inner-menu-item"><a href="아크메이지(불,독).html">아크메이지(불,독)</a></li>
+                            <li class="inner-menu-item"><a href="아크메이지(썬,콜).html">아크메이지(썬,콜)</a></li>
+                            <li class="inner-menu-item"><a href="비숍.html">비숍</a></li>
+                            <li class="inner-menu-item"><a href="보우마스터.html">보우마스터</a></li>
+                            <li class="inner-menu-item"><a href="신궁.html">신궁</a></li>
+                            <li class="inner-menu-item"><a href="패스파인더.html">패스파인더</a></li>
+                            <li class="inner-menu-item"><a href="나이트로드.html">나이트로드</a></li>
+                            <li class="inner-menu-item"><a href="섀도어.html">섀도어</a></li>
+                            <li class="inner-menu-item"><a href="듀얼블레이드.html">듀얼블레이드</a></li>
+                            <li class="inner-menu-item"><a href="바이퍼.html">바이퍼</a></li>
+                            <li class="inner-menu-item"><a href="캡틴.html">캡틴</a></li>
+                            <li class="inner-menu-item"><a href="캐논슈터.html">캐논슈터</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="outer-menu-item">
+                        <span class="menu-title">시그너스 기사단</span>
+                        <ul class="inner-menu">
+                            <li class="inner-menu-item"><a href="소울마스터.html">소울마스터</a></li>
+                            <li class="inner-menu-item"><a href="미하일.html">미하일</a></li>
+                            <li class="inner-menu-item"><a href="플레임위자드.html">플레임위자드</a></li>
+                            <li class="inner-menu-item"><a href="윈드브레이커.html">윈드브레이커</a></li>
+                            <li class="inner-menu-item"><a href="나이트워커.html">나이트워커</a></li>
+                            <li class="inner-menu-item"><a href="스트라이커.html">스트라이커</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="outer-menu-item">
+                        <span class="menu-title">영웅</span>
+                        <ul class="inner-menu">
+                            <li class="inner-menu-item"><a href="아란.html">아란</a></li>
+                            <li class="inner-menu-item"><a href="에반.html">에반</a></li>
+                            <li class="inner-menu-item"><a href="루미너스.html">루미너스</a></li>
+                            <li class="inner-menu-item"><a href="메르세데스.html">메르세데스</a></li>
+                            <li class="inner-menu-item"><a href="팬텀.html">팬텀</a></li>
+                            <li class="inner-menu-item"><a href="은월.html">은월</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="outer-menu-item">
+                        <span class="menu-title">레지스탕스</span>
+                        <ul class="inner-menu">
+                            <li class="inner-menu-item"><a href="블레스터.html">블레스터</a></li>
+                            <li class="inner-menu-item"><a href="베틀메이지.html">베틀메이지</a></li>
+                            <li class="inner-menu-item"><a href="와일드헌터.html">와일드헌터</a></li>
+                            <li class="inner-menu-item"><a href="매카닉.html">매카닉</a></li>
+                            <li class="inner-menu-item"><a href="제논.html">제논</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="outer-menu-item">
+                        <span class="menu-title">데몬</span>
+                        <ul class="inner-menu">
+                            <li class="inner-menu-item"><a href="데몬슬레이어.html">데몬슬레이어</a></li>
+                            <li class="inner-menu-item"><a href="데몬어벤져.html">데몬어벤져</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="outer-menu-item">
+                        <span class="menu-title">노바</span>
+                        <ul class="inner-menu">
+                            <li class="inner-menu-item"><a href="카이저.html">카이저</a></li>
+                            <li class="inner-menu-item"><a href="카인.html">카인</a></li>
+                            <li class="inner-menu-item"><a href="카데나.html">카데나</a></li>
+                            <li class="inner-menu-item"><a href="엔젤릭버스터.html">엔젤릭버스터</a></li>
+                        </ul>
+                    </li>
+                    <li class="outer-menu-item">
+                        <span class="menu-title">레프</span>
+                        <ul class="inner-menu">
+                            <li class="inner-menu-item"><a href="아델.html">아델</a></li>
+                            <li class="inner-menu-item"><a href="일리움.html">일리움</a></li>
+                            <li class="inner-menu-item"><a href="칼리.html">칼리</a></li>
+                            <li class="inner-menu-item"><a href="아크.html">아크</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="outer-menu-item">
+                        <span class="menu-title">아니마</span>
+                        <ul class="inner-menu">
+                            <li class="inner-menu-item"><a href="라라.html">라라</a></li>
+                            <li class="inner-menu-item"><a href="호영.html">호영</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="outer-menu-item">
+                        <span class="menu-title">초월자</span>
+                        <ul class="inner-menu">
+                            <li class="inner-menu-item"><a href="제로.html">제로</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="outer-menu-item">
+                        <span class="menu-title">키네시스</span>
+                        <ul class="inner-menu">
+                            <li class="inner-menu-item"><a href="키네시스.html">키네시스</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <!-- 본문 -->
+        <div id="content">
+            <!-- 본문 좌측 영역 -->
+            <section id="main-section">
+                <article>
+                    <div class="article-header">
+                        <h1 class="article-title">윈드브레이커(Wind Breaker)</h1>
+                    </div>
+                    <div class="article-body">
+                        <img id="c_image" src="image/윈드브레이커.webp" alt="윈드브레이커">
+                        <h1 id="title">장점</h1>
+                        <p>
+                            <strong>뛰어난 생존력과 공격 효율</strong><br>
+                            상위 보스에서 많은 데미지를 막아주는 5차 스킬 '윈드월'은 가동률 높은 유사 무적기로 활용할 수 있고, 고성능 어그로기인 에메랄드 플라워를 가지고 있어 솔로 플레이
+                            시 웬만한 상위 보스들은 바보로 만들어버릴 수 있다. 돌진기인 윈드워크는 선딜이 거의 없고 후딜도 적당해서 보스 패턴을 쉽게 회피할 수 있고, 윗점과 병행하면
+                            유사체공도 가능하다. 보스에서 유용한 다양한 유틸들 덕분에 생존 및 패턴에 대한 유연한 대처가 가능하며 어그로기의 성능이 상당히 좋기 때문에 생존력 뿐만 아니라
+                            비교적 안정적인 딜이 가능하다. 또한 주력 보스전 기술이 속사기라서 후딜 문제로부터 상당히 자유로운 편이고 생존력을 높여준다. 즉, 윈드브레이커는 보스 패턴에 죽을
+                            위험이 적고 그로 인해 꾸준히 화력을 욱여넣는 능력이 좋다.
+                            <br><br>
+                            <strong>유연하고 준수한 기동성</strong><br>
+                            윈드브레이커의 윈드워크는 모험가 마법사나 카이저, 은월, 아크, 패스파인더, 소울마스터보다 빠르다. 게다가 딜레이도 매우 짧아서 공중사용 및 공격 도중 마법사의
+                            텔샷처럼 빠르게 회피하는 것도 가능하다. 타 더블 점프 직업군이 공격 도중 경직 때문에 피하지 못하고 죽는 걸 생각하면 윈드워크는 즉발사용 가능하다는 점에서 더없이
+                            훌륭한 회피기이다. 보스전 성능을 떼어두고 보아도 윈드브레이커는 부드럽게 나아가서 손꼽히는 윗점, 더블점프가 있다는 점에서 기동성으로도 고평가받는다. 텔샷이 가능한
+                            법사 직업군 대다수가 기동성에서 답답하다고 혹평을 받지만 윈브는 기동성, 회피성 둘 다 잡은 셈이다.
+                            <br><br>
+                            <strong>피로도 낮은 뛰어난 사냥 성능</strong><br>
+                            윔 원킬이 어려운데다가 사출기 치고는 속도도 느리지만 윈드브레이커의 사냥 성능은 확실히 상위권이다. 윈드브레이커의 사냥 능력은 기본적으로 5차 스킬들의 뛰어난 맵
+                            장악력에서 나온다. 주력 스킬인 하울링 게일과 볼텍스 스피어의 사용 주기가 짧고 가동 범위가 뛰어나서 준수한 사냥 성능이 보장된다. 이 덕분에 윈드브레이커는 좁은
+                            맵에서 제자리나 뇌빼기 사냥이 간단한 편이다.
+                            또한 윈드브레이커는 윈드 월, 팔랑크스, 아이들 윔, 몬순 등 넓은 범위를 커버할 수 있는 액티브 스킬을 다수 보유하고 있다. 따라서 다소의 피로도를 감수하고 이들을
+                            적재적소에 활용하는 빌드를 짠다면 넓은 맵에서의 사냥 한계치 또한 매우 높다. 한마디로 저점과 고점 모두 뛰어나 어느 쪽을 택하든 좋은 효율로 사냥할 수 있는
+                            직업이라고 볼 수 있다.
+                        </p>
+                        <br>
+                        <br>
+                        <h1 id="title">단점</h1>
+                        <p>
+                            <strong>무적기의 부재</strong><br>
+                            윈드 월은 무적기가 아니라, 받는 피해를 상쇄하는 스킬이다. 즉 피격 판정을 완전하게 없애야 대처할 수 있는 패턴에는 무용지물이다. 또한 윈드 월은 윈드브레이커와
+                            상성이 좋은 시드링인 '리스크테이커 링'과 한 세트로 운영되어야 해서, 피해 상쇄 기능을 가졌지만 해당 시드링 사용이 불가피하다면 윈드 월을 쓰기 어렵다. 그래서
+                            시드링과의 시너지를 위해 데스 카운트를 소모하거나, HP 관리 리스크를 감수해야 한다.
+                            <br><br>
+                            <strong>상당한 스킬 코어 강화 비용</strong><br>
+                            윈드브레이커의 총 강화 코어는 10개이며 그 중에서 트라이플링 윔, 페어리 턴, 천공의 노래, 스톰 브링어 4개를 강화한다. 이는 다른 직업에 비해 비교적 적은
+                            개수이기에 강화 코어의 난이도는 어렵지 않다. 그러나 스킬 코어에서 문제가 생기는데, 타 직업은 스킬 코어를 강화하지 않은 채 1레벨로 사용하더라도 크게 지장이 없는
+                            스킬이 많은 반면 윈드브레이커의 경우 마스터하거나 스킬 레벨을 상당히 높게 유지해야 하는 5차 스킬의 종류가 다양하다. 그래서 단순히 강화 코어 개수 측면에서만
+                            바라본다면 코어 강화가 쉬워 보이지만, 스킬 코어로 인해 실제 들어가는 코어 젬스톤 숫자는 상당히 많다. DPM표 제작자의 분석글에 따르면, 윈브의 요구 코어 젬스톤
+                            양은 1위이며, 종합적인 코어 강화 난이도도 보기보다 어렵다.
+                            <br><br>
+                            <strong>(저사양 PC 한정) 독립 오브젝트로 인한 프레임 드롭 현상</strong><br>
+                            윈브 화력의 핵심은 직접 공격이 아닌 별도 사출되는 투사체에 있다. 그런데 직접 공격도, 트라이플링 윔도, 스톰 브링어도, 스톰 윔도 모두 투사체다. 즉 모든 공격이
+                            독립 오브젝트인데, RAM 용량이 16GB 미만이라서 64비트 클라이언트를 사용할 수 없는 저사양 PC에서는 프레임 드롭(=랙)이 발생할 수 있다. 특히 탄막 뿌리는
+                            나비나 골렘 등 독립 오브젝트 패턴을 문자 그대로 쏟아내는(...) 루시드 같은 보스에서는 처리 과정이 지연되어 위험해질 수 있다.
+                        </p>
+                        <br>
+                        <br>
+                        <h1 id="title">사냥 운용</h1>
+                        <p>
+                            페어리 턴을 사냥 주력기로 사용하고 각종 광역기와 설치기 등으로 사출기를 발생시키며 사냥하는 것이 일반적이다. 5차 이전에는 페어리 턴으로 몹을 긁으며 몬순을
+                            주기마다 사용하는 것이 전부지만 5차 전직을 기점으로 사냥 능력이 꽤나 좋아지는데, 이는 5차 스킬 중에서 사냥에 유용한 스킬이 많기 때문이다. 보통 5차 스킬인
+                            아이들 윔으로 주변 몹을 정리하고, 트라이플링 윔의 사출을 위해 5차 스킬 하울링 게일, 볼텍스 스피어, 시그너스 팔랑크스 등의 스킬을 사용하며 사냥한다.
+                            <br><br>
+                            한편으로는 트라이플링 윔이 사출기임을 고려해도 고스펙 유저들에게 미묘하게 외면받는 경향이 있는데, 실제로도 인식상의 주목도가 크게 뒤떨어진다. 나로의 마크 원킬이나
+                            섀도어의 메익 원킬, 나워의 배트 원킬, 엔버의 시커 엑스퍼트 원킬은 자주 회자되어도 유독 윔 원킬만은 언급되는 빈도가 뜸하다. 이는 윔 자체의 한계와 관련이 있다.
+                            윔은 사출기임에도 불구하고 마크처럼 투사체 속도가 빠른 것도 아니고, 메익처럼 인식범위가 넓은 것도 아니며, 배트처럼 튕기지도 못하는데 시커처럼 재생성과 개별사출
+                            또한 불가능한데다 오랜 시간 체공도 불가능해서 증발하기 일쑤다. 그래도 명색이 사출기라, 없는 것보다야 낫다는 게 결론이다.
+                        </p>
+                        <br>
+                        <br>
+                        <h1 id="title">보스전 운용</h1>
+                        <p>
+                            천공의 노래를 주력으로 사용하면서 하울링 게일과 아이들 윔, 시그너스 팔랑크스, 볼텍스 스피어 등의 스킬을 재사용 대기시간이 돌 때마다 사용해주면 된다. 천공의
+                            노래는 속사기인데도 다수를 공격할 수 있으므로 잡몹 소환 패턴에 비교적 쉽게 대처할 수 있으며, 여차하면 게일이나 아이들 윔으로 대충 정리해버리면 그만이다.
+                            <br><br>
+                            윈드브레이커는 딱히 극딜기라고 부를 만한 스킬이 없다. 그래서 크리티컬 리인포스, 시그너스 초월자의 축복이 사실상 극딜기다. 이로써 극딜 주기는 120초가 된다.
+                            입장 극딜에는 초월자 시그너스의 축복+크리티컬 리인포스+소울 컨트랙트를 켜고 3스택의 하울링 게일과 볼텍스 스피어, 아이들 윔, 시그너스 팔랑크스를 써주면 된다.
+                            시드링을 사용하는 유저라면 다른 120초 극딜 직업군들처럼 2개를 구비해서 120초 단위로 스위칭해서 사용하거나, 아예 리스크테이커, 웨폰퍼프, 리스트레인트 링 을
+                            60초 주기로 스위칭 하면서 매 시드링마다 준극딜을 넣는 방식으로 시드링 3개를 전부 활용할 수도 있다. 이 때 하울링 게일은 매 시드링, 극딜버프에 맞춰서 2스택을
+                            모으거나 시드링 쿨이 얼마 남지 않았을 때는 게일 스택에 영향이 가지 않는 선에서 1스택 사용 타이밍을 최대한 미루는 식으로 최대한 많은 게일이 시드링, 극딜 버프의
+                            효과를 받게 하면 좋다.
+                            <br><br>
+                            외형부터 활을 든 것이 원거리 공격군인 것처럼 보이고 실제로도 원거리 공격을 할 수는 있으나 보스전에서는 근거리 공격군인 것마냥 운용하게 되는 경우가 많은데,
+                            트라이플링 윔이 최대 사출 개수에 제한이 있는 주제에 날아가는 속도가 빠른 것도 아니라서 멀리서 때리고 있으면 최대 사출 개수 제한에 걸려 딜로스가 발생하기
+                            때문이다. 윈드 워크나 윈드 월 등으로 위험한 패턴을 피할 수는 있지만 태생이 궁수라 맷집이 약한 건 어쩔 수 없어서, 아케인 리버 미만 엘리트 보스나 시그너스처럼
+                            몸박이 있는 보스 상대로 많이 취약한 편이다.
+                        </p>
+                        <br>
+                        <br>
+                        <h1 id="title">어빌리티</h1>
+                        <p>
+                            <strong>보스 몬스터 공격 시 데미지 증가</strong><br>
+                            전직업을 통틀어 가장 무난한 선택지. 최대 20%까지 추가 보공이 주어진다.
+                            <br><br>
+                            <strong>크리티컬 확률 증가</strong><br>
+                                크리티컬 리인포스 사용시 크리티컬 데미지 추가로 증가하는 것을 고려한 것이다.
+                                <br><br>
+                                <strong>상태이상에 걸린 적 공격시 데미지 증가</strong><br>
+                                패치 이후 아무 상태이상에나 적용되게 바뀌어서 핀포인트 피어스나 몬순, 아이들 윔의 도트 데미지, 모험가 법사 링크 스킬에도 적용된다.
+                                <br><br>
+                                <strong>아이템 드롭율 증가, 메소 획득량 증가</strong><br>
+                                육성 시에 도움이 된다. 아이템 드롭율 증가, 메소 획득량 증가 등을 뽑아 사용하다가 이후에 크확+상추뎀으로 바꿔주어도 된다.
+                        </p>
+                        <br>
+                        <br>
+                        <h1 id="title">코어강화</h1>
+                        <p>
+                            <strong>필수</strong><br>
+                            천공의 노래, 트라이플링 윔/스톰 윔, 스톰 브링어, 페어리 턴
+                            <br><br>
+                            <strong>선택</strong><br>
+                            몬순
+                        </p>
+                    </div>
+                </article>
+            </section>
+
+            <!-- 본문 우측 영역 -->
+            <aside id="main-aside">
+                <div class="aside-list">
+                    <h3>시그너스 기사단</h3>
+                    <ul>
+                        <li><a href="소울마스터.html">소울마스터</a></li>
+                        <li><a href="미하일.html">미하일</a></li>
+                        <li><a href="플레임위자드.html">플레임위자드</a></li>
+                        <li><a href="윈드브레이커.html">윈드브레이커</a></li>
+                        <li><a href="나이트워커.html">나이트워커</a></li>
+                        <li><a href="스트라이커.html">스트라이커</a></li>
+                    </ul>
+                </div>
+            </aside>
+        </div>
+    </div>
+    <!-- 푸터 -->
+    <footer id="main-footer">
+        <span>ⓒ These photographs and fonts are protected by NEXON Korea Corporation with all rights reserved.</span>
+    </footer>
+</body>
+
+</html>

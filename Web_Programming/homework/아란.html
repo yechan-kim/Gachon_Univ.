@@ -1,0 +1,352 @@
+<!-- data source https://namu.wiki/w/%EB%B3%B4%EC%9A%B0%EB%A7%88%EC%8A%A4%ED%84%B0 -->
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>아란 공략</title>
+    <link rel="stylesheet" href="Style.css"> <!-- 외부 스타일 시트 -->
+    <script src="https://code.jquery.com/jquery-3.7.0.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('.outer-menu-item').hover(function () {
+                $(this).find('.inner-menu').stop().slideDown();
+            }, function () {
+                $(this).find('.inner-menu').stop().slideUp();
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <!-- 전체를 감싸는 테그 -->
+    <div id="page-wrapper">
+        <!-- 헤더 -->
+        <header id="main-header">
+            <hgroup>
+                <h1 class="master-title"><a href="main.html"><img src="image/로고.png" alt="메이플스토리"></a>
+                </h1>
+                <h2 class="master-description"><a href="main.html">직업별 공략</a></h2>
+            </hgroup>
+        </header>
+        <!-- 네비게이션 -->
+        <nav id="main-navigation">
+            <div class="pull-left">
+                <ul class="outer-menu">
+
+                    <li class="outer-menu-item">
+                        <span class="menu-title">모험가</span>
+                        <ul class="inner-menu">
+                            <li class="inner-menu-item"><a href="히어로.html">히어로</a></li>
+                            <li class="inner-menu-item"><a href="팔라딘.html">팔라딘</a></li>
+                            <li class="inner-menu-item"><a href="다크나이트.html">다크나이트</a></li>
+                            <li class="inner-menu-item"><a href="아크메이지(불,독).html">아크메이지(불,독)</a></li>
+                            <li class="inner-menu-item"><a href="아크메이지(썬,콜).html">아크메이지(썬,콜)</a></li>
+                            <li class="inner-menu-item"><a href="비숍.html">비숍</a></li>
+                            <li class="inner-menu-item"><a href="보우마스터.html">보우마스터</a></li>
+                            <li class="inner-menu-item"><a href="신궁.html">신궁</a></li>
+                            <li class="inner-menu-item"><a href="패스파인더.html">패스파인더</a></li>
+                            <li class="inner-menu-item"><a href="나이트로드.html">나이트로드</a></li>
+                            <li class="inner-menu-item"><a href="섀도어.html">섀도어</a></li>
+                            <li class="inner-menu-item"><a href="듀얼블레이드.html">듀얼블레이드</a></li>
+                            <li class="inner-menu-item"><a href="바이퍼.html">바이퍼</a></li>
+                            <li class="inner-menu-item"><a href="캡틴.html">캡틴</a></li>
+                            <li class="inner-menu-item"><a href="캐논슈터.html">캐논슈터</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="outer-menu-item">
+                        <span class="menu-title">시그너스 기사단</span>
+                        <ul class="inner-menu">
+                            <li class="inner-menu-item"><a href="소울마스터.html">소울마스터</a></li>
+                            <li class="inner-menu-item"><a href="미하일.html">미하일</a></li>
+                            <li class="inner-menu-item"><a href="플레임위자드.html">플레임위자드</a></li>
+                            <li class="inner-menu-item"><a href="윈드브레이커.html">윈드브레이커</a></li>
+                            <li class="inner-menu-item"><a href="나이트워커.html">나이트워커</a></li>
+                            <li class="inner-menu-item"><a href="스트라이커.html">스트라이커</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="outer-menu-item">
+                        <span class="menu-title">영웅</span>
+                        <ul class="inner-menu">
+                            <li class="inner-menu-item"><a href="아란.html">아란</a></li>
+                            <li class="inner-menu-item"><a href="에반.html">에반</a></li>
+                            <li class="inner-menu-item"><a href="루미너스.html">루미너스</a></li>
+                            <li class="inner-menu-item"><a href="메르세데스.html">메르세데스</a></li>
+                            <li class="inner-menu-item"><a href="팬텀.html">팬텀</a></li>
+                            <li class="inner-menu-item"><a href="은월.html">은월</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="outer-menu-item">
+                        <span class="menu-title">레지스탕스</span>
+                        <ul class="inner-menu">
+                            <li class="inner-menu-item"><a href="블레스터.html">블레스터</a></li>
+                            <li class="inner-menu-item"><a href="베틀메이지.html">베틀메이지</a></li>
+                            <li class="inner-menu-item"><a href="와일드헌터.html">와일드헌터</a></li>
+                            <li class="inner-menu-item"><a href="매카닉.html">매카닉</a></li>
+                            <li class="inner-menu-item"><a href="제논.html">제논</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="outer-menu-item">
+                        <span class="menu-title">데몬</span>
+                        <ul class="inner-menu">
+                            <li class="inner-menu-item"><a href="데몬슬레이어.html">데몬슬레이어</a></li>
+                            <li class="inner-menu-item"><a href="데몬어벤져.html">데몬어벤져</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="outer-menu-item">
+                        <span class="menu-title">노바</span>
+                        <ul class="inner-menu">
+                            <li class="inner-menu-item"><a href="카이저.html">카이저</a></li>
+                            <li class="inner-menu-item"><a href="카인.html">카인</a></li>
+                            <li class="inner-menu-item"><a href="카데나.html">카데나</a></li>
+                            <li class="inner-menu-item"><a href="엔젤릭버스터.html">엔젤릭버스터</a></li>
+                        </ul>
+                    </li>
+                    <li class="outer-menu-item">
+                        <span class="menu-title">레프</span>
+                        <ul class="inner-menu">
+                            <li class="inner-menu-item"><a href="아델.html">아델</a></li>
+                            <li class="inner-menu-item"><a href="일리움.html">일리움</a></li>
+                            <li class="inner-menu-item"><a href="칼리.html">칼리</a></li>
+                            <li class="inner-menu-item"><a href="아크.html">아크</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="outer-menu-item">
+                        <span class="menu-title">아니마</span>
+                        <ul class="inner-menu">
+                            <li class="inner-menu-item"><a href="라라.html">라라</a></li>
+                            <li class="inner-menu-item"><a href="호영.html">호영</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="outer-menu-item">
+                        <span class="menu-title">초월자</span>
+                        <ul class="inner-menu">
+                            <li class="inner-menu-item"><a href="제로.html">제로</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="outer-menu-item">
+                        <span class="menu-title">키네시스</span>
+                        <ul class="inner-menu">
+                            <li class="inner-menu-item"><a href="키네시스.html">키네시스</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <!-- 본문 -->
+        <div id="content">
+            <!-- 본문 좌측 영역 -->
+            <section id="main-section">
+                <article>
+                    <div class="article-header">
+                        <h1 class="article-title">아란(Aran)</h1>
+                    </div>
+                    <div class="article-body">
+                        <img id="c_image" src="image/아란.webp" alt="아란">
+                        <h1 id="title">장점</h1>
+                        <p>
+                            <strong>뛰어난 기본 스펙에 기반한 쉬운 육성 난이도</strong><br>
+                            자체 최고 공속에 기본 방무 및 크리티컬 확률 수치도 높고, 스킬마다 퍼뎀도 적절히 분배되어 있다. 그래서 수치상으로만 보면 모자란 부분이 없고, 1 ~ 4차 구간을
+                            넘어가기에 용이하다.
+                            <br><br>
+                            <strong>단순한 조작법</strong><br>
+                            대부분의 공격 스킬마다 커맨드가 존재하지만, 대전액션게임에서에서 쓰는 것들 중에서도 대중적이고 기초적인 것들만 가져왔기 때문에 익히기에 어렵지 않다. 게다가 입력
+                            타이밍이 느슨해서 칼같이 타이밍을 지키지 않아도 어지간한 스킬은 다 발동된다.
+                            <br><br>
+                            <strong>여유 있는 키세팅</strong><br>
+                            커맨드 사용이라는 조작법과 합쳐져 키세팅에 올려둘 스킬 갯수가 많지 않다. 핵심 스킬들을 대부분 커맨드로 발동할 수 있기에 키세팅에는 버프 계통 스킬만 올려둬도
+                            충분하기에 비숍이나 신캐처럼 사용해야할 스킬이 많은 캐릭터보다 키세팅이 간편하다.
+                            <br><br>
+                            <strong>낮은 어빌리티 의존도</strong><br>
+                            아란은 스펙상으로 다른 직업에 비해 뒤떨어지거나, 특정 어빌리티가 없으면 기능이 저하되는 캐릭터가 아니다. 그래서 1번째 줄에 가장 무난한 선택지인 보공만 띄우면,
+                            그 다음부터는 본인의 취향에 따라 자유롭게 선택할 수 있다.
+                            <br><br>
+                            <strong>우수하고 유연한 기동성</strong><br>
+                            공격 중에 체공할 수 있는 스윙, 대시 기능이 있는 컴뱃 스텝, 높게 뛰어오르는 파이널 토스, 사용 후의 상황 관리가 좋은 파이널 차지, 강제 착지 스킬인 저지먼트
+                            등 돌발상황에 대처할 수 있는 스킬들이 많다. 그래서 거리의 근원 여부는 크게 문제되지 않는다.
+                            <br><br>
+                            <strong>준수한 생존력</strong><br>
+                            커맨드 파블과 비욘더와 의 슈퍼 스탠스, 마하의 영역의 시전 중 무적과 디스펠, 드레인의 HP 회복 기능 등이 있어 다단히트로 즉사를 유도하는 패턴이 주력인
+                            보스전에서 잘 버틸 수 있다.
+                            <br><br>
+                            <strong>높은 육성 가치</strong><br>
+                            링크 스킬인 콤보킬 어드밴티지는 콤보킬 구슬의 가치를 높여 초반 육성 속도를 크게 높이고, 유니온 공격대원 효과는 비록 순수 HP라는 한계가 있지만 보스전 내구도를
+                            보완하므로 충분히 육성할 만하다.
+                            <br><br>
+                            <strong>간편하고 효율적인 극딜</strong><br>
+                            아란의 극딜은 아드레날린 부스트의 비중이 압도적으로 크다. 이를 제외하면 사전에 챙겨야 할 극딜 버프가 적고, 있더라도 소울 컨트랙트, 시드링, 오라 웨폰, 프리드의
+                            가호 등 공용 스킬이나 블리자드 템페스트 등의 화력 보조 스킬밖에 없다. 게다가 극딜 주력기인 헌터즈 타겟팅은 모든 연격이 동시에 입력되는 유일한 연격형 극딜기라,
+                            중간에 여러 이유로 연격의 일부분이 사라지는 일도 적다.
+                        </p>
+                        <br>
+                        <br>
+                        <h1 id="title">단점</h1>
+                        <p>
+                            <strong>운에 좌우되는 극딜</strong><br>
+                            아란 극딜의 핵심은 이른바 1리레 2헌터즈, 즉 리스트레인트 링의 지속시간이 끝나기 전까지 2연속으로 헌터즈 타겟팅을 쓰는 것이다. 그러나 실전에서는 다음과 같은
+                            이유 때문에 이를 실행하기 어렵다.
+                        <ul>
+                            <li>* 리레 영역은 4레벨 링 기준 최대 15초 동안 지속되니, 15~20초간 유지되는데다 중간에 끊을 수도 없는 아드레날린 부스트와는 상극이다.</li>
+                            <li>* 그래서 고육책으로 아드레날린이 거의 끝나갈 때 리레를 켠 뒤에 헌터즈를 쓰고, 아드레날린이 끝나면 제네레이터로 아드레날린 상태에 다시 돌입하여 헌터즈를 또
+                                쓰는 식으로 운용해야 한다.</li>
+                            <li>* 그런데 아드는 서버 상황에 영향을 받아서 지속시간이 증가할 수 있다. 즉 아드 끝물에 써도 서버렉 때문에 제때 종료되지 않을 수 있다.</li>
+                            <li>* 아드 종료가 지연되면 최악의 경우 리레 지속시간이 끝날 수 있다. 이러면 1리레 1헌터즈로 극딜량이 줄어든다.</li>
+                        </ul>
+                        그러나 극딜 상황이 아니면, 아드 지속시간이 늘어나는 현상은 실보다 득이 더 많다. 아드가 극딜보다는 평딜에 치중한 버프라서 생기는 역할 모순이라고 보면 된다.
+                        <br><br>
+                        <strong>떨어지는 투자 효율과 낮은 스공 증가량</strong><br>
+                        무기 공격력, 최종 데미지%와 크리티컬 데미지 증가%가 낮고 공격력%, 데미지% 가 높아서 생기는 문제다. 이로 인해 극딜 능력에 크게 관여하는 시드링 효율이 나쁘고,
+                        깡공격력도 매우 많은 수치가 스킬로 올라가기 때문에 고자본들이 애용하는 주문서 업그레이드 방식인 놀긍혼 작, 미라클 주문서 작의 효율도 낮다. 그뿐만 아니라 무기 상수에
+                        비해 스공 증가량도 낮아서, 직업간 격차와 무관하게 공통 퍼뎀이 적용되는 5차 공용 스킬의 효율도 낮다.
+                        <br><br>
+                        <strong>많은 MP 소모량</strong><br>
+                        파블 + 비욘더 + 펜릴 크래시 사이클만 돌려도 MP 350이 소모된다. 여기에 브랜디쉬 마하, 인스톨 마하를 써도 소모량이 4자릿수에 달한다. 가뜩이나 전사라 MP
+                        최대치도 적은데, MP를 회복할 수단도 에반 유니온 공격대원이나 마하의 영역 장판이 고작이다.
+                        <br><br>
+                        <strong>곳곳에 산재한 오류</strong>
+                        <br><br>
+                        <p style="padding: 0 0 0 10px;">
+                            <strong>슈퍼 스탠스 미적용</strong><br>
+                            비욘더를 1타부터 3타까지 연속 사용할 때, 간혹 슈퍼 스탠스가 적용되지 않아 밀리는 경우가 있다. 수동 발동형 연격기의 한계로, 비욘더를 매번 끊어치는 식으로
+                            써야만 예방할 수 있다.
+                            <br><br>
+                            <strong>마하의 영역의 간헐적인 회복 지연 현상</strong><br>
+                            표기는 '1초마다'지만, 서버 상황에 따라 3~4초까지 회복이 지연된다. 메이플 클라이언트 특유의 고질병.
+                            <br><br>
+                            <strong>바디 프레셔 강제 해제</strong><br>
+                            라이딩에 탑승하는 일부 콘텐츠에서 바디 프레셔가 강제로 해제되는데, 이는 운영진이 콘텐츠 진행 중 오류 발생을 우려해 비활성화되도록 만든 것이라 어쩔 수 없다.
+                            <br><br>
+                            <strong>파이널 블로우와 비욘더의 액션 딜레이 버그</strong><br>
+                            펜릴 크래시 직후에 파블이나 비욘더를 이어가는 과정에서 원인 불명의 액션 딜레이가 발생해 움직임이 굼뜨게 되는 문제가 발생한다. 펜릴 크래시 끝나기 전에 파블
+                            커맨드를 한 번 더 입력하는 게 유일한 해결책이다.
+                        </p>
+                        </p>
+                        <br>
+                        <br>
+                        <h1 id="title">사냥 운용</h1>
+                        <p>
+                            몬스터 잡을때마다 추가적으로 눌러야 할 스킬도 없고, 설치기 같이 사냥 빌드 및 위치도 신경쓸 것이 많이 없기 때문에 매우 단순하다. 전방 범위도 길고 전체 범위도
+                            꽤 넉넉한 편인지라 점프하면서 두 층을 모두 타격하면서 사냥할 수 있다. 넓은 광역기인 마하의 영역이나 일정 시간동안 광범위기를 난사하는 인스톨 마하를 이용한 광역
+                            사냥은 덤. 비욘더가 연타형 스킬이다 보니 피로도가 타 직업에 비해 높을 수는 있으나, 여러 패치로 난이도가 크게 낮아지면서 익숙해진다면 그럭저럭 사냥할만하다.
+                            <br><br>
+                            상단 기동성이 매우 좋아 로프 커넥터 없이도 여러 층 오르락 내리락 하기도 편하고, 비욘더는 모든 공격이 크리티컬 공격이라 강력한 대미지는 물론 대미지 편차가 크지
+                            않아 안정적인 원킬 사냥이 가능하다. 이러한 덕에 초보자 유저들에게도 사냥하기가 적합한 편이다.
+                            <br><br>
+                            그러나 단점이라면 한계치를 끌어올릴만한 보조 사냥기가 마땅치 않기 때문에 사냥 한계치는 높지가 않다. 즉 접근성이 낮아도 한계가 명확한 편. 광범위 사냥기인 브랜디쉬
+                            마하는 20초 주기라 고작 3젠에 1번정도만 사용이 가능하고, 인스톨 마하중인 상태여도 2젠에 1번정도만 사용이 가능하다. 아란의 사냥능력을 보조하는 마하의 영역과
+                            인스톨 마하도 90초 주기고, 그나마 준수한 사냥보조기는 5차 이후에 얻을 수 있는 공용스킬인 에르다 샤워가 어느정도 제 몫을 하는 편이다. 이러한 탓에 사냥 시
+                            몬스터 누수가 좀 발생하는 편이다.
+                            <br><br>
+                            상단 기동성은 좋아도, 좌우 기동성은 전사답게 평범한 편이기에 조금 굼뜬 느낌을 받을 수 있다. 물론 발판 끝에서 사용하면 이동거리를 길게 할 수 있지만, 이러한
+                            방식으로 사냥이 가능한 사냥터는 많이 없다.
+                            <br><br>
+                            이러한 탓에 사냥터 상성을 어느정도 타는 편이다. 지형이 복잡하거나 3층 지형 사냥터는 아란에게 있어서 좋은 사냥터는 아니며, 높낮이가 크지 않는 두층으로 된
+                            사냥터나 4층 지형의 사냥터가 아란에게 상성이 잘 맞는 편이다. 이 때문에 인기 사냥터를 고집하기보다는 본인에게 맞는 사냥터, 정 모르겠으면 아란 유저들이 추천하는
+                            사냥터를 가는 것이 좋다.
+                            <br><br>
+                            사냥 방식은 500콤보일때부터 인스톨마하를 사용해서 광범위 사냥을 한 다음, 인스톨마하의 공백기간 중 마하의 영역이나 아드레날린 제네레이터 같은 광역기를 사용하면서
+                            사냥터를 정리한다.
+                        </p>
+                        <br>
+                        <br>
+                        <h1 id="title">보스전 운용</h1>
+                        <p>
+                            아란의 보스는 극딜에 중심을 둔 아드레날린 부스트와 인스톨 마하를 기본으로 한다. 평딜은 비욘더 하나로 해결이며, 브랜디쉬 마하는 평딜과 극딜 모두 재사용 대기시간이
+                            끝날 때마다 사용해주면 된다. 아드레날린 부스트 상태에 돌입할 때 마다 부스트 엔드-헌터즈 타겟팅을 사용하고, 극딜 주기를 맞춰 블리자드 템페스트를 사용하면 된다.
+                            따라서 헌터즈 타겟팅의 커맨드가 누르기 힘든 것을 빼면 추가로 소모하는 자원도 없고 복잡한 조작도 없어서 조작 난이도는 단순한 편이다.
+                            <br><br>
+                            반면 운영 면에서는 신경써야 할 부분이 많고 특정 스킬 사용에도 제약이 있기 때문에 운용 난이도는 꽤 높다. 그나마 하위 보스전에서는 공격 기회(딜 타임)가 많아
+                            운영 난이도가 크게 부각되지는 않지만, 상위 보스로 갈수록 딜 타임을 쉽게 내주지 않는다. 적을 타격해야 올라가는 콤보 시스템의 특성상 약한 평딜과 지나치게 유동적인
+                            극딜 타임으로 DPM이 하락하게 된다. 결국 이러한 문제점들을 보완하기 위해 여러번 연습해 숙련도를 쌓는게 중요하다.
+                            <br><br>
+                            아란의 대 보스 유틸리티로는 마하의 영역을 이용한 광역 파티원 디스펠과 HP, MP 회복, 저지먼트의 텔레포트 판정 이동, 파이널 차지(밀격), 파이널 토스(윗점),
+                            에어로 스윙(체공), 드레인(흡혈), 컴뱃 스텝(대시), 스노우 차지(슬로우 상태이상), 블리자드 템페스트(바인드)가 있다.
+                            <br><br>
+                            무적기는 총 3개가 있으며, 3가지 다 사용용도가 조금씩 다르다. 아드레날린 부스트 상태에서 사용이 가능한 극딜용 무적기인 헌터즈 타게팅, 장시간 무적을 제공하지만
+                            사용이 보통 까다로운게 아닌 프리드의 가호, 그리고 즉발 무적기 마하의 영역. 보통 위협적인 패턴을 신속하게 대응하기 위해 마하의 영역을 사용하며, 장시간 무적이
+                            필요한 상황을 대비해서 틈틈히 프리드의 가호를 쌓는게 정석이다. 헌터즈 타게팅은 극딜용 스킬인 만큼 무적기로 사용되는 경우는 거의 없지만 만약 모든 무적기가 쿨인
+                            경우 어쩔 수 없이 사용된다.
+                            <br><br>
+                            극딜 주기는 90초마다 아드레날린을 발동해서 180초 주기를 따르는게 정석이다. 대부분 상황에서 90초마다 아드레날린을 발동시키는 건 어렵지는 않으나, 아란은
+                            블템+헌터즈인 180초 딜링 비중이 가장 크기에 무리해서 아드레날린을 90초마다 발동하지 않아도 된다.결국 아란은 인스톨 마하의 90초 주기를 필두로 한 유동적인
+                            준극딜도 가능하므로 이를 조절하는 것도 아란 유저의 재량으로 한다.
+                            <br><br>
+                            극딜 방식은 짧은 시간동안 헌터즈 타게팅을 2번 연달아서 사용하는, 일명 1리레 2헌터즈 빌드로 극딜하는것이 좋다. 우선 15초동안 아드레날린만 발동해 적당한 딜링을
+                            하고, 아드레날린이 꺼지기 5초 직전에 시드링과 소울 컨트랙트, 블리자드 템페스트를 쓴 다음 바로 헌터즈 타게팅을 날리며, 아드레날린이 꺼지고 즉시 제네레이터를
+                            재발동해 헌터즈 타게팅을 다시 한번 날리면 된다. 헌터즈 타게팅이 참격 형식이라 블리자드 템페스트와 궁합이 좋아 성능이 극대화되지만, 특수 패턴에 대한 리스크 및
+                            서버렉 등으로 인한 변수때문에 난이도는 있는 편이다. 정 익숙하지가 않다면 아드레날린이 발동되자마자 블리자드 템페스트를 쓴 다음, 제네레이터를 나중에 쓰는 방식으로
+                            딜링해도 나쁘지 않다.
+                            <br><br>
+                            또한 1리레 2헌터즈 빌드를 사용하게 되면 인스톨 마하와 같은 지속시간이 긴 극딜버프들을 미리 올리고 시드링, 엔버링크, 블템같은 지속시간이 짧고 딜량이 폭발적인
+                            스킬을 15초뒤에 사용하기 때문에 둘 사이의 간극이 벌어진다. 쉽게 말하자면 인스톨 마하가 먼저 돌고, 꽤 긴 시간이 지나서야 엔버링크가 돌아온다는 것. 극딜 주기가
+                            벌어지는걸 방지하기 위해서는 준극딜 타이밍 때는 인스톨 마하를 쿨이 돌자마자 사용해주고, 엔버링크 쿨이 5초정도 남을쯤에 아드를 켜서 준극딜을 해주면 된다. 그러면
+                            극딜주기가 안정적으로 3분간격으로 유지된다.
+                        </p>
+                        <br>
+                        <br>
+                        <h1 id="title">어빌리티</h1>
+                        <p>
+                            <strong>보스 몬스터 공격 시 데미지 N% 증가</strong><br>
+                            제일 무난한 어빌리티.
+                            <br><br>
+                            <strong>상태 이상에 걸린 적 공격 시 데미지 N% 증가</strong><br>
+                            스노우 차지로 인한 상시 상태이상 부여가 가능하기에 사실상 영구 데미지 증가나 다름없다.
+                            <br><br>
+                            <strong>크리티컬 확률 N% 증가</strong><br>
+                            파이널 블로우, 헌터즈 타겟팅과 비욘더 파동이 크리티컬 확률을 적용받지 않아 크리티컬 확률을 100%로 맞추는 것이 좋다. 밑에 서술된 어빌리티들이 모두 V매트릭스로
+                            대체가 가능하므로 크리티컬 확률이 부족하다면 해당 어빌리티를 선택한다.
+                            <br><br>
+                            <strong>아이템 드롭률 N% 증가, 메소 획득량 N% 증가</strong><br>
+                            광부 옵션.
+                            <br><br>
+                            <strong>패시브 스킬 레벨 1 증가</strong><br>
+                            스윙 연구, 비욘더의 레벨이 올라 효율이 좋다. V 매트릭스로 대체가 가능해 중요성이 줄어들었다.
+                            <br><br>
+                            <strong>일반 몬스터 공격 시 n%만큼 데미지 증가</strong><br>
+                            사냥 원킬컷을 낮추기 위해 선택할 수 있지만, 그리 선호되지는 않는다. 레전더리 옵션 기준으로도 10%가 최대치라 너무 낮기 때문이다.
+                        </p>
+                        <br>
+                        <br>
+                        <h1 id="title">코어강화</h1>
+                        <p>
+                            <strong>1순위</strong><br>
+                            파이널 블로우, 비욘더, 부스트 엔드 - 헌터즈 타겟팅
+                            <br><br>
+                            <strong>2순위</strong><br>
+                            스매시 스윙/에어로 스윙, 파이널 어택, 마하의 영역
+                        </p>
+                    </div>
+                </article>
+            </section>
+
+            <!-- 본문 우측 영역 -->
+            <aside id="main-aside">
+                <div class="aside-list">
+                    <h3>영웅</h3>
+                    <ul>
+                        <li><a href="아란.html">아란</a></li>
+                        <li><a href="에반.html">에반</a></li>
+                        <li><a href="루미너스.html">루미너스</a></li>
+                        <li><a href="메르세데스.html">메르세데스</a></li>
+                        <li><a href="팬텀.html">팬텀</a></li>
+                        <li><a href="은월.html">은월</a></li>
+                    </ul>
+                </div>
+            </aside>
+        </div>
+    </div>
+    <!-- 푸터 -->
+    <footer id="main-footer">
+        <span>ⓒ These photographs and fonts are protected by NEXON Korea Corporation with all rights reserved.</span>
+    </footer>
+</body>
+
+</html>

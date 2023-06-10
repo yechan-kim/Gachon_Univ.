@@ -1,9 +1,20 @@
 /* 1. 초기화하기 */
+@font-face {
+    font-family: 'maple';
+    src: url(font/Maplestory_Light.otf);
+    src: url(font/Maplestory_Light.ttf);
+}
+
+@font-face {
+    font-family: 'maple_bold';
+    src: url(font/Maplestory_Bold.otf);
+    src: url(font/Maplestory_Bold.ttf);
+}
+
 * {
     margin: 0;
     padding: 0;
-    font-family: '메이플스토리 OTF', '메이플스토리 TTF', '메이플스토리', 'Maplestory OTF', 'Maplestory TTF', 'Maplestory';
-    /* 메이플스토리 폰트 설치 필 */
+    font-family: 'maple';
 }
 
 a {
@@ -12,6 +23,18 @@ a {
 
 li {
     list-style: none;
+}
+
+h1 {
+    font-family: 'maple_bold';
+}
+
+h2 {
+    font-family: 'maple_bold';
+}
+
+h3 {
+    font-family: 'maple_bold';
 }
 
 /* 기본 클래스 */
@@ -29,7 +52,7 @@ body {
 
 #page-wrapper {
     background: white;
-    margin: 20px 0 ;
+    margin: 20px 0;
     padding: 0 20px;
     box-shadow: 0 2px 6px rgba(100, 100, 100, 0.3);
 }
@@ -130,6 +153,7 @@ hgroup>*>a {
 
 strong {
     font-size: 15px;
+    font-family: 'maple_bold';
 }
 
 #c_image {

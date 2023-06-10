@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>데몬슬레이어 공략</title>
+    <link rel="stylesheet" href="Style.css"> <!-- 외부 스타일 시트 -->
+    <script src="https://code.jquery.com/jquery-3.7.0.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('.outer-menu-item').hover(function () {
+                $(this).find('.inner-menu').stop().slideDown();
+            }, function () {
+                $(this).find('.inner-menu').stop().slideUp();
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <!-- 전체를 감싸는 테그 -->
+    <div id="page-wrapper">
+        <!-- 헤더 -->
+        <header id="main-header">
+            <hgroup>
+                <h1 class="master-title"><a href="main.html"><img src="image/로고.png" alt="메이플스토리"></a>
+                </h1>
+                <h2 class="master-description"><a href="main.html">직업별 공략</a></h2>
+            </hgroup>
+        </header>
+        <!-- 네비게이션 -->
+        <nav id="main-navigation">
+            <div class="pull-left">
+                <ul class="outer-menu">
+
+                    <li class="outer-menu-item">
+                        <span class="menu-title">모험가</span>
+                        <ul class="inner-menu">
+                            <li class="inner-menu-item"><a href="히어로.html">히어로</a></li>
+                            <li class="inner-menu-item"><a href="팔라딘.html">팔라딘</a></li>
+                            <li class="inner-menu-item"><a href="다크나이트.html">다크나이트</a></li>
+                            <li class="inner-menu-item"><a href="아크메이지(불,독).html">아크메이지(불,독)</a></li>
+                            <li class="inner-menu-item"><a href="아크메이지(썬,콜).html">아크메이지(썬,콜)</a></li>
+                            <li class="inner-menu-item"><a href="비숍.html">비숍</a></li>
+                            <li class="inner-menu-item"><a href="보우마스터.html">보우마스터</a></li>
+                            <li class="inner-menu-item"><a href="신궁.html">신궁</a></li>
+                            <li class="inner-menu-item"><a href="패스파인더.html">패스파인더</a></li>
+                            <li class="inner-menu-item"><a href="나이트로드.html">나이트로드</a></li>
+                            <li class="inner-menu-item"><a href="섀도어.html">섀도어</a></li>
+                            <li class="inner-menu-item"><a href="듀얼블레이드.html">듀얼블레이드</a></li>
+                            <li class="inner-menu-item"><a href="바이퍼.html">바이퍼</a></li>
+                            <li class="inner-menu-item"><a href="캡틴.html">캡틴</a></li>
+                            <li class="inner-menu-item"><a href="캐논슈터.html">캐논슈터</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="outer-menu-item">
+                        <span class="menu-title">시그너스 기사단</span>
+                        <ul class="inner-menu">
+                            <li class="inner-menu-item"><a href="소울마스터.html">소울마스터</a></li>
+                            <li class="inner-menu-item"><a href="미하일.html">미하일</a></li>
+                            <li class="inner-menu-item"><a href="플레임위자드.html">플레임위자드</a></li>
+                            <li class="inner-menu-item"><a href="윈드브레이커.html">윈드브레이커</a></li>
+                            <li class="inner-menu-item"><a href="나이트워커.html">나이트워커</a></li>
+                            <li class="inner-menu-item"><a href="스트라이커.html">스트라이커</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="outer-menu-item">
+                        <span class="menu-title">영웅</span>
+                        <ul class="inner-menu">
+                            <li class="inner-menu-item"><a href="아란.html">아란</a></li>
+                            <li class="inner-menu-item"><a href="에반.html">에반</a></li>
+                            <li class="inner-menu-item"><a href="루미너스.html">루미너스</a></li>
+                            <li class="inner-menu-item"><a href="메르세데스.html">메르세데스</a></li>
+                            <li class="inner-menu-item"><a href="팬텀.html">팬텀</a></li>
+                            <li class="inner-menu-item"><a href="은월.html">은월</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="outer-menu-item">
+                        <span class="menu-title">레지스탕스</span>
+                        <ul class="inner-menu">
+                            <li class="inner-menu-item"><a href="블래스터.html">블래스터</a></li>
+                            <li class="inner-menu-item"><a href="배틀메이지.html">배틀메이지</a></li>
+                            <li class="inner-menu-item"><a href="와일드헌터.html">와일드헌터</a></li>
+                            <li class="inner-menu-item"><a href="메카닉.html">메카닉</a></li>
+                            <li class="inner-menu-item"><a href="제논.html">제논</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="outer-menu-item">
+                        <span class="menu-title">데몬</span>
+                        <ul class="inner-menu">
+                            <li class="inner-menu-item"><a href="데몬슬레이어.html">데몬슬레이어</a></li>
+                            <li class="inner-menu-item"><a href="데몬어벤져.html">데몬어벤져</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="outer-menu-item">
+                        <span class="menu-title">노바</span>
+                        <ul class="inner-menu">
+                            <li class="inner-menu-item"><a href="카이저.html">카이저</a></li>
+                            <li class="inner-menu-item"><a href="카인.html">카인</a></li>
+                            <li class="inner-menu-item"><a href="카데나.html">카데나</a></li>
+                            <li class="inner-menu-item"><a href="엔젤릭버스터.html">엔젤릭버스터</a></li>
+                        </ul>
+                    </li>
+                    <li class="outer-menu-item">
+                        <span class="menu-title">레프</span>
+                        <ul class="inner-menu">
+                            <li class="inner-menu-item"><a href="아델.html">아델</a></li>
+                            <li class="inner-menu-item"><a href="일리움.html">일리움</a></li>
+                            <li class="inner-menu-item"><a href="칼리.html">칼리</a></li>
+                            <li class="inner-menu-item"><a href="아크.html">아크</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="outer-menu-item">
+                        <span class="menu-title">아니마</span>
+                        <ul class="inner-menu">
+                            <li class="inner-menu-item"><a href="라라.html">라라</a></li>
+                            <li class="inner-menu-item"><a href="호영.html">호영</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="outer-menu-item">
+                        <span class="menu-title">초월자</span>
+                        <ul class="inner-menu">
+                            <li class="inner-menu-item"><a href="제로.html">제로</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="outer-menu-item">
+                        <span class="menu-title">키네시스</span>
+                        <ul class="inner-menu">
+                            <li class="inner-menu-item"><a href="키네시스.html">키네시스</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <!-- 본문 -->
+        <div id="content">
+            <!-- 본문 좌측 영역 -->
+            <section id="main-section">
+                <article>
+                    <div class="article-header">
+                        <h1 class="article-title">데몬슬레이어(Demon Slayer)</h1>
+                    </div>
+                    <div class="article-body">
+                        <img id="c_image" src="image/데몬슬레이어.webp" alt="데몬슬레이어">
+                        <h1 id="title">장점</h1>
+                        <p>
+                            <strong>최상위권의 기본 스펙</strong><br>
+                            높은 데미지%, 방무, 주력기들의 추가 크리티컬 확률, 자력 풀공속 덕분에 무~저자본에서도 어느 정도 성능이 보장된다. 맷집이 좋고 HP 드레인 스킬이 있어
+                            사냥터에서 잘 죽지도 않고, 데몬 포스를 써서 마나 포션도 필요 없다. 데몬 포스도 1차때는 부족하긴 하지만, 1차 때는 포스 소모 없이 회복만 시키는 슬래시만
+                            사용해서 의미가 없고 3차 전직을 한 이후로는 스킬로 포스를 소모해도 슬래시로 순식간에 재회복이 가능하다. 160 레벨 이후로는 서버러스를 적당히 사용하면 포스가
+                            상시 최대치 유지도 쉬운 편이다.
+                            <br><br>
+                            <strong>준수한 유틸리티</strong><br>
+                            역사적으로도 최초의 바인드 소유자이고, 무적기만 3가지에 2가지는 회전율이 높으며 자체 회복과 순간이동 등 필요한 유틸을 상당수 보유하고 있다.
+                            <br><br>
+                            <strong>낮은 크리티컬 확률 의존도</strong><br>
+                            기본 크리티컬 확률이 25%로 매우 낮지만, 대부분의 주력 스킬에 추가 크리티컬 확률이 50~100% 적용되기 때문에 별로 신경쓰지 않아도 된다. 일단 어웨이크닝이
+                            꺼진 상태의 주력기인 데몬 임팩트, 그리고 극딜형 소환수인 오르트로스와 요르문간드는 추가 크리티컬 확률이 100%이며, 어웨이크닝을 켠 상태에서의 주력기인 데몬
+                            슬래시와 극딜기인 데몬 베인에는 추가 크확이 50%가 붙어있고, 데빌 크라이로 상태이상 디버프를 걸면 이블 토처의 효과로 15% 추가 크확을 상시로 유지 가능하다.
+                            즉, 기본 크확(25%)+이블 토처(15%)+데몬 베인/어웨이크닝(50%)=90%의 크확을 상시 유지 가능하기에 다른 크리티컬 관련 스탯, 유니온, 링크 등을 하나도
+                            적용하지 않고 오직 쓸만한 샤프 아이즈 하나만 사용해도 점유율이 높은 주력기들의 크확을 100%로 유지가 가능하다. 물론 쓸샾 하나만 사용하면 서버러스,
+                            메타모포시스와 같은 일부 스킬들과 공용 스킬이 크리티컬 확률 보정을 받지 못한다는 단점이 있지만, 자체 크리티컬 확률을 100%로 만든다고 해도 딜 증가량은 거의
+                            없기에 크확에 큰 투자를 할 필요성이 줄어든다.
+                        </p>
+                        <br>
+                        <br>
+                        <h1 id="title">단점</h1>
+                        <p>
+                            <strong>어려운 4차 이전 육성</strong><br>
+                            데몬 익스플로전을 배우기 전까지, 1~3차를 사거리 짧은 데몬 슬래시로 넘겨야 한다. 그렇다고 다른 보조할 만한 스킬이 있는 것도 아니고, 있더라도 데몬 포스가
+                            부족해서 결국 슬래시로 긁어야 한다. 그나마 요령 좀 있다 싶으면 100레벨 찍는 거야 그리 어렵지 않겠지만, 리부트 서버라면 얘기가 달라진다. 유니온과 링크도 없이
+                            대뜸 데슬부터 키우면 고생문이 활짝 열린다(...).
+                            <br><br>
+                            <strong>주력기의 긴 액션 딜레이</strong><br>
+                            자력 공속이 8단계인데도 동작이 굼뜨다. 특히 주력기인 데몬 슬래시, 데몬 임팩트, 데몬 익스플로젼의 액션 딜레이가 길다. 보스 주력기인 데몬 임팩트의 시전 시간은
+                            660ms로 평균보다 느리고, 데몬 어웨이크닝으로 강화된 데몬 슬래시 자체도 4타합 1260ms 등 액션 딜레이가 큰 스킬들이 많다. 그래서 보스의 갑작스러운 패턴에
+                            대처하기 어렵고, 무적기가 있다고는 하나 스킬 사용 중에는 사용할 수 없다.
+                            <br><br>
+                            <strong>과도한 데몬 어웨이크닝 의존도</strong><br>
+                            데슬의 대미지 딜링 구조에서 어웨이크닝이 차지하는 비중은 가히 절대적이라고 해도 과언이 아니다. 심지어 평딜을 강화하는 스킬임에도 데몬 베인을 위시한 극딜에까지 최종
+                            데미지 증가 효과를 부여하며, 그럼에도 불구하고 극딜 화력이 부실하다. 일각에서는 극딜 시간이 65초라는 자학성 푸념까지 보일 정도다. 이렇다 보니 어웨이크닝이
+                            필연적으로 빠지게 되는 50여 초 동안은 데몬 임팩트로 평딜을 이어나가야 하는데, 이때의 평딜은 어웨이크닝+슬래시에 비할 수가 없을 정도로 뒤떨어진다. 극딜 주기의
+                            절반 가까이 되는 시간을 무기력한 평딜로 버텨야만 하는 딜레마에 빠지는 셈이다.
+                            <br><br>
+                            <strong>어려운 코어 강화 난이도</strong><br>
+                            전용 스킬 코어 의존도도 높지만, 강화 코어는 15개 스킬 중에서 6개를 뽑아내야 하기 때문에 더욱 어렵다. 운이 나쁘다면 3중 코어 구경하기가 여간 어렵지 않다.
+                        </p>
+                        <br>
+                        <br>
+                        <h1 id="title">사냥 운용</h1>
+                        <p>
+                            슬래시와 임팩트를 제외한 주력 다수기의 범위가 넓어서 사냥 자체에는 큰 하자가 없다. 나온 지 좀 된 직업이라 스킬이 물 흐르듯이 자연스럽게 이어지지 못한다는 점도
+                            잘 적응하기만 한다면 크게 거슬리지도 않는다. 어차피 사냥 중에는 데몬 익스플로전이 주력이고, 서버러스와 데빌 크라이, 5차 스킬을 간간히 섞는 딜사이클이기 때문.
+                            데몬 익스플로젼이 1타-2타 구조로 나뉘어져 있어서 점샷이 미묘하게 힘들다는 단점도 필드 선택을 잘 해서 위에서 아래로 떨어지면서 사용할 수 있게 하면 그만이다.
+                        </p>
+                        <br>
+                        <br>
+                        <h1 id="title">보스전 운용</h1>
+                        <p>
+                            극딜은 바인드나 데빌 크라이 디버프로 이블 토처 조건을 만족한 상황에서 데몬 어웨이크닝+데몬 베인으로 폭딜을 쏟아붓는 방식이고, 이후는 데몬 어웨이크닝 지속 여부에
+                            따라 갈린다. 물론 이와 무관하게 인피니티 포스를 포함한 각종 버프와 요르문간드, 오르트로스는 기회가 될 때마다 사용해야 한다.
+                            <br><br>
+                        <p style="padding: 0 0 0 10px;">
+                            <strong>데몬 어웨이크닝 ON</strong><br>
+                            데몬 슬래시를 주력으로 사용한다. 데몬 슬래시에는 데몬 임팩트와 달리 이블 토처의 효과를 받기 위한 상태이상이 전혀 붙어있지 않으므로, 데빌 크라이의 디버프를 반드시
+                            묻혀놔야 한다. 그래도 데몬 슬래시의 포스 수급력과 보스 몬스터 공격 시 추가 포스를 흡수하는 기능 덕분에 포스가 부족할 일은 없다.
+                            <br><br>
+                            <strong>데몬 어웨이크닝 OFF</strong><br>
+                            데몬 임팩트를 주력으로 사용한다. 이블 토처의 적용 대상인 자체 감속과 확정 크리티컬, 추가 방무와 보공이 덕지덕지 붙어있어서 어웨이크닝+슬래시보다 지나치게 못하지는
+                            않다. 그러나 액션 딜레이가 공속 8단계 기준으로도 660ms나 되는데, 이는 전 직업 평균인 600ms보다 10%나 긴 수치다. 게다가 포스 흡수 기능이 따로
+                            없기에 슬래시를 잠깐 섞거나 서버러스로 포스를 수급해 주어야 한다.
+                        </p><br>
+                        데몬 어웨이크닝이 ON이건 OFF건 간에, 중요한 것은 데몬 어웨이크닝의 지속시간이 코어의 레벨에 비례하여 증가한다는 사실이다. 데몬 어웨이크닝을 30레벨까지 강화해야만
+                        65초 지속/55초 대기로 가동률 50%를 겨우 넘길 수 있는데, 스킬 코어는 강화 코어보다 강화하기 어렵다. 이는 곧 갓 200레벨을 달성한 데슬 유저에게 상당히 높은
+                        수준의 진입장벽으로 작용한다.
+                        <br><br>
+                        패턴 대응성은 뛰어나다. 블러디 레이븐과 메타모포시스만 잘 사용하면 어지간한 패턴들은 손쉽게 무시할 수 있다. 두 스킬의 재사용 대기시간도 각각 30초/90초로 타 직업에
+                        비해 짧다. 따라서 생존력만은 아무 문제 없다. 데몬 베인은 무적기이긴 하지만 극딜기로서의 측면도 크므로 진짜로 다급한 상황이 아니라면 극딜용으로 남겨놔야 한다.
+                        </p>
+                        <br>
+                        <br>
+                        <h1 id="title">어빌리티</h1>
+                        <p>
+                            <strong>보스 몬스터 공격 시 데미지 증가</strong><br>
+                            가장 무난한 선택지. 후술할 재사용 대기시간 미적용 옵션과 함께 가장 선호되는 옵션이다. 재사용 대기시간 미적용 옵션을 첫 번째 줄에서 사용 시 2~3번째 줄에서
+                            가장 선호되는 옵션이다.
+                            <br><br>
+                            <strong>재사용 대기시간 미적용</strong><br>
+                            메타모포시스나 블러디 레이븐 등의 무적기를 자주 써야 할 때 유용하다. '일정 확률'이라는 단점이 있지만, 안정성 측면을 강화할 생각이라면 이쪽의 효율이 더 좋다.
+                            그밖에는 인피니티 포스, 엔젤릭버스터의 링크 스킬인 소울 컨트랙트도 초기화할 수 있다. 마찬가지로 보스 공격 시 데미지 증가 옵션을 첫 번째 줄에서 사용 시
+                            2~3번째 줄에서 가장 선호된다.
+                            <br><br>
+                            <strong>버프 지속시간 증가</strong><br>
+                            메타모포시스나 인피니티 포스의 지속시간에 영향을 주므로, 2~3번째 줄에서 뜬다면 부담없이 사용할 수 있다.
+                            <br><br>
+                            <strong>아이템 드롭률/메소 획득량 증가</strong><br>
+                            광부용 어빌리티. 데슬은 광부용 캐릭터로서는 인식 수준이 그리 높지 않지만, 일단 생긴다면 2번째 줄에서도 15%는 챙길 수 있으므로 나쁘지 않다. 카룻돌이용으로
+                            쓴다면 좋은 선택.
+                            <br><br>
+                            <strong>상태 이상에 걸린 대상 공격 시 데미지 증가</strong><br>
+                            첫줄로는 보공이나 재사용이라는 매우 좋은 선택지가 있어 선호되지 않지만, 데몬슬레이어가 사용하는 데빌 크라이, 데몬 임팩트의 상태이상뿐만 아니라 모험가 마법사 링크
+                            스킬인 임피리컬 널리지 등 모든 상태이상에 걸린 적에게 발동되기에 2~3번째 줄에서 쓰기 매우 좋은 옵션이다.
+                            <br><br>
+                            <strong>크리티컬 확률 증가</strong><br>
+                            데슬의 기본 크확은 25%에 불과하지만, 추가 크리티컬 확률이 포함된 공격 스킬이나 버프를 주력으로 쓰기 때문에 크확의 효용이 매우 낮다. 보스전에서 크리티컬 확률
+                            보정을 받지 못하는 스킬은 데몬 어웨이크닝이 꺼졌을 때 서버러스와 메타모포시스인데, 이들의 비중은 매우 작으므로 차라리 다른 옵션을 쓰는 것이 훨씬 낫다.
+                        </p>
+                        <br>
+                        <br>
+                        <h1 id="title">코어강화</h1>
+                        <p>
+                            <strong>필수</strong><br>
+                            데몬 슬래시, 데몬 임팩트, 데몬 익스플로젼
+                            <br><br>
+                            <strong>선택</strong><br>
+                            서버러스, 데빌 크라이, 메타모포시스
+                        </p>
+                    </div>
+                </article>
+            </section>
+
+            <!-- 본문 우측 영역 -->
+            <aside id="main-aside">
+                <div class="aside-list">
+                    <h3>데몬</h3>
+                    <ul>
+                        <li><a href="데몬슬레이어.html">데몬슬레이어</a></li>
+                        <li><a href="데몬어벤져.html">데몬어벤져</a></li>
+                    </ul>
+                </div>
+            </aside>
+        </div>
+    </div>
+    <!-- 푸터 -->
+    <footer id="main-footer">
+        <span>ⓒ These photographs and fonts are protected by NEXON Korea Corporation with all rights reserved.</span>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>와일드헌터 공략</title>
+    <link rel="stylesheet" href="Style.css"> <!-- 외부 스타일 시트 -->
+    <script src="https://code.jquery.com/jquery-3.7.0.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('.outer-menu-item').hover(function () {
+                $(this).find('.inner-menu').stop().slideDown();
+            }, function () {
+                $(this).find('.inner-menu').stop().slideUp();
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <!-- 전체를 감싸는 테그 -->
+    <div id="page-wrapper">
+        <!-- 헤더 -->
+        <header id="main-header">
+            <hgroup>
+                <h1 class="master-title"><a href="main.html"><img src="image/로고.png" alt="메이플스토리"></a>
+                </h1>
+                <h2 class="master-description"><a href="main.html">직업별 공략</a></h2>
+            </hgroup>
+        </header>
+        <!-- 네비게이션 -->
+        <nav id="main-navigation">
+            <div class="pull-left">
+                <ul class="outer-menu">
+
+                    <li class="outer-menu-item">
+                        <span class="menu-title">모험가</span>
+                        <ul class="inner-menu">
+                            <li class="inner-menu-item"><a href="히어로.html">히어로</a></li>
+                            <li class="inner-menu-item"><a href="팔라딘.html">팔라딘</a></li>
+                            <li class="inner-menu-item"><a href="다크나이트.html">다크나이트</a></li>
+                            <li class="inner-menu-item"><a href="아크메이지(불,독).html">아크메이지(불,독)</a></li>
+                            <li class="inner-menu-item"><a href="아크메이지(썬,콜).html">아크메이지(썬,콜)</a></li>
+                            <li class="inner-menu-item"><a href="비숍.html">비숍</a></li>
+                            <li class="inner-menu-item"><a href="보우마스터.html">보우마스터</a></li>
+                            <li class="inner-menu-item"><a href="신궁.html">신궁</a></li>
+                            <li class="inner-menu-item"><a href="패스파인더.html">패스파인더</a></li>
+                            <li class="inner-menu-item"><a href="나이트로드.html">나이트로드</a></li>
+                            <li class="inner-menu-item"><a href="섀도어.html">섀도어</a></li>
+                            <li class="inner-menu-item"><a href="듀얼블레이드.html">듀얼블레이드</a></li>
+                            <li class="inner-menu-item"><a href="바이퍼.html">바이퍼</a></li>
+                            <li class="inner-menu-item"><a href="캡틴.html">캡틴</a></li>
+                            <li class="inner-menu-item"><a href="캐논슈터.html">캐논슈터</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="outer-menu-item">
+                        <span class="menu-title">시그너스 기사단</span>
+                        <ul class="inner-menu">
+                            <li class="inner-menu-item"><a href="소울마스터.html">소울마스터</a></li>
+                            <li class="inner-menu-item"><a href="미하일.html">미하일</a></li>
+                            <li class="inner-menu-item"><a href="플레임위자드.html">플레임위자드</a></li>
+                            <li class="inner-menu-item"><a href="윈드브레이커.html">윈드브레이커</a></li>
+                            <li class="inner-menu-item"><a href="나이트워커.html">나이트워커</a></li>
+                            <li class="inner-menu-item"><a href="스트라이커.html">스트라이커</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="outer-menu-item">
+                        <span class="menu-title">영웅</span>
+                        <ul class="inner-menu">
+                            <li class="inner-menu-item"><a href="아란.html">아란</a></li>
+                            <li class="inner-menu-item"><a href="에반.html">에반</a></li>
+                            <li class="inner-menu-item"><a href="루미너스.html">루미너스</a></li>
+                            <li class="inner-menu-item"><a href="메르세데스.html">메르세데스</a></li>
+                            <li class="inner-menu-item"><a href="팬텀.html">팬텀</a></li>
+                            <li class="inner-menu-item"><a href="은월.html">은월</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="outer-menu-item">
+                        <span class="menu-title">레지스탕스</span>
+                        <ul class="inner-menu">
+                            <li class="inner-menu-item"><a href="블래스터.html">블래스터</a></li>
+                            <li class="inner-menu-item"><a href="배틀메이지.html">배틀메이지</a></li>
+                            <li class="inner-menu-item"><a href="와일드헌터.html">와일드헌터</a></li>
+                            <li class="inner-menu-item"><a href="메카닉.html">메카닉</a></li>
+                            <li class="inner-menu-item"><a href="제논.html">제논</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="outer-menu-item">
+                        <span class="menu-title">데몬</span>
+                        <ul class="inner-menu">
+                            <li class="inner-menu-item"><a href="데몬슬레이어.html">데몬슬레이어</a></li>
+                            <li class="inner-menu-item"><a href="데몬어벤져.html">데몬어벤져</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="outer-menu-item">
+                        <span class="menu-title">노바</span>
+                        <ul class="inner-menu">
+                            <li class="inner-menu-item"><a href="카이저.html">카이저</a></li>
+                            <li class="inner-menu-item"><a href="카인.html">카인</a></li>
+                            <li class="inner-menu-item"><a href="카데나.html">카데나</a></li>
+                            <li class="inner-menu-item"><a href="엔젤릭버스터.html">엔젤릭버스터</a></li>
+                        </ul>
+                    </li>
+                    <li class="outer-menu-item">
+                        <span class="menu-title">레프</span>
+                        <ul class="inner-menu">
+                            <li class="inner-menu-item"><a href="아델.html">아델</a></li>
+                            <li class="inner-menu-item"><a href="일리움.html">일리움</a></li>
+                            <li class="inner-menu-item"><a href="칼리.html">칼리</a></li>
+                            <li class="inner-menu-item"><a href="아크.html">아크</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="outer-menu-item">
+                        <span class="menu-title">아니마</span>
+                        <ul class="inner-menu">
+                            <li class="inner-menu-item"><a href="라라.html">라라</a></li>
+                            <li class="inner-menu-item"><a href="호영.html">호영</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="outer-menu-item">
+                        <span class="menu-title">초월자</span>
+                        <ul class="inner-menu">
+                            <li class="inner-menu-item"><a href="제로.html">제로</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="outer-menu-item">
+                        <span class="menu-title">키네시스</span>
+                        <ul class="inner-menu">
+                            <li class="inner-menu-item"><a href="키네시스.html">키네시스</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <!-- 본문 -->
+        <div id="content">
+            <!-- 본문 좌측 영역 -->
+            <section id="main-section">
+                <article>
+                    <div class="article-header">
+                        <h1 class="article-title">와일드헌터(Wild Hunter)</h1>
+                    </div>
+                    <div class="article-body">
+                        <img id="c_image" src="image/와일드헌터.webp" alt="와일드헌터">
+                        <h1 id="title">장점</h1>
+                        <p>
+                            <strong>높은 기본스펙과 투자효율</strong><br>
+                            와일드헌터는 다른 직업이 엠블렘에 수백만원을 부어 얻어내는 공퍼를 기본적으로 30% 이상 가지고 있다. 기본스펙이 좋아 투자효율이 떨어진다는 세간의 인식과는 달리,
+                            보총합이 낮기 때문에 투자효율이 높다. 또한 높은 스공으로 공용스킬 코강효율이 좋은 편이며, 크리티컬 리인포스의 존재로 투자효율이 높다. 무엇보다 덱스 장비는 타스탯
+                            대비 저렴하기 때문에 투자효율이 높다.
+                            <br><br>
+                            <strong>고성능 파티 버프</strong><br>
+                            하울링의 공격력/마력 10% 증가는 무보엠 레전드리 잠재능력 1줄에 해당하는 강력한 버프이며, 샤프 아이즈 또한 보유하고 있어 크리티컬 데미지를 최대 8% 증가시킬
+                            수 있다. 그래서 코젬 하나로 와헌 버프를 산다는 고확을 자주 볼 수 있다.
+                            <br><br>
+                            <strong>성능 좋은 유니온 공격대원 효과</strong><br>
+                            와일드헌터의 메이플 유니온/공격대원 효과는 공격 시 20% 확률로 데미지 4%/8%/12%/16%/20% 증가인데 평균적으로 데미지
+                            0.8%/1.6%/2.4%/3.2%/4.0% 증가 효과를 체감할 수 있다. 체감 증가폭은 낮으나 데미지를 올려주는 유니온 공격대원 효과는 와일드헌터를 제외하면 아무도
+                            없다는 점을 감안해 보면 상당히 좋은 효과라 할 수 있다.
+                        </p>
+                        <br>
+                        <br>
+                        <h1 id="title">단점</h1>
+                        <p>
+                            <strong>어려운 코어 강화 난이도로 인해 부족한 코어 슬롯</strong><br>
+                            와일드헌터의 코어 강화 난이도는 그 악랄하다는 불독과 맞먹는 수준으로 강화 코어 10개 중 9개를 강화한다. 때문에 코어 강화 난이도가 낮은 편에 속한 다른 직업에
+                            비해 코어 슬롯이 매우 부족하여, 일정한 레벨을 달성하지 않는 이상 5차 공용 스킬 등을 사용하는데에 있어 어려움을 겪을 수 있다.
+                            <br><br>
+                            <strong>유연하지 못한 기동성</strong><br>
+                            우선 이동기로 보면 트리플 점프, 즉발형 전방 이동기, 대각선 상향 이동기를 쓸 수 있지만 돌진 판정인데다가 이동거리가 짧고 후딜이 길어 제대로 운용하기 어렵다.
+                            게다가 재규어에서 내리면 이동 점프와 재규어 맥시멈 외에 이동 관련 유틸리티가 없어서 보스전에서는 특히 운용 난이도가 높아진다.
+                            <br><br>
+                            <strong>멍청한 재규어의 AI</strong><br>
+                            와헌의 재규어는 직업 상대를 공격하는 엄연한 소환수이기 때문에 AI의 영향을 심하게 받는다. 특히 보스전 때 재규어를 소환하면 때리라는 보스는 안 때리고 저 멀리
+                            도망가서 허공에 헛발질을 하거나 적을 인식하지 못해서 직무유기를 일삼는 상황이 자주 발생한다. 이는 곧 재규어 소울(바인드)의 적중 실패 문제로 연결된다.
+                        </p>
+                        <br>
+                        <br>
+                        <h1 id="title">사냥 운용</h1>
+                        <p>
+                            5차 전까지는 와일드 발칸 Type-P로 사냥하다가 5차 이후부터는 와일드 그레네이드 덕분에 숨통이 트인다. 주력 스킬들이 공속의 영향을 받지 않기 때문에 공속
+                            유지의 부담은 크지 않으나, Type-P의 하단 범위가 부실해서 너무 높이 뛰었다가는 몬스터가 줄줄이 새는 경우를 자주 볼 수 있다.
+                        </p>
+                        <br>
+                        <br>
+                        <h1 id="title">보스전 운용</h1>
+                        <p>
+                            어나더 바이트를 얼마나 잘 유지하는지가 핵심이다. 어나더 바이트는 플레이어 본체가 아닌 재규어의 일반 공격이나 재규어 스킬로 축적되는 디버프로, 플레이어 본체가
+                            공격시 캐릭터 레벨에 비례해 퍼뎀이 증가하는 추가 타격을 부여한다. 따라서 와헌 특유의 높은 타수는 와일드 발칸보다 어나더 바이트에 더욱 큰 영향을 받은 것이라 할
+                            수 있다.
+                        </p>
+                        <br>
+                        <br>
+                        <h1 id="title">어빌리티</h1>
+                        <p>
+                            <strong>보스 몬스터 공격 시 데미지 증가</strong><br>
+                            가장 무난한 어빌리티다.
+                            <br><br>
+                            <strong>크리티컬 확률 증가</strong><br>
+                            오버 크확이더라도 궁수 공용 5차 스킬인 크리티컬 리인포스의 효과를 고려해 뽑는다.
+                            <br><br>
+                            <strong>상태 이상에 걸린 대상 공격 시 데미지</strong><br>
+                            와헌에게는 어나더 바이트가 있으므로 상시 적용되는 것이나 마찬가지다.
+                            <br><br>
+                            <strong>아이템 드롭률/메소 획득량 증가</strong><br>
+                            사냥 위주의 유저에게 좋다.
+                            <br><br>
+                            <strong>버프 지속시간 증가</strong><br>
+                            하울링 지속시간을 10분대까지 늘려서 버프 셔틀로 써먹을 생각이라면 맨 위에 띄워야 한다. 2~3번째 줄에 뜨더라도 최대치가 38%라 본캐 와헌에게도 괜찮을 수
+                            있다.
+                        </p>
+                        <br>
+                        <br>
+                        <h1 id="title">코어강화</h1>
+                        <p>
+                            <strong>필수</strong><br>
+                            서먼 재규어/어나더 바이트, 와일드 발칸, 플래쉬 레인/램피지 애즈 원
+                            <br><br>
+                            <strong>2순위</strong><br>
+                            클로우 컷, 파이널 어택, 소닉붐/재규어 소울
+                            <br><br>
+                            <strong>3순위</strong><br>
+                            크로스 로드/화이트 히트 러쉬, 어시스턴트 헌팅 유닛, 드릴 컨테이너
+                        </p>
+                    </div>
+                </article>
+            </section>
+
+            <!-- 본문 우측 영역 -->
+            <aside id="main-aside">
+                <div class="aside-list">
+                    <h3>레지스탕스</h3>
+                    <ul>
+                        <li><a href="블래스터.html">블래스터</a></li>
+                        <li><a href="배틀메이지.html">배틀메이지</a></li>
+                        <li><a href="와일드헌터.html">와일드헌터</a></li>
+                        <li><a href="메카닉.html">메카닉</a></li>
+                        <li><a href="제논.html">제논</a></li>
+                    </ul>
+                </div>
+            </aside>
+        </div>
+    </div>
+    <!-- 푸터 -->
+    <footer id="main-footer">
+        <span>ⓒ These photographs and fonts are protected by NEXON Korea Corporation with all rights reserved.</span>
+    </footer>
+</body>
+
+</html>

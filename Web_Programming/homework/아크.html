@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>아크 공략</title>
+    <link rel="stylesheet" href="Style.css"> <!-- 외부 스타일 시트 -->
+    <script src="https://code.jquery.com/jquery-3.7.0.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('.outer-menu-item').hover(function () {
+                $(this).find('.inner-menu').stop().slideDown();
+            }, function () {
+                $(this).find('.inner-menu').stop().slideUp();
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <!-- 전체를 감싸는 테그 -->
+    <div id="page-wrapper">
+        <!-- 헤더 -->
+        <header id="main-header">
+            <hgroup>
+                <h1 class="master-title"><a href="main.html"><img src="image/로고.png" alt="메이플스토리"></a>
+                </h1>
+                <h2 class="master-description"><a href="main.html">직업별 공략</a></h2>
+            </hgroup>
+        </header>
+        <!-- 네비게이션 -->
+        <nav id="main-navigation">
+            <div class="pull-left">
+                <ul class="outer-menu">
+
+                    <li class="outer-menu-item">
+                        <span class="menu-title">모험가</span>
+                        <ul class="inner-menu">
+                            <li class="inner-menu-item"><a href="히어로.html">히어로</a></li>
+                            <li class="inner-menu-item"><a href="팔라딘.html">팔라딘</a></li>
+                            <li class="inner-menu-item"><a href="다크나이트.html">다크나이트</a></li>
+                            <li class="inner-menu-item"><a href="아크메이지(불,독).html">아크메이지(불,독)</a></li>
+                            <li class="inner-menu-item"><a href="아크메이지(썬,콜).html">아크메이지(썬,콜)</a></li>
+                            <li class="inner-menu-item"><a href="비숍.html">비숍</a></li>
+                            <li class="inner-menu-item"><a href="보우마스터.html">보우마스터</a></li>
+                            <li class="inner-menu-item"><a href="신궁.html">신궁</a></li>
+                            <li class="inner-menu-item"><a href="패스파인더.html">패스파인더</a></li>
+                            <li class="inner-menu-item"><a href="나이트로드.html">나이트로드</a></li>
+                            <li class="inner-menu-item"><a href="섀도어.html">섀도어</a></li>
+                            <li class="inner-menu-item"><a href="듀얼블레이드.html">듀얼블레이드</a></li>
+                            <li class="inner-menu-item"><a href="바이퍼.html">바이퍼</a></li>
+                            <li class="inner-menu-item"><a href="캡틴.html">캡틴</a></li>
+                            <li class="inner-menu-item"><a href="캐논슈터.html">캐논슈터</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="outer-menu-item">
+                        <span class="menu-title">시그너스 기사단</span>
+                        <ul class="inner-menu">
+                            <li class="inner-menu-item"><a href="소울마스터.html">소울마스터</a></li>
+                            <li class="inner-menu-item"><a href="미하일.html">미하일</a></li>
+                            <li class="inner-menu-item"><a href="플레임위자드.html">플레임위자드</a></li>
+                            <li class="inner-menu-item"><a href="윈드브레이커.html">윈드브레이커</a></li>
+                            <li class="inner-menu-item"><a href="나이트워커.html">나이트워커</a></li>
+                            <li class="inner-menu-item"><a href="스트라이커.html">스트라이커</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="outer-menu-item">
+                        <span class="menu-title">영웅</span>
+                        <ul class="inner-menu">
+                            <li class="inner-menu-item"><a href="아란.html">아란</a></li>
+                            <li class="inner-menu-item"><a href="에반.html">에반</a></li>
+                            <li class="inner-menu-item"><a href="루미너스.html">루미너스</a></li>
+                            <li class="inner-menu-item"><a href="메르세데스.html">메르세데스</a></li>
+                            <li class="inner-menu-item"><a href="팬텀.html">팬텀</a></li>
+                            <li class="inner-menu-item"><a href="은월.html">은월</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="outer-menu-item">
+                        <span class="menu-title">레지스탕스</span>
+                        <ul class="inner-menu">
+                            <li class="inner-menu-item"><a href="블래스터.html">블래스터</a></li>
+                            <li class="inner-menu-item"><a href="배틀메이지.html">배틀메이지</a></li>
+                            <li class="inner-menu-item"><a href="와일드헌터.html">와일드헌터</a></li>
+                            <li class="inner-menu-item"><a href="메카닉.html">메카닉</a></li>
+                            <li class="inner-menu-item"><a href="제논.html">제논</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="outer-menu-item">
+                        <span class="menu-title">데몬</span>
+                        <ul class="inner-menu">
+                            <li class="inner-menu-item"><a href="데몬슬레이어.html">데몬슬레이어</a></li>
+                            <li class="inner-menu-item"><a href="데몬어벤져.html">데몬어벤져</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="outer-menu-item">
+                        <span class="menu-title">노바</span>
+                        <ul class="inner-menu">
+                            <li class="inner-menu-item"><a href="카이저.html">카이저</a></li>
+                            <li class="inner-menu-item"><a href="카인.html">카인</a></li>
+                            <li class="inner-menu-item"><a href="카데나.html">카데나</a></li>
+                            <li class="inner-menu-item"><a href="엔젤릭버스터.html">엔젤릭버스터</a></li>
+                        </ul>
+                    </li>
+                    <li class="outer-menu-item">
+                        <span class="menu-title">레프</span>
+                        <ul class="inner-menu">
+                            <li class="inner-menu-item"><a href="아델.html">아델</a></li>
+                            <li class="inner-menu-item"><a href="일리움.html">일리움</a></li>
+                            <li class="inner-menu-item"><a href="칼리.html">칼리</a></li>
+                            <li class="inner-menu-item"><a href="아크.html">아크</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="outer-menu-item">
+                        <span class="menu-title">아니마</span>
+                        <ul class="inner-menu">
+                            <li class="inner-menu-item"><a href="라라.html">라라</a></li>
+                            <li class="inner-menu-item"><a href="호영.html">호영</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="outer-menu-item">
+                        <span class="menu-title">초월자</span>
+                        <ul class="inner-menu">
+                            <li class="inner-menu-item"><a href="제로.html">제로</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="outer-menu-item">
+                        <span class="menu-title">키네시스</span>
+                        <ul class="inner-menu">
+                            <li class="inner-menu-item"><a href="키네시스.html">키네시스</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <!-- 본문 -->
+        <div id="content">
+            <!-- 본문 좌측 영역 -->
+            <section id="main-section">
+                <article>
+                    <div class="article-header">
+                        <h1 class="article-title">아크(Ark)</h1>
+                    </div>
+                    <div class="article-body">
+                        <img id="c_image" src="image/아크.webp" alt="아크">
+                        <h1 id="title">장점</h1>
+                        <p>
+                            <strong>유연한 기동성</strong><br>
+                            일단 레프 상태의 더블 점프는 타 직업과 비교해서 좀 짧다는 평가를 받고, 스펙터 상태의 트리플 점프도 웬만한 직업의 더블 점프에 비교될 정도의 이동거리다. 하지만
+                            윗점과 부유가 같이 붙어있으며, 방향키와 점프키를 순서무관 누르기만 하면 작동하는 미스틱/인스팅트 리프의 쉬운 조작 난이도와, 충동/본능을 필두로 한 여러
+                            이동스킬들을 적절히 사용하여 아주 빠르진 않지만 상당히 유연한 기동을 보일 수 있다.
+                            물론 이벤트 맵 등에서는 변신과 각종 이동 스킬의 사용이 불가능 하기에 다른 직업군처럼 로프커넥트를 사용하는것이 일반적이다.
+                            <br><br>
+                            <strong>양호한 파티/생존형 유틸리티</strong><br>
+                            아크는 말뚝딜을 가능하게 하는 스킬이 있어 보스와의 상성이 나쁘지 않다. 다만 재사용 대기시간이 대체로 짧고, 레프 상태와 스펙터 상태가 각기 따로 돌아가기 때문에
+                            블래스터처럼 이론상의 데미지를 넣기 위해선 손이 혹사당하게 된다.
+                            유틸적인 면에선 바인드와 체력 소모를 대가로 키다운 이동이 가능한 무적기와 움직이지 못하는 5차 무적기가 있고, 앰플리피케이션을 통해 스펠의 버프를 파티 버프로 줄
+                            수도 있으며 스펙터 잠식 - 인핸스를 찍으면 스펙터 잠식 상태 한정이지만 45초라는 전직업 중 가장 긴 시간 동안 슈퍼스탠스를 유지할 수 있어서 유틸이 전무한 일부
+                            직업보다는 확실히 좋다.
+                        </p>
+                        <br>
+                        <br>
+                        <h1 id="title">단점</h1>
+                        <p>
+                            <strong>높은 스펙터 잠식 의존도</strong><br>
+                            아크는 사냥이나 보스 가릴 것 없이 스펙터 잠식 의존도가 매우 크다. 잠식 상태의 스킬 범위, 데미지 모두 레프 상태일 때보다 우월하고, 대부분의 유틸 및 딜링
+                            스킬도 잠식 상태를 동반하기 때문에 사냥은 물론 보스전에서 게이지 관리는 필연적이다.
+                            <br><br>
+                            <strong>극딜기의 구조적 문제</strong><br>
+                            아크의 극딜기인 끝없는 고통, 근원의 기억, 영원히 굶주리는 짐승 모두 막타에 대미지의 대부분이 집중되어 있는 구조라 스킬 적중에 실패하면 평딜이 약하고 극딜에
+                            치중된 아크의 딜링 능력이 처참하게 떨어진다. 게다가 끝없는 고통은 키다운 스킬임에도 상태이상 면역은 물론 최소한의 이동 기능도 없어 보스 패턴에 매우 취약하고,
+                            핵심 극딜기인 영원히 굶주리는 짐승도 설치기인데 즉발이 아닌 예열이 필요한 스킬이기에 끝없는 고통과 동일한 문제를 겪는다. 심지어 영원히 굶주리는 짐승은 튀어나오기
+                            전에 죽으면 보존되지도 않는다.
+                            <br><br>
+                            <strong>스킬 전반에 붙은 강제이동</strong><br>
+                            공격 스킬마다 강제이동이 너무 많이 붙어서 제어하기 어렵다. 특히 스펙터 모드에서 쓰는 인스팅트 아츠류 스킬들은 방향키에서 손을 떼고 있지 않으면 죄다 급발진하기
+                            일쑤다. 그나마 지워지지 않는 상처(스칼렛 차지드라이브)는 남들도 다 있는 전방 돌진이라 경로를 예측하기 쉽지만, 채워지지 않는 굶주림(거스트 차지드라이브)이나
+                            걷잡을 수 없는 혼돈(어비스 차지드라이브)은 포물선을 그리기 때문에 발판이라도 하나 있으면 예측하지 못한 문제가 생길 가능성이 급등한다.
+                            자체 바인드 또한 상당히 하자가 있는 스킬인데, 범위 내의 적을 무조건 추적하여 걸고 범위 내에 적이 없을경우 시전이 불가능하단 점은 좋지만, 1인 바인드이며, 이
+                            역시 강제 이동 기능이 있기에, 점차 섬세하게 패턴 하나하나를 전부 다 피하는것이 중요해지는 보스 컨텐츠에서는 바인드를 걸려고 강제 이동이 되면서 여러 패턴에 맞아
+                            폭사할수 있는 문제점이 있다.
+                            <br><br>
+                            <strong>불편한 스펠 버프 갱신</strong><br>
+                            다른 직업이라면 패시브 효과로 있을 능력치를 아크는 스펠 버프라는 형태로 받아야 하다보니 불편함이 존재한다. 물론 지속시간이 60초이고, 몬스터가 없어졌을 때 스펠이
+                            5초간 체공하기 때문에 크게 부각되는 단점은 아니다.
+                            <br><br>
+                            <strong>지형을 타는 사냥능력 및 높은 사냥 피로도</strong><br>
+                            아크는 사냥에서 꽤 지형을 타는 편이다. 아크의 스킬은 대다수 이리저리 움직이는 방식이기에 착지할 발판의 위치가 매우 중요하며, 그 외에도 시계탑 같이 가로로 좁은
+                            맵에서는 제대로 움직일 수가 없기에 효율이 매우 떨어진다. 아크는 레프 상태에서 주력기에 쿨이 달려있는 만큼 점프+주력기 사냥이 불가능하여 다양한 광역기 및 이동기를
+                            효율적으로 사용할 수 있는 맵을 찾아야 하는데, 이를 극대화할 수 있는 적당한 크기의 맵과 발판의 배열을 만족하는 사냥터는 생각보다 많지는 않다. 특히 맵이 아크
+                            스킬들의 범위만으로 커버하기 힘들 만큼 거대해지는 모라스 이상 사냥터부터는 스킬들의 이동 판정을 최대한으로 이용할 수 있는 지형의 맵들이 반강제되며, 피로도가 높은
+                            사냥 빌드를 반드시 참조해야만 한다.
+                            에르다 샤워 스킬의 효과 변경으로 설치기로도 이용이 가능하기에 빌드에 유의미한 영향을 끼치긴 하나, 여전히 상당한 피로감을 가지고 있는것도 사실이다.
+                            <br><br>
+                            <strong>어려운 코어 강화 난이도로 인한 부족한 코어 칸 개수</strong><br>
+                            스트라이커를 제외한 연계 or 각 차수 스킬을 전부 사용하는 직업들이 공유하는 단점. 카데나, 제로, 에반처럼 뭘 까도 3줄 코어인 직업이다. 반대로 얘기하면
+                            듀얼블레이드, 캐논슈터 등처럼 잡스킬이 많아 유효 코어 뽑기가 힘든 건 아니지만, 5차 스킬 4개까지 코강을 모두 마치기 위해서는 최소한 235 이상의 레벨이
+                            요구된다. 거기다가 이마저도 강화 코어와 스킬 코어만 장착했을 때의 기준이며, 실제 사용에서는 쓸만한 홀리 심볼, 쓸만한 샤프 아이즈 등 여러 가지 공용 5차
+                            스킬들과 235레벨 이상에서는 스파이더 인 미러까지 추가로 사용하다 보니 칸수가 부족해져 요구 레벨은 더욱 높아진다.
+                            <br><br>
+                            <strong>부실한 내구도</strong><br>
+                            아크의 중요 극딜 버프인 인피니트 스펠은 최대 HP 8%를 소모해야 하고 심지어 무적기인 기어다니는 공포도 0.5초당 최대 HP의 2%식 키다운에 따라 HP 소모가
+                            누적된다. 물약 제한이 없는 보스일 경우 크게 부각되는 단점은 아니지만, 상위 보스로 진행 될수록 회복 물약 제약은 피할 수도 없고 다른 회복 수단까지 막는 보스도
+                            존재한다. 각종 연계 스킬은 HP를 회복시키긴 하지만 회복 봉인이 걸려버리면 더욱 어려워진다. 스킬 자체 HP 소모량에 익숙하지 않으면 극딜이 끊기는 것은 물론이고
+                            데스 카운트까지 잃어야 할 위험이 크다.
+                        </p>
+                        <br>
+                        <br>
+                        <h1 id="title">사냥 운용</h1>
+                        <p>
+                            피로도는 다른 직업들에 비해 높으나, 소수의 공격 스킬을 제외하면 다들 범위가 깡패라고 해도 무방할 정도로 넓고 퍼뎀도 높아서, 필드가 조금 좁다 싶으면 손쉽게
+                            휩쓸어버릴 수 있다. 그러나 고레벨이 될수록 재사용 대기시간이 달린 여러 스킬을 순차적으로, 상황과 '스킬 빌드'에 맞춰서 사용해야 한다는 게 발목을 잡는다. 특히
+                            기억의 늪 모라스부터는 타 유저들의 빌드를 참조해야 원활한 사냥을 할 수 있다. 피로도가 높고 재사용 대기시간 붙은 스킬이 많아서 소위 말하는 '뇌빼기' 사냥은
+                            어지간히 숙련된 게 아니면 힘들다.
+                        </p>
+                        <br>
+                        <br>
+                        <h1 id="title">보스전 운용</h1>
+                        <p>
+                            <strong>딜사이클</strong><br>
+                            레프 상태일 때 4종의 차지드라이브 스킬로 스펠 버프를 발동시키고 스펙터로 변신하여 정신력 게이지를 관리하면서 딜을 넣다가 게이지가 부족해질 때, 혹은 스펠 버프가
+                            풀릴 때 쯤에 다시 레프 상태로 되돌아가는 사이클을 기반으로 플레이한다.
+                            <br><br>
+                            아크 운용 시에 가장 중요한 점은 플레인/흉몽 캔슬을 익혀두는 것이다. 재사용 대기시간이 존재하는 2~4차 스킬인 스칼렛 차지드라이브/지워지지 않는 상처, 멈출 수
+                            없는 충동/본능, 거스트 차지드라이브/채워지지 않는 굶주림, 어비스 차지드라이브/걷잡을 수 없는 혼돈은 원래 강제이동이 동반되는 스킬들이지만, 플레인
+                            차지드라이브/끝나지 않는 흉몽을 쓴 직후 연계해서 사용하면 움직이지 않고 제자리에서 말뚝딜이 가능하다. 연계 방법은 플레인/흉몽키를 누른 후 쿨 달린 스킬들을
+                            눌러주는 것. 이를테면 다음과 같다.
+                            <br><br>
+                            플레인/흉몽 → 스칼렛/상처 → 플레인/흉몽 → 충동/본능 → 플레인/흉몽 → 거스트/굶주림 → 플레인/흉몽 → 어비스/혼돈<br>
+                            이런 식으로 2~4차 주력기들의 주기가 돌아올 때마다 주력기 → 미스틱 아츠 또는 인스팅트 아츠 순서로 연계를 꾸준히 해주면 된다.
+                            <br><br>
+                            아크는 엄연한 연계직업으로, 깡으로 플레인/흉몽만 쓰는 것보다 연계를 할 때 잠재력을 온전히 발휘 할 수 있다. 연계를 해야지 4차 스킬인 전투광란의 효과를 받아
+                            공속이 빨라져서 타수가 늘어나기 때문. 연계를 했을 때와 안 했을 때의 딜 차이는 최종데미지 20% 가량된다. 게다가 연계를 해야 5차 극딜기인 '영원히 굶주리는
+                            짐승'을 빨리 발동시킬 수 있기 때문에 실전에서 연계는 필수이다.
+                            연계는 처음 사용하면 손이 꼬여서 자기 멋대로 튀어나가다가 보스 패턴에 맞아 죽을 수 있으니 연습이 필요하다. 사실 숙련자도 간혹 실수하거나 서버렉 때문에 연계 도중
+                            급발진해서 맞아죽는 경우가 많기 때문에 생존을 위해서는 상황에 따라 적당히 보스 눈치를 보면서 연계해주는 편이 낫다. 플레인/흉몽 캔슬 연계에 대해 더 자세히 알고
+                            싶으면 아크 캔슬 강의를 참고. 연계팁으로는 키보드 재입력 시간과 반복속도를 가장빠름으로 설정해놓으면 연계가 더 부드러워지고 멋대로 튀어나가는 경우도 줄어든다.
+                            또 다른 팁이라면 3차 스킬인 '돌아오는 증오'는 스펠 불릿처럼 자동으로 쓸 수 있긴 하지만, 컨트롤에 충분히 익숙해지고 여유가 된다면 스킬창에 올려두고 매 주기마다
+                            수동으로 쓰는 것을 추천한다. 자동으로 사용하면 징표가 찰 때마다 무조건 자동으로 나가서 편하긴하지만 대신 멋대로 나가는만큼 빗나갈 가능성도 높고, 무엇보다 자동으로
+                            설정하면 사출량이 12개에서 8개로 제한되어서 인피니티 스펠 극딜 타임 때 딜 손실이 조금 있기 때문.
+                            <br><br>
+                            <strong>극딜</strong><br>
+                            아크의 극딜 주기는 영원히 굶주리는 짐승, 인피니티 스펠의 사용 주기인 120초에 맞춘다. 극딜을 넣는 순서는 다음과 같다.
+                            <br><br>
+                            (스펠 버프 미리 준비 후)차지 스펠 앰플리피케이션 발동 → 인피니티 스펠, 레이스 오브 갓, 매직 서킷 풀드라이브 등 지속시간이 긴 극딜 버프 발동 → 설치형
+                            극딜기인 영원히 굶주리는 짐승(영굶짐) 설치 → 황홀한 구속(설치형 바인드 - 코강시 2인 바인드) 설치 → 소울 컨트랙트, 시드링 등 지속시간이 짧은 극딜 버프
+                            발동 → 흉몽 캔슬과 끝없는 고통 키다운으로 영원히 굶주리는 짐승 발동 → 근원의 기억 막타 발동.
+                            <br><br>
+                            근원의 기억은 인피니티 스펠이 적용되지 않는다는 단점이 있지만 무적을 동반한 안정적인 극딜을 넣을 수 있고, 점유율 역시 크기 때문에 극딜에 맞춰서 같이 써주는 것이
+                            좋다. 지속시간 동안 계속 쓰는 것이 아니라 스킬키를 두 번 눌러서 막타만 넣어준다. 막타에 대부분의 딜이 몰려있어서 리레 지속 시간 내에 막타딜을 꽂아줄 필요가
+                            있고, 인피니티 스펠의 불릿 사출 손해를 최소화 할 수 있다.
+                            물론 보스에 따라서 영원히 굶주리는 짐승을 깔고 바인드를 걸려는 그 찰나의 순간에 텔레포트를 하여 이동하는 경우도 간혹 있기에 경우에 맞게 바인드를 먼저 거는 등의
+                            변화를 줘서 조금더 극딜하기에 편한 환경을 직접 조성하면 된다.
+                            <br><br>
+                            <strong>유틸리티</strong><br>
+                            아크는 개인 유틸리티가 좋기 때문에 보스의 위험한 패턴에 대처하기가 쉽다. 무적기가 2개이며 그 중 하나인 기어다니는 공포는 누르는 동안 최대 5초 무적에 60초
+                            주기인데, 쿨타임 리듀스를 찍으면 48초가 된다. 다른 무적기인 근원의 기억은 시전 중 행동이 제한되나 5초 동안 무적 상태가 되는 극딜기이다. 자체적으로 바인드
+                            스킬을 소지하고 있으며, 돌진 스킬인 스칼렛 차지드라이브/지워지지 않는 상처는 공중에서 사용하면 텔레포트 판정으로 이동하게 된다. 이동 경로에 피격 판정이 없게끔
+                            이동하므로 회피기로 유용하게 사용된다. 어비스 차지드라이브는 시전 도중 슈퍼 스탠스 상태가 되어 적의 공격에 밀려나지 않게 되고 하이퍼스킬인 스펙터 잠식-인핸스를
+                            찍으면 스펙터 상태일 때 상시 슈퍼스탠스가 적용되므로 슈퍼넉백이 특히 위협적인 보스들을 여유롭게 상대할 수 있게 해준다.
+                        </p>
+                        <br>
+                        <br>
+                        <h1 id="title">어빌리티</h1>
+                        <p>
+                            어빌리티를 무난하게 가겠다면 어빌리티를 타지 않는 아크 특성상 첫줄은 보스 몬스터 공격 시 데미지 증가가 가장 좋은 선택이다. 공격 속도 1단계 증가는 자력
+                            풀공속(2등급)에 도달 가능하니 없어도 되며, 주력기의 타겟 수가 6명으로 준수하여 다수기 타겟 수 1 증가 어빌리티도 필요없다.
+                            <br><br>
+                            첫줄을 뽑은 뒤에는 게임을 즐기는 취향에 따라 나뉜다. 일반적인 경우라면 모두의 국민 옵션인 상태이상 추가 데미지, 크리티컬 확률을 챙기는 것이 가장 이상적이며,
+                            보스보단 사냥을 우선할 경우 메소 획득량 증가 및 아이템 드롭률 증가를 고려해도 좋다. 스펠 원킬컷을 위한 일반 몬스터 데미지, 스펠 버프 지속시간을 조금이나마
+                            늘리기 위한 버프 지속시간도 나쁘지는 않지만, 크게 추천할만한 옵션은 아니다.
+                        </p>
+                        <br>
+                        <br>
+                        <h1 id="title">코어강화</h1>
+                        <p>
+                            <strong>1순위</strong><br>
+                            플레인 차지드라이브, 잊혀지지 않는 악몽/흉몽, 다가오는 죽음/돌아오는 증오
+                            <br><br>
+                            <strong>2순위</strong><br>
+                            스칼렛 차지드라이브/지워지지 않는 상처, 거스트 차지드라이브/채워지지 않는 굶주림, 기어 다니는 공포/황홀한 구속/끝없는 고통, 어비스 차지드라이브/걷잡을 수 없는
+                            혼돈
+                            <br><br>
+                            <strong>3순위</strong><br>
+                            멈출 수 없는 충동/멈출 수 없는 본능
+                        </p>
+                    </div>
+                </article>
+            </section>
+
+            <!-- 본문 우측 영역 -->
+            <aside id="main-aside">
+                <div class="aside-list">
+                    <h3>레프</h3>
+                    <ul>
+                        <li><a href="아델.html">아델</a></li>
+                        <li><a href="일리움.html">일리움</a></li>
+                        <li><a href="칼리.html">칼리</a></li>
+                        <li><a href="아크.html">아크</a></li>
+                    </ul>
+                </div>
+            </aside>
+        </div>
+    </div>
+    <!-- 푸터 -->
+    <footer id="main-footer">
+        <span>ⓒ These photographs and fonts are protected by NEXON Korea Corporation with all rights reserved.</span>
+    </footer>
+</body>
+
+</html>

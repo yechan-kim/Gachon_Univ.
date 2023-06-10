@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>아델 공략</title>
+    <link rel="stylesheet" href="Style.css"> <!-- 외부 스타일 시트 -->
+    <script src="https://code.jquery.com/jquery-3.7.0.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('.outer-menu-item').hover(function () {
+                $(this).find('.inner-menu').stop().slideDown();
+            }, function () {
+                $(this).find('.inner-menu').stop().slideUp();
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <!-- 전체를 감싸는 테그 -->
+    <div id="page-wrapper">
+        <!-- 헤더 -->
+        <header id="main-header">
+            <hgroup>
+                <h1 class="master-title"><a href="main.html"><img src="image/로고.png" alt="메이플스토리"></a>
+                </h1>
+                <h2 class="master-description"><a href="main.html">직업별 공략</a></h2>
+            </hgroup>
+        </header>
+        <!-- 네비게이션 -->
+        <nav id="main-navigation">
+            <div class="pull-left">
+                <ul class="outer-menu">
+
+                    <li class="outer-menu-item">
+                        <span class="menu-title">모험가</span>
+                        <ul class="inner-menu">
+                            <li class="inner-menu-item"><a href="히어로.html">히어로</a></li>
+                            <li class="inner-menu-item"><a href="팔라딘.html">팔라딘</a></li>
+                            <li class="inner-menu-item"><a href="다크나이트.html">다크나이트</a></li>
+                            <li class="inner-menu-item"><a href="아크메이지(불,독).html">아크메이지(불,독)</a></li>
+                            <li class="inner-menu-item"><a href="아크메이지(썬,콜).html">아크메이지(썬,콜)</a></li>
+                            <li class="inner-menu-item"><a href="비숍.html">비숍</a></li>
+                            <li class="inner-menu-item"><a href="보우마스터.html">보우마스터</a></li>
+                            <li class="inner-menu-item"><a href="신궁.html">신궁</a></li>
+                            <li class="inner-menu-item"><a href="패스파인더.html">패스파인더</a></li>
+                            <li class="inner-menu-item"><a href="나이트로드.html">나이트로드</a></li>
+                            <li class="inner-menu-item"><a href="섀도어.html">섀도어</a></li>
+                            <li class="inner-menu-item"><a href="듀얼블레이드.html">듀얼블레이드</a></li>
+                            <li class="inner-menu-item"><a href="바이퍼.html">바이퍼</a></li>
+                            <li class="inner-menu-item"><a href="캡틴.html">캡틴</a></li>
+                            <li class="inner-menu-item"><a href="캐논슈터.html">캐논슈터</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="outer-menu-item">
+                        <span class="menu-title">시그너스 기사단</span>
+                        <ul class="inner-menu">
+                            <li class="inner-menu-item"><a href="소울마스터.html">소울마스터</a></li>
+                            <li class="inner-menu-item"><a href="미하일.html">미하일</a></li>
+                            <li class="inner-menu-item"><a href="플레임위자드.html">플레임위자드</a></li>
+                            <li class="inner-menu-item"><a href="윈드브레이커.html">윈드브레이커</a></li>
+                            <li class="inner-menu-item"><a href="나이트워커.html">나이트워커</a></li>
+                            <li class="inner-menu-item"><a href="스트라이커.html">스트라이커</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="outer-menu-item">
+                        <span class="menu-title">영웅</span>
+                        <ul class="inner-menu">
+                            <li class="inner-menu-item"><a href="아란.html">아란</a></li>
+                            <li class="inner-menu-item"><a href="에반.html">에반</a></li>
+                            <li class="inner-menu-item"><a href="루미너스.html">루미너스</a></li>
+                            <li class="inner-menu-item"><a href="메르세데스.html">메르세데스</a></li>
+                            <li class="inner-menu-item"><a href="팬텀.html">팬텀</a></li>
+                            <li class="inner-menu-item"><a href="은월.html">은월</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="outer-menu-item">
+                        <span class="menu-title">레지스탕스</span>
+                        <ul class="inner-menu">
+                            <li class="inner-menu-item"><a href="블래스터.html">블래스터</a></li>
+                            <li class="inner-menu-item"><a href="배틀메이지.html">배틀메이지</a></li>
+                            <li class="inner-menu-item"><a href="와일드헌터.html">와일드헌터</a></li>
+                            <li class="inner-menu-item"><a href="메카닉.html">메카닉</a></li>
+                            <li class="inner-menu-item"><a href="제논.html">제논</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="outer-menu-item">
+                        <span class="menu-title">데몬</span>
+                        <ul class="inner-menu">
+                            <li class="inner-menu-item"><a href="데몬슬레이어.html">데몬슬레이어</a></li>
+                            <li class="inner-menu-item"><a href="데몬어벤져.html">데몬어벤져</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="outer-menu-item">
+                        <span class="menu-title">노바</span>
+                        <ul class="inner-menu">
+                            <li class="inner-menu-item"><a href="카이저.html">카이저</a></li>
+                            <li class="inner-menu-item"><a href="카인.html">카인</a></li>
+                            <li class="inner-menu-item"><a href="카데나.html">카데나</a></li>
+                            <li class="inner-menu-item"><a href="엔젤릭버스터.html">엔젤릭버스터</a></li>
+                        </ul>
+                    </li>
+                    <li class="outer-menu-item">
+                        <span class="menu-title">레프</span>
+                        <ul class="inner-menu">
+                            <li class="inner-menu-item"><a href="아델.html">아델</a></li>
+                            <li class="inner-menu-item"><a href="일리움.html">일리움</a></li>
+                            <li class="inner-menu-item"><a href="칼리.html">칼리</a></li>
+                            <li class="inner-menu-item"><a href="아크.html">아크</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="outer-menu-item">
+                        <span class="menu-title">아니마</span>
+                        <ul class="inner-menu">
+                            <li class="inner-menu-item"><a href="라라.html">라라</a></li>
+                            <li class="inner-menu-item"><a href="호영.html">호영</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="outer-menu-item">
+                        <span class="menu-title">초월자</span>
+                        <ul class="inner-menu">
+                            <li class="inner-menu-item"><a href="제로.html">제로</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="outer-menu-item">
+                        <span class="menu-title">키네시스</span>
+                        <ul class="inner-menu">
+                            <li class="inner-menu-item"><a href="키네시스.html">키네시스</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <!-- 본문 -->
+        <div id="content">
+            <!-- 본문 좌측 영역 -->
+            <section id="main-section">
+                <article>
+                    <div class="article-header">
+                        <h1 class="article-title">아델(Adele)</h1>
+                    </div>
+                    <div class="article-body">
+                        <img id="c_image" src="image/아델.webp" alt="아델">
+                        <h1 id="title">장점</h1>
+                        <p>
+                            <strong>모든 방면으로 준수한 기본 스펙</strong><br>
+                            아델의 경우 부스터 사용만으로 풀 공속 달성이 가능하고, 기본적인 보스 공격력, 데미지, 크리티컬 확률, 크리티컬 데미지 및 방어율 무시율의 수치가 너무 과하지 않아
+                            그란디스 여신의 축복으로 인한 극딜 공격력 상승을 제외하면 스펙대에 따라 투자 효율이 급감하지 않는 모습을 보인다.
+                            <br><br>
+                            <strong>준수한 기동성</strong><br>
+                            임페일-레조넌스나 에테르 결정-레조넌스 연계를 이용해 먼 거리를 순식간에 이동할 수 있다. 여기에 페더로 스킬 사용 중 텔레포트 판정을 받는 후방이동까지 할 수
+                            있어서 반응성도 좋고, 체공 스킬인 레비테이션까지 있어서 패턴 회피도 용이하다.
+                            <br><br>
+                            <strong>편리한 사냥능력</strong><br>
+                            주력기 디바이드의 범위가 매우 출중해서, 어느 사냥터에 가든 점프-디바이드만 써도 편리하게 몹을 쓸어담을 수 있다. 디바이드의 범위는 가로축도 훌륭하지만 세로축의
+                            범위가 정말 넓어서, 특히 커닝타워, 지방본, 버발2, 숨일 등의 복층구조 사냥터에서 매우 효율적이다. 디바이드의 원킬컷은 인식과 달리 평범한 수준이지만,
+                            디바이드보다 2배 가까이 강력한 크리에이션이 1.5초마다 함께 터지기 때문에, 딜이 부족하더라도 유사 원킬 사냥을 할 수 있다. 게다가 크리에이션은 범위도 준 광역기
+                            수준이다. 덕분에 아델은 유니온 200작 깡패로 불리며 몹들이 훨씬 단단해진 리부트 월드에서도 무리없이 원킬을 내 첫 직업으로 가장 많이 추천받는다.
+                        </p>
+                        <br>
+                        <br>
+                        <h1 id="title">단점</h1>
+                        <p>
+                            <strong>까다로운 에테르 운용으로 인한 효율성 문제</strong><br>
+                            자동 타격기인 오더가 있는 만큼 아델의 화력 대비 자체는 나쁘지 않지만, 사용하는 에테르 양에 비해 수급 속도가 상당히 느려서 상황에 따라서는 효율이 떨어질 수
+                            있다. 일정 시간 마다 자동 회복되는 수치는 거의 의미가 없는 수준이라, 결국 트리거 스킬과 레조넌스-엑스트라 힐링으로 열심히 에테르를 수급해야 한다. 게다가 오더는
+                            버프 프리저로 보호할 수 없어 사망 시의 손해가 상당하다. 에테르를 소모하지 않으면 오더를 뽑을 수 없고, 에테르를 낭비하면 크리에이션의 효율이 반감되는 직업 구조상
+                            에테르 관리가 아주 중요하다.
+                            <br><br>
+                            <strong>압축되지 않은 극딜</strong><br>
+                            주요 극딜기인 인피니트의 지속시간은 30초, 스톰은 20초다. 보통 극딜기가 바인드 지속시간인 10초, 혹은 5~6초 안에 모든 화력을 다 쏟아붓고 끝장내는 데에
+                            특화되어 있다는 점을 고려하면 명백한 단점이다. 단적으로 엔버 링크나 시드링도 기본 지속시간이 10~15초인데, 이 버프가 다 끝날 즈음이면 아델은 겨우 절반까지 온
+                            것에 불과하다.
+                            <br><br>
+                            <strong>불편한 조작감과 강제되는 기동</strong><br>
+                            수시로 사용해야 하는 임페일-레조넌스와 게더링-블로썸 콤보의 액션 딜레이가 상당하다. 게다가 에테르 결정이 생성될 경우 키씹힘을 유발하기에 콤보를 넣다가 나갈 스킬이
+                            나가지 않거나 스킬을 넣은 뒤에 상상 이상의 후딜을 경험하는 경우가 발생하게 된다. 이런 문제점 때문에 숙련도가 낮거나 패턴 숙지가 덜 된 아델들이 별거 아닌 패턴에
+                            쉽게 뇌절하는 경우를 심심찮게 볼 수 있다.
+                            <br><br>
+                            <strong>무적기의 부실한 성능</strong><br>
+                            일반적인 무적기와 달리, 다이크의 무적은 미하일의 로얄 가드처럼 피격 타이밍을 맞춰야만 적용되기 때문에 사용 난이도가 높다. 또한 무적 지속시간이 0.5초 이하로
+                            매우 짧아 연이어 날아오는 패턴들을 다 막기에는 한계가 있다. 툴팁과는 달리, 키다운 뎀감 중에도 검은 마법사의 저주는 받는다.
+                            <br><br>
+                            <strong>5차 스킬 간의 역시너지</strong><br>
+                            매직 서킷 풀드라이브는 MP의 비율에 따라 데미지 상승량이 다르게 적용되는데, 리스토어는 초당 MP를 일정 비율로 깎아내린다. 그래서 물약 사용 대기시간이나 제한이
+                            있는 보스에서는 최대한의 성능을 끌어내기 어렵다.
+                        </p>
+                        <br>
+                        <br>
+                        <h1 id="title">사냥 운용</h1>
+                        <p>
+                            소위 뇌빼기 사냥이라 불리는 더블 점프 - 디바이드만 사용해도 어지간한 필드는 정리된다. 그만큼 주력기인 디바이드의 범위가 넓으므로, 4차 전직 이후 육성 난이도는
+                            지극히 낮다.
+                        </p>
+                        <br>
+                        <br>
+                        <h1 id="title">보스전 운용</h1>
+                        <p>
+                            <strong>평딜</strong><br>
+                            딜사이클 자체는 크게 어렵지 않지만 신경 써줘야하는 요소가 많은 편이다. 노쿨 주력기인 '디바이드'를 꾸준히 눌러주며 다음 스킬들을 주기적으로 사용하면된다.
+                        <p style="padding: 0 0 0 10px;">
+                            * 사출기 '오더'를 6개 유지한다<br>
+                            * 설치기, '테리토리'를 쿨다운이 돌 때마다 주기적으로 설치한다.<br>
+                            * 이동기 겸 공격기인 '레조넌스'를 사용 시 발동되는 버프 스킬의 스택을 유지해준다.<br>
+                            * 짧은 쿨 극딜 스킬인 '게더링+블로섬'을 주기적으로 연계하여 사용한다.
+                        </p>
+                        기본적으로 여기까지만 해줘도 충분히 강력한 화력을 뽑아낼 수 있다. 여기에 중간중간에 레조넌스, 수동 샤드, 트레드까지 사용하면 아델의 화력을 극한까지 끌어낼 수 있지만
+                        온갖 위협적인 패턴이 난무하는 실전 보스에서는 수동 샤드까지는 몰라도 트레드까지 섞어서 쓰는 딜사이클은 사용하기 힘들다. 대신 보스 패턴이 위협적이지 않은 무릉도장에서는
+                        써볼만하다.
+                        <br><br>
+                        <strong>극딜</strong><br>
+                        레이스 오브 갓, 노빌리티, 인피니트, 리스토어, 매직 서킷 풀드라이브, 그란디스 여신의 축복 등 극딜 버프를 지속시간이 긴 순서대로 전부 다 켜고, 바인드를 건 후, 엔버
+                        링크와 시드링을 쓴 다음에 그레이브, 마커, 루인을 써주고 평딜을 지속적으로 넣어주면 된다. 극딜 버프는 그란디스 여신의 축복, 매직 서킷 풀드라이브와 레이스 오브 갓을
+                        제외하면 전부 180초에 맞춰져 있다. 또한 마커와 루인은 60초 주기라서 쿨이 돌 때마다 꾸준히 써줘도 180초 극딜에 맞출 수 있으나, 칼같이 써줘야 180초에 맞출 수
+                        있는만큼 웬만하면 소울 컨트랙트에 맞춰서 그냥 90초 주기로 돌리는 것이 더 나을 수도 있다.
+                        </p>
+                        <br>
+                        <br>
+                        <h1 id="title">어빌리티</h1>
+                        <p>
+                            <strong>재사용 대기시간 미적용</strong><br>
+                            아델의 스킬 중에는 이 효과가 적용되지 않는 스킬이 많아 효율이 떨어진다고 생각할 수 있지만, 테리토리의 딜 지분이 꽤 높아 이 어빌도 추천된다. 테리토리 외에도
+                            엔버 링크가 가끔 재사용이 터진다면 큰 도움이 되고, 샤드가 분산되지 않는 상황에선 샤드 풀타가 꽤 강한 편이라 재사용이 터지면 매우 유용하다. 크리에이션도 발동
+                            주기가 1.5초에 불과해서 재사용이 매우 자주 발동된다. 또한 보공은 스펙이 올라갈 수록 효율이 떨어지지만 재사용은 일정한 효율을 보여주기 때문에 루시드 이상 상위
+                            보스를 잡는 유저는 주로 재사용을 첫줄로 뽑는다.
+                            <br><br>
+                            <strong>보스 공격 시 데미지 증가</strong><br>
+                            보공 총합이 16%밖에 안되는 직업이라 보공 효율이 좋다. 다만 극딜을 넣을 때 모든 버프를 다 쓰고 그레이브까지 걸면 하이퍼를 제외하더라도 코어 만렙 기준 데미지가
+                            최대 170%나 추가되어 효율이 많이 감소된다.
+                            <br><br>
+                            <strong>버프 지속시간 증가</strong><br>
+                            레조넌스 버프와 엔버 링크(소울 컨트랙트)의 지속시간이 늘어난다. 30초 극딜에 집중하는 아델에게 유용한 옵션이다. 2~3번째 줄에서 20% 정도 뽑아두면 좋다.
+                            <br><br>
+                            <strong>상태 이상에 걸린 적 공격 시 데미지 증가</strong><br>
+                            그레이브 외에도 게더링의 공격 시 방어율 무시 디버프도 상태 이상으로 적용돼 사실상 보공과 똑같다. 보공 어빌과 중첩 가능하기 때문에 첫줄이 보공이라면
+                            2,3번째줄에서 뽑아두면 좋다.
+                            <br><br>
+                            <strong>크리티컬 확률 증가</strong><br>
+                            아델의 기본 크확은 45%다. 이는 낮지는 않지만 높지도 않은 수치이므로, 2~3번째 줄부터 10% 가량 뽑아두면 어렵지 않게 크리티컬 100%를 확보할 수 있다.
+                            물론 다른 곳에서 크확을 보충할 수 있다면 그쪽을 고르는 게 낫다.
+                            <br><br>
+                            <strong>아이템 드랍률/메소 획득량 증가</strong><br>
+                            광부 필수 어빌리티.
+                        </p>
+                        <br>
+                        <br>
+                        <h1 id="title">코어강화</h1>
+                        <p>
+                            <strong>1순위</strong><br>
+                            오더/그레이브, 디바이드, 테리토리/트레드
+                            <br><br>
+                            <strong>2순위</strong><br>
+                            샤드/원더, 크리에이션/게더링, 블로섬/스콜, 임페일/레조넌스/마커
+                        </p>
+                    </div>
+                </article>
+            </section>
+
+            <!-- 본문 우측 영역 -->
+            <aside id="main-aside">
+                <div class="aside-list">
+                    <h3>레프</h3>
+                    <ul>
+                        <li><a href="아델.html">아델</a></li>
+                        <li><a href="일리움.html">일리움</a></li>
+                        <li><a href="칼리.html">칼리</a></li>
+                        <li><a href="아크.html">아크</a></li>
+                    </ul>
+                </div>
+            </aside>
+        </div>
+    </div>
+    <!-- 푸터 -->
+    <footer id="main-footer">
+        <span>ⓒ These photographs and fonts are protected by NEXON Korea Corporation with all rights reserved.</span>
+    </footer>
+</body>
+
+</html>

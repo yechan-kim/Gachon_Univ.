@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>데몬슬레이어 공략</title>
+    <link rel="stylesheet" href="Style.css"> <!-- 외부 스타일 시트 -->
+    <script src="https://code.jquery.com/jquery-3.7.0.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('.outer-menu-item').hover(function () {
+                $(this).find('.inner-menu').stop().slideDown();
+            }, function () {
+                $(this).find('.inner-menu').stop().slideUp();
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <!-- 전체를 감싸는 테그 -->
+    <div id="page-wrapper">
+        <!-- 헤더 -->
+        <header id="main-header">
+            <hgroup>
+                <h1 class="master-title"><a href="main.html"><img src="image/로고.png" alt="메이플스토리"></a>
+                </h1>
+                <h2 class="master-description"><a href="main.html">직업별 공략</a></h2>
+            </hgroup>
+        </header>
+        <!-- 네비게이션 -->
+        <nav id="main-navigation">
+            <div class="pull-left">
+                <ul class="outer-menu">
+
+                    <li class="outer-menu-item">
+                        <span class="menu-title">모험가</span>
+                        <ul class="inner-menu">
+                            <li class="inner-menu-item"><a href="히어로.html">히어로</a></li>
+                            <li class="inner-menu-item"><a href="팔라딘.html">팔라딘</a></li>
+                            <li class="inner-menu-item"><a href="다크나이트.html">다크나이트</a></li>
+                            <li class="inner-menu-item"><a href="아크메이지(불,독).html">아크메이지(불,독)</a></li>
+                            <li class="inner-menu-item"><a href="아크메이지(썬,콜).html">아크메이지(썬,콜)</a></li>
+                            <li class="inner-menu-item"><a href="비숍.html">비숍</a></li>
+                            <li class="inner-menu-item"><a href="보우마스터.html">보우마스터</a></li>
+                            <li class="inner-menu-item"><a href="신궁.html">신궁</a></li>
+                            <li class="inner-menu-item"><a href="패스파인더.html">패스파인더</a></li>
+                            <li class="inner-menu-item"><a href="나이트로드.html">나이트로드</a></li>
+                            <li class="inner-menu-item"><a href="섀도어.html">섀도어</a></li>
+                            <li class="inner-menu-item"><a href="듀얼블레이드.html">듀얼블레이드</a></li>
+                            <li class="inner-menu-item"><a href="바이퍼.html">바이퍼</a></li>
+                            <li class="inner-menu-item"><a href="캡틴.html">캡틴</a></li>
+                            <li class="inner-menu-item"><a href="캐논슈터.html">캐논슈터</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="outer-menu-item">
+                        <span class="menu-title">시그너스 기사단</span>
+                        <ul class="inner-menu">
+                            <li class="inner-menu-item"><a href="소울마스터.html">소울마스터</a></li>
+                            <li class="inner-menu-item"><a href="미하일.html">미하일</a></li>
+                            <li class="inner-menu-item"><a href="플레임위자드.html">플레임위자드</a></li>
+                            <li class="inner-menu-item"><a href="윈드브레이커.html">윈드브레이커</a></li>
+                            <li class="inner-menu-item"><a href="나이트워커.html">나이트워커</a></li>
+                            <li class="inner-menu-item"><a href="스트라이커.html">스트라이커</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="outer-menu-item">
+                        <span class="menu-title">영웅</span>
+                        <ul class="inner-menu">
+                            <li class="inner-menu-item"><a href="아란.html">아란</a></li>
+                            <li class="inner-menu-item"><a href="에반.html">에반</a></li>
+                            <li class="inner-menu-item"><a href="루미너스.html">루미너스</a></li>
+                            <li class="inner-menu-item"><a href="메르세데스.html">메르세데스</a></li>
+                            <li class="inner-menu-item"><a href="팬텀.html">팬텀</a></li>
+                            <li class="inner-menu-item"><a href="은월.html">은월</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="outer-menu-item">
+                        <span class="menu-title">레지스탕스</span>
+                        <ul class="inner-menu">
+                            <li class="inner-menu-item"><a href="블래스터.html">블래스터</a></li>
+                            <li class="inner-menu-item"><a href="배틀메이지.html">배틀메이지</a></li>
+                            <li class="inner-menu-item"><a href="와일드헌터.html">와일드헌터</a></li>
+                            <li class="inner-menu-item"><a href="메카닉.html">메카닉</a></li>
+                            <li class="inner-menu-item"><a href="제논.html">제논</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="outer-menu-item">
+                        <span class="menu-title">데몬</span>
+                        <ul class="inner-menu">
+                            <li class="inner-menu-item"><a href="데몬슬레이어.html">데몬슬레이어</a></li>
+                            <li class="inner-menu-item"><a href="데몬어벤져.html">데몬어벤져</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="outer-menu-item">
+                        <span class="menu-title">노바</span>
+                        <ul class="inner-menu">
+                            <li class="inner-menu-item"><a href="카이저.html">카이저</a></li>
+                            <li class="inner-menu-item"><a href="카인.html">카인</a></li>
+                            <li class="inner-menu-item"><a href="카데나.html">카데나</a></li>
+                            <li class="inner-menu-item"><a href="엔젤릭버스터.html">엔젤릭버스터</a></li>
+                        </ul>
+                    </li>
+                    <li class="outer-menu-item">
+                        <span class="menu-title">레프</span>
+                        <ul class="inner-menu">
+                            <li class="inner-menu-item"><a href="아델.html">아델</a></li>
+                            <li class="inner-menu-item"><a href="일리움.html">일리움</a></li>
+                            <li class="inner-menu-item"><a href="칼리.html">칼리</a></li>
+                            <li class="inner-menu-item"><a href="아크.html">아크</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="outer-menu-item">
+                        <span class="menu-title">아니마</span>
+                        <ul class="inner-menu">
+                            <li class="inner-menu-item"><a href="라라.html">라라</a></li>
+                            <li class="inner-menu-item"><a href="호영.html">호영</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="outer-menu-item">
+                        <span class="menu-title">초월자</span>
+                        <ul class="inner-menu">
+                            <li class="inner-menu-item"><a href="제로.html">제로</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="outer-menu-item">
+                        <span class="menu-title">키네시스</span>
+                        <ul class="inner-menu">
+                            <li class="inner-menu-item"><a href="키네시스.html">키네시스</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <!-- 본문 -->
+        <div id="content">
+            <!-- 본문 좌측 영역 -->
+            <section id="main-section">
+                <article>
+                    <div class="article-header">
+                        <h1 class="article-title">데몬어벤져(Demon Avenger)</h1>
+                    </div>
+                    <div class="article-body">
+                        <img id="c_image" src="image/데몬어벤져.webp" alt="데몬어벤져">
+                        <h1 id="title">장점</h1>
+                        <p>
+                            <strong>단순하고 효율적인 보스전 메커니즘</strong><br>
+                            데벤져의 평딜 방식은 평이하다. 프렌지를 활성화하고 적에게 비비면서 실드체이싱+엑스큐션만 쓰다가, 가끔 방깎 디버프인 아머 브레이크를 먹이고, 릴리즈 오버로드 쓰는
+                            게 고작이다. 캔슬이나 연계나 게이지 관리 등의 난해한 운용법이 필요하지도 않고, 그렇다고 해서 극딜 역시 버프기들을 제외하면 디멘션 소드 하나뿐이라 복잡하거나
+                            약하지도 않다. 상황 판단력이 조금 필요할 수는 있지만, 상시 모든 피해 감소를 달고 다닐 수 있는 직업이라서 HP 관리만 잘 된다면 무적 없이도 사지에서 잘만
+                            살아나갈 수 있다.
+                            <br><br>
+                            <strong>육성에 따른 부가가치</strong><br>
+                            데벤져는 200레벨 기준, 링크 스킬로 데미지 10%와 유니온 공격대원으로 보공 5%를 부여한다. 즉 링크와 유니온이 모두 필수 옵션으로 여겨지는 유일한 케이스다.
+                            그래서 유니온도 생성되지 않은 완전한 신규 유저가 조언 대상이라면, 열에 아홉은 데벤져부터 키우고 볼 것을 권장한다.
+                            <br><br>
+                            <strong>(숙련자 한정) 질긴 생존력</strong><br>
+                            데몬 프렌지로 덜 아프게 맞으면서, 피장판+앱졸브 라이프로 HP를 점진적으로 회복하는 메커니즘을 잘 이해한 데벤져는 죽을 듯한 상황에서도 끈질기게 안 죽는다. 오히려
+                            피스트의 순간 피해 감소, 레버넌트의 불사까지 대동하면 다른 직업이 무적 없이 빠져나갈 수 없는 상황에서도 버틸 수 있다. 여차하면 윗점+글라이드로 유유히 패턴을
+                            피하면 그만이라 대처능력도 좋다.
+                            <br><br>
+                            <strong>저투자 고효율의 성장 방식</strong><br>
+                            공용, 또는 전사 장비 중에서 HP 추가 옵션이나 잠재 능력이 붙은 것들은 데벤져 전용이다. 게다가 HP 추옵/잠재는 체감상 뜨기는 잘 뜨는데, 수요자는 데벤져뿐이라
+                            공급에 비해 수요가 적다. 그래서 가격도 대체로 저렴하다. 게다가 쓸만한 하이퍼 바디로 순수 HP 40%를 추가하고, 듀라빌리티 링과 에피네아 소울까지 쓸 수 있으니
+                            순간적으로 주스탯을 펌핑하기도 쉽다.
+                            <br><br>
+                            <strong>태생적으로 높은 방어 무시율</strong><br>
+                            디펜스 엑스퍼타이즈에 방무 30%, 엑스큐션에 추가 방무 30%, 아머 브레이크에 30% 방무 디버프까지 있다. 극딜기인 디멘션 소드는 극딜 모드 한정으로 추가
+                            방무가 아예 100%다. 그래서 실방무 95%를 챙기기가 가장 쉽다. 물론 프렌지에는 추가 방무가 없으므로, 무보엠에서 방무 1줄 정도는 챙겨야 한다.
+                            <br><br>
+                            <strong>지극히 낮은 포션 의존도</strong><br>
+                            비록 프렌지로 인해 회복량이 제한되지만, 데벤져는 패시브 흡혈이 있고, 여차하면 프렌지를 무시하고 전체 HP의 1/4를 즉시 회복하는 블러드 피스트가 있다.
+                            장기적으로 보면 오히려 물약을 쓰지 않는 게 화력 측면에서 이점으로 작용한다. 심지어 프렌지 자체도 오라가 다단히트하는 공격 스킬이라 점진적으로 HP 회복에 도움을
+                            준다. 요컨대 회복 능력이 너무 좋아서 포션을 쓸 일이 없다.
+                            낮은 포션 의존도 덕에 생기는 다른 장점으로, 보스전에서 만병통치약을 자주 활용할 수 있다. 이는 듄켈과 더스크에서 특히 빛을 발하는데, 남들은 낙하물과 상태이상으로
+                            고생하고 있을때 데벤져는 기절만 신경쓰면서 편안한 플레이가 가능하다. 허약, 빗나감, 봉인은 만병통치약 하나면 전부 해결되기 때문.
+                        </p>
+                        <br>
+                        <br>
+                        <h1 id="title">단점</h1>
+                        <p>
+                            <strong>어려운 HP 관리법</strong><br>
+                            아무리 상시 흡혈과 모든 피해 감소를 달고 있다고 해도, 프렌지를 활성화한 내내 HP가 주기적으로 감소하는데다 회복력까지 극도로 제한된다. 29레벨 프렌지로 회복력을
+                            극한까지 낮추고 최종 데미지를 확보하면서도 질기게 살아남을 정도의 컨트롤 능력을 가진 유저라고 해도, 레버넌트 하나만 가지고 즉사 패턴이 난무하는 보스전을 견디는 건
+                            결코 쉬운 일이 아니다. 요컨대 자신의 HP 상황을 파악하고 맞아도 될 패턴과 맞으면 안될 패턴을 구별해야만 하는데, 숙련자도 아차하면 위험해질 수 있는 사항이라
+                            데벤져 컨트롤에 미숙한 초심자라면 말할 것도 없다. 여기에 화력을 극한까지 끌어올리기 위해 피격 데미지를 증가시키는 루인 포스실드까지 착용하면 HP 관리가 더욱
+                            힘들어진다.
+                            <br><br>
+                            <strong>낮은 크리티컬 관련 능력치</strong><br>
+                            데벤져의 크리티컬 보정은 기본 크리티컬 확률 5%에 추가 20%, 크리티컬 데미지 8%가 고정이다. 그나마 크뎀이 낮은 건 크뎀 효율이 좋다는 해석으로라도
+                            이어지지만, 크확이 모든 직업을 통틀어 최하라는 사실은 데벤져의 아킬레스건이나 다름없다. 그래서 데벤져가 주캐인 유저는 크리티컬 확률에 자원을 할애할 수밖에 없다.
+                            <br><br>
+                            <strong>높은 어빌리티 의존도</strong><br>
+                            실드 체이싱의 가동률이 곧 화력 증강 및 생존력 향상으로 이어지는 보스전 특성상 데벤져는 어빌리티 중 n% 확률로 재사용 대기시간 미적용 옵션을 반드시 뽑아야만
+                            한다. 문제는 이게 첫째 줄에서만 나오고, 레전드리 어빌리티가 되어야만 20%까지 확보된다는 건데, 어빌리티는 완전한 랜덤이라 운이 나쁘다면 명성치를 엄청나게
+                            쏟아부어야만 한다. 여기에 크확 수급 문제까지 겹치면 첫째는 미적용, 둘째는 크확을 뽑아야만 한다는 부담이 생긴다.
+                            <br><br>
+                            <strong>각 공격 스킬의 한계로 인한 비효율</strong><br>
+                        <p style="padding: 0 0 0 10px;">
+                            <strong>데몬 점프: 다른 직업과 다른 커맨드와 굼뜬 움직임</strong><br>
+                            데몬은 글라이드와 더블 점프가 혼재되어 있다. 글라이드는 더블 점프의 관성 없이 쓰면 느린데, 더블 점프는 커맨드가 대시(→→ or ←←)다. 그렇다고 커스텀
+                            커맨드로 글라이드를 봉인해도 기동성 측면에 괄목할 만한 변화가 있지도 않고, 오히려 글라이드의 이점만 내다버려야 한다. 윗점도 타직업과 다르게 위 방향키 2회
+                            입력(↑↑)이다. 이는 타직업에 익숙한 유저 한정 문제점으로, 글라이드를 점프키로 발동해야 하는 특성상 윗점 커맨드를 타직업처럼 바꾸게 되면 글라이드를 이용한 윗점
+                            높이 조절이나 글라이드 도중 윗점하기 등등 활용하는 데에 문제가 생긴다.[39]
+                            <br><br>
+                            <strong>배츠 스웜: 높은 원킬컷과 스킬 메커니즘의 한계</strong><br>
+                            배츠 스웜은 부실한 데벤져의 사냥 능력을 보완하기 위해 억지로 쓰는 스킬이지만, 사실 '1층에 깔아두기'의 측면만 보고 울며 겨자 먹기로 쓰는 스킬이다. 태생이 2차
+                            스킬이라 강화 코어를 대동해도 퍼뎀이 극히 낮고, 여러 개를 동시에 깔아둘 수도 없어서 지속 시간이나 공격 횟수가 다 닳을 때까지 기다려야 하며, 츄츄 에르밸리나
+                            레헬른 시계탑, 또는 아르카나 동굴처럼 바닥이 뻥 뚫린 곳에서는 지하로 빠져서 사라지기 일쑤다.
+                            <br><br>
+                            <strong>문라이트 슬래시: 좁은 상하 범위</strong><br>
+                            문슬은 다수 대상 주력 공격기지만, 캐릭터의 위나 아래로는 공격 판정이 거의 없을 정도로 협소하다. 결국 데몬 점프를 이용해서 뛰어들든 활강하든 이동해야만 하는데,
+                            데몬 점프만으로는 적진에 들이박는 능력이 부족하다.
+                            <br><br>
+                            <strong>실드 체이싱: 좁은 대상 인식 범위와 수시로 증발하는 방패</strong><br>
+                            체이싱은 아델의 오더처럼 미리 깔아두는 식으로 운용할 수 없고, 사라지면 새로 뽑아야 한다. 게다가 방패가 새로운 대상을 물색하는 시간이 고작 2.5초에 불과해서,
+                            항상 리젠 타이밍을 기다리지 못하고 사라진다. 게다가 자동 사출 기능도 없어서 일일이 뽑아 써야 하는데, 그 액션 딜레이 하나하나가 시간 낭비다.
+                        </p><br>
+                        <strong>고갈에 가깝게 없는 종결급 장비 매물</strong><br>
+                        무기는 어찌어찌 구한다 치더라도, 1급 HP 추옵이 붙었거나, 높은 HP 잠재가 붙은 유니크~레전드리 단계의 장비를 보기가 힘들다. 그나마 카루타 세트는 물량이 넘쳐나니
+                        의미가 적지만 앱솔, 아케인은 생각보다 많지 않다. 데벤져를 본캐로 하지 않는 한 일정 단계 이상부터는 가성비가 떨어지니 생기는 현상. 사실상 직작을 강요하는 수준이라,
+                        저자본 고효율이라는 장점이 역으로 고자본 저효율의 방증이 되는 셈이다.
+                        </p>
+                        <br>
+                        <br>
+                        <h1 id="title">사냥 운용</h1>
+                        <p>
+                            5차 전직 이전까지의 육성은 쉽다. 실드 체이싱에 목매지 않아도 사우전드 소드라는 좋은 사냥용 스킬이 있기 때문. 게다가 HP 코스트긴 하지만 자가 회복 스킬도
+                            빵빵해서, 기계무덤의 스카이라인처럼 최대 HP에 비례한 피해를 주는 낙하물이 떨어지는 곳이어도 인헤일 바이탈리티를 사용해주면 물약을 쓸 일도 없다.
+                            <br><br>
+                            5차 전직 이후부터는 데몬 프렌지가 사냥 스킬로서 기능하기 시작한다. 장판 원킬컷을 맞춘다면 활성화한 후에 글라이드로 날아다니기만 해도 바이퍼의 서펜트 스크류처럼
+                            필드가 알아서 정리되는 마법(...)을 볼 수 있다. 물론 원킬컷이 높은데다가 효율성을 생각한다면 실드 체이싱과 사우전드 소드를 포함한 다른 스킬도 잘 써야 하지만,
+                            뇌빼기 사냥으로는 쓸 만하다.
+                        </p>
+                        <br>
+                        <br>
+                        <h1 id="title">보스전 운용</h1>
+                        <p>
+                            극딜 화력은 평범하지만, 강력한 평딜 덕분에 모든 보스전에서 보통 이상은 하는 직업이다. 일단 높은 자체 방어 무시율, 방어력 감소 디버프, 바인드(행동불능) 등
+                            무적기를 제외한 보스전에 필요한 유틸리티는 거의 다 구비하고 있다. 특히 실드 체이싱이라는 추적 공격형 오브젝트 소환 스킬과 데몬 프렌지의 공격 무시/반사 완전
+                            이뮨, 그리고 에픽둘둘 기준 압도적인 투자 효율 덕분에 저자본까지 용이한 편이다. 그러나 무적의 부재, 기형적인 스펙업 구조 때문에 중~고자본부터는 효율과 성능이
+                            타직업과 비교해서 떨어진다.
+                        </p>
+                        <br>
+                        <br>
+                        <h1 id="title">어빌리티</h1>
+                        <p>
+                            <strong>재사용 대기시간 미적용</strong><br>
+                            1순위 고정이다. 데벤져는 실드 체이싱의 가동률을 높이기 위해 이 옵션에 더해 몬스터 라이프의 쁘띠 은월과 큰 운영자의 벌룬까지 대동한다. 이 어빌리티가 없다면
+                            데벤져를 본캐로 삼을 생각은 재고해야 한다.
+                            <br><br>
+                            <strong>크리티컬 확률 증가</strong><br>
+                            속칭 크확. 데벤져의 기본 크확은 25%에 불과하다. 물론 1순위는 상술한 재사용이 워낙 압도적인 지분을 차지하는지라 크확은 보통 2순위 이하로 책정된다.
+                            <br><br>
+                            <strong>보스 공격 시 데미지 증가</strong><br>
+                            속칭 보공. 어느 직업이든 무난하게 쓸 수 있는 옵션이지만, 데벤져는 특정 옵션에 대한 의존도가 워낙 높다 보니 크확보다도 선호도가 낮을 수 있다. 물론 2~3순위로
+                            유니크 크확과 보공이 나란히 뜬다면야 무난하게 쓸 만하지만, 1순위로 뜬다면 돌리는 게 낫다.
+                            <br><br>
+                            <strong>상태 이상에 걸린 대상 공격 시 데미지 증가</strong><br>
+                            속칭 상추뎀. 모험가 마법사의 링크 스킬인 임피리컬 널리지, 데벤의 자체 디버프까지, 사실상 추가 보공이나 마찬가지라 보스 몬스터에게 입히는 데미지가 늘어나게 된다.
+                            어빌리티 둘째 줄 이하에서는 유니크 등급 기준 최대 8%까지 나올 수 있으므로 굉장히 매력적인 옵션이다. 유니크에서 보공과 상추뎀이 등장할 확률이 매우 낮기 때문에,
+                            둘중에 먼저 나오는 옵션을 채용하면 된다.
+                        </p>
+                        <br>
+                        <br>
+                        <h1 id="title">코어강화</h1>
+                        <p>
+                            <strong>필수</strong><br>
+                            익시드 : 문라이트 슬래시, 익시드 : 엑스큐션, 실드 체이싱
+                            <br><br>
+                            <strong>선택</strong><br>
+                            사우전드 소드, 인핸스드 익시드, 배츠 스웜
+                        </p>
+                    </div>
+                </article>
+            </section>
+
+            <!-- 본문 우측 영역 -->
+            <aside id="main-aside">
+                <div class="aside-list">
+                    <h3>데몬</h3>
+                    <ul>
+                        <li><a href="데몬슬레이어.html">데몬슬레이어</a></li>
+                        <li><a href="데몬어벤져.html">데몬어벤져</a></li>
+                    </ul>
+                </div>
+            </aside>
+        </div>
+    </div>
+    <!-- 푸터 -->
+    <footer id="main-footer">
+        <span>ⓒ These photographs and fonts are protected by NEXON Korea Corporation with all rights reserved.</span>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>칼리 공략</title>
+    <link rel="stylesheet" href="Style.css"> <!-- 외부 스타일 시트 -->
+    <script src="https://code.jquery.com/jquery-3.7.0.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('.outer-menu-item').hover(function () {
+                $(this).find('.inner-menu').stop().slideDown();
+            }, function () {
+                $(this).find('.inner-menu').stop().slideUp();
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <!-- 전체를 감싸는 테그 -->
+    <div id="page-wrapper">
+        <!-- 헤더 -->
+        <header id="main-header">
+            <hgroup>
+                <h1 class="master-title"><a href="main.html"><img src="image/로고.png" alt="메이플스토리"></a>
+                </h1>
+                <h2 class="master-description"><a href="main.html">직업별 공략</a></h2>
+            </hgroup>
+        </header>
+        <!-- 네비게이션 -->
+        <nav id="main-navigation">
+            <div class="pull-left">
+                <ul class="outer-menu">
+
+                    <li class="outer-menu-item">
+                        <span class="menu-title">모험가</span>
+                        <ul class="inner-menu">
+                            <li class="inner-menu-item"><a href="히어로.html">히어로</a></li>
+                            <li class="inner-menu-item"><a href="팔라딘.html">팔라딘</a></li>
+                            <li class="inner-menu-item"><a href="다크나이트.html">다크나이트</a></li>
+                            <li class="inner-menu-item"><a href="아크메이지(불,독).html">아크메이지(불,독)</a></li>
+                            <li class="inner-menu-item"><a href="아크메이지(썬,콜).html">아크메이지(썬,콜)</a></li>
+                            <li class="inner-menu-item"><a href="비숍.html">비숍</a></li>
+                            <li class="inner-menu-item"><a href="보우마스터.html">보우마스터</a></li>
+                            <li class="inner-menu-item"><a href="신궁.html">신궁</a></li>
+                            <li class="inner-menu-item"><a href="패스파인더.html">패스파인더</a></li>
+                            <li class="inner-menu-item"><a href="나이트로드.html">나이트로드</a></li>
+                            <li class="inner-menu-item"><a href="섀도어.html">섀도어</a></li>
+                            <li class="inner-menu-item"><a href="듀얼블레이드.html">듀얼블레이드</a></li>
+                            <li class="inner-menu-item"><a href="바이퍼.html">바이퍼</a></li>
+                            <li class="inner-menu-item"><a href="캡틴.html">캡틴</a></li>
+                            <li class="inner-menu-item"><a href="캐논슈터.html">캐논슈터</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="outer-menu-item">
+                        <span class="menu-title">시그너스 기사단</span>
+                        <ul class="inner-menu">
+                            <li class="inner-menu-item"><a href="소울마스터.html">소울마스터</a></li>
+                            <li class="inner-menu-item"><a href="미하일.html">미하일</a></li>
+                            <li class="inner-menu-item"><a href="플레임위자드.html">플레임위자드</a></li>
+                            <li class="inner-menu-item"><a href="윈드브레이커.html">윈드브레이커</a></li>
+                            <li class="inner-menu-item"><a href="나이트워커.html">나이트워커</a></li>
+                            <li class="inner-menu-item"><a href="스트라이커.html">스트라이커</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="outer-menu-item">
+                        <span class="menu-title">영웅</span>
+                        <ul class="inner-menu">
+                            <li class="inner-menu-item"><a href="아란.html">아란</a></li>
+                            <li class="inner-menu-item"><a href="에반.html">에반</a></li>
+                            <li class="inner-menu-item"><a href="루미너스.html">루미너스</a></li>
+                            <li class="inner-menu-item"><a href="메르세데스.html">메르세데스</a></li>
+                            <li class="inner-menu-item"><a href="팬텀.html">팬텀</a></li>
+                            <li class="inner-menu-item"><a href="은월.html">은월</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="outer-menu-item">
+                        <span class="menu-title">레지스탕스</span>
+                        <ul class="inner-menu">
+                            <li class="inner-menu-item"><a href="블래스터.html">블래스터</a></li>
+                            <li class="inner-menu-item"><a href="배틀메이지.html">배틀메이지</a></li>
+                            <li class="inner-menu-item"><a href="와일드헌터.html">와일드헌터</a></li>
+                            <li class="inner-menu-item"><a href="메카닉.html">메카닉</a></li>
+                            <li class="inner-menu-item"><a href="제논.html">제논</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="outer-menu-item">
+                        <span class="menu-title">데몬</span>
+                        <ul class="inner-menu">
+                            <li class="inner-menu-item"><a href="데몬슬레이어.html">데몬슬레이어</a></li>
+                            <li class="inner-menu-item"><a href="데몬어벤져.html">데몬어벤져</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="outer-menu-item">
+                        <span class="menu-title">노바</span>
+                        <ul class="inner-menu">
+                            <li class="inner-menu-item"><a href="카이저.html">카이저</a></li>
+                            <li class="inner-menu-item"><a href="카인.html">카인</a></li>
+                            <li class="inner-menu-item"><a href="카데나.html">카데나</a></li>
+                            <li class="inner-menu-item"><a href="엔젤릭버스터.html">엔젤릭버스터</a></li>
+                        </ul>
+                    </li>
+                    <li class="outer-menu-item">
+                        <span class="menu-title">레프</span>
+                        <ul class="inner-menu">
+                            <li class="inner-menu-item"><a href="아델.html">아델</a></li>
+                            <li class="inner-menu-item"><a href="일리움.html">일리움</a></li>
+                            <li class="inner-menu-item"><a href="칼리.html">칼리</a></li>
+                            <li class="inner-menu-item"><a href="아크.html">아크</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="outer-menu-item">
+                        <span class="menu-title">아니마</span>
+                        <ul class="inner-menu">
+                            <li class="inner-menu-item"><a href="라라.html">라라</a></li>
+                            <li class="inner-menu-item"><a href="호영.html">호영</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="outer-menu-item">
+                        <span class="menu-title">초월자</span>
+                        <ul class="inner-menu">
+                            <li class="inner-menu-item"><a href="제로.html">제로</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="outer-menu-item">
+                        <span class="menu-title">키네시스</span>
+                        <ul class="inner-menu">
+                            <li class="inner-menu-item"><a href="키네시스.html">키네시스</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <!-- 본문 -->
+        <div id="content">
+            <!-- 본문 좌측 영역 -->
+            <section id="main-section">
+                <article>
+                    <div class="article-header">
+                        <h1 class="article-title">칼리(Khali)</h1>
+                    </div>
+                    <div class="article-body">
+                        <img id="c_image" src="image/칼리.webp" alt="칼리">
+                        <h1 id="title">장점</h1>
+                        <p>
+                            <strong>압도적인 기동성</strong><br>
+                            칼리 운영의 가장 큰 특징이자 핵심. 운영진들이 대놓고 기동성을 강조한만큼, 칼리의 핵심인 크레센텀과 연계해서 6연속으로 8방향을 움직이는 돌진기인 보이드 러쉬를
+                            이용해 온갖 기상천외한 이동 경로와 사냥 빌드를 만들 수 있다. 여기에 스파크의 윗점이나 트리플 점프까지 조합하면 다른 직업이 따라올 수 없는 기동성을 보여준다.
+                            <br><br>
+                            <strong>쉬운 초반 육성 난이도</strong><br>
+                            스토리에 연연하지 않는다면 10레벨 찍고 바로 에리모스에서 나와 레벨을 올려도 무방하고, 전직 과정도 대화 몇 번 하면 끝나는 정도라 순식간에 넘어가며, 원체
+                            기동성이 좋아 사냥 능력이 출중한데다 사냥터 상성도 크게 따지지 않아서 초반 레벨 업도 빠르다. 물론 편의를 위해 보이드 러쉬로 쓸어버릴 수 있는 좌우로 긴
+                            필드가 선호되지만, 어디까지나 선호하는 정도다.
+                            <br><br>
+                            <strong>양질의 유틸리티</strong><br>
+                            보이드 러쉬와 블리츠에는 다크 사이트가 2초 붙어있는데, 아츠 계열 스킬을 적중시키면 재사용 대기시간이 줄어들어 회전율을 끌어올릴 수 있다. 그래서 잘만 쓰면 낙하물
+                            패턴에는 면역이라 할 정도로 뛰어난 대응 능력을 보인다. 여기에 극딜 무적과 별도 무적기까지 있으므로 낙하물이 많은 스우, 더스크, 듄켈과 같은 보스전에서 유리하다.
+                        </p>
+                        <br>
+                        <br>
+                        <h1 id="title">단점</h1>
+                        <p>
+                            <strong>리스크가 높은 캔슬</strong><br>
+                            헥스:차크람 스윕의 캔슬 타이밍이 조금이라도 어긋나면 뒤로 튕겨나가 버리기 때문에, 패턴에 맞아죽거나 리스트레인트 링의 범위를 벗어날 위험이 있다. 헥스:차크람
+                            퓨리는 너무 빨리 캔슬하면 이펙트가 사라져서 되레 타수가 줄어든다. 또한 고점을 뽑으려면 이동기인 보이드 러쉬까지 적극적으로 캔슬에 활용해야 하기 때문에 리스크가
+                            높다. 아래방향 러쉬는 발판 위에서 사용할 수 없으며, 러쉬점캔은 난이도가 어렵고, 공통적으로 러쉬를 캔슬에 활용할 경우 크레센텀으로 초기화하지 않으면 정작 이동기가
+                            필요할 때 러쉬가 없을 수도 있다. 크레센텀 개선 이후로는 보이드 블리츠로만 캔슬하고 보이드 러쉬를 순수 이동기로 운용하는 것도 가능하지만, 캔슬 횟수가 줄어드는데다
+                            차크리가 근처에 남아있으면 새로운 차크리의 생성을 방해하기 때문에 고점도 낮아진다.
+                            <br><br>
+                            <strong>지형 상성 문제로 인한 높은 사냥 피로도</strong><br>
+                            화면 변동이 적어 시각적인 피로도는 낮지만, 의외로 지형 상성을 크게 탄다. 이동기이자 주력 사냥기인 보이드 러쉬로 발판 상하에 있는 몹을을 모두 처리해야 제대로 된
+                            사냥 능력이 나오는데, 보이드 러쉬의 상하 범위는 그리 넉넉하지 않고 보이드 러쉬를 쓰다 밧줄이나 사다리에 매달리는 상황이 나오기도 하며, 특히 경사면 발판에 닿으면
+                            돌진하지 않는다. 그렇기에 러쉬의 돌진 범위를 일일이 신경써서 사용해야 하고, 이는 높은 사냥 피로도로 이어진다.
+                            <br><br>
+                            <strong>낮은 회피율과 내구도</strong><br>
+                            회피율이 30%에 불과한데다 추가 회피율도 없고, 추가 HP도 15%에 불과하다. 물론 보이드 러쉬의 다크 사이트로 얻어맞지 않고 다니는 것에 대한 페널티라고 볼
+                            수는 있지만 황혼의 페리온과 기계무덤, 세르니움 이후의 사냥터에서는 한번 얻어맞을 때마다 HP가 뭉텅이로 깎여나가기 때문에 펫 자동 물약을 필수로 설정해야 한다.
+                        </p>
+                        <br>
+                        <br>
+                        <h1 id="title">사냥 운용</h1>
+                        <p>
+                            보이드 러쉬+크레센텀 연계를 기반으로 필드를 온통 휘젓고 다니는 방식이 주가 된다. 이때 러쉬를 너무 연타하다간 엉뚱한 방향으로 빠질 우려가 있으므로, 키 입력 간에
+                            여유를 둘 것이 권장된다. 헥스 스킬과 차크리는 러쉬가 닿지 않았던 공간을 커버하는 식으로 쓰되, 보이드 스킬로 캔슬해서 다음에 쓸 차크리를 생성해두는 식으로
+                            활용하면 러쉬의 사각지대를 보완할 수 있다.
+                        </p>
+                        <br>
+                        <br>
+                        <h1 id="title">보스전 운용</h1>
+                        <p>
+                            캔슬이나 연계 없이도 칼리의 공격속도는 빠른 편이기 때문에 굳이 하지 않아도 답답할 일은 없지만 캔슬을 해야 사출기인 차크리가 만들어지기 때문에 제대로 파고드려면
+                            캔슬을 해야 한다. 조작감이 이질적이거나, 타이밍이 까다롭거나 한건 아니라 캔슬 난이도는 낮다.
+                            <br><br>
+                            인새니티 I 습득 후부터 보이드 러쉬와 헥스 스킬을 연계할 수 있게 된다. 아츠 스킬을 쓰면 보이드 러쉬의 사용횟수가 남아도 더 이상 쓸 수 없게 되기 때문에 아츠는
+                            콤보의 첫 시동 단계 외엔 쓸 수 없다. 오해하기 쉬운 것으로, 보이드 블리츠는 인새니티 I를 배워도 헥스와 연계가 안되기 때문에 블리츠-헥스 순으로 써도 프레임
+                            이득이 없다.
+                            <br><br>
+                            사용가능횟수가 남아도는 보이드 러쉬에 비해 헥스 스킬들은 쿨타임이 긴 편이기 때문에 헥스 스킬의 배분을 잘 해야한다. 아무 생각없이 러쉬와 헥스를 연계하다간 헥스
+                            스킬은 쿨타임인데 차크리는 최대 갯수 제한에 막혀 레조네이터로 발현되지 못하고 손가락만 빨게 된다.
+                        </p>
+                        <br>
+                        <br>
+                        <h1 id="title">어빌리티</h1>
+                        <p>
+                            <strong>재사용 대기시간 미적용</strong><br>
+                            보이드 계열을 제외한 모든 스킬들이 재사용 대기시간 초기화의 효과를 받는다. 특히 기동성의 상징인 보이드 러쉬를 초기화 할 수 있는 크레센텀이 초기화가 된다면 이론상
+                            보이드 러쉬를 무한정 사용할 수 있고, 사냥/보스 양면으로 유용한 4차 스킬 헥스 : 차크람 스플릿이 적용 대상이기 때문에 채용하면 좋다.
+                            <br><br>
+                            <strong>보스 몬스터 공격 시 데미지 증가</strong><br>
+                            재사용 대기시간 미적용만큼은 아니지만, 2~3번째 줄에서 10% 정도 띄우면 무난하게 활용할 수 있다.
+                            <br><br>
+                            <strong>크리티컬 확률 증가</strong><br>
+                            칼리의 기본 크리티컬 확률은 40%로, 전직업 평균보다 아래다. 크확을 올릴 자원(유니온, 하이퍼 스탯, 농장)이 없다면 여기서 채우는 것도 나쁘지 않다.
+                            <br><br>
+                            <strong>상태 이상에 걸린 대상 공격 시 데미지 증가</strong><br>
+                            보공과 비교해서 먼저 나온 쪽을 쓰거나, 둘 다 쓰면 된다. 단, 칼리는 보유한 디버프기가 없으므로 모험가 마법사의 링크 스킬을 빌려와야 한다.
+                            <br><br>
+                            <strong>아이템/메소 획득 확률 증가</strong><br>
+                            광부용 옵션. 둘째 줄 이하에서 띄우면 쓸 만하다.
+                            <br><br>
+                            <strong>패시브 스킬 레벨 1 증가</strong><br>
+                            이 옵션을 쓰려면 첫째 줄의 재사용 대기시간 미적용을 포기해야 하는데다가 적용되는 스킬도 별로 없다. 따라서 쓸만한 컴뱃 오더스로 대체하는 쪽이 낫다.
+                        </p>
+                        <br>
+                        <br>
+                        <h1 id="title">코어강화</h1>
+                        <p>
+                            <strong>1순위</strong><br>
+                            아츠 : 플러리/크레센텀, 헥스 : 차크람 스윕/스플릿/퓨리, 레조네이트/디시빙 블레이드
+                            <br><br>
+                            <strong>2순위</strong><br>
+                            보이드 러쉬, 데스 블로섬, 보이드 블리츠
+                        </p>
+                    </div>
+                </article>
+            </section>
+
+            <!-- 본문 우측 영역 -->
+            <aside id="main-aside">
+                <div class="aside-list">
+                    <h3>레프</h3>
+                    <ul>
+                        <li><a href="아델.html">아델</a></li>
+                        <li><a href="일리움.html">일리움</a></li>
+                        <li><a href="칼리.html">칼리</a></li>
+                        <li><a href="아크.html">아크</a></li>
+                    </ul>
+                </div>
+            </aside>
+        </div>
+    </div>
+    <!-- 푸터 -->
+    <footer id="main-footer">
+        <span>ⓒ These photographs and fonts are protected by NEXON Korea Corporation with all rights reserved.</span>
+    </footer>
+</body>
+
+</html>

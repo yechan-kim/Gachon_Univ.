@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>메카닉 공략</title>
+    <link rel="stylesheet" href="Style.css"> <!-- 외부 스타일 시트 -->
+    <script src="https://code.jquery.com/jquery-3.7.0.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('.outer-menu-item').hover(function () {
+                $(this).find('.inner-menu').stop().slideDown();
+            }, function () {
+                $(this).find('.inner-menu').stop().slideUp();
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <!-- 전체를 감싸는 테그 -->
+    <div id="page-wrapper">
+        <!-- 헤더 -->
+        <header id="main-header">
+            <hgroup>
+                <h1 class="master-title"><a href="main.html"><img src="image/로고.png" alt="메이플스토리"></a>
+                </h1>
+                <h2 class="master-description"><a href="main.html">직업별 공략</a></h2>
+            </hgroup>
+        </header>
+        <!-- 네비게이션 -->
+        <nav id="main-navigation">
+            <div class="pull-left">
+                <ul class="outer-menu">
+
+                    <li class="outer-menu-item">
+                        <span class="menu-title">모험가</span>
+                        <ul class="inner-menu">
+                            <li class="inner-menu-item"><a href="히어로.html">히어로</a></li>
+                            <li class="inner-menu-item"><a href="팔라딘.html">팔라딘</a></li>
+                            <li class="inner-menu-item"><a href="다크나이트.html">다크나이트</a></li>
+                            <li class="inner-menu-item"><a href="아크메이지(불,독).html">아크메이지(불,독)</a></li>
+                            <li class="inner-menu-item"><a href="아크메이지(썬,콜).html">아크메이지(썬,콜)</a></li>
+                            <li class="inner-menu-item"><a href="비숍.html">비숍</a></li>
+                            <li class="inner-menu-item"><a href="보우마스터.html">보우마스터</a></li>
+                            <li class="inner-menu-item"><a href="신궁.html">신궁</a></li>
+                            <li class="inner-menu-item"><a href="패스파인더.html">패스파인더</a></li>
+                            <li class="inner-menu-item"><a href="나이트로드.html">나이트로드</a></li>
+                            <li class="inner-menu-item"><a href="섀도어.html">섀도어</a></li>
+                            <li class="inner-menu-item"><a href="듀얼블레이드.html">듀얼블레이드</a></li>
+                            <li class="inner-menu-item"><a href="바이퍼.html">바이퍼</a></li>
+                            <li class="inner-menu-item"><a href="캡틴.html">캡틴</a></li>
+                            <li class="inner-menu-item"><a href="캐논슈터.html">캐논슈터</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="outer-menu-item">
+                        <span class="menu-title">시그너스 기사단</span>
+                        <ul class="inner-menu">
+                            <li class="inner-menu-item"><a href="소울마스터.html">소울마스터</a></li>
+                            <li class="inner-menu-item"><a href="미하일.html">미하일</a></li>
+                            <li class="inner-menu-item"><a href="플레임위자드.html">플레임위자드</a></li>
+                            <li class="inner-menu-item"><a href="윈드브레이커.html">윈드브레이커</a></li>
+                            <li class="inner-menu-item"><a href="나이트워커.html">나이트워커</a></li>
+                            <li class="inner-menu-item"><a href="스트라이커.html">스트라이커</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="outer-menu-item">
+                        <span class="menu-title">영웅</span>
+                        <ul class="inner-menu">
+                            <li class="inner-menu-item"><a href="아란.html">아란</a></li>
+                            <li class="inner-menu-item"><a href="에반.html">에반</a></li>
+                            <li class="inner-menu-item"><a href="루미너스.html">루미너스</a></li>
+                            <li class="inner-menu-item"><a href="메르세데스.html">메르세데스</a></li>
+                            <li class="inner-menu-item"><a href="팬텀.html">팬텀</a></li>
+                            <li class="inner-menu-item"><a href="은월.html">은월</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="outer-menu-item">
+                        <span class="menu-title">레지스탕스</span>
+                        <ul class="inner-menu">
+                            <li class="inner-menu-item"><a href="블래스터.html">블래스터</a></li>
+                            <li class="inner-menu-item"><a href="배틀메이지.html">배틀메이지</a></li>
+                            <li class="inner-menu-item"><a href="와일드헌터.html">와일드헌터</a></li>
+                            <li class="inner-menu-item"><a href="메카닉.html">메카닉</a></li>
+                            <li class="inner-menu-item"><a href="제논.html">제논</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="outer-menu-item">
+                        <span class="menu-title">데몬</span>
+                        <ul class="inner-menu">
+                            <li class="inner-menu-item"><a href="데몬슬레이어.html">데몬슬레이어</a></li>
+                            <li class="inner-menu-item"><a href="데몬어벤져.html">데몬어벤져</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="outer-menu-item">
+                        <span class="menu-title">노바</span>
+                        <ul class="inner-menu">
+                            <li class="inner-menu-item"><a href="카이저.html">카이저</a></li>
+                            <li class="inner-menu-item"><a href="카인.html">카인</a></li>
+                            <li class="inner-menu-item"><a href="카데나.html">카데나</a></li>
+                            <li class="inner-menu-item"><a href="엔젤릭버스터.html">엔젤릭버스터</a></li>
+                        </ul>
+                    </li>
+                    <li class="outer-menu-item">
+                        <span class="menu-title">레프</span>
+                        <ul class="inner-menu">
+                            <li class="inner-menu-item"><a href="아델.html">아델</a></li>
+                            <li class="inner-menu-item"><a href="일리움.html">일리움</a></li>
+                            <li class="inner-menu-item"><a href="칼리.html">칼리</a></li>
+                            <li class="inner-menu-item"><a href="아크.html">아크</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="outer-menu-item">
+                        <span class="menu-title">아니마</span>
+                        <ul class="inner-menu">
+                            <li class="inner-menu-item"><a href="라라.html">라라</a></li>
+                            <li class="inner-menu-item"><a href="호영.html">호영</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="outer-menu-item">
+                        <span class="menu-title">초월자</span>
+                        <ul class="inner-menu">
+                            <li class="inner-menu-item"><a href="제로.html">제로</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="outer-menu-item">
+                        <span class="menu-title">키네시스</span>
+                        <ul class="inner-menu">
+                            <li class="inner-menu-item"><a href="키네시스.html">키네시스</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <!-- 본문 -->
+        <div id="content">
+            <!-- 본문 좌측 영역 -->
+            <section id="main-section">
+                <article>
+                    <div class="article-header">
+                        <h1 class="article-title">메카닉(Mechanic)</h1>
+                    </div>
+                    <div class="article-body">
+                        <img id="c_image" src="image/메카닉.webp" alt="메카닉">
+                        <h1 id="title">장점</h1>
+                        <p>
+                            <strong>(고스펙 한정) 지형을 가리지 않는 준수한 사냥능력</strong><br>
+                            어떤 직업이든 지형의 형태로 인해 사냥능력의 유불리함을 따질 수 밖에 없다. 그러나 메카닉은 설치 스킬의 원킬컷을 맞출 수만 있다면 몇십초에 달하는 지속 시간과 호밍
+                            미사일이라는 사출기로 어지간한 사냥터는 넓든 좁든 죄다 쓸어담을 수 있다. 단, 설치기들의 피해량이 하나같이 낮아서 스펙 요구량이 상당하다는 점에 유의해야 한다.
+                            <br><br>
+                            <strong>뛰어난 안정성과 기동성</strong><br>
+                            메카닉은 메탈아머에 탑승시 1차 때부터 방어력이 비약적으로 상승한다. 특히 4차의 모든 스킬을 마스터하는 시기에는 공격 무효화/오토가드/피격 데미지 감소 3박자의
+                            콤보에 포션걱정 없는 사냥이 가능하다. 이러한 옵션은 보스전에서는 큰 의미가 없으나 보스 전에서는 워머신 : 타이탄의 시전 시 무적 효과, 공중 시전 중 슈퍼
+                            스탠스, 공중 체공, 대쉬와 더블점프 및 윗점의 응용에서 나오는 슈퍼점프, 오픈게이트 : GX-9의 텔레포트 기능등 여러가지 생존에 도움이 될만한 옵션들을 가지고
+                            있다.
+                            <br><br>
+                            <strong>뛰어난 파티 보조 능력</strong><br>
+                            서포트 웨이버는 설치 시 맵 내 모든 적의 방어력을 10% 감소시키고 설치 범위 내 파티원 의 최종 데미지를 11% 증가시킨다. 비숍같은 서포팅 특화 직업에 비하면
+                            수치 자체는 낮은 편이지만 극딜타임 뿐만 아니라 상시로 화력을 보강할 수 있다는 차별점이 있어 서포터 겸 보조 딜러로 자주 기용된다. 또한 오픈게이트로 제한적인
+                            텔레포트 기능을 파티원에게 제공할 수 있어 위험한 패턴에서 파티원을 구할 수 있다. 방어막이나 힐과는 차별화되는 장점.
+                            <br><br>
+                            <strong>우수한 유니온 효과</strong><br>
+                            메카닉의 유니온 효과는 SS등급 기준으로 버프 지속시간 증가 20%이다. 버프 지속시간이 자체 성능과 직결되는 직업들에게는 필수적인 효과이며, 소울 컨트랙트의
+                            지속시간에도 영향을 미치기 때문에 버프 지속시간 증가가 자체 성능에 직접적인 영향을 미치지 않는 직업들한테도 극딜에 있어 상당히 좋은 효과다. 이는 오직 메카닉만이
+                            가진 유니온 효과인 만큼 그 가치는 매우 높다.
+                        </p>
+                        <br>
+                        <br>
+                        <h1 id="title">단점</h1>
+                        <p>
+                            <strong>(사냥 한정) 높은 로봇 스킬 의존도</strong><br>
+                            기본적으로 신경써야되는 로봇 스킬만 5개나 되는데다 각 스킬들의 성능을 온전하게 발휘하려면 위치를 주의깊게 지정해야 한다. 그나마 재사용 대기시간이 없기 때문에 다시
+                            설치하면 그만이지만, 위치 선정도 엄연한 피로도 증가 요인이다. 게다가 로봇을 설치할 때마다 액션 딜레이 때문에 움직임이 뻣뻣하다 또한 사냥에서는 포탈만 타면 공들여
+                            설치한 로봇들이 싹 다 사라져서 새로 깔아야 하는 편의성 문제도 있다. 이는 특히 맵을 옮길 수밖에 없는 현상금 사낭꾼이나 무릉도장에서 빈번하게 발생한다.
+                            <br><br>
+                            <strong>어려운 육성 난이도</strong><br>
+                            명목상 사냥 주력기인 SPLASH-F의 퍼뎀이 1,560%에 불과한데다 스공 보정도 평범하다. 그래서 유니온으로 전직업을 키운다고 해도 200 육성은 후순위로 밀리는
+                            편이다. 상술했듯이 유니온 공격대원 효과가 버프 지속시간 증가라서 본캐가 모험가 마법사나 루미너스라면 육성을 포기할 수도 없다.
+                            <br><br>
+                            <strong>어려운 코어 강화 난이도</strong><br>
+                            강화 코어로 강화할 스킬이 6개라 전 직업 평균이지만, 강화 대상의 가짓수가 14개나 된다. 1~2번째 줄에 유효한 코어가 떴다고 해도, 나중에 뜬 3줄 코어에
+                            전승하면 되기에 3줄 코어의 난도 자체는 평이하다. 문제는 코어를 강화할 때 나타난다. 2중첩 4코어로 코어강화를 진행할 경우 6개의 스킬을 강화하게 되지만 14개의
+                            스킬 중 4개만 쓰게 된다. 필요없는 스킬이 10개나 되기 때문에 강화할 스킬을 뽑는게 쉽지 않다. 또한 4개 코어를 25렙을 만들어야 하는 2중첩 4코어 특성상
+                            막대한 양의 코어젬스톤이 필요하다. 유효한 코어는 적은데 25렙을 4개나 만들어야 하니 큰 단점으로 지목된다.
+                            <br><br>
+                            <strong>메탈아머:휴먼과 메탈아머:탱크 간의 성능 불균형</strong><br>
+                            메카닉의 스킬 설명을 보면 휴먼-사냥/탱크-보스전으로 양분되어 있는 것처럼 보이겠지만, 실제 보통 메카닉 유저들은 휴먼 모드를 거의 사용하지 않는다. 탱크의 추가
+                            크리티컬 확률과 호밍 미사일의 다중 조준 기능 때문이다. 물론 탱크 모드 상태에서는 호밍 미사일의 피해량이 감소하는 패널티가 존재하지만, 대부분은 이를 압도적인 스펙
+                            상승으로 때워버리는 추세인지라 그렇게 큰 패널티라고 할 수도 없다. 또한 휴먼 모드로 매시브 파이어: SPLASH-F를 사용하기 보다는 로봇이나 소울 스킬을 설치하며
+                            원젠컷 사냥을 하는 게 편의상으로도 비교를 불허한다.
+                            <br><br>
+                            <strong>답답한 플레이</strong><br>
+                            수많은 메이플 유저들에게 외면받고 인구수 최하위권을 찍어버린 황선영 캐릭터들 대부분이 공유하는 점이다. 초기 더블점프도 못쓰던 시절에 비해선 훨씬 나아졌다고는 하나,
+                            여러 종류의 로봇을 계속 설치하면서 엄청난 후딜에 고통받고 답답하고 속터지는 조작감에 메카닉을 키워본 수많은 유저들이 몸서리를 치며 절대 본캐로 키우지 않겠다고
+                            다짐하게 되는 최대 단점이다. 따라서 메카닉은 유저들에게 인기가 많은 빠릿빠릿하고 시원시원한 캐릭터들의 정반대 대척점에 있는, 메이플에서 플레이하기 답답한 캐릭터들
+                            중 하나다.
+                        </p>
+                        <br>
+                        <br>
+                        <h1 id="title">사냥 운용</h1>
+                        <p>
+                            탱크 모드+호밍 미사일 혹은 휴먼 모드+매시브 파이어가 핵심이다. 그러나 호밍 미사일은 어디까지나 보조 공격용 오브젝트를 사출하는 스킬이라 원킬컷의 허들이 높다.
+                            게다가 휴먼 모드에서는 미사일이 1인당 1개씩밖에 유도되지 않는다. 반면 탱크 모드에서는 미사일의 퍼뎀이 기존 대비 60%로 깎이는 대신 미사일을 다중으로 유도할 수
+                            있고, 크리티컬 확률이 증가한다. 이 때문에 질보다 양을 택해야 하는 저레벨 무~저자본 유저들로서는 선택의 여지가 없다.
+                            <br><br>
+                            휴먼 모드 매시브 파이어 또한 원킬컷이 매우 높은 주제에 범위도 좁아서 사냥 능력이 매우 떨어진다. 그래도 호밍 미사일에 비하면 원킬컷이 낮은 편이기 때문에 호밍
+                            미사일로 적에게 생채기조차 낼 수 없는 스펙이라면 울며 겨자먹기로 매시브 파이어를 사용하여 사냥해야 한다. 그러나 탱크 모드에서도 호밍 미사일 원킬을 내는 고스펙
+                            유저의 경우는 다르다. 탱크 모드의 호밍 미사일은 멀티 타겟팅 기능에 의해 무조건 최대 탄수로 발사되는데, 타겟팅된 몬스터를 잡는 것은 개중 많아야 두세개 정도의
+                            미사일이다. 이렇게 되면 남은 미사일은 그대로 다른 몬스터를 추적하는데, 이 범위가 메카닉의 호밍 미사일 상단 인식범위보다 넓다. 이러한 이유로 탱크 모드
+                            호밍원킬~투킬 메카닉 유저는 그렇지 않은 유저와 비교하기 민망할 정도로 사냥 능력에 차이가 난다. 따라서 스펙이 오를수록 탱크 모드가 사냥이고 보스고 다 해먹는
+                            모습을 보인다. 휴먼 모드는 기동성이 좋다는 점을 들어 이동 시에나 써먹는 수준.
+                            <br><br>
+                            로봇 또한 사냥의 중추를 담당한다. 로봇 원킬이 날 경우 뛰어난 사냥 능력을 보여준다. 하지만 로봇을 계속 정해진 위치에 소환하고 지속시간을 신경써야 하기 때문에
+                            사냥 피로도가 굉장히 높다. 뇌빼기 사냥은 거의 불가능하다고 보면 된다.
+                        </p>
+                        <br>
+                        <br>
+                        <h1 id="title">보스전 운용</h1>
+                        <p>
+                            로봇 마스터리 패시브 패치이후 설치기들로 받는 데미지 증가효과 스택 관리가 필요없어져, 그만큼 각종 전용 5차 스킬과 메카닉 본체의 비중이 커진다. 고로 매시브
+                            파이어: IRON-B와 호밍 미사일을 주력으로 삼고, 여기에 멀티플, 마미컨, 캐리어 등 전용 5차 스킬들과 인팬트리 등 공용 5차 스킬의 보조를 받는 형상이 된다.
+                            <br><br>
+                            메탈아머 전탄발사는 제한된 시간 동안 호밍 미사일을 대량으로 뽑아내는 데에 특화된 버프인 봄버 타임과 궁합이 좋다. 그리고 사용하는 내내 무적인 만큼 급한 상황이라면
+                            화력을 다소 희생하는 대신 무적기로도 쓸 수 있다. 또한 워머신:타이탄 시전 중 무적 효과도 있기에 최소한의 자기 방어 능력은 갖췄고, 여기에 서포트 웨이버의 최종
+                            데미지 증가 효과 덕분에 파티 시너지도 있다.
+                        </p>
+                        <br>
+                        <br>
+                        <h1 id="title">어빌리티</h1>
+                        <p>
+                            <strong>패시브 스킬 레벨 1 증가</strong><br>
+                            필수. 레전드리 등급에서만 등장하는 옵션이기에 명성치와 서큘레이터가 적지 않게 갈려 나가지만, 4차 스킬 호밍 미사일 시스템 연구가 스킬 레벨당 호밍 미사일 1발
+                            증가이기 때문에 다른 옵션보다도 가치가 높다. 그 외에도 메탈아머 익스트림과 로봇 마스터리의 공격력, 숙련도, 데미지 증가 수치도 높아지는 등 소소한 이득이 있다.
+                            <br><br>
+                            <strong>보스 몬스터 공격 시 데미지 증가/상태 이상에 걸린 대상 공격 시 데미지 증가</strong><br>
+                            패시브 레벨 증가를 제외하면, 메카닉의 어빌리티 의존도는 높지 않다. 때문에 무난한 보스돌이용 어빌리티를 주로 띄운다.
+                            <br><br>
+                            <strong>아이템 드롭률 증가, 메소 획득량 증가</strong><br>
+                            광부 육성시, 혹은 리부트 육성시 고려되는 어빌리티. 상술했듯이 메카닉의 사냥 능력은 스펙이 된다는 가정 하에 상위권이므로 광부용으로 키우기에도 부족함은 없다.
+                        </p>
+                        <br>
+                        <br>
+                        <h1 id="title">코어강화</h1>
+                        <p>
+                            <strong>필수</strong><br>
+                            호밍 미사일, 매시브 파이어 : SPLASH-F/IRON-B, 디스토션 필드
+                            <br><br>
+                            <strong>2순위</strong><br>
+                            로봇 런처 : RM7, 마그네틱 필드, 로봇 팩토리 : RM1
+                        </p>
+                    </div>
+                </article>
+            </section>
+
+            <!-- 본문 우측 영역 -->
+            <aside id="main-aside">
+                <div class="aside-list">
+                    <h3>레지스탕스</h3>
+                    <ul>
+                        <li><a href="블래스터.html">블래스터</a></li>
+                        <li><a href="배틀메이지.html">배틀메이지</a></li>
+                        <li><a href="와일드헌터.html">와일드헌터</a></li>
+                        <li><a href="메카닉.html">메카닉</a></li>
+                        <li><a href="제논.html">제논</a></li>
+                    </ul>
+                </div>
+            </aside>
+        </div>
+    </div>
+    <!-- 푸터 -->
+    <footer id="main-footer">
+        <span>ⓒ These photographs and fonts are protected by NEXON Korea Corporation with all rights reserved.</span>
+    </footer>
+</body>
+
+</html>

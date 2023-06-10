@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>은월 공략</title>
+    <link rel="stylesheet" href="Style.css"> <!-- 외부 스타일 시트 -->
+    <script src="https://code.jquery.com/jquery-3.7.0.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('.outer-menu-item').hover(function () {
+                $(this).find('.inner-menu').stop().slideDown();
+            }, function () {
+                $(this).find('.inner-menu').stop().slideUp();
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <!-- 전체를 감싸는 테그 -->
+    <div id="page-wrapper">
+        <!-- 헤더 -->
+        <header id="main-header">
+            <hgroup>
+                <h1 class="master-title"><a href="main.html"><img src="image/로고.png" alt="메이플스토리"></a>
+                </h1>
+                <h2 class="master-description"><a href="main.html">직업별 공략</a></h2>
+            </hgroup>
+        </header>
+        <!-- 네비게이션 -->
+        <nav id="main-navigation">
+            <div class="pull-left">
+                <ul class="outer-menu">
+
+                    <li class="outer-menu-item">
+                        <span class="menu-title">모험가</span>
+                        <ul class="inner-menu">
+                            <li class="inner-menu-item"><a href="히어로.html">히어로</a></li>
+                            <li class="inner-menu-item"><a href="팔라딘.html">팔라딘</a></li>
+                            <li class="inner-menu-item"><a href="다크나이트.html">다크나이트</a></li>
+                            <li class="inner-menu-item"><a href="아크메이지(불,독).html">아크메이지(불,독)</a></li>
+                            <li class="inner-menu-item"><a href="아크메이지(썬,콜).html">아크메이지(썬,콜)</a></li>
+                            <li class="inner-menu-item"><a href="비숍.html">비숍</a></li>
+                            <li class="inner-menu-item"><a href="보우마스터.html">보우마스터</a></li>
+                            <li class="inner-menu-item"><a href="신궁.html">신궁</a></li>
+                            <li class="inner-menu-item"><a href="패스파인더.html">패스파인더</a></li>
+                            <li class="inner-menu-item"><a href="나이트로드.html">나이트로드</a></li>
+                            <li class="inner-menu-item"><a href="섀도어.html">섀도어</a></li>
+                            <li class="inner-menu-item"><a href="듀얼블레이드.html">듀얼블레이드</a></li>
+                            <li class="inner-menu-item"><a href="바이퍼.html">바이퍼</a></li>
+                            <li class="inner-menu-item"><a href="캡틴.html">캡틴</a></li>
+                            <li class="inner-menu-item"><a href="캐논슈터.html">캐논슈터</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="outer-menu-item">
+                        <span class="menu-title">시그너스 기사단</span>
+                        <ul class="inner-menu">
+                            <li class="inner-menu-item"><a href="소울마스터.html">소울마스터</a></li>
+                            <li class="inner-menu-item"><a href="미하일.html">미하일</a></li>
+                            <li class="inner-menu-item"><a href="플레임위자드.html">플레임위자드</a></li>
+                            <li class="inner-menu-item"><a href="윈드브레이커.html">윈드브레이커</a></li>
+                            <li class="inner-menu-item"><a href="나이트워커.html">나이트워커</a></li>
+                            <li class="inner-menu-item"><a href="스트라이커.html">스트라이커</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="outer-menu-item">
+                        <span class="menu-title">영웅</span>
+                        <ul class="inner-menu">
+                            <li class="inner-menu-item"><a href="아란.html">아란</a></li>
+                            <li class="inner-menu-item"><a href="에반.html">에반</a></li>
+                            <li class="inner-menu-item"><a href="루미너스.html">루미너스</a></li>
+                            <li class="inner-menu-item"><a href="메르세데스.html">메르세데스</a></li>
+                            <li class="inner-menu-item"><a href="팬텀.html">팬텀</a></li>
+                            <li class="inner-menu-item"><a href="은월.html">은월</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="outer-menu-item">
+                        <span class="menu-title">레지스탕스</span>
+                        <ul class="inner-menu">
+                            <li class="inner-menu-item"><a href="블래스터.html">블래스터</a></li>
+                            <li class="inner-menu-item"><a href="배틀메이지.html">배틀메이지</a></li>
+                            <li class="inner-menu-item"><a href="와일드헌터.html">와일드헌터</a></li>
+                            <li class="inner-menu-item"><a href="메카닉.html">메카닉</a></li>
+                            <li class="inner-menu-item"><a href="제논.html">제논</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="outer-menu-item">
+                        <span class="menu-title">데몬</span>
+                        <ul class="inner-menu">
+                            <li class="inner-menu-item"><a href="데몬슬레이어.html">데몬슬레이어</a></li>
+                            <li class="inner-menu-item"><a href="데몬어벤져.html">데몬어벤져</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="outer-menu-item">
+                        <span class="menu-title">노바</span>
+                        <ul class="inner-menu">
+                            <li class="inner-menu-item"><a href="카이저.html">카이저</a></li>
+                            <li class="inner-menu-item"><a href="카인.html">카인</a></li>
+                            <li class="inner-menu-item"><a href="카데나.html">카데나</a></li>
+                            <li class="inner-menu-item"><a href="엔젤릭버스터.html">엔젤릭버스터</a></li>
+                        </ul>
+                    </li>
+                    <li class="outer-menu-item">
+                        <span class="menu-title">레프</span>
+                        <ul class="inner-menu">
+                            <li class="inner-menu-item"><a href="아델.html">아델</a></li>
+                            <li class="inner-menu-item"><a href="일리움.html">일리움</a></li>
+                            <li class="inner-menu-item"><a href="칼리.html">칼리</a></li>
+                            <li class="inner-menu-item"><a href="아크.html">아크</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="outer-menu-item">
+                        <span class="menu-title">아니마</span>
+                        <ul class="inner-menu">
+                            <li class="inner-menu-item"><a href="라라.html">라라</a></li>
+                            <li class="inner-menu-item"><a href="호영.html">호영</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="outer-menu-item">
+                        <span class="menu-title">초월자</span>
+                        <ul class="inner-menu">
+                            <li class="inner-menu-item"><a href="제로.html">제로</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="outer-menu-item">
+                        <span class="menu-title">키네시스</span>
+                        <ul class="inner-menu">
+                            <li class="inner-menu-item"><a href="키네시스.html">키네시스</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <!-- 본문 -->
+        <div id="content">
+            <!-- 본문 좌측 영역 -->
+            <section id="main-section">
+                <article>
+                    <div class="article-header">
+                        <h1 class="article-title">은월(Eunwol)</h1>
+                    </div>
+                    <div class="article-body">
+                        <img id="c_image" src="image/은월.webp" alt="은월">
+                        <h1 id="title">장점</h1>
+                        <p>
+                            <strong>최상위권의 개인 유틸리티</strong><br>
+                            한마디로 없는 게 없다. 자가 회복, 회피, 상태이상 방어, 무적, 바인드, 각종 디버프 등 일일이 열거하기에는 입이 아플 정도로 많다. 특히 검은 마법사의 패턴 중
+                            하나인 창조와 파괴의 저주를 막을 때 소혼 결계만 쓰면 끝인지라, 최종 콘텐츠의 공략 가능성 또한 높다.
+                            뛰어난 파티 플레이 보조 및 기여 능력</strong><br>
+                            분혼 격참, 속박진, 귀문진, 약화 등은 물론 솔플에도 유용하지만, 파티플에서 더욱 빛을 발한다. 특히 분혼 격참은 아예 타격점을 하나 더 만듦으로써 단순한 최종
+                            데미지 증가 이상의 효용을 보이고, 귀문진은 크리티컬 관련 능력치를 증가시켜주기 때문에 궁수 직업군의 크리티컬 리인포스와 궁합이 잘 맞는다. 그래서 120초 주기의
+                            파티에서 은월은 비숍과 함께 서포터로 자주 기용된다.
+                            <br><br>
+                            <strong>쉬운 조작 난이도</strong><br>
+                            은월에게는 게이지, 조건부 패시브/액티브, 연계가 없다. 심지어 걸어둬야 할 버프도 손에 꼽히도록 적다. 고로 온전히 치고 빠지는 데에만 집중하면 끝난다. 물론
+                            챙겨야 할 극딜 버프까지 아예 없는 건 아니지만, 그밖의 상황에서는 복잡해질 일이 일절 없다.
+                            <br><br>
+                            <strong>난이도 대비 고효율의 사냥 능력</strong><br>
+                            도약+폭류권 조합만으로 생각 없이 사냥터를 돌아도 전직업 중상위권의 처치 수를 보일 정도로 손목 피로도가 적다.
+                            <br><br>
+                            <strong>우수한 기동성</strong><br>
+                            더블 점프와 텔레포트를 둘 다 보유하면서도 더블점프-텔레포트가 연계 가능하다. 특히 도약+후방 이동+축지의 조합은 웬만한 트리플 점프 보유 직업군 저리 가라 할
+                            수준의 기동력을 보여 주면서도, 원하는 발판으로 안정적으로 착지하게 해 준다.여기에 5차 이후 로프 커넥트를 습득할 경우 능동적인 상향 기동력이 추가로 붙어서 안
+                            그래도 좋은 기동력이 더더욱 좋아진다. 진가는 바로 스피릿 세이비어로, 제논이나 블래스터 등 은월보다 속도 자체는 빠른 직업군이 꽤 있는데도 은월은 더블 점프 +
+                            텔레포트 연계와 축지의 적 추적 덕분에 매우 안정감이 있는 기동력을 지녔기 때문에 정령 구출, 맹독의 정령 회피 등등의 면에서 타 직업들을 뛰어넘는 수준이며,
+                            보스전에서도 후방 이동으로 자유로운 회피가 가능하고 적을 추적한다는 축지의 특성에 익숙해지면 정확히 가고 싶은 거리에 이동하는 텔레포트 캐릭터 특유의 장점을 누릴 수
+                            있다.
+                            <br><br>
+                            <strong>뛰어난 유니온 공격대원 효과</strong><br>
+                            전 스탯 중에서도 올리기가 가장 힘든 크리티컬 데미지를 상승시켜 주는 효과이며 이는 KMS 기준으로는 은월이 유일하다. 얼핏 보면 수치가 낮아서 별로일 듯하나
+                            크리티컬 데미지는 어빌리티에서 나오지 않으며 잠재능력으로 얻으려고 해도 레전드리 등급, 그것도 장갑에서만 8% 고정 옵션으로 나온다. 그밖의 경로도 키네시스의 링크
+                            스킬, V 매트릭스 코어 혹은 유니크 이상의 잠재능력으로 얻을 수 있는 쓸만한 샤프 아이즈 정도로 매우 적기 때문에 오히려 효율이 뛰어나다고 할 수 있다. 크리티컬
+                            확률 100%를 달성한다면 사실상 유니온 캐릭터 우선 육성 순위 1위가 된다고 할 수 있다.
+                        </p>
+                        <br>
+                        <br>
+                        <h1 id="title">단점</h1>
+                        <p>
+                            <strong>상대적으로 부실한 평딜 능력</strong><br>
+                            극딜은 훌륭하지만, 극딜이 빠지고 난 이후의 공백이 다소 크다. 어차피 최상위권 보스로 갈수록 극딜이 평딜보다 더 중요해지는 추세라지만, 귀참만 주야장천으로 쓰고
+                            있는 게 고작이라 어쩔 수 없이 체감되는 단점이다. 그나마 평딜을 보조하는 유틸이 훌륭하기에 다른 극딜 몰빵형 직업보다는 사정이 낫다.
+                            <br><br>
+                            <strong>낮은 크리티컬 확률</strong><br>
+                            은월의 크리티컬 확률을 증가시키는 스킬은 4차의 '약점 간파' 뿐인데, 이 스킬로 상승하는 크리티컬 확률은 25%에 불과하고 반피 이하의 적에게 확정 크리티컬이라는
+                            제한적 크리티컬 확률을 부여했다. 이 옵션이 얼마나 괴상하냐면 높은 데미지를 주기 위해선 크리티컬 확률을 높여 크리티컬을 띄워야 하는데 은월은 HP가 50% 이하인
+                            적에게만 크리티컬 확률이 100%가 되기에, HP를 50%까지 깎으려면 우선적으로 크리티컬 확률에 좌우되는 모순적인 상황에 빠지고 만다. 요컨대 있으나 마나다.
+                            그렇다고 별다른 보정도 없으므로, 은월의 상시 크리티컬 확률은 엔젤릭버스터(35%)보다도 더 낮은 30%로, 메이플 직업 중 뒤에서 두 번째다. 다른 능력치에 투자할
+                            여건이 되어도 크리티컬 확률을 우선적으로 구비해야 하기 때문에 은월의 초반 육성 난도를 높이는 단점이다.
+                            <br><br>
+                            <strong>높은 코어 강화 난이도</strong><br>
+                            은월의 코강은 상당히 어렵다. V 매트릭스에서 강화해야 할 스킬은 기껏해야 귀참이나 폭류권, 소혼 장막 정도고 더 찾아봤자 여우령, 정령의 화신, 사혼각인 뿐이지만
+                            코어 강화가 가능한 스킬이 15개에 달해서 유효 옵션을 찾기가 힘들고, 마찬가지로 재료 코어 역시 잘 안 나오기 때문에 코어 레벨업도 만만치 않다.
+                            <br><br>
+                            <strong>낮은 스탯 공격력 증가량</strong><br>
+                            사용 무기가 너클이라서 무기 상수가 1.7로 매우 높기에 공격력 효율이 뛰어나지만, 최종 데미지 수치가 33.4%에 불과하고, 스탯 공격력을 큰 폭으로 올려주는
+                            버프가 전무하여 스탯 공격력이 낮은 편이다. 때문에 공용 5차 스킬 효율이 상당히 나쁜 직업 중 하나다.
+                            <br><br>
+                            <strong>높은 MP 소모량</strong><br>
+                            현질로 엘릭서 계열을 넘쳐나도록 들고 다니는 게 아니고서야 주력기가 스킬 타당 MP를 소모하는 방식이라 마나통이 크지 않은 은월에게 3차 전직 이후로는 MP 소모량이
+                            꽤 부담되게 다가온다. 물론 엘릭서 계열을 뿌리는 추세기도 하고, 메소도 얻기 쉬운 현재로써는 무과금 유저들에게 다가오는 약간의 불편에 가까워지게 되었다.
+                        </p>
+                        <br>
+                        <br>
+                        <h1 id="title">사냥 운용</h1>
+                        <p>
+                            사냥 1타 원킬컷도 무난하고, 전직업을 통틀어 '뇌빼기 사냥'이 가장 쉬울 정도로 단순하고 빠른데다 효율적이다. 폭류권의 넓은 범위와 기동성을 보조할 각종 이동기들을
+                            토대로, 아무 생각 없이 공격만 난사하면서 한바퀴 빙 돌면 끝난다. 물론 폭류권 1타 원킬이 나지 않는 스펙이라면 늘어질 수는 있겠지만, 여차하면 귀문진이나 에르다
+                            파운틴 등의 설치기나 정령의 화신 같은 광범위 공격기를 활용해도 무방하다. 물론 이마저도 필수가 아닌 선택사항이다.
+                        </p>
+                        <br>
+                        <br>
+                        <h1 id="title">보스전 운용</h1>
+                        <p>
+                            다재다능한 시너지 딜러. 다른 직업이 몸을 사려야 할 상황에서도 다양한 유틸리티를 기반으로 패턴을 회피하고 버티며 꾸준히 화력을 욱여넣는 데에 특화되어 있다.
+                            그렇다고 해서 극딜 화력이 뒤처지지도 않고, 오히려 2분 극딜 직업임에도 3분 극딜과 비슷할 정도의 화력을 구가한다.
+                            <br><br>
+                            은월이 보유한 고유 유틸리티는 다음과 같다.
+                        <p style="padding: 0 0 0 10px;">
+                            <strong>HP 회복</strong><br>
+                            정령 결속 1식, 사혼 각인
+                            <br><br>
+                            <strong>긴급 회피기</strong><br>
+                            축지, 후방 이동
+                            <br><br>
+                            <strong>상태이상 방어</strong><br>
+                            소혼 결계(+ 정령 결속 극대화)
+                            <br><br>
+                            <strong>바인드</strong><br>
+                            속박술
+                            <br><br>
+                            <strong>피해량 증폭</strong><br>
+                            약화(데미지 디버프), 분혼 격참(타격점 추가 생성), 귀문진(크리티컬 확률+크리티컬 데미지 증가)
+                            <br><br>
+                            <strong>사망 방지</strong><br>
+                            환령 강신, 구사일생(10%로 발동, 은월의 링크 스킬)
+                            <br><br>
+                            <strong>재사용 대기시간 초기화</strong><br>
+                            정령 집속
+                            <br><br>
+                            <strong>무적</strong><br>
+                            정령의 화신
+                        </p><br>
+                        이처럼 은월은 보스전에서 필요한 덕목을 모두 갖춘 만능 직업으로서, 극딜에 비해 평딜이 상대적으로 부실하다는 점만 제외하면 단점을 찾아보기 어려운 팔방미인으로 정평이 났다.
+                        </p>
+                        <br>
+                        <br>
+                        <h1 id="title">어빌리티</h1>
+                        <p>
+                            <strong>보스 몬스터 공격 시 데미지 증가</strong><br>
+                            은월은 숨은 보공과 데미지가 많아 보공 효율이 뛰어나다고 하기는 어렵다. 하지만 크리티컬을 충분히 수급해줬거나 2-3줄로 미룰거라면, 보공을 레전 1줄로 보내는 것이
+                            그래도 가장 좋다.
+                            <br><br>
+                            <strong>크리티컬 확률 증가</strong><br>
+                            100%를 확보하지 못했다면 가장 시급한 옵션. 자체 크리티컬 제공량이 30%에 불과하기 때문에 어떻게든 확정 크리티컬을 통해 안정적인 피해량을 확보해야 한다.
+                            <br><br>
+                            <strong>N% 확률로 재사용 대기시간이 미적용</strong><br>
+                            정령 집속의 존재 때문에 우선순위는 낮지만 구비해둔다면 사혼 각인, 소혼 결계의 초기화로 생존성 증가를 꾀할 수 있다. 바인드 저항이 자주 초기화되는 카오스
+                            핑크빈이나 두 대상을 동시에 공략해야하는 윌 1페이즈 에서는 속박술, 분혼 격참의 초기화가 큰 도움이 된다.
+                            <br><br>
+                            <strong>크리티컬 확률 증가</strong><br>
+                            1번째 줄을 보스 몬스터 공격 시 데미지 20% 증가를 챙겼을 경우 2번째 줄에서는 이 옵션을 챙기는게 제일 좋다.
+                            <br><br>
+                            <strong>몬스터 상태이상 시 데미지 증가</strong><br>
+                            약화의 존재 때문에 사실상 상시 상태이상을 몬스터에게 적용시킬수 있으므로 꽤 좋은 옵션이다. 사실상 데미지 증가 옵션.
+                            <br><br>
+                            <strong>메소 획득량 증가/아이템 획득량 증가</strong><br>
+                            200레벨 이후 사냥으로,광부로 은월을 키울 선택이라면 좋은 옵션이다.
+                        </p>
+                        <br>
+                        <br>
+                        <h1 id="title">코어강화</h1>
+                        <p>
+                            <strong>1순위</strong><br>
+                            귀참, 여우령, 소혼 장막, 폭류권
+                            <br><br>
+                            <strong>2순위</strong><br>
+                            정령의 화신, 사혼 각인
+                        </p>
+                    </div>
+                </article>
+            </section>
+
+            <!-- 본문 우측 영역 -->
+            <aside id="main-aside">
+                <div class="aside-list">
+                    <h3>영웅</h3>
+                    <ul>
+                        <li><a href="아란.html">아란</a></li>
+                        <li><a href="에반.html">에반</a></li>
+                        <li><a href="루미너스.html">루미너스</a></li>
+                        <li><a href="메르세데스.html">메르세데스</a></li>
+                        <li><a href="팬텀.html">팬텀</a></li>
+                        <li><a href="은월.html">은월</a></li>
+                    </ul>
+                </div>
+            </aside>
+        </div>
+    </div>
+    <!-- 푸터 -->
+    <footer id="main-footer">
+        <span>ⓒ These photographs and fonts are protected by NEXON Korea Corporation with all rights reserved.</span>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>메르세데스 공략</title>
+    <link rel="stylesheet" href="Style.css"> <!-- 외부 스타일 시트 -->
+    <script src="https://code.jquery.com/jquery-3.7.0.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('.outer-menu-item').hover(function () {
+                $(this).find('.inner-menu').stop().slideDown();
+            }, function () {
+                $(this).find('.inner-menu').stop().slideUp();
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <!-- 전체를 감싸는 테그 -->
+    <div id="page-wrapper">
+        <!-- 헤더 -->
+        <header id="main-header">
+            <hgroup>
+                <h1 class="master-title"><a href="main.html"><img src="image/로고.png" alt="메이플스토리"></a>
+                </h1>
+                <h2 class="master-description"><a href="main.html">직업별 공략</a></h2>
+            </hgroup>
+        </header>
+        <!-- 네비게이션 -->
+        <nav id="main-navigation">
+            <div class="pull-left">
+                <ul class="outer-menu">
+
+                    <li class="outer-menu-item">
+                        <span class="menu-title">모험가</span>
+                        <ul class="inner-menu">
+                            <li class="inner-menu-item"><a href="히어로.html">히어로</a></li>
+                            <li class="inner-menu-item"><a href="팔라딘.html">팔라딘</a></li>
+                            <li class="inner-menu-item"><a href="다크나이트.html">다크나이트</a></li>
+                            <li class="inner-menu-item"><a href="아크메이지(불,독).html">아크메이지(불,독)</a></li>
+                            <li class="inner-menu-item"><a href="아크메이지(썬,콜).html">아크메이지(썬,콜)</a></li>
+                            <li class="inner-menu-item"><a href="비숍.html">비숍</a></li>
+                            <li class="inner-menu-item"><a href="보우마스터.html">보우마스터</a></li>
+                            <li class="inner-menu-item"><a href="신궁.html">신궁</a></li>
+                            <li class="inner-menu-item"><a href="패스파인더.html">패스파인더</a></li>
+                            <li class="inner-menu-item"><a href="나이트로드.html">나이트로드</a></li>
+                            <li class="inner-menu-item"><a href="섀도어.html">섀도어</a></li>
+                            <li class="inner-menu-item"><a href="듀얼블레이드.html">듀얼블레이드</a></li>
+                            <li class="inner-menu-item"><a href="바이퍼.html">바이퍼</a></li>
+                            <li class="inner-menu-item"><a href="캡틴.html">캡틴</a></li>
+                            <li class="inner-menu-item"><a href="캐논슈터.html">캐논슈터</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="outer-menu-item">
+                        <span class="menu-title">시그너스 기사단</span>
+                        <ul class="inner-menu">
+                            <li class="inner-menu-item"><a href="소울마스터.html">소울마스터</a></li>
+                            <li class="inner-menu-item"><a href="미하일.html">미하일</a></li>
+                            <li class="inner-menu-item"><a href="플레임위자드.html">플레임위자드</a></li>
+                            <li class="inner-menu-item"><a href="윈드브레이커.html">윈드브레이커</a></li>
+                            <li class="inner-menu-item"><a href="나이트워커.html">나이트워커</a></li>
+                            <li class="inner-menu-item"><a href="스트라이커.html">스트라이커</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="outer-menu-item">
+                        <span class="menu-title">영웅</span>
+                        <ul class="inner-menu">
+                            <li class="inner-menu-item"><a href="아란.html">아란</a></li>
+                            <li class="inner-menu-item"><a href="에반.html">에반</a></li>
+                            <li class="inner-menu-item"><a href="루미너스.html">루미너스</a></li>
+                            <li class="inner-menu-item"><a href="메르세데스.html">메르세데스</a></li>
+                            <li class="inner-menu-item"><a href="팬텀.html">팬텀</a></li>
+                            <li class="inner-menu-item"><a href="은월.html">은월</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="outer-menu-item">
+                        <span class="menu-title">레지스탕스</span>
+                        <ul class="inner-menu">
+                            <li class="inner-menu-item"><a href="블래스터.html">블래스터</a></li>
+                            <li class="inner-menu-item"><a href="배틀메이지.html">배틀메이지</a></li>
+                            <li class="inner-menu-item"><a href="와일드헌터.html">와일드헌터</a></li>
+                            <li class="inner-menu-item"><a href="메카닉.html">메카닉</a></li>
+                            <li class="inner-menu-item"><a href="제논.html">제논</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="outer-menu-item">
+                        <span class="menu-title">데몬</span>
+                        <ul class="inner-menu">
+                            <li class="inner-menu-item"><a href="데몬슬레이어.html">데몬슬레이어</a></li>
+                            <li class="inner-menu-item"><a href="데몬어벤져.html">데몬어벤져</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="outer-menu-item">
+                        <span class="menu-title">노바</span>
+                        <ul class="inner-menu">
+                            <li class="inner-menu-item"><a href="카이저.html">카이저</a></li>
+                            <li class="inner-menu-item"><a href="카인.html">카인</a></li>
+                            <li class="inner-menu-item"><a href="카데나.html">카데나</a></li>
+                            <li class="inner-menu-item"><a href="엔젤릭버스터.html">엔젤릭버스터</a></li>
+                        </ul>
+                    </li>
+                    <li class="outer-menu-item">
+                        <span class="menu-title">레프</span>
+                        <ul class="inner-menu">
+                            <li class="inner-menu-item"><a href="아델.html">아델</a></li>
+                            <li class="inner-menu-item"><a href="일리움.html">일리움</a></li>
+                            <li class="inner-menu-item"><a href="칼리.html">칼리</a></li>
+                            <li class="inner-menu-item"><a href="아크.html">아크</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="outer-menu-item">
+                        <span class="menu-title">아니마</span>
+                        <ul class="inner-menu">
+                            <li class="inner-menu-item"><a href="라라.html">라라</a></li>
+                            <li class="inner-menu-item"><a href="호영.html">호영</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="outer-menu-item">
+                        <span class="menu-title">초월자</span>
+                        <ul class="inner-menu">
+                            <li class="inner-menu-item"><a href="제로.html">제로</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="outer-menu-item">
+                        <span class="menu-title">키네시스</span>
+                        <ul class="inner-menu">
+                            <li class="inner-menu-item"><a href="키네시스.html">키네시스</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <!-- 본문 -->
+        <div id="content">
+            <!-- 본문 좌측 영역 -->
+            <section id="main-section">
+                <article>
+                    <div class="article-header">
+                        <h1 class="article-title">메르세데스(Mercedes)</h1>
+                    </div>
+                    <div class="article-body">
+                        <img id="c_image" src="image/메르세데스.webp" alt="메르세데스">
+                        <h1 id="title">장점</h1>
+                        <p>
+                            <strong>동성을 활용한 뛰어난 생존력</strong><br>
+                            기본 회피율 및 추가 회피율 덕분에 도적과 비견될 정도로 MISS가 많이 뜬다. 게다가 하이킥 데몰리션과 스피릿 이스케이프에 텔레포트 판정이 있어서 패턴 회피에도
+                            용이하다. 여기에 컨트롤만 익숙하다면 위에서 보이는 움짤과 같이 10초 이상 체공하는 통칭 메르콥터를 쓸 수 있다.
+                            <br><br>
+                            <strong>준수한 기본 스펙 보정</strong><br>
+                            공격 관련 능력치 보정이 화려하다. 공격력 수치 및 퍼센티지(%), 최종 데미지, 방무, 보공 등 자본 투자량에 비해 높은 효율을 구가할 수 있는 기반이 탄탄하다.
+                            자연히 스공 증가량도 높아 물스공에 가깝고, 이로 인해 5차 공용 스킬을 사용할 때 유리하다.
+                            <br><br>
+                            <strong>압도적인 극딜 화력</strong><br>
+                            평딜은 평범하지만, 극딜 화력이 살인적이다. KMS의 전직업을 통틀어 리레딜, 바인드딜, 5초딜 등 모든 지표가 최상위권이다. 일각에서는 모든 역량을 극딜에 총동원한
+                            극단적인 극딜 직업인 나이트로드와도 비견할 정도다.
+                            <br><br>
+                            <strong>뛰어난 파티 보조 및 기여 능력</strong><br>
+                            방깎 50%에 데미지 30%, 그리고 충돌 무시까지 있다. 특히 래쓰 오브 엔릴의 충돌 무시 디버프는 몸통 박치기가 뼈아프거나 그와 유사한 패턴을 보유한 보스를
+                            상대할 때 더할 나위 없이 유용하다. 이로 인해 검은 마법사나 세렌 레이드에서도 몸박 무시 딜러로 취급되어 환영받는다.
+                            <br><br>
+                            <strong>유용한 직업 고유 특성</strong><br>
+                            육성 보너스로 추가 경험치 15%와 재사용 대기시간 6% 감소(250레벨 기준)를 주므로, 부캐로서의 육성 가치가 높다.
+                        </p>
+                        <br>
+                        <br>
+                        <h1 id="title">단점</h1>
+                        <p>
+                            <strong>높은 사냥 피로도와 낮은 사냥 능력</strong><br>
+                            메르세데스의 사냥 주력기인 리프 토네이도는 스킬 특성상 반드시 체공해야만 쓸 수 있다. 고로 점샷이 강제된다. 물론 점샷은 다른 직업도 다 쓰는 기술이지만, 발판
+                            밑으로 내려갈 때가 문제다. 리프 토네이도의 자체 반동 때문에 발판에서 내려가려 해도 발판 위로 도로 올라오는 널뛰기 현상이 발생한다. 하필이면 아래로 내려가면서
+                            써야 효율을 잘 뽑아내는 스킬인데도 도통 내려가질 못하니 초보자 입장에서는 답답할 수 있다.
+                            게다가 이는 원킬컷에 목을 매는 기조에도 한몫한다. 다른 직업이 주력기 투킬이면 점샷 없이 또 쓰면 그만이지만, 메세는 또 점프부터 해야 한다. 그게 아니면 뻣뻣하고
+                            부자연스러운 스킬 연계가 최선이다. 거스트 다이브로 연계를 잘 이어나간다면 그나마 낫겠지만, 거스트 다이브 또한 발판에 착지하지 못하면 공중에서 굳어버려서 답답하기는
+                            매한가지다.
+                            <br><br>
+                            <strong>스킬 연계의 의미 상실</strong><br>
+                            메세의 뻣뻣하고 부자연스럽기 그지없는 스킬 연계는 엘리멘탈 고스트에 붙은 에우렐의 형상의 회전율을 높이는 데에도 쓰이지만, 고스트를 제하면 열에 아홉은 이그니스
+                            로어의 스택 갱신에만 치중한다. 요컨대 연계가 효율적이거나 실용적이어서, 하다못해 추가 효과가 존재해서 쓰는 게 아니라, 단지 최종 데미지를 보존하기 위한 수단에
+                            불과하다는 의미다.
+                            사실 역사적으로 따져 보면 출시 당시에는 스킬 연계가 중추인 직업도 아니었는데, 황선영이 디렉터로 있던 시절에 고정된 플레이를 탈피한답시고 기존 스킬에 연계 관련
+                            기능을 도입했다가 직업의 정체성 자체가 박살나기 직전까지 내몰렸고, 이를 복구하느라 연계가 자연스레 뒷전으로 밀린 결과가 작금의 메르세데스다. 그나마 로어 스택의
+                            지속시간이 널널하니 까맣게 잊어먹기 전에 한두 번씩 섞어주면 그만이라지만, 스킬 구조나 연계 자체를 손볼 의향도 없으면서 부득이한 연계를 강요하는 작태는
+                            어불성설이다.
+                        </p>
+                        <br>
+                        <br>
+                        <h1 id="title">사냥 운용</h1>
+                        <p>
+                            스펙이 충분하다면 이그니스 로어 스택 갱신과 무관하게 리프 토네이도만 가지고도 무난하게 사냥을 이어나갈 수 있지만, 로어 스택에 공속 1단계가 붙어있기 때문에 최대
+                            공속(8단계)에 도달하기 위해서는 1스택이라도 있어야 한다. 연계 자체도 크게 어렵지 않아서 굳이 등한시할 이유도 없다.
+
+                            사냥에서 주로 쓰는 스킬은 다음과 같다.
+                            <br><br>
+                        <p style="padding: 0 0 0 10px;">
+                            <strong>리프 토네이도</strong><br>
+                            주력으로 쓰이는 사냥용 스킬. 공중에서 써야 한다는 제약이 있지만, 거스트 다이브에서 이어질 때를 제외하면 아주 낮은 높이에서도 쓸 수 있어서 거슬릴 일이 적다.
+                            위에서 아래로 화살 폭격을 가하는 스킬이라 어지간한 2층 높이는 이 스킬만으로 커버할 수 있다. 하향 점프를 하면서 쓰다 보면 위로 약간 튀어오르는 바람에 도로 발판
+                            위로 올라가는 일이 자주 발생하므로, 이때는 간격을 두어 쓰면 된다.
+                            <br><br>
+                            <strong>거스트 다이브</strong><br>
+                            리프 토네이도에서 연계해서 이그니스 로어 스택을 갱신하거나, 빠르게 착지해서 일정 거리를 전진하는 등의 용도로 쓴다. 단, 바닥에 발이 닿지 않으면 공중에서
+                            경직된다. 이때 높이가 충분하다면 리프 토네이도를 한번 더 쓰거나, 스피릿 이스케이프 등으로 착지할 공간을 찾아야 한다.
+                            <br><br>
+                            <strong>레전드리 스피어</strong><br>
+                            확정 크리티컬이라 크확이 부족한 초반에는 원킬컷이 낮고, 범위도 리프 토네이도에 버금갈 정도로 넉넉하다. 무엇보다도 바닥에서 쓰면 공중에 뜨고, 공중에서 쓰면
+                            체공하므로 리프 토네이도로 이어기가도 수월하다. 다만 액션 딜레이가 길어 경직되기 쉬우므로, 육성 후반부에 가까워질수록 사용 빈도가 적어진다.
+                            <br><br>
+                            <strong>래쓰 오브 엔릴</strong><br>
+                            리프 토네이도가 커버하지 못하는 위쪽을 커버하기 좋고, 리프 토네이도에서 연계되어 이그니스 로어 스택을 갱신할 수 있으므로 경우에 따라서는 거스트 다이브나 레전드리
+                            스피어보다 훨씬 자주 쓰인다.
+                            <br><br>
+                            <strong>스트라이크 듀얼샷</strong><br>
+                            리프 토네이도가 닿지 않는 전방 범위를 보완하거나, 급하게 로어 스택을 갱신할 필요가 있을 때에만 가끔 쓰인다.
+                            <br><br>
+                            <strong>라이트닝 엣지</strong><br>
+                            태생에 돌진기라 퍼뎀이 낮고, 코어 강화에서도 대체로 빠지기 십상이다. 그래서 스피릿 이스케이프와 연계할 때가 아니면 거의 쓰이지 않는다.
+                            <br><br>
+                            <strong>스피릿 이스케이프</strong><br>
+                            메르세데스는 공중에 뜰 일이 많기 때문에 의외로 이 스킬이 사냥 빌드를 짤 때 큰 도움이 된다. 그러나 연계 판정이 아니기 때문에 로어 스택을 갱신하지 못하고,
+                            재사용 대기시간이 줄어드는 효과도 없어서 회전율을 끌어올릴 방법이 없다.
+                        </p>
+                        </p>
+                        <br>
+                        <br>
+                        <h1 id="title">보스전 운용</h1>
+                        <p>
+                            이그니스 로어 10스택을 쌓아놓은 상황에서 이슈타르의 링을 주축으로 삼고, 가끔 스킬 연계로 로어 스택을 갱신하면 끝. 투사체를 날리는 단일기가 주력 스킬이라 잡몹
+                            패턴에 취약하지만, 연계용 스킬이 모두 다수기이므로 원투킬만 난다면 크게 문제될 것은 없다.
+                            <br><br>
+                            공격 스킬마다 연계를 언급함에도 단일 대상 속사기인 이슈타르의 링이 보스전 주력기라는 사실에서 알 수 있듯이, 메르세데스는 스킬 연계가 주력인 직업이 아니다.
+                            정확히는 이그니스 로어의 최종 데미지를 노리고 스킬 연계를 사용할 뿐, 연계 자체에는 효용이 극히 적다. 따라서 스킬 연계는 로어 스택이 사라질 때쯤, 움직임을
+                            최소화하는 방향으로만 사용할 것이 권장된다.
+                        </p>
+                        <br>
+                        <br>
+                        <h1 id="title">어빌리티</h1>
+                        <p>
+                            <strong>보스 몬스터 공격 시 데미지 증가</strong><br>
+                            심플하면서도 어느 직업이든 잘 어울리는 무난한 옵션으로, 필수 어빌이 존재하지 않는 직업 대부분은 첫줄로 선택한다. 메르 역시 다르지 않다.
+                            <br><br>
+                            <strong>크리티컬 확률 증가</strong><br>
+                            기본 크확이 낮은 직업은 아니지만, 궁수 계열 직업은 공용 5차 스킬 중 크리티컬 리인포스가 있기에 채용 가치는 충분하다. 게다가 극딜 능력을 끌어올리는 것이 중요한
+                            메세 특성상, 타 궁수보다도 그 가치는 더욱 올라간다.
+                            <br><br>
+                            <strong>상태 이상에 걸린 적 공격 시 데미지 증가</strong><br>
+                            유니콘, 스피어, 엔릴 등의 디버프를 상시로 걸 수 있기 때문에 사실상 추가 보공을 수급한다고 생각하면 된다.
+                            <br><br>
+                            <strong>메소/아이템 드롭 확률 증가</strong><br>
+                            사냥 피로도가 높아 광부로 사용하기엔 적합한 직업은 아니지만, 사냥을 중점으로 두는 유저라면 뽑아둔다.
+                        </p>
+                        <br>
+                        <br>
+                        <h1 id="title">코어강화</h1>
+                        <p>
+                            <strong>1순위</strong><br>
+                            이슈타르의 링, 스트라이크 듀얼샷/파이널 어택 : 듀얼보우건, 리프 토네이도/거스트 다이브
+                            <br><br>
+                            <strong>2순위</strong><br>
+                            엘리멘탈 나이트, 레전드리 스피어, 레쓰 오브 엔릴, 유니콘 스파이크
+                            <br><br>
+                            <strong>선택</strong><br>
+                            차지 드라이브/파이널 샷/하이킥 데몰리션/롤링 문썰트, 라이트닝 엣지
+                        </p>
+                    </div>
+                </article>
+            </section>
+
+            <!-- 본문 우측 영역 -->
+            <aside id="main-aside">
+                <div class="aside-list">
+                    <h3>영웅</h3>
+                    <ul>
+                        <li><a href="아란.html">아란</a></li>
+                        <li><a href="에반.html">에반</a></li>
+                        <li><a href="루미너스.html">루미너스</a></li>
+                        <li><a href="메르세데스.html">메르세데스</a></li>
+                        <li><a href="팬텀.html">팬텀</a></li>
+                        <li><a href="은월.html">은월</a></li>
+                    </ul>
+                </div>
+            </aside>
+        </div>
+    </div>
+    <!-- 푸터 -->
+    <footer id="main-footer">
+        <span>ⓒ These photographs and fonts are protected by NEXON Korea Corporation with all rights reserved.</span>
+    </footer>
+</body>
+
+</html>

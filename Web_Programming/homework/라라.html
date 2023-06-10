@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>라라 공략</title>
+    <link rel="stylesheet" href="Style.css"> <!-- 외부 스타일 시트 -->
+    <script src="https://code.jquery.com/jquery-3.7.0.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('.outer-menu-item').hover(function () {
+                $(this).find('.inner-menu').stop().slideDown();
+            }, function () {
+                $(this).find('.inner-menu').stop().slideUp();
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <!-- 전체를 감싸는 테그 -->
+    <div id="page-wrapper">
+        <!-- 헤더 -->
+        <header id="main-header">
+            <hgroup>
+                <h1 class="master-title"><a href="main.html"><img src="image/로고.png" alt="메이플스토리"></a>
+                </h1>
+                <h2 class="master-description"><a href="main.html">직업별 공략</a></h2>
+            </hgroup>
+        </header>
+        <!-- 네비게이션 -->
+        <nav id="main-navigation">
+            <div class="pull-left">
+                <ul class="outer-menu">
+
+                    <li class="outer-menu-item">
+                        <span class="menu-title">모험가</span>
+                        <ul class="inner-menu">
+                            <li class="inner-menu-item"><a href="히어로.html">히어로</a></li>
+                            <li class="inner-menu-item"><a href="팔라딘.html">팔라딘</a></li>
+                            <li class="inner-menu-item"><a href="다크나이트.html">다크나이트</a></li>
+                            <li class="inner-menu-item"><a href="아크메이지(불,독).html">아크메이지(불,독)</a></li>
+                            <li class="inner-menu-item"><a href="아크메이지(썬,콜).html">아크메이지(썬,콜)</a></li>
+                            <li class="inner-menu-item"><a href="비숍.html">비숍</a></li>
+                            <li class="inner-menu-item"><a href="보우마스터.html">보우마스터</a></li>
+                            <li class="inner-menu-item"><a href="신궁.html">신궁</a></li>
+                            <li class="inner-menu-item"><a href="패스파인더.html">패스파인더</a></li>
+                            <li class="inner-menu-item"><a href="나이트로드.html">나이트로드</a></li>
+                            <li class="inner-menu-item"><a href="섀도어.html">섀도어</a></li>
+                            <li class="inner-menu-item"><a href="듀얼블레이드.html">듀얼블레이드</a></li>
+                            <li class="inner-menu-item"><a href="바이퍼.html">바이퍼</a></li>
+                            <li class="inner-menu-item"><a href="캡틴.html">캡틴</a></li>
+                            <li class="inner-menu-item"><a href="캐논슈터.html">캐논슈터</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="outer-menu-item">
+                        <span class="menu-title">시그너스 기사단</span>
+                        <ul class="inner-menu">
+                            <li class="inner-menu-item"><a href="소울마스터.html">소울마스터</a></li>
+                            <li class="inner-menu-item"><a href="미하일.html">미하일</a></li>
+                            <li class="inner-menu-item"><a href="플레임위자드.html">플레임위자드</a></li>
+                            <li class="inner-menu-item"><a href="윈드브레이커.html">윈드브레이커</a></li>
+                            <li class="inner-menu-item"><a href="나이트워커.html">나이트워커</a></li>
+                            <li class="inner-menu-item"><a href="스트라이커.html">스트라이커</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="outer-menu-item">
+                        <span class="menu-title">영웅</span>
+                        <ul class="inner-menu">
+                            <li class="inner-menu-item"><a href="아란.html">아란</a></li>
+                            <li class="inner-menu-item"><a href="에반.html">에반</a></li>
+                            <li class="inner-menu-item"><a href="루미너스.html">루미너스</a></li>
+                            <li class="inner-menu-item"><a href="메르세데스.html">메르세데스</a></li>
+                            <li class="inner-menu-item"><a href="팬텀.html">팬텀</a></li>
+                            <li class="inner-menu-item"><a href="은월.html">은월</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="outer-menu-item">
+                        <span class="menu-title">레지스탕스</span>
+                        <ul class="inner-menu">
+                            <li class="inner-menu-item"><a href="블래스터.html">블래스터</a></li>
+                            <li class="inner-menu-item"><a href="배틀메이지.html">배틀메이지</a></li>
+                            <li class="inner-menu-item"><a href="와일드헌터.html">와일드헌터</a></li>
+                            <li class="inner-menu-item"><a href="메카닉.html">메카닉</a></li>
+                            <li class="inner-menu-item"><a href="제논.html">제논</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="outer-menu-item">
+                        <span class="menu-title">데몬</span>
+                        <ul class="inner-menu">
+                            <li class="inner-menu-item"><a href="데몬슬레이어.html">데몬슬레이어</a></li>
+                            <li class="inner-menu-item"><a href="데몬어벤져.html">데몬어벤져</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="outer-menu-item">
+                        <span class="menu-title">노바</span>
+                        <ul class="inner-menu">
+                            <li class="inner-menu-item"><a href="카이저.html">카이저</a></li>
+                            <li class="inner-menu-item"><a href="카인.html">카인</a></li>
+                            <li class="inner-menu-item"><a href="카데나.html">카데나</a></li>
+                            <li class="inner-menu-item"><a href="엔젤릭버스터.html">엔젤릭버스터</a></li>
+                        </ul>
+                    </li>
+                    <li class="outer-menu-item">
+                        <span class="menu-title">레프</span>
+                        <ul class="inner-menu">
+                            <li class="inner-menu-item"><a href="아델.html">아델</a></li>
+                            <li class="inner-menu-item"><a href="일리움.html">일리움</a></li>
+                            <li class="inner-menu-item"><a href="칼리.html">칼리</a></li>
+                            <li class="inner-menu-item"><a href="아크.html">아크</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="outer-menu-item">
+                        <span class="menu-title">아니마</span>
+                        <ul class="inner-menu">
+                            <li class="inner-menu-item"><a href="라라.html">라라</a></li>
+                            <li class="inner-menu-item"><a href="호영.html">호영</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="outer-menu-item">
+                        <span class="menu-title">초월자</span>
+                        <ul class="inner-menu">
+                            <li class="inner-menu-item"><a href="제로.html">제로</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="outer-menu-item">
+                        <span class="menu-title">키네시스</span>
+                        <ul class="inner-menu">
+                            <li class="inner-menu-item"><a href="키네시스.html">키네시스</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <!-- 본문 -->
+        <div id="content">
+            <!-- 본문 좌측 영역 -->
+            <section id="main-section">
+                <article>
+                    <div class="article-header">
+                        <h1 class="article-title">라라(Lara)</h1>
+                    </div>
+                    <div class="article-body">
+                        <img id="c_image" src="image/라라.webp" alt="라라">
+                        <h1 id="title">장점</h1>
+                        <p>
+                            <strong>탄탄한 기초 스펙</strong><br>
+                            데미지, 최종 데미지, 방무 등 기초 스펙상으로는 부족할 것이 없다. 특히 최종 데미지만 기본 97.98%를 상시로 받는데, 이는 인피니티 쓴 모험가 마법사를
+                            제외하면 가장 높은 수치다. 다소 물스공이라 사려될 여지는 있으나, 직업별 스펙 고려 없이 퍼뎀이 책정된 공용 스킬을 쓸 때 그 진가가 드러난다.
+                            <br><br>
+                            <strong>강력하면서 안정적인 딜링 능력</strong><br>
+                            라라의 스킬 구조는 딜로스를 최소화하여 안정적인 딜링을 넣을 수 있게 설계되어 있다. 큰 기지개, 산등성이 굽이굽이, 용솟음치는 정기 등의 준 극딜기들은 범위가 넓고
+                            추적 기능이 있으며 메인 극딜기인 해 강 산 바람은 키다운형이 아닌 한번 사용하면 자동으로 적을 공격하는 설치형 극딜기라 한 번 사용하면 자유롭게 행동이 가능하여
+                            극딜이 끊길 염려가 없다. 게다가 자체 바인드가 있어서 설치형 극딜기 특성상 딜로스가 발생한다는 단점을 해결할 수 있다.
+                            <br><br>
+                            평딜 능력도 준수한 편인데, 보조 공격기만 세 개(해, 물, 바람)나 되는데다 이 세 스킬을 거의 동시에 꽂아넣을 수 있어서 극딜 이후의 딜로스도 거의 생기지
+                            않는다. 기본적으로 라라 본인은 정기 뿌리기만 사용하면 되지만 분출 스킬을 주로 사용해야할 경우 정기 뿌리기의 비중은 약 1/5 수준까지 줄어들어 사실상 보스전에서
+                            지속적으로 명중할 필요가 없다. 반대로 분출 스킬을 맞추기 힘든 상황이라면 흡수 스킬을 통해 정기 뿌리기의 비중을 늘림으로써 유연하게 딜링 방식을 전환하며 운용할
+                            수도 있다. 소환수의 비중과 주력기의 비중을 자유자재로 조절할 수 있다는 것은 보스전에서 매우 큰 메리트다.
+                            <br><br>
+                            <strong>쉬운 코어 강화 난이도</strong><br>
+                            약식 코어강화를 하면 3~4개를 강화하면 되고, 풀 코강을 노린다면 6개를 강화하게 되어있어서 조금 난이도가 있다고 생각할 수 있으나, 최대 코어갯수는 8개로 비숍과
+                            동일하기에 3중 코어 등장확률이 매우 높다. 레벨업에 필요한 재료 코어 등장확률도 높아 필요칸 코어젬스톤 갯수도 적다.
+                        </p>
+                        <br>
+                        <br>
+                        <h1 id="title">단점</h1>
+                        <p>
+                            <strong>쓸모없는 유틸리티</strong><br>
+                            분명 보유한 보조 스킬은 많지만, 다음과 같은 이유로 실전에서 유의미하게 써먹기 힘들다.
+                            <br><br>
+                        <p style="padding: 0 0 0 10px;">
+                            <strong>발현: 해(회복)</strong><br>
+                            정해진 영역에서만 힐링을 하기 때문에 좋은 성능이 아니다. 힐링 능력이 중요한 보스전은 물약 제한이 있는 시그너스, 매그너스, 자쿰을 비롯한 몇 가지 보스인데 문제는
+                            저 보스 모두 다 상대하려면 정신없이 움직여야 하는 특성상 빈말로도 쓸만한 힐링이라 보긴 어렵다. 그나마 해의 경우에는 힐보단 데미지 증가를 보고 수시로 쓰는
+                            기술이기에, 보스전 기준으로 아래 경우들에 비하면 그나마 보너스로서의 가치는 있는 편이다.
+                            <br><br>
+                            <strong>발현: 바람(공중부양)</strong><br>
+                            빠르게 떠오르는 것이 아니라 너무 느리게 두둥실 떠오르기 때문에 카오스 자쿰의 팔찍기나 시그너스의 어비스 토네이도, 스우의 전깃줄 등 각종 즉사기를 피하는 게
+                            힘들다. 윗점과 공중체공이 바로바로 이어지는 모법과 아델 같은 경우가 아니기 때문에 라라 유저들도 블링크를 쓰지 이걸 쓰는 경우가 없다. 심지어 윗점 커맨드와
+                            공중부양 커맨드가 동일한 직업군(모궁, 데몬) 기준으로는 윗점을 하려는게 저공 체공이 되어버려 오히려 트롤이 될 여지가 높기도 하다.
+                            <br><br>
+                            <strong>용맥의 자취(텔레포트)</strong><br>
+                            일정한 범위로 텔포하는 것이 아니기 때문에 길이를 맞추는 것도 힘들고 설상가상으로 라라는 용맥을 소모하는 스킬이 많은데다 스킬 사용과 텔레포트의 타이밍이 달라 원하는
+                            위치로 언제든지 이동하는 것은 불가능하며, 급기야는 코 앞의 용맥에 이동하는 경우가 생기기도 한다.
+                            <br><br>
+                            <strong>아름드리 나무(상태이상 해제)</strong><br>
+                            범위 내에 있으면 2초마다 상태이상이 해제되지만, 즉시 적용이 아니라서 마음먹은 그대로 되는 경우가 적다. 스우나 더스크 등 보스에서 낙하물로 인한 상태이상에
+                            대처하는 용도로 만든 효과인 것 같지만, 실제로 이 효과 덕을 보는 일은 거의 없다. 그렇다고 더스크 공포 패턴 등에서 생존을 위해 3분짜리 극딜 버프를 사용할 수도
+                            없으니 여러모로 난감하다. 그마저도 해 발현 스킬과는 다르게 상하 범위마저 가지지 못해서 몇몇 보스에서는 아예 써먹을 수조차 없다.
+                        </p><br>
+                        <strong>용맥의 무작위 속성</strong><br>
+                        용맥이 생성되는 자리는 크게 달라지지 않고 반쯤 정해져 있다시피 하지만, 해당 위치마다 어떤 용맥이 나올지는 순전히 랜덤이다. 발현은 그래도 자유로운 용맥으로 연계해서
+                        속성에 무관하게 바로 연계할 수 있지만, 분출이나 흡수는 원하는 용맥을 용맥 변환으로 속성을 골라야 한다. 설령 자유로운 용맥에서 연계하려 해도 방향키를 일일이 눌러야 하기
+                        때문에 귀찮기는 매한가지다.
+                        <br><br>
+                        <strong>매우 귀찮은 버프 관리</strong><br>
+                        사냥은 분출만 쓰면 되니 크게 불편한 점은 없지만, 문제는 보스전이다. 3흡수를 사용하려면 3가지 용맥을 90초마다 갱신해야 하고, 발현까지 합하면 120초마다 바람 그네와
+                        햇살 가득 안은 터가 추가된다. 이로써 도합 5가지를 계속 유지해야만 한다. 그나마 바람 그네는 공속이니 익스 그린이나 쓸윈부로 대체하면 된다.
+                        <br><br>
+                        <strong>뻣뻣한 조작감과 기동성</strong><br>
+                        라라의 주력기는 정기 뿌리기인데 문제는 이 스킬과 더블점프의 궁합이 그다지 좋지 않다. 점프 - 주력기 난사를 할 때마다 은근히 키씹힘과 엉성한 조작감이 두드러지는데 정기
+                        뿌리기는 텔레포트 직업군에게 더 어울리는 성능을 가지고 있다. 윗점도 상당히 거슬리는데, 우선 땅에 발을 대고 있어야 하기 때문에 정밀한 거리 조절을 할 수 없고 땅에 발을
+                        댄 상태에서 윗방향키+점프를 눌러야 한다는 특유의 커맨드 때문에 혼란에 걸렸을 때 커맨드 잠금을 해놓지 않았다면 아예 일반 점프를 할 수 없다. 그래서 위로 폴짝을 따로
+                        키세팅에 놓고 사용하는 유저들도 있다. 이러한 점들은 기동성이 요구되는 컨텐츠에서 매우 불리하게 작용한다.
+                        <br><br>
+                        <strong>피로도 높은 사냥</strong><br>
+                        사냥 효율은 차치하더라도 성능을 끌어올리기가 힘들다. 아케인 리버, 특히 모라스부터는 분출의 초반 범위만으로는 커버하기 힘들 정도로 사냥터가 넓어진다. 사출기 원킬컷을
+                        어찌어찌 맞췄더라도 어느 위치에 어느 용맥이 알맞을지를 끊임없이 고민해야 한다.
+                        <br><br>
+                        <strong>빈약한 내구도</strong><br>
+                        200레벨 이전 사냥 능력은 매우 좋은 반면, 내구도는 다소 떨어진다. 무등과 감응을 다 합쳐도 통상적인 매직 가드에 비해 뒤떨어지는데, 정작 HP 수치 자체는 모험가
+                        마법사와 비슷한 수준이다. 150레벨 이후부터 두드러지는 단점이라, 180레벨 이후 주무대인 황혼의 페리온에서 펫 자동물약을 쓰지 않는다면 사냥하다 사망하는 경우가 정말
+                        잦다. 특히 세르니움 이후의 사냥터에 가면 더더욱 체감된다.
+                        <br><br>
+                        <strong>용맥 이펙트의 시각적 불편함</strong><br>
+                        용맥 스킬은 스킬 투명도가 적용되나 용맥 자체는 스킬 투명도 적용이 되지 않아 지형이나 보스의 모션을 못보거나 아이템을 놓치는 경우가 있다.
+                        </p>
+                        <br>
+                        <br>
+                        <h1 id="title">사냥 운용</h1>
+                        <p>
+                            정기 뿌리기를 주력으로 쓰지만, 핵심은 용맥 분출이다. 그러나 용맥은 위치와 속성이 무작위로 결정되므로, 어느 위치에서 어느 용맥을 분출시킬지는 조금 생각할 필요가
+                            있다. 설치기가 많다고 해서 그게 온전한 뇌빼기 사냥으로 이어지지는 않기 때문이다. 다행히도 4차 전직 이후 풍월주인을 습득하고 나면 분출 스킬의 전반적인 범위가
+                            월등히 향상되므로, 분출 스킬의 사각지대를 무엇으로, 어떻게 메울지만 신경쓰면 된다.
+                            <br><br>
+                            라라의 사냥에서 꼭 숙지해야 할 사항은 다음과 같다.
+                            <br><br>
+                        <p style="padding: 0 0 0 10px;">
+                            <strong>방향키 사용에 익숙해지기.</strong><br>
+                            위는 해, 왼쪽은 강, 오른쪽은 바람이다. 용맥 변환 인터페이스에 익숙해지기 위함이기도 하지만, 그보다는 자유로운 용맥-분출/흡수로 자연스럽게 이어지기 위한
+                            초석이다.
+                            <br><br>
+                            <strong>발현: 강줄기 흐르는 곳을 잘 활용하기.</strong><br>
+                            필드가 넓어지고 몬스터의 분포가 옅어질수록, 분출 스킬의 사각지대는 커진다. 이를 보완하려면 강줄기를 타고 움직이면서 발현 스킬의 범위 바깥에 있는 적을 지속적으로
+                            처치해야 한다.
+                            <br><br>
+                            <strong>버프 지속 시간을 수시로 체크하기.</strong><br>
+                            용맥의 메아리는 20초, 바람 그네와 햇살 가득 안은 터는 120초다. 결코 길다고는 할 수 없는 시간이므로, 조금 느슨해지면 꼭 풀려있기 일쑤다. 만약 원킬컷을
+                            맞췄는데 버프 빠지면 위태로울 정도의 스펙이라면, 버프 관리는 필수다.
+                            <br><br>
+                            <strong>투사체는 고밀도인 지역에서 사용하기.</strong><br>
+                            큰 기지개로 생성되는 무형의 기운의 수는 용맥의 수에 비례하지만, 그 원본인 잠 깨우기는 소모할 용맥 주변에 있는 적의 수에 비례해 수가 늘어난다.[28] 그리고
+                            라라의 스킬로 생성된 모든 오브젝트는 적 인식 범위가 그리 좋지 않으므로, 과신하지 않는 게 좋다.
+                        </p>
+                        </p>
+                        <br>
+                        <br>
+                        <h1 id="title">보스전 운용</h1>
+                        <p>
+                            <strong>평딜</strong><br>
+                            수치 자체만 보면 극딜 못지않게 좋다. 흡수와 분출을 유동적으로 쓸 수 있다면 제일 좋겠지만, 용맥 생성의 쿨다운과 원본의 랜덤성 때문에 흡수에서 분출로 자연스럽게
+                            전환하기가 쉽지 않다. 따라서 보통은 각각의 보스별 특징과 개인의 취향에 따라 유형화된 딜 사이클을 골라 사용하는 식으로 운영한다.
+                            <br><br>
+                        <p style="padding: 0 0 0 10px;">
+                            <strong>3분출</strong><br>
+                            모든 평딜 사이클 중에서 지속딜과 딜 효율이 가장 높은 사이클이기에 라라의 딜량을 온전히 뽑아내려면 3분출을 사용하는 것이 좋다. 스우 1페, 루시드 1페, 3페,
+                            윌 3페와 같은 고정형 보스를 상대할때 특히 빛을 발한다. 각 분출의 쿨타임을 일일이 확인해가며 플레이할 경우 굉장히 복잡해지기 때문에 11초 이내의 주기로 모든
+                            분출을 한번에 갈아주는것이 편하다.[30] 용맥의 랜덤성에 영향을 가장 많이 받고, 점샷이 불가능한 분출 스킬을 시도때도 없이 쓰다보니 보스전에서의 조작감이
+                            불편해진다는 단점이 있다.
+                            <br><br>
+                            <strong>1분출 2흡수</strong><br>
+                            3분출의 불편한 조작감을 싫어하는 유저에게 추천하는 사이클이다. 분출 스킬을 하나만 사용하기 때문에 자유로운 용맥이 부족한 일이 거의 없어 설치에 부담이 적다. 분출
+                            스킬은 주로 같은 속성의 흡수 스킬에 비해 압도적으로 강력한 해 분출을 사용한다.
+                            <br><br>
+                            <strong>3흡수</strong><br>
+                            루시드 2페이즈처럼 시도때도없이 움직여 1분출도 제대로 맞추기 빠듯한 보스를 상대할 때가 아닌 이상 위의 두가지 사이클에 비해 딜이 많이 약하다. 어느정도의 딜량을
+                            기대하기 위해서는 어빌리티와 농장에서 재사용 대기시간 초기화 효과를 많이 챙겨와야 한다. 흡수 계통은 분출과 달리 지속시간이 긴 편이고 보스에게 자동으로 타겟팅이
+                            되기 때문에 쉽고 편리하지만, 자동으로 공격하는 분출과 흡수 쿨타임이 돌때마다 정기 뿌리기를 써줘야 하기 때문에 상대적으로 딜 효율이 떨어진다. 분출을 사용하지
+                            않으므로 20초마다 용맥을 써서 최종뎀 5%를 받는 패시브인 용맥의 메아리를 계속 신경써야 하며, 산의 씨앗 또한 분출 사용 시 자동으로 나가던 것을 수동으로,
+                            스택이 쌓일 때마다 써줘야 한다. 산의 씨앗은 아래키와 함께 사용하면 모든 씨앗을 한 번에 심을 수 있고, 용맥의 메아리 유지는 잠 깨우기 스킬로 관리하면 된다.
+                            재사용 어빌리티를 사용한다면 활용할 수 있는 소소한 팁이 있는데, 잠 깨우기를 사용했을때 생기는 투사체 각각이 전부 흡수를 발동시킬 수 있기 때문에 운이 좋다면 잠
+                            깨우기 한번에 재사용이 한번에 연달아서 터져서 준극딜급 폭딜이 꽂히는 경우도 간혹 있다.
+                        </p><br>
+                        <strong>극딜</strong><br>
+                        라라의 극딜 주기는 해 강 산 바람의 재사용 대기시간인 180초에 맞춰져 있다. 그리고 스킬 대부분의 재사용 대기시간은 180초의 약수이므로, 시간 맞춰 쓰다 보면 알아서
+                        극딜 타이밍에 맞춰진다. 극딜 버프의 개수가 적고 극딜 자체도 굉장히 짧기 때문에 바인드를 먼저 건 다음에 극딜 버프를 올린다. 극딜 순서는 넝쿨 타래 → 아름드리 나무 →
+                        극딜 버프 → 해 강 산 바람 → 산등성이 굽이굽이 → 큰 기지개 → 용솟음치는 정기 순이다. 평소에 흡수를 쓰더라도 극딜타임만큼은 분출을 사용하면 극딜을 올리는 동안
+                        생기는 딜로스를 줄일 수 있다.
+                        </p>
+                        <br>
+                        <br>
+                        <h1 id="title">어빌리티</h1>
+                        <p>
+                            <strong>패시브 스킬 레벨 1 증가</strong><br>
+                            효과를 받지 않는 스킬도 있지만, 딜 상승 기대치가 보공 20%를 상회하므로 무조건 채용된다. 재사용 대기시간 미적용 효과와 비교해 보아도 일정한 효율을 보여주는
+                            편이다.
+                            <br><br>
+                            <strong>보스 몬스터 공격 시 데미지 증가</strong><br>
+                            패시브 스킬 레벨 1 증가보다 효율이 떨어지지만, 라라에 크게 투자를 할 생각이 없다면 킵하는 것이 추천된다.
+                            <br><br>
+                            <strong>재사용 대기시간이 확률로 미적용</strong><br>
+                            잠 깨우기와 발현, 흡수 스킬들에 적용된다. 본인이 2흡수 이상의 딜 사이클을 채용한다면 패시브 1렙과 저울질해서 사용할 수 있다. 3흡수면 패시브 1렙보다 효율이
+                            좋다. 3분출 상황이 까다로워서 1흡수는 사용하는 만큼 두번째나 세번째 줄에 띄워도 된다. 확률에 의존하기에 효율이 들쭉날쭉한 것이 흠이긴 하나, 운만 따라주면
+                            패시브 어빌리티보다 좋다.
+                            <br><br>
+                            <strong>메소 획득량/아이템 드롭률 증가</strong><br>
+                            광부용 어빌리티.
+                            <br><br>
+                            <strong>공격 속도 1단계 증가</strong><br>
+                            바람 그네 버프나 쓸윈부 또는 익스트림 그린 물약만 써도 풀공속이 되도록 패치된 후로는 고려할 가치가 없어졌다.
+                            <br><br>
+                            <strong>보스 몬스터 공격 시 데미지 증가</strong><br>
+                            1번째 어빌리티에서 패시브 스킬 레벨 1단계 증가 또는 재사용 대기시간 미적용 효과를 선택할 경우 채용한다.
+                            <br><br>
+                            <strong>상태 이상에 걸린 적 공격 시 데미지 증가</strong><br>
+                            단, 상태이상 유발기가 아름드리 나무를 제외하고는 전무한 라라 입장에서는 모험가 마법사의 임피리컬 널리지를 전수받았다는 가정 하에서만 유효하다. 범용성 측면과 최대치
+                            등에 있어 보뎀 증가 어빌리티보다는 떨어진다.
+                            <br><br>
+                            <strong>버프 지속시간 증가</strong><br>
+                            햇살 가득 안은 터의 데미지 증가와 바람 그네의 공속 증가 버프, 용맥 흡수의 지속 시간을 늘려주기 때문에 2흡수 이상의 딜 사이클을 채용한다면 어빌리티 둘째 줄에
+                            뽑는 것도 고려해 볼 수 있다.
+                            <br><br>
+                            <strong>크리티컬 확률 증가</strong><br>
+                            라라의 크리티컬 확률은 전체적으로 높지 않은 편이다.유니온 8000레벨 달성 시에도 일정 칸수를 크리티컬 확률에 투자해야 할 수도 있기 때문에 크리티컬 확률을 여기서
+                            챙기는 것도 나쁘지 않은 선택이다. 다만 첫째줄에 챙기기에는 다른 우수한 효과가 너무 많으므로, 2, 3번쨰 줄에서 챙기는 것을 권장한다.
+                        </p>
+                        <br>
+                        <br>
+                        <h1 id="title">코어강화</h1>
+                        <p>
+                            <strong>필수</strong><br>
+                            정기 뿌리기, 용맥 분출, 용맥 흡수
+                            <br><br>
+                            <strong>선택</strong><br>
+                            잠 깨우기, 산 꼬마, 산의 씨앗
+                        </p>
+                    </div>
+                </article>
+            </section>
+
+            <!-- 본문 우측 영역 -->
+            <aside id="main-aside">
+                <div class="aside-list">
+                    <h3>아니마</h3>
+                    <ul>
+                        <li><a href="라라.html">라라</a></li>
+                        <li><a href="호영.html">호영</a></li>
+                    </ul>
+                </div>
+            </aside>
+        </div>
+    </div>
+    <!-- 푸터 -->
+    <footer id="main-footer">
+        <span>ⓒ These photographs and fonts are protected by NEXON Korea Corporation with all rights reserved.</span>
+    </footer>
+</body>
+
+</html>

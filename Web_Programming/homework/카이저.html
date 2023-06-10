@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>카이저 공략</title>
+    <link rel="stylesheet" href="Style.css"> <!-- 외부 스타일 시트 -->
+    <script src="https://code.jquery.com/jquery-3.7.0.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('.outer-menu-item').hover(function () {
+                $(this).find('.inner-menu').stop().slideDown();
+            }, function () {
+                $(this).find('.inner-menu').stop().slideUp();
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <!-- 전체를 감싸는 테그 -->
+    <div id="page-wrapper">
+        <!-- 헤더 -->
+        <header id="main-header">
+            <hgroup>
+                <h1 class="master-title"><a href="main.html"><img src="image/로고.png" alt="메이플스토리"></a>
+                </h1>
+                <h2 class="master-description"><a href="main.html">직업별 공략</a></h2>
+            </hgroup>
+        </header>
+        <!-- 네비게이션 -->
+        <nav id="main-navigation">
+            <div class="pull-left">
+                <ul class="outer-menu">
+
+                    <li class="outer-menu-item">
+                        <span class="menu-title">모험가</span>
+                        <ul class="inner-menu">
+                            <li class="inner-menu-item"><a href="히어로.html">히어로</a></li>
+                            <li class="inner-menu-item"><a href="팔라딘.html">팔라딘</a></li>
+                            <li class="inner-menu-item"><a href="다크나이트.html">다크나이트</a></li>
+                            <li class="inner-menu-item"><a href="아크메이지(불,독).html">아크메이지(불,독)</a></li>
+                            <li class="inner-menu-item"><a href="아크메이지(썬,콜).html">아크메이지(썬,콜)</a></li>
+                            <li class="inner-menu-item"><a href="비숍.html">비숍</a></li>
+                            <li class="inner-menu-item"><a href="보우마스터.html">보우마스터</a></li>
+                            <li class="inner-menu-item"><a href="신궁.html">신궁</a></li>
+                            <li class="inner-menu-item"><a href="패스파인더.html">패스파인더</a></li>
+                            <li class="inner-menu-item"><a href="나이트로드.html">나이트로드</a></li>
+                            <li class="inner-menu-item"><a href="섀도어.html">섀도어</a></li>
+                            <li class="inner-menu-item"><a href="듀얼블레이드.html">듀얼블레이드</a></li>
+                            <li class="inner-menu-item"><a href="바이퍼.html">바이퍼</a></li>
+                            <li class="inner-menu-item"><a href="캡틴.html">캡틴</a></li>
+                            <li class="inner-menu-item"><a href="캐논슈터.html">캐논슈터</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="outer-menu-item">
+                        <span class="menu-title">시그너스 기사단</span>
+                        <ul class="inner-menu">
+                            <li class="inner-menu-item"><a href="소울마스터.html">소울마스터</a></li>
+                            <li class="inner-menu-item"><a href="미하일.html">미하일</a></li>
+                            <li class="inner-menu-item"><a href="플레임위자드.html">플레임위자드</a></li>
+                            <li class="inner-menu-item"><a href="윈드브레이커.html">윈드브레이커</a></li>
+                            <li class="inner-menu-item"><a href="나이트워커.html">나이트워커</a></li>
+                            <li class="inner-menu-item"><a href="스트라이커.html">스트라이커</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="outer-menu-item">
+                        <span class="menu-title">영웅</span>
+                        <ul class="inner-menu">
+                            <li class="inner-menu-item"><a href="아란.html">아란</a></li>
+                            <li class="inner-menu-item"><a href="에반.html">에반</a></li>
+                            <li class="inner-menu-item"><a href="루미너스.html">루미너스</a></li>
+                            <li class="inner-menu-item"><a href="메르세데스.html">메르세데스</a></li>
+                            <li class="inner-menu-item"><a href="팬텀.html">팬텀</a></li>
+                            <li class="inner-menu-item"><a href="은월.html">은월</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="outer-menu-item">
+                        <span class="menu-title">레지스탕스</span>
+                        <ul class="inner-menu">
+                            <li class="inner-menu-item"><a href="블래스터.html">블래스터</a></li>
+                            <li class="inner-menu-item"><a href="배틀메이지.html">배틀메이지</a></li>
+                            <li class="inner-menu-item"><a href="와일드헌터.html">와일드헌터</a></li>
+                            <li class="inner-menu-item"><a href="메카닉.html">메카닉</a></li>
+                            <li class="inner-menu-item"><a href="제논.html">제논</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="outer-menu-item">
+                        <span class="menu-title">데몬</span>
+                        <ul class="inner-menu">
+                            <li class="inner-menu-item"><a href="데몬슬레이어.html">데몬슬레이어</a></li>
+                            <li class="inner-menu-item"><a href="데몬어벤져.html">데몬어벤져</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="outer-menu-item">
+                        <span class="menu-title">노바</span>
+                        <ul class="inner-menu">
+                            <li class="inner-menu-item"><a href="카이저.html">카이저</a></li>
+                            <li class="inner-menu-item"><a href="카인.html">카인</a></li>
+                            <li class="inner-menu-item"><a href="카데나.html">카데나</a></li>
+                            <li class="inner-menu-item"><a href="엔젤릭버스터.html">엔젤릭버스터</a></li>
+                        </ul>
+                    </li>
+                    <li class="outer-menu-item">
+                        <span class="menu-title">레프</span>
+                        <ul class="inner-menu">
+                            <li class="inner-menu-item"><a href="아델.html">아델</a></li>
+                            <li class="inner-menu-item"><a href="일리움.html">일리움</a></li>
+                            <li class="inner-menu-item"><a href="칼리.html">칼리</a></li>
+                            <li class="inner-menu-item"><a href="아크.html">아크</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="outer-menu-item">
+                        <span class="menu-title">아니마</span>
+                        <ul class="inner-menu">
+                            <li class="inner-menu-item"><a href="라라.html">라라</a></li>
+                            <li class="inner-menu-item"><a href="호영.html">호영</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="outer-menu-item">
+                        <span class="menu-title">초월자</span>
+                        <ul class="inner-menu">
+                            <li class="inner-menu-item"><a href="제로.html">제로</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="outer-menu-item">
+                        <span class="menu-title">키네시스</span>
+                        <ul class="inner-menu">
+                            <li class="inner-menu-item"><a href="키네시스.html">키네시스</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <!-- 본문 -->
+        <div id="content">
+            <!-- 본문 좌측 영역 -->
+            <section id="main-section">
+                <article>
+                    <div class="article-header">
+                        <h1 class="article-title">카이저(Kaiser)</h1>
+                    </div>
+                    <div class="article-body">
+                        <img id="c_image" src="image/카이저.webp" alt="카이저">
+                        <h1 id="title">장점</h1>
+                        <p>
+                            <strong>다양한 개인 유틸</strong><br>
+                            카이저는 다양한 부류의 유틸을 갖추고 있다. 공반무시, 체력비례 데미지감소, 무적기, 기동성, 재사용 대기시간 초기화, 사망방지버프 등 필수적인 개인 유틸이 많다.
+                            <br><br>
+                        <p style="padding: 0 0 0 10px;">
+                            <strong>기동성</strong><br>
+                            비변신 상태에서는 텔레포트 판정이 있는 블루 스트릭과 로프 커넥트의 원조인 버티컬 커넥트가 있고, 변신 상태일 때는 파이널 피규레이션과 방향키를 눌러서 원거리
+                            텔레포트가 가능하다. 이 텔레포트는 좌우거리 400, 상하거리 최대 800으로 이동거리로만 따지면 전직업 텔레포트 스킬 중에서 1등을 차지한다. 텔레포트와 함께
+                            더블점프, 피어스러쉬를 동시 운용하면서 매우 빠르면서도 정밀한 컨트롤이 가능해진다. 때문에 스피릿 세이비어에서는 아란과 함께 최고 기록 30,000점을 보유하고 있는
+                            캐릭터다.
+                            <br><br>
+                            <strong>생존력</strong><br>
+                            리셔플스위치: 방어모드로 뎀감 5%를 변신시간 내내 받을 수 있으며, 버프형 뎀감기 로버스트 아머도 따로 존재한다. 카이저의 뎀감기는 감소율보다는 가동률이 유독
+                            높은데, 때문에 물약 제한이 없는 카오스 루타비스, 파풀라투스에서 매우 강한 모습을 보여준다. 또한 노바 직업군이기에 5차 공용 스킬 중 사망방지 버프스킬인 판테온도
+                            사용할 수 있으며, 60초 주기의 무적기 프로미넌스도 존재한다. 또한 90초 주기의 140제 하이퍼 스킬 마제스티오브 카이저는 재사용 대기시간 초기화 효과가 있는데,
+                            노바 용사의 의지도 초기화 대상에 포함되므로 사실상 의지류 스킬을 90초마다 쓴다.
+                            <br><br>
+                            <strong>공격 반사/무시 대응 능력</strong><br>
+                            변신 상태라면 공격반사나 공격무시 버프를 무시하고 피해를 입힐 수 있으며, 140제 하이퍼스킬 마제스티 오브 카이저를 사용해도 30초 동안 공격반사와 공격무시를
+                            무시하고 피해를 입힐 수 있다. 사실상 메이플에서 짜증나는 공격 반사/무시 보스를 가장 잘 잡는 직업이다. 요즘 나오는 보스는 공격 반사/무시 패턴이 없기에 다소
+                            퇴색된 장점이긴 하나, 무릉도장 50층과 60층에서 핑크빈과 시그너스가 나오기 때문에 마냥 무시할 수 없는 장점이다.
+                        </p><br>
+                        <strong>높은 딜효율</strong><br>
+                        조작이 매우 간단하다. 평딜 사이클은 기가 슬래셔에 윌 오브 소드 계열 스킬을 쓰는 게 전부고, 극딜 역시 올려야할 버프들이 많지 않다. 또한 주력기인 기가 슬래셔와 드라코
+                        슬래셔는 사정거리가 나름 넓은 편이라 원거리에서도 딜을 넣을 수 있고, 윌 오브 소스 계열 스킬들은 범위도 넓고 적을 추적하기 때문에 딜 누수가 적은 편이다. 여기에 앞서
+                        언급한 다양한 개인 유틸들 역시 카이저의 딜효율을 높여주는데 크게 기여한다. 특히나 변신 상태의 텔레포트는 후딜도 거의 없는 데다가 범위도 넓어서 잘만 활용하면 보스의 등
+                        뒤를 쉽게 잡으며 끊임 없이 평딜을 우겨넣을 수 있다.
+                        <br><br>
+                        <strong>준수한 사냥 능력</strong><br>
+                        주력 사냥기인 소드 스트라이크는 층간 간격이 넓은 맵에서 좋은 효율을 보인다. 그리고 5차 이후엔 가디언 오브 노바와 드래곤 블레이즈를 번갈아서 사용하면 120초 쿨에 최대
+                        65초, 1/2 가동률로 더블점프 사냥이 가능해지며, 드라코 슬래셔와 윌 오브 소드 : 스트라이크로 빈 공백을 커버할 수 있다. 또한 가디언 오브 노바와 드라코 슬래셔는
+                        코어 강화에 따라 각각 지속시간과 재사용 대기시간이 영향을 받기 때문에 스킬 레벨이 높을수록 사냥이 더 수월해진다.
+                        <br><br>
+                        <strong>매우 높은 기본 크리티컬 확률</strong><br>
+                        기본 크리티컬 확률이 무려 65%에 달한다. 궁수 직업군인 윈드브레이커와 메르세데스보다 5%p 높은 수치이다. 전사 직업군에서는 제로, 어빌리티나 쓸컴뱃을 쓰지 않은
+                        블래스터와 함께 공동 2위. 크확이 전 직업 공동 2위인 다크나이트, 비숍도 기본 크리티컬 확률이 75%라는 것과 크리티컬 확률이 가장 높은 패스파인더도 79%임을
+                        생각해보면 전사를 떠나 모든 직업과 비교해도 상당한 수치이다. 팬텀 링크를 장착해주면 80%가 되고, 쓸샾을 쓰면 90%. 모험가 궁수의 링크 스킬인 어드벤처러 큐리어스
+                        6레벨을 적용해주면 100%가 된다. 그 외에도 크확을 챙길 수 있는 수단이 많아서 크확 100%을 맞추기가 수월하다.
+                        <br><br>
+                        <strong>파이널 피규레이션의 능동성</strong><br>
+                        카이저의 파이널 피규레이션은 지속 시간이 1분으로 매우 길어 극딜 버프의 주기와 파티원과의 극딜 타이밍을 조절할 수 있다. 비슷한 변신형 게이지 직업인 아란, 루미너스,
+                        일리움이 특수 상태 관리로 인해 불협화음이 일어나는 점을 보면 카이저의 변신은 이러한 문제가 적다.
+                        </p>
+                        <br>
+                        <br>
+                        <h1 id="title">단점</h1>
+                        <p>
+                            <strong>극단적인 변신 의존도</strong><br>
+                            카이저는 변신이 없으면 모험가 법사의 인피니티처럼 화력만 약해지고 끝나는게 아니라, 화력은 물론이고 생존조차 버거워진다. 카이저의 높은 생존력은 대부분 보스 패턴을
+                            유연하게 피할 수 있게 해주는 파이널 피규레이션의 뛰어난 기동성과 텔레포트에서 나오기 때문이다. 이는 사냥 역시 마찬가지며, 5차 스킬이 있더라도 변신 시 사용
+                            가능한 텔포 없이는 정상적인 사냥이 어렵다. 때문에 버프지속시간을 늘리기 위해 유니온과 어빌리티를 챙겨야 한다.
+                            <br><br>
+                            <strong>노후화된 스킬 구성</strong><br>
+                            커맨드에 최종데미지 15%가 붙어 있어도 평타인 드래곤 슬래시를 섞어서 쓴다는 것 자체가 손해이고, 윙비트는 점샷이 불가능하며 보스전을 위해 존재하는 스킬이지만
+                            고정형 보스가 아닌 이상 윙비트를 전부 맞아주는 보스는 없다. 상황에 따라 따로 시전해야 하는 버프 스킬인 마제스티 오브 카이저, 로버스트 아머는 후딜이 상당히
+                            길며, 무적기 프로미넌스는 사용시 움직일 수 없고 눈뽕 때문에 시야 확보에 문제가 있다. 또한 블루스트릭은 이동스킬임에도 후딜이 있다. 또한 패시브 하이퍼 스킬은
+                            기가 슬래셔를 제외하고 효율이 좋지 못한 스킬들 뿐이다. 기가 슬래셔가 그나마 성능적으론 문제가 없긴 한데, 이펙트의 가시성이 상당히 좋지 못해 헛방을 치는 경우가
+                            가끔씩 나온다.
+                            <br><br>
+                            <strong>떨어지는 파티 유틸</strong><br>
+                            개인 유틸 능력이 뛰어난 것에 비해 파티 유틸은 다소 부족하다. 유틸만으로도 1인분을 한다는 배틀메이지, 비숍까지는 아니어도 대부분의 직업들은 파티원들에게 방무,
+                            보공, 하다못해 스탯이나 공격력을 소소하게 올려주는 파티유틸을 한두 개씩은 가지고 있는데, 카이저는 스펙을 올려주는 파티 시너지가 전혀 없다. 그나마 쓸만한 파티
+                            유틸이라면 슬로우 정도가 전부이다.
+                            <br><br>
+                            <strong>파이널 피규레이션 상태의 히트박스 문제</strong><br>
+                            변신 시 커지는 히트박스 때문에 변신 중의 실질 내구력은 변신 전에 비해 좀 떨어지는 편이며, 노멀 폼 상태에서 맞지 않았던 패턴에 피격당하는 경우가 생긴다.
+                            히트박스 판정 개선이 이루어지면서 조금은 완화되었지만, 문제가 해결되어 사라진 게 아니라서 항상 주의할 필요가 있으며, 캐릭터 크기가 커지는 것 자체는 그대로이기
+                            때문에 공격 패턴을 가려버리는 문제나 불편함을 감수해야 한다. 그리고 변신 상태에서 피에르의 모자 변경을 확인하기 어렵거나 제단을 사용해 데미안의 낙인을 해제할 수
+                            없는 등, 일부 보스들에서 난해한 상황이 나올 수 있으니 주의할 필요가 있다.
+                            <br><br>
+                            <strong>4차 이전까지의 어려운 육성 난이도</strong><br>
+                            엔젤릭버스터 역시 마찬가지인 1세대 노바들의 고질병. 카이저는 1~3차 구간 육성 난이도가 굉장히 높은 편이다. 변신하지 않았을 때는 기동력도 영 좋지 않아서 답답한
+                            데다가 4차까지 쓸만한 사냥기는 존재하지도 않고, 그렇다고 드래곤 슬래시로 사냥하는 것도 연타형식에다 범위도 작아 굉장히 답답하다. 원킬 컷도 높은 편. 괜히 유니온
+                            용 메가버닝 추천 캐릭터들 중 카이저가 있는 게 아니다.
+                            <br><br>
+                            <strong> 극딜기의 부재</strong><br>
+                            한정된 시간 안에 화력을 욱여넣는 능력이 부족하다. 당장 드래곤 블레이즈만 해도 20초이 달하는 지속시간 때문에 반쯤 사냥기로 치부되고, 드라코 슬래셔는 윌 오브
+                            소드:스트라이크가 적중해야 5연속으로 쓸 수 있는데 이마저도 30초 주기라 순간 화력은 미약하다. 일반적으로 스킬의 화력이 사용 주기의 길이에 비례함을 감안하면,
+                            압축되거나 제대로 된 극딜기가 없다고 봐도 무방한데, 이는 특히나 파티 플레이를 할 때 크게 두드러진다.
+                        </p>
+                        <br>
+                        <br>
+                        <h1 id="title">사냥 운용</h1>
+                        <p>
+                            주력기는 소드 스트라이크다. 전방 범위가 짧지만, 위쪽 범위가 넓고 후방 범위도 있기 때문에 어지간한 층 간격에는 손쉽게 대처할 수 있다. 그리고 파이널
+                            피규레이션이나 파이널 트랜스로 변신하면 기동성이 폭발적으로 증가하므로, 소드 스트라이크와 연계하면 필드 점유율이 대폭 향상된다. 단 소드 스트라이크의
+                            원킬컷(2400%)을 맞추지 못한 유저라면, 변신 후에 대상 수가 3명으로 증가하는 기가 슬래셔(2970~3630%)를 이용해 사냥해도 나쁘지 않다. 게다가 강화코어
+                            20레벨 효과가 공격 대상 1 증가이므로 코어를 강화한 이후 소드 스트라이크 원킬이 안나는 시기에는 기가 슬래셔로 사냥하는 것이 더 나을 수도 있다.
+                            <br><br>
+                            5차 전직 이후에는 드라코 슬래셔가 사냥 사이클에 확고하게 자리잡는다. 공격 판정이 두 번 뜨기 때문에 표기된 대상 수의 2배를 공격할 수 있고, 범위 또한 무척
+                            크기 때문에 어디서든 유용하게 쓰인다. 특히 30레벨까지 강화하면 5초마다 1번씩 쓸 수 있으므로, 강화 효율 또한 높다. 여기에 가디언 오브 노바와 드래곤
+                            블레이즈를 번갈아 사용하며 더블 점프 사냥을하고, 윌 오브 소드: 스트라이크로 모프 게이지 충전량을 소폭 희생하는 대신 범위 공격과 4~5연속 드라코 슬래셔를
+                            얻어가는 식으로 운용하면 최적의 사냥 사이클이 완성된다.
+                        </p>
+                        <br>
+                        <br>
+                        <h1 id="title">보스전 운용</h1>
+                        <p>
+                            파이널 피규레이션을 통한 변신 유지가 핵심이다. 보스전 자체는 기가 슬래셔 연사와 커맨드+윙비트에, 극딜 타이밍에 드라코 슬래셔 5연타를 쓰는 정도로, 비교적
+                            단순하다. 그러나 변신이 곧 직업의 정체성을 상징하는 직업인지라, 그만큼 변신 여부가 보스전 성능을 좌우한다고 볼 수 있다. 변신이 퍼뎀부터 타수까지 관여하기
+                            때문이다. 그래서 버프 지속시간 증가 옵션의 중요성이 크다. 추가로, 변신시에만 방어모드의 최대 HP비례 공격의 피해를 감소시키는 효과가 있기 때문에 최대 HP의
+                            100% 공격을 하는 보스 상대로는 변신 시에만 방어 모드를 켜고 변신이 풀리면 공격 모드로 다시 전환해줄 필요가 있기도 하다.
+                            <br><br>
+                            유틸리티 측면으로는 부족함이 없다. 마제스티 오브 카이저를 통한 쿨다운 초기화, 마오카와 변신을 통한 공반 무시, 프로미넌스의 무적까지 필요한 건 전부 갖췄다.
+                            그러나 변신 전에 비해 변신 후의 히트박스는 크게 변하지 않는 반면 이미지가 너무 크기 때문에, 변신하지 않은 상태에서는 얻어맞지 않을 패턴을 변신한 후에 판단
+                            착오로 얻어맞고 산화하는 참사가 벌어질 수 있다. 따라서 파이널 피규레이션과 블루 스트릭의 텔레포트 기능, 피어스 러쉬의 순간적인 움직임을 잘 활용하는 것이
+                            관건이다.
+                        </p>
+                        <br>
+                        <br>
+                        <h1 id="title">어빌리티</h1>
+                        <p>
+                            첫줄은 보스 몬스터 공격 시 데미지 증가 또는 변신 시간을 늘리기 위한 버프 지속시간 증가중 하나를 선택하나 본캐용으로는 보통은 전자를 더 선호하는 편이다. 그리고
+                            둘째줄은 나머지 하나를 뽑는다. 아이템 획득률 상승이나 메소 획득률 상승은 둘째줄 이하에서 뽑는다. 자체 크확이 워낙 높아서 링크, 유니온으로 크확 100%를
+                            달성하기 쉬워 셋째줄은 대체로 마음껏 원하는 대로 뽑아도 무방하다. 셋째줄은 보통 아획or메획을 챙기기도 하지만, 윌 오브 소드와 인퍼널 브레스를 더 쓸 수 있는
+                            재사용 대기시간 미적용, 기가슬래셔, 윙비트의 화력증강을 노리는 상태이상 추가 데미지가 고려된다.
+                        </p>
+                        <br>
+                        <br>
+                        <h1 id="title">코어강화</h1>
+                        <p>
+                            <strong>필수</strong><br>
+                            기가 슬래셔, 소드 스트라이크, 윌 오브 소드
+                            <br><br>
+                            <strong>선택</strong><br>
+                            페트리파이드, 인퍼널 브레스, 윙비트
+                        </p>
+                    </div>
+                </article>
+            </section>
+
+            <!-- 본문 우측 영역 -->
+            <aside id="main-aside">
+                <div class="aside-list">
+                    <h3>노바</h3>
+                    <ul>
+                        <li><a href="카이저.html">카이저</a></li>
+                        <li><a href="카인.html">카인</a></li>
+                        <li><a href="카데나.html">카데나</a></li>
+                        <li><a href="엔젤릭버스터.html">엔젤릭버스터</a></li>
+                    </ul>
+                </div>
+            </aside>
+        </div>
+    </div>
+    <!-- 푸터 -->
+    <footer id="main-footer">
+        <span>ⓒ These photographs and fonts are protected by NEXON Korea Corporation with all rights reserved.</span>
+    </footer>
+</body>
+
+</html>

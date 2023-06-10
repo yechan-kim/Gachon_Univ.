@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>블래스터 공략</title>
+    <link rel="stylesheet" href="Style.css"> <!-- 외부 스타일 시트 -->
+    <script src="https://code.jquery.com/jquery-3.7.0.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('.outer-menu-item').hover(function () {
+                $(this).find('.inner-menu').stop().slideDown();
+            }, function () {
+                $(this).find('.inner-menu').stop().slideUp();
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <!-- 전체를 감싸는 테그 -->
+    <div id="page-wrapper">
+        <!-- 헤더 -->
+        <header id="main-header">
+            <hgroup>
+                <h1 class="master-title"><a href="main.html"><img src="image/로고.png" alt="메이플스토리"></a>
+                </h1>
+                <h2 class="master-description"><a href="main.html">직업별 공략</a></h2>
+            </hgroup>
+        </header>
+        <!-- 네비게이션 -->
+        <nav id="main-navigation">
+            <div class="pull-left">
+                <ul class="outer-menu">
+
+                    <li class="outer-menu-item">
+                        <span class="menu-title">모험가</span>
+                        <ul class="inner-menu">
+                            <li class="inner-menu-item"><a href="히어로.html">히어로</a></li>
+                            <li class="inner-menu-item"><a href="팔라딘.html">팔라딘</a></li>
+                            <li class="inner-menu-item"><a href="다크나이트.html">다크나이트</a></li>
+                            <li class="inner-menu-item"><a href="아크메이지(불,독).html">아크메이지(불,독)</a></li>
+                            <li class="inner-menu-item"><a href="아크메이지(썬,콜).html">아크메이지(썬,콜)</a></li>
+                            <li class="inner-menu-item"><a href="비숍.html">비숍</a></li>
+                            <li class="inner-menu-item"><a href="보우마스터.html">보우마스터</a></li>
+                            <li class="inner-menu-item"><a href="신궁.html">신궁</a></li>
+                            <li class="inner-menu-item"><a href="패스파인더.html">패스파인더</a></li>
+                            <li class="inner-menu-item"><a href="나이트로드.html">나이트로드</a></li>
+                            <li class="inner-menu-item"><a href="섀도어.html">섀도어</a></li>
+                            <li class="inner-menu-item"><a href="듀얼블레이드.html">듀얼블레이드</a></li>
+                            <li class="inner-menu-item"><a href="바이퍼.html">바이퍼</a></li>
+                            <li class="inner-menu-item"><a href="캡틴.html">캡틴</a></li>
+                            <li class="inner-menu-item"><a href="캐논슈터.html">캐논슈터</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="outer-menu-item">
+                        <span class="menu-title">시그너스 기사단</span>
+                        <ul class="inner-menu">
+                            <li class="inner-menu-item"><a href="소울마스터.html">소울마스터</a></li>
+                            <li class="inner-menu-item"><a href="미하일.html">미하일</a></li>
+                            <li class="inner-menu-item"><a href="플레임위자드.html">플레임위자드</a></li>
+                            <li class="inner-menu-item"><a href="윈드브레이커.html">윈드브레이커</a></li>
+                            <li class="inner-menu-item"><a href="나이트워커.html">나이트워커</a></li>
+                            <li class="inner-menu-item"><a href="스트라이커.html">스트라이커</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="outer-menu-item">
+                        <span class="menu-title">영웅</span>
+                        <ul class="inner-menu">
+                            <li class="inner-menu-item"><a href="아란.html">아란</a></li>
+                            <li class="inner-menu-item"><a href="에반.html">에반</a></li>
+                            <li class="inner-menu-item"><a href="루미너스.html">루미너스</a></li>
+                            <li class="inner-menu-item"><a href="메르세데스.html">메르세데스</a></li>
+                            <li class="inner-menu-item"><a href="팬텀.html">팬텀</a></li>
+                            <li class="inner-menu-item"><a href="은월.html">은월</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="outer-menu-item">
+                        <span class="menu-title">레지스탕스</span>
+                        <ul class="inner-menu">
+                            <li class="inner-menu-item"><a href="블래스터.html">블래스터</a></li>
+                            <li class="inner-menu-item"><a href="배틀메이지.html">배틀메이지</a></li>
+                            <li class="inner-menu-item"><a href="와일드헌터.html">와일드헌터</a></li>
+                            <li class="inner-menu-item"><a href="메카닉.html">메카닉</a></li>
+                            <li class="inner-menu-item"><a href="제논.html">제논</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="outer-menu-item">
+                        <span class="menu-title">데몬</span>
+                        <ul class="inner-menu">
+                            <li class="inner-menu-item"><a href="데몬슬레이어.html">데몬슬레이어</a></li>
+                            <li class="inner-menu-item"><a href="데몬어벤져.html">데몬어벤져</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="outer-menu-item">
+                        <span class="menu-title">노바</span>
+                        <ul class="inner-menu">
+                            <li class="inner-menu-item"><a href="카이저.html">카이저</a></li>
+                            <li class="inner-menu-item"><a href="카인.html">카인</a></li>
+                            <li class="inner-menu-item"><a href="카데나.html">카데나</a></li>
+                            <li class="inner-menu-item"><a href="엔젤릭버스터.html">엔젤릭버스터</a></li>
+                        </ul>
+                    </li>
+                    <li class="outer-menu-item">
+                        <span class="menu-title">레프</span>
+                        <ul class="inner-menu">
+                            <li class="inner-menu-item"><a href="아델.html">아델</a></li>
+                            <li class="inner-menu-item"><a href="일리움.html">일리움</a></li>
+                            <li class="inner-menu-item"><a href="칼리.html">칼리</a></li>
+                            <li class="inner-menu-item"><a href="아크.html">아크</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="outer-menu-item">
+                        <span class="menu-title">아니마</span>
+                        <ul class="inner-menu">
+                            <li class="inner-menu-item"><a href="라라.html">라라</a></li>
+                            <li class="inner-menu-item"><a href="호영.html">호영</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="outer-menu-item">
+                        <span class="menu-title">초월자</span>
+                        <ul class="inner-menu">
+                            <li class="inner-menu-item"><a href="제로.html">제로</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="outer-menu-item">
+                        <span class="menu-title">키네시스</span>
+                        <ul class="inner-menu">
+                            <li class="inner-menu-item"><a href="키네시스.html">키네시스</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <!-- 본문 -->
+        <div id="content">
+            <!-- 본문 좌측 영역 -->
+            <section id="main-section">
+                <article>
+                    <div class="article-header">
+                        <h1 class="article-title">블래스터(Blaster)</h1>
+                    </div>
+                    <div class="article-body">
+                        <img id="c_image" src="image/블래스터.webp" alt="블래스터">
+                        <h1 id="title">장점</h1>
+                        <p>
+                            <strong>(숙련자 한정) 막강한 보스전 성능</strong><br>
+                            지극히 이질적이지만, 숙달되기만 한다면 블래스터만큼 스펙 대비 퍼포먼스를 보이는 직업이 없다.
+                            <br><br>
+                            <strong>탄탄한 기초 스펙</strong><br>
+                            주무기인 건틀렛 리볼버의 무기 상수가 1.7이라 무기 강화 효율이 뛰어나다. 그리고 콤비네이션 트레이닝에 붙은 최종 데미지 자체도 높은데다, 자체 크리티컬 확률이
+                            높아 확정 크리티컬을 구비하기도 쉽다. 여기에 어빌리티나 쓸만한 컴뱃 오더스 등의 레벨링 효율도 뛰어나서 자체 스펙만큼은 탄탄하다.
+                            <br><br>
+                            <strong>강력한 화력</strong><br>
+                            차지 캔슬과 연계를 통한 노도와도 같은 공격이 대표적인 특징이라, DPS 및 DPM 순위표에서 상위권을 양보한 적이 없다. 특히 매그팡 캔슬을 초당 1.7회 사용하는
+                            고수의 시연 영상을 보면, 스킬 입력 간에 인터벌이 없다고 착각될 정도로 폭발이 쉴 새 없이 터진다.
+                            <br><br>
+                            <strong>질긴 생존력</strong><br>
+                            차지 마스터리에는 차지한 스킬을 사용하는 도중에 받는 모든 종류의 피해를 퍼센티지로 감소시켜 적용하는 기능이 있다. 그리고 블래스터는 연계를 일부러 지연시켜 동작을
+                            길게 늘리거나, 반대로 캔슬을 통해 동작을 단축시켜 공격을 재빨리 피하는 데에 도가 텄다.
+                            <br><br>
+                            <strong>높은 기동성</strong><br>
+                            전사답지 않게 움직임이 경쾌하고, 불릿 잔량만 충분하다면 익스플로전 무브로 날아다닐 수 있다. 실용성은 없지만, 더블 점프까지 합치면 최대 8단 점프까지도 가능하다.
+                            <br><br>
+                            <strong>낮은 어빌리티 의존도</strong><br>
+                            블래스터에게 효율이 좋은 어빌리티는 단연 패시브 스킬 레벨 1 증가지만, 수차례 어빌을 돌려도 정 나오지 않는다면 쓸컴뱃을 써도 된다. 그밖에는 보공처럼 전직업에게
+                            무난한 옵션뿐이라, 블래스터가 딱히 욕심을 부릴 만한 특정 어빌리티가 없다.
+                        </p>
+                        <br>
+                        <br>
+                        <h1 id="title">단점</h1>
+                        <p>
+                            <strong>짧은 유효 사거리</strong><br>
+                            주먹질이 주요한 공격 방법이라 그런지 범위가 정직하게 짧다. 그나마 충격파라도 남기는 쇼크웨이브와 달리, 매그팡 연계는 딱 보이는 이펙트만큼만 공격 범위가 설정되어
+                            있다.
+                            <br><br>
+                            <strong>압도적으로 높은 난이도의 조작 난이도와 요구 환경</strong><br>
+                            다른 직업과 비교해도 메커니즘이 유난히 별쭝나다. 그래서 여러모로 다루기 까다롭고, 따져야 할 것도 많다.
+                            <br><br>
+                            <strong>차지 및 스킬 연계 강요</strong><br>
+                            널리 퍼진 악명이나 박한 인식과는 달리, 블래스터도 결국 메이플스토리의 직업 중 하나다. 극단적으로 보면 콤비네이션 트레이닝의 스택을 무시하고, 마음 가는 대로
+                            육성하더라도 평균을 살짝 밑도는 정도의 성능은 보존할 수 있다. 그러나 진정한 성능을 발휘하려면 스킬 연계가 필수불가결한데, 여타 연계 직업과 비교해도 워낙 이질적인
+                            시스템이라 키보드 세팅을 싹 다 갈아엎어야 한다. 자칫하면 부캐로 쓰던 블래스터가 본캐 운용법을 혼동하거나 망각하게 만들 수도 있다.
+                            <br><br>
+                            <strong>제어하기 어려운 강제 이동</strong><br>
+                            더킹과 스웨이는 차지 마스터리와 연계하여 불릿을 수급하고 피격 시 피해량을 줄이는 중요한 스킬이지만, 각각 전방과 후방으로 이동하는 강제 이동기다. 이를 제어하려면
+                            적절한 타이밍에 점프나 커스텀 커맨드 등으로 중단해야 하는데, 초심자는 물론이고 숙련자도 가끔 '삑사리'가 날 정도로 여간 까다롭지 않다. 보스전에서 1픽셀 차이로도
+                            패턴 회피 여부가 갈릴 수도 있다는 점을 감안하면 치명적인 단점이다.
+                            <br><br>
+                            <strong>무시할 수 없는 외부 요인의 영향력</strong><br>
+                            스킬 메커니즘이나 캐릭터 스펙과는 별개로, 외부 요인이 의외로 크게 작용스킬 키가 동시 입력되지 않는 키보드를 사용하거나, 프레임 드롭이 생길 정도의 저사양
+                            컴퓨터라면 필히 교체해야 한다. 물론 장수 게임 특유의 오래된 게임 엔진과 구식 클라이언트로 인한 서버 상태 또한 감수해야 한다. 요컨대 고급 키보드와 고사양
+                            컴퓨터도 스펙이 된다.
+                            <br><br>
+                            <strong>고레벨일수록 현저히 떨어지는 사냥 능력</strong><br>
+                            소위 유니온용이라 불리는 200레벨까지와 상대적으로 맵이 좁고 몬스터가 뭉쳐있는 230레벨까지의 사냥터들은 릴리즈 파일 벙커나 쇼크웨이브 펀치, 허리케인 믹서만으로도
+                            쉽게 도달할 수 있다. 그러나 사냥터 면적이 눈에 띄게 넓어지는 모라스, 즉 230레벨부터는 광범위 공격기 두어 개만 가지고서는 커버되지 않는다. 가뜩이나 따라가서
+                            연계와 캔슬로 때리는 게 전부인 블래스터로서는 피로도가 높아질 수밖에 없다.
+                            <br><br>
+                            <strong>방치되고 있는 수많은 버그 및 오류</strong><br>
+                            독특한 메커니즘의 한계인지 버그가 곳곳에 산재해 있다.
+                        </p>
+                        <br>
+                        <br>
+                        <h1 id="title">사냥 운용</h1>
+                        <p>
+                            출시 초창기에는 콤비네이션 트레이닝만 잘 유지하면 원킬컷도 낮고, 기동성도 좋아서 그럭저럭 밥값은 하는 직업으로 평가받았다. 그러나 5차 전직의 추가와 함께 고레벨
+                            콘텐츠가 하나둘씩 출시되자 점차 도태되기 시작했다. 악명높은 피로도는 둘째 치더라도, 주력 공격 스킬들의 범위가 전방에 치우쳐 있어서 광범위 사냥과 거리가 먼 게
+                            가장 큰 이유. 그리고 자동 공격형 오브젝트를 통한 필드 점유 능력도 없어서, 아무리 스펙이 최상위권이고 기동성으로 날고 긴다 해도 넓디 넓은 필드를 한번에 휘어잡을
+                            재간이 없다. 결국 적을 추격해서 직접 때리는 것 이외에는 다른 방법이 없다.
+                            <br><br>
+                            당연하지만 높은 피로도도 발목을 잡는 요인 중 하나이다. 콤비네이션 트레이닝 때문에 연계와 차지를 필수적으로 해야 하는데, 이때문에 손목의 피로가 금방 쌓인다.
+                            사출기나 광역기를 난사하는 사냥 특화 직업들은 논할 필요도 없고, 하다못해 한두개의 주력기만 쓰면 느려도 속 편하게 사냥 할 수 있는 직업들이 양반으로 보일 수준.
+                            블래스터는 광역기인 릴파벙으로 필드를 정리하려면 리볼빙 캐논을 써야 하고, 그러면 불릿을 차지 마스터리로 채워야 하고, 차지를 빠르게 쓰기 위해서는 결국 연계를 해야
+                            한다. 그야말로 악순환의 연속이 따로 없다. 그렇다고 이 일련의 과정을 모두 무시한다면 곧바로 끔찍한 후딜이 기다리고 있고, 스택이 쌓이지 않아 원킬컷마저 높아지기에
+                            사냥이 거의 불가능해진다.
+                        </p>
+                        <br>
+                        <br>
+                        <h1 id="title">보스전 운용</h1>
+                        <p>
+                            유저의 손에 따라 세간에 떠도는 DPM 순위를 현실로 만들 수 있지만, 그 수준이 나오려면 상당한 컨트롤을 요구한다. 후술할 캔슬 테크닉과 더불어 차지를 통한 보스전
+                            패턴 대응, 강제 이동 제어, 심지어는 낮은 수치의 HP/MP/방어력까지 다 신경을 써야 한다. 따라서 열거한 조건들을 다 극복할 수 있는지가 제일 중요하다. 하지만
+                            이를 극복했다 하더라도 결국 서버와 컴퓨터 환경이 좋지 않으면 물거품이 되고 세월이 흐를수록 괴악해지는 보스 레이드 환경에 끊임없이 적응해야 하니, 플레이 피로도는
+                            천정부지로 올라간다.
+                            <br><br>
+                            유틸기의 측면에서는 상당히 유용하게 사용할 수 있는데, 리볼빙 벙커와 하이퍼 매그넘 펀치에 5차 스킬 버닝 브레이커까지 무적기가 총 3개나 된다.여기에 차지와 연계를
+                            통한 슈퍼 스탠스와 최대 HP에 비례한 피해까지 경감하는 가드 시스템으로 생존력을 크게 올릴 수 있다.
+                        </p>
+                        <br>
+                        <br>
+                        <h1 id="title">어빌리티</h1>
+                        <p>
+                            <strong>패시브 스킬 레벨 1 증가</strong><br>
+                            코어칸이 넉넉하지 않고, '<쓸만한 컴뱃 오더스> 스킬 사용 가능' 잠재옵션을 지닌 신발을 보유하지 않은 저레벨 유저의 경우 사용하는 것을 추천한다. 최대의 성능을
+                                위해 첫 줄에 보공을 선택하고 쓸만한 컴뱃 오더스 스킬을 별도로 사용할 것을 권장한다.
+                                <br><br>
+                                <strong>보스 몬스터 공격 시 데미지 증가</strong><br>
+                                첫 줄에 패시브 스킬 레벨 1 증가를 사용할 경우 둘째 줄 또는 셋째 줄에 뽑을 수 있으며, 이 경우 최대 10%이다. 코어칸이 넉넉하다면 첫 줄에 뽑는 것이
+                                좋다.
+                                <br><br>
+                                <strong>상태이상에 걸린 대상 공격 시 데미지 증가</strong><br>
+                                해머 스매시의 디버프가 상태이상으로 판정되므로, 제2의 보공이라고 봐도 무방하다.
+                                <br><br>
+                                <strong>크리티컬 확률</strong><br>
+                                기본 크리티컬 확률이 낮은 직업은 아니지만, 사용할 경우 링크스킬, 하이퍼 스탯, 유니온 점령 효과, 몬스터 라이프 등에 배치한 크리티컬 확률 증가 옵션들을
+                                다른 스펙 상승효과가 있는 옵션들로 대체할 수 있다.
+                                <br><br>
+                                <strong>공격력 증가</strong><br>
+                                아직 필수 옵션이 뽑히지 않은 상황이라면 잠시 쓸 만하다.
+                                <br><br>
+                                <strong>아이템 드랍률, 메소 획득량 증가</strong><br>
+                                사냥 피로도가 높은 직업이라 대체로 효용은 떨어질 수 있다.
+                        </p>
+                        <br>
+                        <br>
+                        <h1 id="title">코어강화</h1>
+                        <p>
+                            매그넘 펀치, 리볼빙 캐논/리볼빙 캐논 마스터리, 릴리즈 파일 벙커, 더블 팡, 해머 스매시, 쇼크 웨이브 펀치
+                        </p>
+                    </div>
+                </article>
+            </section>
+
+            <!-- 본문 우측 영역 -->
+            <aside id="main-aside">
+                <div class="aside-list">
+                    <h3>레지스탕스</h3>
+                    <ul>
+                        <li><a href="블래스터.html">블래스터</a></li>
+                        <li><a href="배틀메이지.html">배틀메이지</a></li>
+                        <li><a href="와일드헌터.html">와일드헌터</a></li>
+                        <li><a href="메카닉.html">메카닉</a></li>
+                        <li><a href="제논.html">제논</a></li>
+                    </ul>
+                </div>
+            </aside>
+        </div>
+    </div>
+    <!-- 푸터 -->
+    <footer id="main-footer">
+        <span>ⓒ These photographs and fonts are protected by NEXON Korea Corporation with all rights reserved.</span>
+    </footer>
+</body>
+
+</html>

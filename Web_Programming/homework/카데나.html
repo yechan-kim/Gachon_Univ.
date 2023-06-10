@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>카데나 공략</title>
+    <link rel="stylesheet" href="Style.css"> <!-- 외부 스타일 시트 -->
+    <script src="https://code.jquery.com/jquery-3.7.0.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('.outer-menu-item').hover(function () {
+                $(this).find('.inner-menu').stop().slideDown();
+            }, function () {
+                $(this).find('.inner-menu').stop().slideUp();
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <!-- 전체를 감싸는 테그 -->
+    <div id="page-wrapper">
+        <!-- 헤더 -->
+        <header id="main-header">
+            <hgroup>
+                <h1 class="master-title"><a href="main.html"><img src="image/로고.png" alt="메이플스토리"></a>
+                </h1>
+                <h2 class="master-description"><a href="main.html">직업별 공략</a></h2>
+            </hgroup>
+        </header>
+        <!-- 네비게이션 -->
+        <nav id="main-navigation">
+            <div class="pull-left">
+                <ul class="outer-menu">
+
+                    <li class="outer-menu-item">
+                        <span class="menu-title">모험가</span>
+                        <ul class="inner-menu">
+                            <li class="inner-menu-item"><a href="히어로.html">히어로</a></li>
+                            <li class="inner-menu-item"><a href="팔라딘.html">팔라딘</a></li>
+                            <li class="inner-menu-item"><a href="다크나이트.html">다크나이트</a></li>
+                            <li class="inner-menu-item"><a href="아크메이지(불,독).html">아크메이지(불,독)</a></li>
+                            <li class="inner-menu-item"><a href="아크메이지(썬,콜).html">아크메이지(썬,콜)</a></li>
+                            <li class="inner-menu-item"><a href="비숍.html">비숍</a></li>
+                            <li class="inner-menu-item"><a href="보우마스터.html">보우마스터</a></li>
+                            <li class="inner-menu-item"><a href="신궁.html">신궁</a></li>
+                            <li class="inner-menu-item"><a href="패스파인더.html">패스파인더</a></li>
+                            <li class="inner-menu-item"><a href="나이트로드.html">나이트로드</a></li>
+                            <li class="inner-menu-item"><a href="섀도어.html">섀도어</a></li>
+                            <li class="inner-menu-item"><a href="듀얼블레이드.html">듀얼블레이드</a></li>
+                            <li class="inner-menu-item"><a href="바이퍼.html">바이퍼</a></li>
+                            <li class="inner-menu-item"><a href="캡틴.html">캡틴</a></li>
+                            <li class="inner-menu-item"><a href="캐논슈터.html">캐논슈터</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="outer-menu-item">
+                        <span class="menu-title">시그너스 기사단</span>
+                        <ul class="inner-menu">
+                            <li class="inner-menu-item"><a href="소울마스터.html">소울마스터</a></li>
+                            <li class="inner-menu-item"><a href="미하일.html">미하일</a></li>
+                            <li class="inner-menu-item"><a href="플레임위자드.html">플레임위자드</a></li>
+                            <li class="inner-menu-item"><a href="윈드브레이커.html">윈드브레이커</a></li>
+                            <li class="inner-menu-item"><a href="나이트워커.html">나이트워커</a></li>
+                            <li class="inner-menu-item"><a href="스트라이커.html">스트라이커</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="outer-menu-item">
+                        <span class="menu-title">영웅</span>
+                        <ul class="inner-menu">
+                            <li class="inner-menu-item"><a href="아란.html">아란</a></li>
+                            <li class="inner-menu-item"><a href="에반.html">에반</a></li>
+                            <li class="inner-menu-item"><a href="루미너스.html">루미너스</a></li>
+                            <li class="inner-menu-item"><a href="메르세데스.html">메르세데스</a></li>
+                            <li class="inner-menu-item"><a href="팬텀.html">팬텀</a></li>
+                            <li class="inner-menu-item"><a href="은월.html">은월</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="outer-menu-item">
+                        <span class="menu-title">레지스탕스</span>
+                        <ul class="inner-menu">
+                            <li class="inner-menu-item"><a href="블래스터.html">블래스터</a></li>
+                            <li class="inner-menu-item"><a href="배틀메이지.html">배틀메이지</a></li>
+                            <li class="inner-menu-item"><a href="와일드헌터.html">와일드헌터</a></li>
+                            <li class="inner-menu-item"><a href="메카닉.html">메카닉</a></li>
+                            <li class="inner-menu-item"><a href="제논.html">제논</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="outer-menu-item">
+                        <span class="menu-title">데몬</span>
+                        <ul class="inner-menu">
+                            <li class="inner-menu-item"><a href="데몬슬레이어.html">데몬슬레이어</a></li>
+                            <li class="inner-menu-item"><a href="데몬어벤져.html">데몬어벤져</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="outer-menu-item">
+                        <span class="menu-title">노바</span>
+                        <ul class="inner-menu">
+                            <li class="inner-menu-item"><a href="카이저.html">카이저</a></li>
+                            <li class="inner-menu-item"><a href="카인.html">카인</a></li>
+                            <li class="inner-menu-item"><a href="카데나.html">카데나</a></li>
+                            <li class="inner-menu-item"><a href="엔젤릭버스터.html">엔젤릭버스터</a></li>
+                        </ul>
+                    </li>
+                    <li class="outer-menu-item">
+                        <span class="menu-title">레프</span>
+                        <ul class="inner-menu">
+                            <li class="inner-menu-item"><a href="아델.html">아델</a></li>
+                            <li class="inner-menu-item"><a href="일리움.html">일리움</a></li>
+                            <li class="inner-menu-item"><a href="칼리.html">칼리</a></li>
+                            <li class="inner-menu-item"><a href="아크.html">아크</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="outer-menu-item">
+                        <span class="menu-title">아니마</span>
+                        <ul class="inner-menu">
+                            <li class="inner-menu-item"><a href="라라.html">라라</a></li>
+                            <li class="inner-menu-item"><a href="호영.html">호영</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="outer-menu-item">
+                        <span class="menu-title">초월자</span>
+                        <ul class="inner-menu">
+                            <li class="inner-menu-item"><a href="제로.html">제로</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="outer-menu-item">
+                        <span class="menu-title">키네시스</span>
+                        <ul class="inner-menu">
+                            <li class="inner-menu-item"><a href="키네시스.html">키네시스</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <!-- 본문 -->
+        <div id="content">
+            <!-- 본문 좌측 영역 -->
+            <section id="main-section">
+                <article>
+                    <div class="article-header">
+                        <h1 class="article-title">카데나(Cadena)</h1>
+                    </div>
+                    <div class="article-body">
+                        <img id="c_image" src="image/카데나.webp" alt="카데나">
+                        <h1 id="title">장점</h1>
+                        <p>
+                            <strong>스킬 연계를 통한 빠른 공격속도와 강력한 화력</strong><br>
+                            전체적으로 퍼뎀이 높게 책정되어 있어 화력이 준수하고, 원킬컷도 낮다. 게다가 후술할 최종 데미지 증가와 크리티컬 관련 능력치로 인해 안 그래도 뛰어난 기초 능력치를
+                            보유하고 있는데, 스킬 캔슬로 후딜레이를 줄임으로써 물 흐르듯 스킬 연계가 가능해서, 한 순간에 여러 개의 스킬을 동시에 꽂는 것이 가능하다. 이 뿐만 아니라 웨폰
+                            버라이어티의 추가타가 덤으로 쉴새없이 발생하기 때문에 메이플스토리 내에서 가장 화력이 강력한 직업을 꼽는다하면 카데나는 무조건 들어갈 정도다. 때문에 DPS,
+                            DPM이 매우 중요한 무릉도장에서는 궤를 달리하며, 전 직업 중에서도 강력하다는 축에 드는 블래스터를 가뿐히 능가하는 수준이다.
+                            <br><br>
+                            <strong>뛰어난 생존력</strong><br>
+                            웨폰 버라이어티로 발생한 추가타를 적중시키면 잠시 동안 다크사이트 상태가 되며, 최대 HP의 25%만큼 보호막이 생긴다. 논체인아츠 스킬을 순서가 겹치지 않게 잘
+                            운용하기만 한다면 최대 체력 비례 공격을 방어할 수 있는 보호막을 꾸준히 유지하며 공격할 수 있는데, 다크 사이트로 낙하물까지 무시할 수 있으니 숙련되기만 하면
+                            어지간해서는 죽지도 않는다.
+                            <br><br>
+                            <strong>준수한 기동성</strong><br>
+                            카데나는 고성능의 트리플 점프와 이동기인 체인아츠:체이스, 연계기에 보유한 각종 스킬들까지 모두 동원한다면 전 직업에서도 상위권의 기동성을 지니게 된다. 특히 서먼
+                            스트라이킹 브릭은 윗 방향키를 누르고 사용할 경우 거의 더블 점프를 한번 더 사용하는 수준으로 멀리까지 날아간다. 추가로, 트리플 점프가 끝난 뒤 바닥에 체인을
+                            박으면 점프가 초기화돼서 한 번 더 트리플 점프를 쓸 수 있다.
+                            <br><br>
+                            <strong>독보적인 크리티컬 관련 능력치</strong><br>
+                            하이퍼 스킬을 제외한 카데나의 기본 크리티컬 확률은 55%로 전 직업 중에서도 상위권의 크리티컬 확률을 자랑한다. 따라서 남은 크리티컬 확률은 팬텀의 링크 스킬,
+                            쓸만한 샤프 아이즈, 하이퍼 스탯 등으로 충족시킨다면 쉽게 크리티컬 확률 100%를 달성할 수 있다. 또한, 카데나의 기본 크리티컬 데미지는 33%이며, 상태이상을
+                            중첩시킬수록 크리티컬 데미지를 추가로 50%나 확보할 수 있어 솔플 한정으로는 최대 83%라는 엄청난 수치의 크리티컬 데미지를 가지게 된다. 다른 직업의 디버프를
+                            동원하여 상태이상을 10개까지 중첩시키면 패시브만으로 얻는 크리티컬 데미지만 무려 총 133%로, 데미지를 엄청나게 뻥튀기시킬 수 있다. 크리티컬 데미지는 하이퍼
+                            스탯, 유니온, 키네시스 링크 외에 구할 수 있는 루트가 엄청난 가격을 자랑하는 크뎀 장갑 외엔 없다는 걸 생각해보면 상당히 큰 메리트다.
+                            <br><br>
+                            <strong>매우 높은 최종 데미지 증가량</strong><br>
+                            카데나의 상시 최종 데미지는 웨폰 버라이어티 최대 중첩인 80%이며, 140제 하이퍼 스킬인 프로페셔널 에이전트를 써주면 두 배로 급증하여 30초 동안 160%가
+                            된다. 게다가 레디 투 다이까지 사용하면 능력치에 표기되는 수치만 최대 253.6%로, 30초 지속 최종 데미지만큼은 전 직업 중에서도 최상위권이다. 뿐만 아니라
+                            하이퍼 스킬인 '체인아츠:스트로크-넥스트어택 리인포스'가 적용된 스트로크 연계를 활용하면 스킬의 최종 데미지가 15% 더 증가하기에, 결론적으로 306.64%의 표기
+                            수치가 된다. 거기에 총 데미지와 보스 공격력은 매우 낮거나 없기 때문에 추가적인 보공/댐증 효율도 높고, 크리티컬 데미지도 상당해서 실제로 올라가는 증가량은 더
+                            상승한다.
+                            <br><br>
+                            <strong>적은 수의 버프 스킬</strong><br>
+                            하이퍼 스킬을 제외하고 카데나가 써야 할 버프는 웨폰 부스터와 노바의 용사로 단 2개밖에 없어서 은월, 블래스터와 함께 버프 수가 가장 적은 직업에 속한다. 몇몇의
+                            다른 버프들은 특정 조건 만족시 자동 발동이라 따로 쓰지 않아도 된다. 연계 스택도 메르세데스처럼 빡빡하게 넣어야 하는것도 아닌 20초 지속에 바인드 및 극딜기인
+                            테이크다운 스킬과 버프를 갱신시켜주는 크러시 스킬을 제대로 활용한다면 버프 스택을 오랫동안 최대 수치로 유지시킬 수 있다.
+                        </p>
+                        <br>
+                        <br>
+                        <h1 id="title">단점</h1>
+                        <p>
+                            <strong>까다로운 연계 버프 축적 및 유지</strong><br>
+                            블래스터의 콤비네이션 트레이닝에 버금가는 까다로운 웨폰 버라이어티라는 패시브 버프를 가지고 있다. 모든 논체인아츠 스킬을 각각 한 번씩 적에게 적중시켜야 하기에
+                            카데나의 단축키 설정은 블래스터와 카인, 호영에 버금가게 까다로운 편이다. 아예 키세팅을 갈아엎어서 던전 앤 파이터 등의 게임처럼 일렬로 등록하는게 편할 정도이다.
+                            여러모로 이그니스 로어와 비교 및 대조가 되는데, 메르세데스의 경우 주력기와 스택 갱신용 연계기술이 달라 반강제로 주력기를 끊고 다른 연계스킬로 스택갱신을 해야 하나
+                            카데나의 경우 모든 논체인아츠 스킬들이 주력기이다 보니 그럴 필요는 없다. 패턴에 의해 갱신을 잃거나 다시 중첩시키기에는 카데나 쪽이 난이도가 훨씬 높지만 연계할
+                            필요는 없이 스킬을 맞추기만 하면 돼서 관리는 또 쉬운 편. 또한 어느정도 프리딜이 보장되거나 스킬연계가 익숙해지면 논체인아츠의 쿨타임 때문에 어차피 다양한 스킬을
+                            쓰게 되어 스택을 쌓는것도 제법 난이도가 낮아진다. 버프 시간을 갱신시켜주는 스킬인 체인아츠: 크러시, 버프를 바로 최대치로 올려주는 테이크다운 스킬을 잘 활용해야
+                            한다.
+                            <br><br>
+                            <strong>스킬의 강제 이동으로 인한 필수적인 스킬 연계</strong><br>
+                            체인아츠:스트로크 1타 직후 논체인아츠 시전 시 최종 데미지 증가로 인해 스트로크 캔슬은 물론, 대부분의 스킬들이 강제 이동을 하기 때문에 타 스킬과의 연계는
+                            필수이며, 스킬들의 후딜레이가 짧지는 않은 편이라서 스킬 사용 도중 '체인아츠:체이스'를 추가하여 후딜레이를 없애는 운용이 중요하다. 그러나 체이스는 캔슬 도중
+                            보스전에서 자칫하다간 사용 도중 보스와 강제 연결될 수도 있어 사용이 상당히 까다롭다. 플레이어의 숙련도와 보스의 난이도에 따라 딜이 극명하게 갈라진다는 점은 매우
+                            큰 단점이다.
+                            <br><br>
+                            <strong>모든 강화 코어 및 전용 스킬 코어 유효로 인해 부족한 코어 슬롯</strong><br>
+                            카데나의 강화코어는 코어 통합 패치로 8가지뿐이지만, 모두 유효한 코어다. 딜 점유율이 낮다고 알려진 스킬들이 있지만 그 스킬들끼리 합쳐져 있어 한 코어당 점유율은
+                            무시 못할 수준이다. 또 스킬 코어로 가면 유효 5차 스킬이 쓸만한 스킬을 제외하고도 카데나 전용 5차 스킬 4개, 레디 투 다이, 베놈 버스트, 그란디스 여신의
+                            축복, 스파이더 인 더 미러로 총 8개의 스킬 코어가 유효 코어다.
+                            <br><br>
+                            그로 인해 코어를 모두 장착하는 레벨이 다른 직업에 비해 월등히 높은데, 자본을 들여 강화 코어를 2중첩 6코어로 가고 쓸만한 스킬을 전부 장비로 대체해도
+                            255레벨이 되어야 기본 코어 장착이 끝나게 된다. 이는 이론상 DPM을 이끌어내는 데에 많은 시간과 노력이 필요하다는 단점으로 귀결된다.
+                            <br><br>
+                            <strong>높은 사냥 피로도</strong><br>
+                            월등한 기동성과 넓은 범위를 통하여 빠르게 사냥이 가능하지만, 각 스킬 간 사이클이 짧기 때문에 단시간에 다수의 스킬을 여러 번 눌러야 되는 캐릭터 특성상 여타
+                            커뮤니티에서 손목 통증을 자주 호소하는 직업이기도 하다. 게다가 사출기가 없어서 몬스터를 흘리지 않으려면 사냥 빌드를 치밀하게 세워야 해서 맵 상성도 심하다. 특히,
+                            모라스 이후 사냥터 맵이 커질 때 문제가 심각하여 피로도 누적으로 다른 도적캐릭으로 이탈하는 현상이 많아지고 있는 추세다. 이러한 부분을 충족시키지 않을 시 상기한
+                            장점들을 모두 잡아먹기에 주요한 단점으로 지적된다.
+                        </p>
+                        <br>
+                        <br>
+                        <h1 id="title">운용</h1>
+                        <p>
+                            카데나 운용의 기초는 5차 스킬 체인아츠:메일스트롬을 설치하고 10초 내외로 짧은 쿨타임이 붙은 논체인아츠 스킬을 끊임없이 굴려 위크포인트 컨버징 어택과 웨폰
+                            버라이어티 III 스택을 유지해 크리티컬 확률 12%, 크리티컬 대미지 60%, 최종 대미지 80%와 딜 지분의 약 20%를 차지하는 추가타를 가져가는 것이다.
+                            <br><br>
+                            쿨타임이 도는 동안 다른 스킬을 눌러주면 되는 캐릭터이긴 하나 엄연히 연계 직업이기에, 카데나의 최대 성능을 뽑아내려면 그 사이 사이에 평타 대체 스킬인
+                            체인아츠:스트로크 연계를 이용해 논체인아츠 스킬의 최종 대미지 15%를 챙겨야하며, 강제이동으로 인한 딜손실을 최대한 막기 위해 다른 스킬로 캔슬하는 방법도 익혀야
+                            하기 때문이다. 물론 익숙해지면 스킬 운용 자체는 크게 어렵지는 않다.
+                            <br><br>
+                            카데나에 입문하려고 하는 유저들의 경우 카데나의 스킬 콤보나 연계 방법을 먼저 물어보는 경우가 많은데, 결론부터 말하자면 에반, 블래스터, 제로 등의 직업들과 달리
+                            카데나는 정해진 연계법이나 딜사이클이 없다. 스트로크 1타를 통한 캔슬로 인해 다양하게 연계 방식을 응용할 수 있고, 카데나의 필수 어빌리티인 재사용 대기시간
+                            초기화, 그리고 고자본의 경우 자주 사용하는 쿨타임 감소 잠재 모자 때문에 실전에서는 스킬들의 쿨타임이 제각각 따로 놀기 때문이다. 그래도 우선 카데나의 보스 운용시
+                            필수적으로 알아둬야할 것은 다음과 같다.
+                            <br><br>
+                        <p style="padding: 0 0 0 10px;">
+                            * 체인아츠: 스트로크(평타) 1타 직후에 스킬을 쓰면 최종데미지 증가 버프가 발동되며, 스킬 직후 스트로크를 쓰면 후딜이 캔슬된다. 그러니 기본적으로 2타를 쓰지
+                            않고 평1타-스킬-평1타-스킬-평1타 식으로 딜을 넣어주어야한다.<br>
+                            * 체인아츠: 체이스는 스킬의 후딜을 캔슬하는 기능이 있다.<br>
+                            * 강제이동이 동반되는 논체인아츠 스킬들 중 몇몇 스킬들은 연계해주면 강제이동을 막을 수 있다.
+                        </p><br>
+                        앞서 언급했듯이 실전에서는 스킬들 쿨타임이 제각기 따로 놀기 때문에 상황에 맞춰 적당한 스킬들을 사용하며 최대한 안정적으로 말뚝딜을 넣는 것이 카데나 운용의 핵심이다.
+                        자세한 운용법과 실전에서 자주 사용되는 연계는 해당 링크들을 참고. 카데나 공략 1편, 카데나 공략 2편. 해당 링크들에 적혀있는 연계법 외에도 실전에서는 다른 다양한
+                        방법으로 연계가 가능하다.
+                        </p>
+                        <br>
+                        <br>
+                        <h1 id="title">어빌리티</h1>
+                        <p>
+                            <strong>확률로 재사용 대기시간 미적용</strong><br>
+                            카데나는 평타를 제외한 모든 공격 스킬에 재사용 대기시간이 붙어있는 만큼, 재사용 대기시간 미적용 옵션이 있으면 체인아츠:테이크다운과 터프 허슬을 제외한 나머지
+                            스킬들을 연속으로 쓸 수 있기 때문에 명실상부한 1픽으로 꼽힌다. 특히 보스전 주력 딜링기인 니들배트의 쿨타임이 초기화되면 매우 높은 딜 상승량을 체감할 수 있다.
+                            <br><br>
+                            <strong>보스 몬스터 공격 시 데미지 증가</strong><br>
+                            보공은 누구에게나 좋은 옵션이고 카데나는 보공 효율이 좋은 편이므로 보스전 위주 플레이어라면 뽑아둘 가치가 있다. 다만 첫째줄은 무조건 재사용 미적용인지라 보공은
+                            최대 10% 정도에 그친다.
+                            <br><br>
+                            <strong>상태이상에 걸린 적 공격 시 추가 데미지</strong><br>
+                            카데나는 많은 공격 스킬이 상태이상을 동반하므로 약간의 추가 데미지를 확보할 수 있어 괜찮은 옵션. 사실상 보공처럼 활용할 수 있다. 다만 데미지 상승량이 그리 높지
+                            않아 우선순위가 높다고는 할 수 없다.
+                            <br><br>
+                            <strong>아이템 드롭률/메소 획득량 증가</strong><br>
+                            사냥을 많이 하는 유저나 광부용 부캐를 키운다면 괜찮은 옵션.
+                            <br><br>
+                            <strong>크리티컬 확률 증가</strong><br>
+                            크확 100%를 맞추기 위해 육성 초반에 고려되기도 한다. 다만 카데나의 기본 크확이 높은 편이고 수급처가 다양하므로 우선순위는 떨어지며, 위의 옵션들이 먼저
+                            나왔다면 대개는 자리를 내주게 된다.
+                        </p>
+                        <br>
+                        <br>
+                        <h1 id="title">코어강화</h1>
+                        <p>
+                            체인아츠:스트로크/웨폰 버라이어티/체인아츠:터프허슬, 서먼 슈팅 샷건/서먼 릴리싱 봄, 서먼 비팅 니들배트, 서먼 스트라이킹 브릭
+                        </p>
+                    </div>
+                </article>
+            </section>
+
+            <!-- 본문 우측 영역 -->
+            <aside id="main-aside">
+                <div class="aside-list">
+                    <h3>노바</h3>
+                    <ul>
+                        <li><a href="카이저.html">카이저</a></li>
+                        <li><a href="카인.html">카인</a></li>
+                        <li><a href="카데나.html">카데나</a></li>
+                        <li><a href="엔젤릭버스터.html">엔젤릭버스터</a></li>
+                    </ul>
+                </div>
+            </aside>
+        </div>
+    </div>
+    <!-- 푸터 -->
+    <footer id="main-footer">
+        <span>ⓒ These photographs and fonts are protected by NEXON Korea Corporation with all rights reserved.</span>
+    </footer>
+</body>
+
+</html>

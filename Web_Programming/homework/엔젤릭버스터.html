@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>엔젤릭버스터 공략</title>
+    <link rel="stylesheet" href="Style.css"> <!-- 외부 스타일 시트 -->
+    <script src="https://code.jquery.com/jquery-3.7.0.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('.outer-menu-item').hover(function () {
+                $(this).find('.inner-menu').stop().slideDown();
+            }, function () {
+                $(this).find('.inner-menu').stop().slideUp();
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <!-- 전체를 감싸는 테그 -->
+    <div id="page-wrapper">
+        <!-- 헤더 -->
+        <header id="main-header">
+            <hgroup>
+                <h1 class="master-title"><a href="main.html"><img src="image/로고.png" alt="메이플스토리"></a>
+                </h1>
+                <h2 class="master-description"><a href="main.html">직업별 공략</a></h2>
+            </hgroup>
+        </header>
+        <!-- 네비게이션 -->
+        <nav id="main-navigation">
+            <div class="pull-left">
+                <ul class="outer-menu">
+
+                    <li class="outer-menu-item">
+                        <span class="menu-title">모험가</span>
+                        <ul class="inner-menu">
+                            <li class="inner-menu-item"><a href="히어로.html">히어로</a></li>
+                            <li class="inner-menu-item"><a href="팔라딘.html">팔라딘</a></li>
+                            <li class="inner-menu-item"><a href="다크나이트.html">다크나이트</a></li>
+                            <li class="inner-menu-item"><a href="아크메이지(불,독).html">아크메이지(불,독)</a></li>
+                            <li class="inner-menu-item"><a href="아크메이지(썬,콜).html">아크메이지(썬,콜)</a></li>
+                            <li class="inner-menu-item"><a href="비숍.html">비숍</a></li>
+                            <li class="inner-menu-item"><a href="보우마스터.html">보우마스터</a></li>
+                            <li class="inner-menu-item"><a href="신궁.html">신궁</a></li>
+                            <li class="inner-menu-item"><a href="패스파인더.html">패스파인더</a></li>
+                            <li class="inner-menu-item"><a href="나이트로드.html">나이트로드</a></li>
+                            <li class="inner-menu-item"><a href="섀도어.html">섀도어</a></li>
+                            <li class="inner-menu-item"><a href="듀얼블레이드.html">듀얼블레이드</a></li>
+                            <li class="inner-menu-item"><a href="바이퍼.html">바이퍼</a></li>
+                            <li class="inner-menu-item"><a href="캡틴.html">캡틴</a></li>
+                            <li class="inner-menu-item"><a href="캐논슈터.html">캐논슈터</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="outer-menu-item">
+                        <span class="menu-title">시그너스 기사단</span>
+                        <ul class="inner-menu">
+                            <li class="inner-menu-item"><a href="소울마스터.html">소울마스터</a></li>
+                            <li class="inner-menu-item"><a href="미하일.html">미하일</a></li>
+                            <li class="inner-menu-item"><a href="플레임위자드.html">플레임위자드</a></li>
+                            <li class="inner-menu-item"><a href="윈드브레이커.html">윈드브레이커</a></li>
+                            <li class="inner-menu-item"><a href="나이트워커.html">나이트워커</a></li>
+                            <li class="inner-menu-item"><a href="스트라이커.html">스트라이커</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="outer-menu-item">
+                        <span class="menu-title">영웅</span>
+                        <ul class="inner-menu">
+                            <li class="inner-menu-item"><a href="아란.html">아란</a></li>
+                            <li class="inner-menu-item"><a href="에반.html">에반</a></li>
+                            <li class="inner-menu-item"><a href="루미너스.html">루미너스</a></li>
+                            <li class="inner-menu-item"><a href="메르세데스.html">메르세데스</a></li>
+                            <li class="inner-menu-item"><a href="팬텀.html">팬텀</a></li>
+                            <li class="inner-menu-item"><a href="은월.html">은월</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="outer-menu-item">
+                        <span class="menu-title">레지스탕스</span>
+                        <ul class="inner-menu">
+                            <li class="inner-menu-item"><a href="블래스터.html">블래스터</a></li>
+                            <li class="inner-menu-item"><a href="배틀메이지.html">배틀메이지</a></li>
+                            <li class="inner-menu-item"><a href="와일드헌터.html">와일드헌터</a></li>
+                            <li class="inner-menu-item"><a href="메카닉.html">메카닉</a></li>
+                            <li class="inner-menu-item"><a href="제논.html">제논</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="outer-menu-item">
+                        <span class="menu-title">데몬</span>
+                        <ul class="inner-menu">
+                            <li class="inner-menu-item"><a href="데몬슬레이어.html">데몬슬레이어</a></li>
+                            <li class="inner-menu-item"><a href="데몬어벤져.html">데몬어벤져</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="outer-menu-item">
+                        <span class="menu-title">노바</span>
+                        <ul class="inner-menu">
+                            <li class="inner-menu-item"><a href="카이저.html">카이저</a></li>
+                            <li class="inner-menu-item"><a href="카인.html">카인</a></li>
+                            <li class="inner-menu-item"><a href="카데나.html">카데나</a></li>
+                            <li class="inner-menu-item"><a href="엔젤릭버스터.html">엔젤릭버스터</a></li>
+                        </ul>
+                    </li>
+                    <li class="outer-menu-item">
+                        <span class="menu-title">레프</span>
+                        <ul class="inner-menu">
+                            <li class="inner-menu-item"><a href="아델.html">아델</a></li>
+                            <li class="inner-menu-item"><a href="일리움.html">일리움</a></li>
+                            <li class="inner-menu-item"><a href="칼리.html">칼리</a></li>
+                            <li class="inner-menu-item"><a href="아크.html">아크</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="outer-menu-item">
+                        <span class="menu-title">아니마</span>
+                        <ul class="inner-menu">
+                            <li class="inner-menu-item"><a href="라라.html">라라</a></li>
+                            <li class="inner-menu-item"><a href="호영.html">호영</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="outer-menu-item">
+                        <span class="menu-title">초월자</span>
+                        <ul class="inner-menu">
+                            <li class="inner-menu-item"><a href="제로.html">제로</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="outer-menu-item">
+                        <span class="menu-title">키네시스</span>
+                        <ul class="inner-menu">
+                            <li class="inner-menu-item"><a href="키네시스.html">키네시스</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <!-- 본문 -->
+        <div id="content">
+            <!-- 본문 좌측 영역 -->
+            <section id="main-section">
+                <article>
+                    <div class="article-header">
+                        <h1 class="article-title">엔젤릭버스터(Angelic Buster)</h1>
+                    </div>
+                    <div class="article-body">
+                        <img id="c_image" src="image/엔젤릭버스터.webp" alt="엔젤릭버스터">
+                        <h1 id="title">장점</h1>
+                        <p>
+                            <strong>최상위권의 사냥 성능</strong><br>
+                            엔버는 흔히 섀도어, 바이퍼와 어깨를 나란히 하는 광부 3대장으로 불린다. 물론 여기에는 소울 시커 원킬이라는 조건이 붙는다. 그래도 일단 조건만 맞으면 필드
+                            장악력을 손쉽게 가져올 수 있고, 설령 시커 원킬이 안나더라도 사냥 주력기인 프라이멀 로어의 범위가 상당히 준수하고 엔버 자체의 기동성이 워낙 좋아 사냥 능력은
+                            대장급 성능을 보인다. 또한 슈퍼 노바나 스포트라이트 같은 광범위 설치기가 지형을 타지 않는 것도 강점.
+                            <br><br>
+                            <strong>좋은 링크 스킬</strong><br>
+                            링크 스킬인 소울 컨트랙트는 사용 시 10초 동안 데미지 90%, 계정 내 전수된 캐릭터가 사용할 시 45%가 증가하는 액티브 버프다. 이는 단일 스킬로서는 쉽게
+                            찾아보기 힘든 수치다. 여기에 버프 지속시간 증가 효과까지 적용되므로, 벞지를 많이 챙기고 다니는 직업일수록 시너지가 발생한다. 때문에 전 직업이 거의 필수로 챙기는
+                            링크 스킬이라고 봐도 무방하다.
+                            <br><br>
+                            <strong>간단한 딜 사이클</strong><br>
+                            극딜 타임에는 버프나 설치기가 조금 많긴 하지만 평시에는 60초 단위로 피니투라 페투치아의 디버프를 유지하면서 트리니티만 쓰면 끝난다. 극딜 때도 올릴 버프 다
+                            올리고 마스코트 패밀리어만 신경쓰면서 트리니티만 쓰면 끝이라 컨트롤 난이도 자체는 낮은 편에 속한다. 또한 극딜 중 최대 10초 무적을 부여하는 에너지버스트 덕에
+                            각종 상태이상과 맵, 보스 패턴을 무시하고 안정적으로 극딜을 박을 수 있다.
+                        </p>
+                        <br>
+                        <br>
+                        <h1 id="title">단점</h1>
+                        <p>
+                            <strong>복기형적인 크리티컬 확률 버프</strong><br>
+                            엔젤릭버스터의 기본 크확은 고작 35%로, 꼴지만 면했을 뿐이라 상당히 낮다. 때문에 본격적인 육성을 위해선 크확 확보가 관건이며, 어빌 크확 같은 요소들이 꽤
+                            중요하다. 이상한 건 파이널 컨트랙트랑 스포트라이트에는 일시적으로 크리티컬 확률을 증가시키는 버프가 있다는 것이다. 버프로 얻는 크확은 대부분 무시되며 어떤
+                            상황에서도 상시 크확 100%를 맞추는 현 메이플 메타상 이해할 수가 없는 구조이다. 엔버 유저들은 버프에 달린 일시적 크확을 조금 수치를 낮추더라도 상시로 달라고
+                            요구하는 목소리가 크다.
+                            <br><br>
+                            <strong>높은 극딜 의존도</strong><br>
+                            링크 스킬부터 5차 스킬에 이르기까지 순간 극딜을 뽑아낼 요소는 상당하나, 그에 비해 평딜 능력이 뒤떨어진다. 그래서 소울 컨트랙트가 허락하는 한, 제한된 시간 안에
+                            최대한도로 '딜뽕'을 뽑아내야만 한다. 그나마 극딜 자체는 에너지 버스트의 기나긴 무적 덕분에 안정적이다.
+                        </p>
+                        <br>
+                        <br>
+                        <h1 id="title">사냥 운용</h1>
+                        <p>
+                            프라이멀 로어의 기본 범위가 광역기에 준할 정도로 상당히 넓긴 하지만, 최대 공속(2단계)에 도달해도 로어는 사용할 때마다 지연되는 시간이 길다. 그래서 보통은
+                            오브젝트 사출기인 소울 시커에 중점을 둔다. 적을 추적하는 사출기 특성상 사냥 한계치와 필드 점유율이 높지만, 마찬가지로 사출기라 각 오브젝트의 퍼뎀이 낮게
+                            책정됐다. 게다가 소울 시커 엑스퍼트를 통해 사출되는 시커는 수동으로 발동한 것에서 퍼뎀이 25% 감소하는데 설상가상으로 퍼뎀 하나 올려주지 않는 엑스퍼트 스킬인데도
+                            코어 강화 레벨당 최종 데미지가 2%p씩만 오른다. 따라서 시커 엑스퍼트로 원킬을 내려면 상당한 스펙을 갖춰야 한다.
+                            <br><br>
+                            2022년 개선 패치를 통해 트리니티가 다인기로 변경된 이후로는 세르니움 이후의 고체력 사냥터는 트리니티로 사냥하는 경우도 생겼다. 시커와 로어 모두 원킬컷 허들이
+                            꽤나 높기 때문.
+                        </p>
+                        <br>
+                        <br>
+                        <h1 id="title">보스전 운용</h1>
+                        <p>
+                            엔젤릭버스터는 120초마다 돌아오는 강력한 극딜 화력과, 긴 무적 시간을 통해 장시간 안정적인 극딜 타임을 보장받는 메커니즘이 주력이다.
+                            <br><br>
+                            극딜 화력은 엔버의 상징이다. 고유 링크 스킬인 소울 컨트랙트가 데미지 증가 수치를 대량으로 제공하고, 피니투라 페투치아의 최종 데미지 디버프가 피해량을 뻥튀기처럼
+                            부풀릴 수 있다. 스포트라이트 3중첩의 최종 데미지 증가 버프, 마스코트 패밀리어의 브레스까지 합하면 이것이 엔버의 극딜 사이클이 된다. 최대 10초 무적을 제공하는
+                            에너지 버스트 덕분에 극딜 안정성은 좋다. 특히 가디언 엔젤 슬라임, 더스크 처럼 패턴을 통해 극딜 타임 자체를 주는 보스의 경우 극딜 타임이 끝나도 에너지 버스트를
+                            터뜨려 추가적인 극딜 타임을 이어갈 수 있어 좋다.
+                            <br><br>
+                            다만 그 반대 급부로 극딜 예열을 위한 시간이 긴 것은 단점. 많은 개선을 받았지만 여전히 써야할 버프의 종류가 많고 특히 '마스코트 패밀리어'의 경우 발동 이후
+                            8번의 버프 스택을 쌓고 한번 더 발동해야 최대 효율을 낼 수 있기 때문에 예열 시간이 길다. 보통 10초의 극딜 타임을 주는 바인드 극딜의 경우, 바인드 극딜이
+                            끝나갈 때 쯤 마스코트 패밀리어가 풀스택에 도달한다. 에너지 버스트 덕분에 극딜 타임 자체는 길게 가져갈 수 있지만 모든 극딜을 쏟아붓는게 가능한지 여부는 보스마다
+                            다르다. 스우나 윌, 더스크처럼 보스 자체가 마구 움직이는 보스가 아니거나, 제로의 연바가 있다면 모든 화력을 마지막까지 넣을 수 있지만 루시드 2페처럼 이리저리
+                            움직이는 보스라면 피격 대상이 도망가버려서 극딜 마무리가 날라가는 상황이 종종 생긴다.
+                            <br><br>
+                            보스전에서도 소울 시커는 매우 중요하다. 소울 시커 엑스퍼트를 활성화하고 공격하기만 하면 자동으로 소울 시커가 우수수 나오는데, 굳이 소울 레조넌스 같은 다단히트하는
+                            스킬을 사용하지 않아도 트리니티와 딜 비중이 비슷하거나 그 이상일 수 있다. 그러나 별도 오브젝트라는 한계상, 타점이 사라지거나 대상이 범위 밖으로 순간이동할 경우
+                            모조리 사라지기 쉽다. 그래서 엔버의 단독 공략 효율은 보스가 어떤 패턴을 쓰느냐에 따라 극명히 갈린다.
+                        </p>
+                        <br>
+                        <br>
+                        <h1 id="title">어빌리티</h1>
+                        <p>
+                            <strong>보스 몬스터 공격 시 데미지 증가</strong><br>
+                            보스전 용도로 키울 경우 1번째 줄 필수 옵션. 수치가 그렇게 높아 보이지 않아도 무기, 보조 무기에서만 띄울 수 있는 최대 수치인 40%의 절반에 해당하며
+                            유니온으로 따지면 4000레벨과 동급이다.
+                            <br><br>
+                            <strong>메소 획득량 N% 증가</strong><br>
+                            광부로 키울 경우 1번째 줄 필수 옵션. 엔젤릭버스터는 사냥 능력이 뛰어나기 때문에 광부 캐릭터로 쓰는 사람들이 많다.
+                            <br><br>
+                            <strong>아이템 드롭률 N% 증가</strong><br>
+                            메획과 마찬가지로 광부의 필수 옵션. 광부는 보통 메획을 첫번째 옵션으로 두기 때문에 아획은 최대 15%까지 뜬다.
+                            <br><br>
+                            <strong>크리티컬 확률 N% 증가</strong><br>
+                            엔젤릭버스터의 저열한 크리티컬 확률을 어느정도 커버 해준다. 단, 크리티컬 확률은 하이퍼 스탯과 유니온, 링크 스킬로 충분히 대체 가능하다.
+                            <br><br>
+                            <strong>일반 몬스터 공격 시 N%만큼 데미지 증가</strong><br>
+                            소울 시커의 원킬컷을 낮출 용도라면 쓸 만하다.
+                            <br><br>
+                            <strong>상태 이상에 걸린 적 공격 시 데미지 N% 증가</strong><br>
+                            피니투라 페투치아나 임피리컬 널리지와 함께하면 상시 보공이나 다름없다.
+                        </p>
+                        <br>
+                        <br>
+                        <h1 id="title">코어강화</h1>
+                        <p>
+                            <strong>필수</strong><br>
+                            프라이멀 로어, 트리니티, 소울 시커, 슈퍼 노바
+                            <br><br>
+                            <strong>선택</strong><br>
+                            피니투라 페투치아, 소울 레조넌스
+                        </p>
+                    </div>
+                </article>
+            </section>
+
+            <!-- 본문 우측 영역 -->
+            <aside id="main-aside">
+                <div class="aside-list">
+                    <h3>노바</h3>
+                    <ul>
+                        <li><a href="카이저.html">카이저</a></li>
+                        <li><a href="카인.html">카인</a></li>
+                        <li><a href="카데나.html">카데나</a></li>
+                        <li><a href="엔젤릭버스터.html">엔젤릭버스터</a></li>
+                    </ul>
+                </div>
+            </aside>
+        </div>
+    </div>
+    <!-- 푸터 -->
+    <footer id="main-footer">
+        <span>ⓒ These photographs and fonts are protected by NEXON Korea Corporation with all rights reserved.</span>
+    </footer>
+</body>
+
+</html>

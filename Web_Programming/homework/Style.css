@@ -14,7 +14,7 @@
 * {
     margin: 0;
     padding: 0;
-    font-family: 'maple';
+    font-family: 'maple','serif', 'sans-serif';
 }
 
 a {
@@ -26,15 +26,15 @@ li {
 }
 
 h1 {
-    font-family: 'maple_bold';
+    font-family: 'maple_bold','serif', 'sans-serif';
 }
 
 h2 {
-    font-family: 'maple_bold';
+    font-family: 'maple_bold','serif', 'sans-serif';
 }
 
 h3 {
-    font-family: 'maple_bold';
+    font-family: 'maple_bold','serif', 'sans-serif';
 }
 
 /* 기본 클래스 */
@@ -147,13 +147,13 @@ hgroup>*>a {
     width: 7%;
 }
 
-#title {
+.title {
     font-size: 25px;
 }
 
 strong {
     font-size: 15px;
-    font-family: 'maple_bold';
+    font-family: 'maple_bold','serif', 'sans-serif';
 }
 
 #c_image {
@@ -218,6 +218,6 @@ article {
 
 #main-footer {
     width: 100%;
-    bottom: 0px;
+    bottom: 0;
     position: relative;
 }

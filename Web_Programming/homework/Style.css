@@ -131,6 +131,7 @@ hgroup>*>a {
 /* 5. 본문 추가하기(중앙 내용) */
 #content {
     overflow: hidden;
+    display: inline-block;
 }
 
 #main {

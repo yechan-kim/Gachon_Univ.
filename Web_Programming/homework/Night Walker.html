@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>나이트워커 공략</title>
+    <link rel="stylesheet" href="Style.css"> <!-- 외부 스타일 시트 -->
+    <script src="https://code.jquery.com/jquery-3.7.0.js"></script>
+    <script src="pulldown%20menu.js"></script>
+</head>
+
+<body>
+    <!-- 전체를 감싸는 테그 -->
+    <div id="page-wrapper">
+        <!-- 헤더 -->
+        <header id="main-header">
+            <hgroup>
+                <h1 class="master-title"><a href="Index.html"><img src="image/Logo.png" alt="메이플스토리"></a>
+                </h1>
+                <h2 class="master-description"><a href="Index.html">직업별 공략</a></h2>
+            </hgroup>
+        </header>
+        <!-- 네비게이션 -->
+        <nav id="main-navigation">
+            <div class="pull-left">
+                <ul class="outer-menu">
+
+                    <li class="outer-menu-item">
+                        <span class="menu-title">모험가</span>
+                        <ul class="inner-menu">
+                            <li class="inner-menu-item"><a href="Hero.html">히어로</a></li>
+                            <li class="inner-menu-item"><a href="Paladin.html">팔라딘</a></li>
+                            <li class="inner-menu-item"><a href="Dark%20Knight.html">다크나이트</a></li>
+                            <li class="inner-menu-item"><a href="Arch%20Mage%20(Fire,%20Poison).html">아크메이지(불,독)</a></li>
+                            <li class="inner-menu-item"><a href="Arch%20Mage%20(Ice,%20Lightning).html">아크메이지(썬,콜)</a></li>
+                            <li class="inner-menu-item"><a href="Bishop.html">비숍</a></li>
+                            <li class="inner-menu-item"><a href="Bowmaster.html">보우마스터</a></li>
+                            <li class="inner-menu-item"><a href="Marksman.html">신궁</a></li>
+                            <li class="inner-menu-item"><a href="Pathfinder.html">패스파인더</a></li>
+                            <li class="inner-menu-item"><a href="Night%20Lord.html">나이트로드</a></li>
+                            <li class="inner-menu-item"><a href="Shadower.html">섀도어</a></li>
+                            <li class="inner-menu-item"><a href="Dual%20Blade.html">듀얼블레이드</a></li>
+                            <li class="inner-menu-item"><a href="Viper.html">바이퍼</a></li>
+                            <li class="inner-menu-item"><a href="Captain.html">캡틴</a></li>
+                            <li class="inner-menu-item"><a href="Cannon%20Shooter.html">캐논슈터</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="outer-menu-item">
+                        <span class="menu-title">시그너스 기사단</span>
+                        <ul class="inner-menu">
+                            <li class="inner-menu-item"><a href="Soul%20Master.html">소울마스터</a></li>
+                            <li class="inner-menu-item"><a href="Mihile.html">미하일</a></li>
+                            <li class="inner-menu-item"><a href="Flame%20Wizard.html">플레임위자드</a></li>
+                            <li class="inner-menu-item"><a href="Wind%20Breaker.html">윈드브레이커</a></li>
+                            <li class="inner-menu-item"><a href="Night Walker.html">나이트워커</a></li>
+                            <li class="inner-menu-item"><a href="Striker.html">스트라이커</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="outer-menu-item">
+                        <span class="menu-title">영웅</span>
+                        <ul class="inner-menu">
+                            <li class="inner-menu-item"><a href="Aran.html">아란</a></li>
+                            <li class="inner-menu-item"><a href="Evan.html">에반</a></li>
+                            <li class="inner-menu-item"><a href="Luminous.html">루미너스</a></li>
+                            <li class="inner-menu-item"><a href="Mercedes.html">메르세데스</a></li>
+                            <li class="inner-menu-item"><a href="Phantom.html">팬텀</a></li>
+                            <li class="inner-menu-item"><a href="Eunwol.html">은월</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="outer-menu-item">
+                        <span class="menu-title">레지스탕스</span>
+                        <ul class="inner-menu">
+                            <li class="inner-menu-item"><a href="Blaster.html">블래스터</a></li>
+                            <li class="inner-menu-item"><a href="Battle%20Mage.html">배틀메이지</a></li>
+                            <li class="inner-menu-item"><a href="Wild%20Hunter.html">와일드헌터</a></li>
+                            <li class="inner-menu-item"><a href="Mechanic.html">메카닉</a></li>
+                            <li class="inner-menu-item"><a href="Xenon.html">제논</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="outer-menu-item">
+                        <span class="menu-title">데몬</span>
+                        <ul class="inner-menu">
+                            <li class="inner-menu-item"><a href="Demon%20Slayer.html">데몬슬레이어</a></li>
+                            <li class="inner-menu-item"><a href="Demon%20Avenger.html">데몬어벤져</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="outer-menu-item">
+                        <span class="menu-title">노바</span>
+                        <ul class="inner-menu">
+                            <li class="inner-menu-item"><a href="Kaiser.html">카이저</a></li>
+                            <li class="inner-menu-item"><a href="Kain.html">카인</a></li>
+                            <li class="inner-menu-item"><a href="Cadena.html">카데나</a></li>
+                            <li class="inner-menu-item"><a href="Angelic%20Buster.html">엔젤릭버스터</a></li>
+                        </ul>
+                    </li>
+                    <li class="outer-menu-item">
+                        <span class="menu-title">레프</span>
+                        <ul class="inner-menu">
+                            <li class="inner-menu-item"><a href="Adele.html">아델</a></li>
+                            <li class="inner-menu-item"><a href="Illium.html">일리움</a></li>
+                            <li class="inner-menu-item"><a href="Khali.html">칼리</a></li>
+                            <li class="inner-menu-item"><a href="Ark.html">아크</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="outer-menu-item">
+                        <span class="menu-title">아니마</span>
+                        <ul class="inner-menu">
+                            <li class="inner-menu-item"><a href="Lara.html">라라</a></li>
+                            <li class="inner-menu-item"><a href="Ho%20Young.html">호영</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="outer-menu-item">
+                        <span class="menu-title">초월자</span>
+                        <ul class="inner-menu">
+                            <li class="inner-menu-item"><a href="Zero.html">제로</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="outer-menu-item">
+                        <span class="menu-title">키네시스</span>
+                        <ul class="inner-menu">
+                            <li class="inner-menu-item"><a href="Kinesis.html">키네시스</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <!-- 본문 -->
+        <div id="content">
+            <!-- 본문 좌측 영역 -->
+            <section id="main-section">
+                <article>
+                    <div class="article-header">
+                        <h1 class="article-title">나이트워커(Night Walker)</h1>
+                    </div>
+                    <div class="article-body">
+                        <img id="c_image" src="image/Night%20Walker.webp" alt="나이트워커">
+                        <h1 id="title">장점</h1>
+                        <p>
+                            <strong>우월한 기동성과 빠른 공격속도</strong><br>
+                            기본 공속이 8단계로 최대치를 찍고, 스킬 시전 속도 또한 스타 더스트와 다크니스 오멘을 제외하면 매우 빠르다. 쉐도우 모멘텀 3스택 기준으로 주력기의 후딜레이가
+                            390ms까지 줄어든다. 게다가 그 딜레이까지도 래피드 이베이젼으로 캔슬할 수 있다. 메이플스토리에서 제일 빠른 주력기 후딜레이 기준이 540ms~570ms임을
+                            감안하면 나이트워커의 공격속도는 독보적인 경지에 있다. 기동성 측면에서도 도적 직업군 답게 트리플 점프가 가능하며 도적 직업군 중 유일하게 트리플 점프에 상향
+                            점프(윗점)가 같이 내장되어 있는 직업군이다. 이같은 우월한 기동성으로 사냥 능력을 보완할 수 있고, 스피릿 세이비어 등의 컨텐츠에서도 상당히 유리한 위치에 있다.
+                            보스 레이드에서도 트리플 점프와 윗점을 활용하여 여러 즉사 패턴들로부터의 회피가 용이하다.
+                            <br><br>
+                            <strong>강력한 딜링 능력과 다양한 유틸리티</strong><br>
+                            나이트워커는 DPM, 리레딜, 극딜, 40초딜 모두 TOP 5 수준의 상위권에 위치해 있다. 여기에 트리플 점프, 흡혈기(쉐도우 배트 1타 한정), 바인드기, 순간
+                            무적기, 피해량 감소, 부활기, 후방 이동, 윗점프, 슈퍼 스탠스, 다크 사이트, 지속 설치기, 텔레포트 등 보스전에서 유용한 다양한 유틸을 가지고 있다. 유틸은
+                            따지면 나이트로드보다 훨씬 좋으며 전직업 통틀어도 평균 이상은 된다. 때문에 숙련된 컨트롤을 할 수 있다면 매우 강력한 보스전 성능을 발휘할 수 있다.
+                            <br><br>
+                            <strong>뛰어난 사냥능력</strong><br>
+                            리부트 월드 같은 특수한 경우를 제외하면 저레벨대의 몹들의 체력이 워낙 낮기 때문에 쉐도우 배트가 대부분의 몹을 원킬낸다. 100레벨 이후 스타포스 사냥터와
+                            170레벨 이후 무기고와 연무장에 진입하면서 급격히 효율이 떨어지지만 초고스펙의 경우 다시 좋아진다. 5차 스킬 쉐도우 스피어와 쉐도우 서번트 익스텐드, 쉐도우
+                            바이트 같은 경우 보스전보다는 사냥에서 더 빛나는 스킬이다 보니 5차 이후 이 3개의 스킬을 얻으면 그나마 사냥이 나아지는 모습을 볼 수 있다. 특히 쉐도우 배트
+                            원킬과 맞물리면 사냥이 엄청나게 수월해진다. 배트 자체 데미지도 괜찮고, 5차 이후의 스킬코어 강화, 뎀증 기능이 있는 데몬어벤져•일리움•아크나 일반 몬스터 데미지
+                            증가 기능이 있는 라라의 링크 스킬들을 활용하면 원킬이 생각보다 어렵지는 않다. 쉐도우 배트가 나이트워커의 정체성인 만큼 배트의 퍼뎀은 섀도어나 엔젤릭버스터의
+                            사출기보다 압도적으로 높기 때문에 세르니움 이후로 가도 배트원킬 사냥이 가능할 정도이다. 심지어 배트 원킬이 나지 않아도 사냥 능력이 꽤 좋은편이라 분명 원킬은
+                            안나는데 젠컷은 나는 이상한 상황도 많이 생긴다.
+                            <br><br>
+                            <strong>매우 쉬운 코어 강화 난이도</strong><br>
+                            코어 강화가 쉬운 직업 중에 하나로, 5차 스킬 4개와 퀀터플 스로우, 쉐도우/래버너스 배트, 다크니스 오멘만 강화하면 끝이다. 덕분에 코어칸이 매우 널널하므로 다른
+                            직업이라면 코어칸 부족, 효율성 등의 문제로 사용하지 않는 공용 스킬 코어도 부담없이 채용할 수 있다. 강화 스킬도 9개밖에 안 돼서 3중코어도 금방 뜬다.
+                        </p>
+                        <br>
+                        <br>
+                        <h1 id="title">단점</h1>
+                        <p>
+                            <strong>5차 스킬의 구조적 문제</strong><br>
+                            주력 딜링기인 쉐도우 배트, 퀸터플 스로우에 집중한다면 코어 강화가 쉬운 것은 분명한 장점이다. 하지만 최상위 보스에서 나이트워커의 5차 스킬에는 활용하기에 몇 가지
+                            결함이 존재한다.
+                            <br><br>
+                            <strong>빈약한 방어 유틸리티</strong><br>
+                            같은 표창을 사용하는 나이트로드에 비해서 생존 관련 유틸리티를 다수 보유하고 있지만, 하나하나 뜯어보면 어딘가 나사빠진 모습을 보여준다. 무적기인 도미니언을 보유하고
+                            있으나 도미니언은 최종 데미지 20%가 증가하는 스킬으로 실전에서는 절대로 무적기로 사용하지 않고 극딜 버프로 사용하며 쿨타임도 3분이나 된다. 그외엔 뎀감기로
+                            사이펀 바이탈리티를 보유하고 있으나, 스킬 문서에서 볼 수 있듯이 굉장히 까다로운 조건을 요구하며 10%밖에 안 돼 별 도움이 되지 못한다. 공격을 피하지 못한 순간
+                            살아나가긴 힘들다.
+                            <br><br>
+                            <strong>지나치게 많은 극딜 버프</strong><br>
+                            극딜 시동 준비가 굉장히 오래 걸리는 직업이다. 극딜 발동 직전 올려야 하는 버프만 10개 이상이며 이는 같은 도적 직업군인 호영과 함께 전직업 탑3안에 드는 극딜
+                            준비 시간을 자랑한다. 그리고 극딜시 사용하는 자버프만 나열해도 도미니언, 쉐도우 스피어, 쉐도우 일루전, 쉐도우 익스텐드, 쉐도우 바이트로 5개나 되며, 공용
+                            버프와 시드링까지 고려하면 10개를 웃도는 수준이다. 따라서 각각의 버프 시전 시간으로 인한 지연이 필연적으로 발목을 잡는다. 그래서 파티원이 "바인드 스킬을
+                            쓰겠다"라는 콜을 던져줄 때부터 버프를 올리기 시작해야 한다. 걸리고 난 다음은 너무 늦는다.
+                        </p>
+                        <br>
+                        <br>
+                        <h1 id="title">사냥 운용</h1>
+                        <p>
+                            나이트워커 사냥의 핵심은 쉐도우 배트다. 1대1 대인전 스킬을 사냥기로 사용해서 사냥이 안 좋다는 인식이 있지만 필드몹을 대상으로 배트 원킬이 가능한 나이트워커는
+                            시커 원킬 엔버, 메익 원킬 섀도어 못지 않게 뽐내는 사냥 효율을 자랑한다. 물론 원킬이 아니더라도 3방 정도만 나면 보통 수준은 된다. 단지 원킬에 대한 로망이
+                            인식을 잡아먹다시피 했을 뿐이다. 사출기 사냥을 주로 하는 섀도어, 나이트로드, 엔젤릭버스터 등 다른 직업보다 사출기 원킬이 상대적으로 훨씬 쉬워서 자본을 조금만
+                            투자해줘도 최상위권의 사냥 능력을 자랑한다. 그리고 오멘도 원하는 위치나 공중에 깔아놓는 방법을 익혀놓으면 수족처럼 쓸 수 있다.
+                            <br><br>
+                            사출기로 사냥을 한다는 특성상 사냥터를 거의 가리지 않는다. 그래서 최대한 젠량이 많은 사냥터로 가는게 좋다. 다만 몬스터에서 몬스터로 전이되는 특성상 한두 마리씩
+                            새는건 어쩔 수 없다. 괜히 새는 몹 잡겠다고 뛰어다니는 것보다 젠컷에 크게 연연하지 않는게 오히려 실질적인 마릿수에도 피로도에도 좋다.
+                            <br><br>
+                            멀티킬이 거의 드물고 전 직업 중 가장 콤보킬을 잘 쌓는 직업이므로 아란 링크는 필수로 착용하고 콤보킬 구슬도 최대한 챙기는 것이 좋다.
+                        </p>
+                        <br>
+                        <br>
+                        <h1 id="title">보스전 운용</h1>
+                        <p>
+                            극딜 준비 과정이 조금 복잡하고 까다롭지만, 쉐도우 모멘텀의 관성 시스템을 잘 활용하면 비(非)속사기 직업 중에서도 압도적인 타수를 욱여넣을 수 있다. 같은 표창
+                            도적 직업인 나이트로드와 흡사하지만, 화력을 약간 덜어낸 대신 유틸리티를 받아챙긴 케이스라고 보면 된다.
+                            <br><br>
+                            사이클은 간단하다. 이론적으로는 스로우만 쓰다가 90초마다 준극딜을 쏟아붓고, 180초마다 바인드 극딜을 넣기만 하면 된다. 그러나 공격 사거리가 짧고 몸이 약하기
+                            때문에 패턴을 정확히 숙지하고 생존에 집중해야 한다.
+                            <br><br>
+                            그나마 빠른 공속과 캔슬기, 3단 점프, 위치 지정형 텔레포트, 다크 사이트 등 다양한 회피기를 보유했지만, 고유 무적기는 극딜 버프인 도미니언 단 하나뿐이다.
+                            설상가상으로 피해 경감 패시브인 사이펀 바이탈리티는 설계상 하자가 부각될 정도로 성능이 낮아 피격을 허용하면 위험해진다. 결국 맞지 않는 것만이 답인 고난도 직업인
+                            셈이다.
+                        </p>
+                        <br>
+                        <br>
+                        <h1 id="title">어빌리티</h1>
+                        <p>
+                            <strong>보스 몬스터 공격 시 데미지 증가</strong><br>
+                            통칭 '보공'. 어느 직업에게나 잘 어울리는 어빌리티다.
+                            <br><br>
+                            <strong>메소 획득량/아이템 드롭률 증가</strong><br>
+                            광부용 어빌리티. 캐릭터보다 5~10레벨 가량 높은 사냥터에서도 배트 1~2킬이 날 정도의 스펙이라면 고려할 만하다.
+                            <br><br>
+                            <strong>크리티컬 확률 증가</strong><br>
+                            나워의 기본 크리티컬 확률은 40%로, 평균보다 다소 낮다. 다만 어빌 첫줄 크확을 쓰기보단 둘째줄 크확을 노리거나 유니온, 링크, 하이퍼스탯 쪽에서 끌어오는 것이
+                            좋다.
+                            <br><br>
+                            <strong>상태이상 추가 데미지</strong><br>
+                            통칭 상추뎀. 직업 특성상 어빌리티에 자유로운 직업으로 보통 유니크 2~3번째 줄에 상추뎀을 띄워 사용한다.
+                        </p>
+                        <br>
+                        <br>
+                        <h1 id="title">코어강화</h1>
+                        <p>
+                            퀸터플 스로우, 쉐도우 배트/래버너스 배트, 다크니스 오멘
+                        </p>
+                    </div>
+                </article>
+            </section>
+
+            <!-- 본문 우측 영역 -->
+            <aside id="main-aside">
+                <div class="aside-list">
+                    <h3>시그너스 기사단</h3>
+                    <ul>
+                        <li><a href="Soul%20Master.html">소울마스터</a></li>
+                        <li><a href="Mihile.html">미하일</a></li>
+                        <li><a href="Flame%20Wizard.html">플레임위자드</a></li>
+                        <li><a href="Wind%20Breaker.html">윈드브레이커</a></li>
+                        <li><a href="Night Walker.html">나이트워커</a></li>
+                        <li><a href="Striker.html">스트라이커</a></li>
+                    </ul>
+                </div>
+            </aside>
+        </div>
+    </div>
+    <!-- 푸터 -->
+    <footer id="main-footer">
+        <span>ⓒ These photographs and fonts are protected by NEXON Korea Corporation with all rights reserved.</span>
+    </footer>
+</body>
+
+</html>

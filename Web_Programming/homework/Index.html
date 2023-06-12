@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>메이플스토리 직업별 공략</title>
+    <link rel="stylesheet" href="Style.css"> <!-- 외부 스타일 시트 -->
+    <script src="https://code.jquery.com/jquery-3.7.0.js"></script>
+    <script src="pulldown%20menu.js"></script>
+    <!-- 에니메이션 -->
+    <script>
+        $(document).ready(function () {
+            // 변수를 선언합니다.
+            var width = $('[data-role="slider"]').attr("data-width");
+            var height = $('[data-role="slider"]').attr("data-height");
+            var count = $('[data-role="slider"] div.item').length;
+
+            // 스타일을 적용
+            $('[data-role="slider"]').css({
+                position: "relative",
+                overflow: "hidden",
+                width: width,
+                height: height
+            }).find(".container").css({
+                position: "absolute",
+                width: width * count,
+                overflow: "hidden"
+            }).find(".item").css({
+                float: "left",
+                width: width,
+                height: height,
+                justifycontent: "center",
+                alignitems: "center"
+            });
+
+            // 변수를 선언합니다.
+            var currentPage = 0;
+            var changePage = function () {
+                $('[data-role="slider"] > .container').animate({
+                    left: -currentPage * width
+                }, 500, function () {
+                    // 애니메이션 완료 후 3초 대기
+                    setTimeout(function () {
+                        // 다음 페이지로 이동
+                        if (currentPage < count - 1) {
+                            currentPage++;
+                        } else {
+                            currentPage = 0;
+                        }
+                        changePage();
+                    }, 3000);
+                });
+            };
+
+            // 초기 슬라이더 실행
+            changePage();
+        });
+    </script>
+</head>
+
+<body>
+    <!-- 전체를 감싸는 테그 -->
+    <div id="page-wrapper">
+        <!-- 헤더 -->
+        <header id="main-header">
+            <hgroup>
+                <h1 class="master-title"><a href="Index.html"><img src="image/Logo.png" alt="메이플스토리"></a>
+                </h1>
+                <h2 class="master-description"><a href="Index.html">직업별 공략</a></h2>
+            </hgroup>
+        </header>
+        <!-- 네비게이션 -->
+        <nav id="main-navigation">
+            <div class="pull-left">
+                <ul class="outer-menu">
+
+                    <li class="outer-menu-item">
+                        <span class="menu-title">모험가</span>
+                        <ul class="inner-menu">
+                            <li class="inner-menu-item"><a href="Hero.html">히어로</a></li>
+                            <li class="inner-menu-item"><a href="Paladin.html">팔라딘</a></li>
+                            <li class="inner-menu-item"><a href="Dark%20Knight.html">다크나이트</a></li>
+                            <li class="inner-menu-item"><a href="Arch%20Mage%20(Fire,%20Poison).html">아크메이지(불,독)</a></li>
+                            <li class="inner-menu-item"><a href="Arch%20Mage%20(Ice,%20Lightning).html">아크메이지(썬,콜)</a></li>
+                            <li class="inner-menu-item"><a href="Bishop.html">비숍</a></li>
+                            <li class="inner-menu-item"><a href="Bowmaster.html">보우마스터</a></li>
+                            <li class="inner-menu-item"><a href="Marksman.html">신궁</a></li>
+                            <li class="inner-menu-item"><a href="Pathfinder.html">패스파인더</a></li>
+                            <li class="inner-menu-item"><a href="Night%20Lord.html">나이트로드</a></li>
+                            <li class="inner-menu-item"><a href="Shadower.html">섀도어</a></li>
+                            <li class="inner-menu-item"><a href="Dual%20Blade.html">듀얼블레이드</a></li>
+                            <li class="inner-menu-item"><a href="Viper.html">바이퍼</a></li>
+                            <li class="inner-menu-item"><a href="Captain.html">캡틴</a></li>
+                            <li class="inner-menu-item"><a href="Cannon%20Shooter.html">캐논슈터</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="outer-menu-item">
+                        <span class="menu-title">시그너스 기사단</span>
+                        <ul class="inner-menu">
+                            <li class="inner-menu-item"><a href="Soul%20Master.html">소울마스터</a></li>
+                            <li class="inner-menu-item"><a href="Mihile.html">미하일</a></li>
+                            <li class="inner-menu-item"><a href="Flame%20Wizard.html">플레임위자드</a></li>
+                            <li class="inner-menu-item"><a href="Wind%20Breaker.html">윈드브레이커</a></li>
+                            <li class="inner-menu-item"><a href="Night%20Walker.html">나이트워커</a></li>
+                            <li class="inner-menu-item"><a href="Striker.html">스트라이커</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="outer-menu-item">
+                        <span class="menu-title">영웅</span>
+                        <ul class="inner-menu">
+                            <li class="inner-menu-item"><a href="Aran.html">아란</a></li>
+                            <li class="inner-menu-item"><a href="Evan.html">에반</a></li>
+                            <li class="inner-menu-item"><a href="Luminous.html">루미너스</a></li>
+                            <li class="inner-menu-item"><a href="Mercedes.html">메르세데스</a></li>
+                            <li class="inner-menu-item"><a href="Phantom.html">팬텀</a></li>
+                            <li class="inner-menu-item"><a href="Eunwol.html">은월</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="outer-menu-item">
+                        <span class="menu-title">레지스탕스</span>
+                        <ul class="inner-menu">
+                            <li class="inner-menu-item"><a href="Blaster.html">블래스터</a></li>
+                            <li class="inner-menu-item"><a href="Battle%20Mage.html">배틀메이지</a></li>
+                            <li class="inner-menu-item"><a href="Wild%20Hunter.html">와일드헌터</a></li>
+                            <li class="inner-menu-item"><a href="Mechanic.html">메카닉</a></li>
+                            <li class="inner-menu-item"><a href="Xenon.html">제논</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="outer-menu-item">
+                        <span class="menu-title">데몬</span>
+                        <ul class="inner-menu">
+                            <li class="inner-menu-item"><a href="Demon%20Slayer.html">데몬슬레이어</a></li>
+                            <li class="inner-menu-item"><a href="Demon%20Avenger.html">데몬어벤져</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="outer-menu-item">
+                        <span class="menu-title">노바</span>
+                        <ul class="inner-menu">
+                            <li class="inner-menu-item"><a href="Kaiser.html">카이저</a></li>
+                            <li class="inner-menu-item"><a href="Kain.html">카인</a></li>
+                            <li class="inner-menu-item"><a href="Cadena.html">카데나</a></li>
+                            <li class="inner-menu-item"><a href="Angelic%20Buster.html">엔젤릭버스터</a></li>
+                        </ul>
+                    </li>
+                    <li class="outer-menu-item">
+                        <span class="menu-title">레프</span>
+                        <ul class="inner-menu">
+                            <li class="inner-menu-item"><a href="Adele.html">아델</a></li>
+                            <li class="inner-menu-item"><a href="Illium.html">일리움</a></li>
+                            <li class="inner-menu-item"><a href="Khali.html">칼리</a></li>
+                            <li class="inner-menu-item"><a href="Ark.html">아크</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="outer-menu-item">
+                        <span class="menu-title">아니마</span>
+                        <ul class="inner-menu">
+                            <li class="inner-menu-item"><a href="Lara.html">라라</a></li>
+                            <li class="inner-menu-item"><a href="Ho%20Young.html">호영</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="outer-menu-item">
+                        <span class="menu-title">초월자</span>
+                        <ul class="inner-menu">
+                            <li class="inner-menu-item"><a href="Zero.html">제로</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="outer-menu-item">
+                        <span class="menu-title">키네시스</span>
+                        <ul class="inner-menu">
+                            <li class="inner-menu-item"><a href="Kinesis.html">키네시스</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <!-- 본문 -->
+        <div id="main" data-role="slider" data-width="900" data-height="700">
+            <div class="container">
+                <a href="Hero.html">
+                    <div class="item">
+                        <img src="image/히어로.webp" alt="히어로">
+                        <h1>모험가 전사 히어로</h1>
+                    </div>
+                </a>
+                <a href="Paladin.html">
+                    <div class="item">
+                        <img src="image/팔라딘.webp" alt="팔라딘">
+                        <h1>모험가 전사 팔라딘</h1>
+                    </div>
+                </a>
+                <a href="Dark%20Knight.html">
+                    <div class="item">
+                        <img src="image/다크나이트.webp" alt="다크나이트">
+                        <h1>모험가 전사 다크나이트</h1>
+                    </div>
+                </a>
+                <a href="Arch%20Mage%20(Fire,%20Poison).html">
+                    <div class="item">
+                        <img src="image/아크메이지(불,독).webp" alt="아크메이지(불,독)">
+                        <h1>모험가 마법사 아크메이지(불,독)</h1>
+                    </div>
+                </a>
+                <a href="Arch%20Mage%20(Ice,%20Lightning).html">
+                    <div class="item">
+                        <img src="image/아크메이지(썬,콜).webp" alt="아크메이지(썬,콜)">
+                        <h1>모험가 마법사 아크메이지(썬,콜)</h1>
+                    </div>
+                </a>
+                <a href="Bishop.html">
+                    <div class="item">
+                        <img src="image/비숍.webp" alt="비숍">
+                        <h1>모험가 마법사 비숍</h1>
+                    </div>
+                </a>
+                <a href="Bowmaster.html">
+                    <div class="item">
+                        <img src="image/보우마스터.webp" alt="보우마스터">
+                        <h1>모험가 궁수 보우마스터</h1>
+                    </div>
+                </a>
+                <a href="Marksman.html">
+                    <div class="item">
+                        <img src="image/신궁.webp" alt="신궁">
+                        <h1>모험가 궁수 신궁</h1>
+                    </div>
+                </a>
+                <a href="Pathfinder.html">
+                    <div class="item">
+                        <img src="image/패스파인더.webp" alt="패스파인더">
+                        <h1>모험가 궁수 패스파인더</h1>
+                    </div>
+                </a>
+                <a href="Night%20Lord.html">
+                    <div class="item">
+                        <img src="image/Night%20Lord.webp" alt="나이트로드">
+                        <h1>모험가 도적 나이트로드</h1>
+                    </div>
+                </a>
+                <a href="Shadower.html">
+                    <div class="item">
+                        <img src="image/Shadower.webp" alt="섀도어">
+                        <h1>모험가 도적 섀도어</h1>
+                    </div>
+                </a>
+                <a href="Dual%20Blade.html">
+                    <div class="item">
+                        <img src="image/Dual%20Blade.webp" alt="듀얼블레이드">
+                        <h1>모험가 도적 듀얼블레이드</h1>
+                    </div>
+                </a>
+                <a href="Viper.html">
+                    <div class="item">
+                        <img src="image/바이퍼.webp" alt="바이퍼">
+                        <h1>모험가 해적 바이퍼</h1>
+                    </div>
+                </a>
+                <a href="Captain.html">
+                    <div class="item">
+                        <img src="image/캡틴.webp" alt="캡틴">
+                        <h1>모험가 해적 캡틴</h1>
+                    </div>
+                </a>
+                <a href="Cannon%20Shooter.html">
+                    <div class="item">
+                        <img src="image/캐논슈터.webp" alt="캐논슈터">
+                        <h1>모험가 해적 캐논슈터</h1>
+                    </div>
+                </a>
+                <a href="Soul%20Master.html">
+                    <div class="item">
+                        <img src="image/소울마스터.webp" alt="소울마스터">
+                        <h1>시그너스 기사단 전사 소울마스터</h1>
+                    </div>
+                </a>
+                <a href="Mihile.html">
+                    <div class="item">
+                        <img src="image/미하일.webp" alt="미하일">
+                        <h1>시그너스 기사단 전사 미하일</h1>
+                    </div>
+                </a>
+                <a href="Flame%20Wizard.html">
+                    <div class="item">
+                        <img src="image/플레임위자드.webp" alt="플레임위자드">
+                        <h1>시그너스 기사단 마법사 플레임위자드</h1>
+                    </div>
+                </a>
+                <a href="Wind%20Breaker.html">
+                    <div class="item">
+                        <img src="image/윈드브레이커.webp" alt="윈드브레이커">
+                        <h1>시그너스 기사단 궁수 윈드브레이커</h1>
+                    </div>
+                </a>
+                <a href="Night%20Walker.html">
+                    <div class="item">
+                        <img src="image/나이트워커.webp" alt="나이트워커">
+                        <h1>시그너스 기사단 도적 나이트워커</h1>
+                    </div>
+                </a>
+                <a href="Striker.html">
+                    <div class="item">
+                        <img src="image/스트라이커.webp" alt="스트라이커">
+                        <h1>시그너스 기사단 해적 스트라이커</h1>
+                    </div>
+                </a>
+                <a href="Aran.html">
+                    <div class="item">
+                        <img src="image/아란.webp" alt="아란">
+                        <h1>영웅 전사 아란</h1>
+                    </div>
+                </a>
+                <a href="Evan.html">
+                    <div class="item">
+                        <img src="image/에반.webp" alt="에반">
+                        <h1>영웅 마법사 에반</h1>
+                    </div>
+                </a>
+                <a href="Luminous.html">
+                    <div class="item">
+                        <img src="image/루미너스.webp"
+                            alt="루미너스">
+                        <h1>영웅 마법사 루미너스</h1>
+                    </div>
+                </a>
+                <a href="Mercedes.html">
+                    <div class="item">
+                        <img src="image/메르세데스.webp"
+                            alt="메르세데스">
+                        <h1>영웅 궁수 메르세데스</h1>
+                    </div>
+                </a>
+                <a href="Phantom.html">
+                    <div class="item">
+                        <img src="image/Phantom.webp" alt="팬텀">
+                        <h1>영웅 도적 팬텀</h1>
+                    </div>
+                </a>
+                <a href="Eunwol.html">
+                    <div class="item">
+                        <img src="image/은월.webp" alt="은월">
+                        <h1>영웅 해적 은월</h1>
+                    </div>
+                </a>
+                <a href="Blaster.html">
+                    <div class="item">
+                        <img src="image/Blaster.webp" alt="블래스터">
+                        <h1>레지스탕스 전사 블래스터</h1>
+                    </div>
+                </a>
+                <a href="Battle%20Mage.html">
+                    <div class="item">
+                        <img src="image/Battle%20Mage.webp" alt="배틀메이지">
+                        <h1>레지스탕스 마법사 배틀메이지</h1>
+                    </div>
+                </a>
+                <a href="Wild%20Hunter.html">
+                    <div class="item">
+                        <img src="image/와일드헌터.webp" alt="와일드헌터">
+                        <h1>레지스탕스 궁수 와일드헌터</h1>
+                    </div>
+                </a>
+                <a href="Mechanic.html">
+                    <div class="item">
+                        <img src="image/메카닉.webp" alt="메카닉">
+                        <h1>레지스탕스 해적 메카닉</h1>
+                    </div>
+                </a>
+                <a href="Xenon.html">
+                    <div class="item">
+                        <img src="image/제논.webp" alt="제논">
+                        <h1>레지스탕스 도적 & 해적 제논</h1>
+                    </div>
+                </a>
+                <a href="Demon%20Slayer.html">
+                    <div class="item">
+                        <img src="image/데몬슬레이어.webp" alt="데몬슬레이어">
+                        <h1>데몬슬레이어</h1>
+                    </div>
+                </a>
+                <a href="Demon%20Avenger.html">
+                    <div class="item">
+                        <img src="image/데몬어벤져.webp" alt="데몬어벤져">
+                        <h1>데몬어벤져</h1>
+                    </div>
+                </a>
+                <a href="Kaiser.html">
+                    <div class="item">
+                        <img src="image/카이저.webp" alt="카이저">
+                        <h1>노바 전사 카이저</h1>
+                    </div>
+                </a>
+                <a href="Kain.html">
+                    <div class="item">
+                        <img src="image/카인.webp" alt="카인">
+                        <h1>노바 궁수 카인</h1>
+                    </div>
+                </a>
+                <a href="Cadena.html">
+                    <div class="item">
+                        <img src="image/카데나.webp" alt="카데나">
+                        <h1>노바 도적 카데나</h1>
+                    </div>
+                </a>
+                <a href="Angelic%20Buster.html">
+                    <div class="item">
+                        <img src="image/엔젤릭버스터.webp" alt="엔젤릭버스터">
+                        <h1>노바 해적 엔젤릭버스터</h1>
+                    </div>
+                </a>
+                <a href="Adele.html">
+                    <div class="item">
+                        <img src="image/아델.webp" alt="아델">
+                        <h1>레프 전사 아델</h1>
+                    </div>
+                </a>
+                <a href="Illium.html">
+                    <div class="item">
+                        <img src="image/일리움.webp" alt="일리움">
+                        <h1>레프 마법사 일리움</h1>
+                    </div>
+                </a>
+                <a href="Khali.html">
+                    <div class="item">
+                        <img src="image/칼리.webp" alt="칼리">
+                        <h1>레프 도적 칼리</h1>
+                    </div>
+                </a>
+                <a href="Ark.html">
+                    <div class="item">
+                        <img src="image/아크.webp"
+                            alt="아크">
+                        <h1>레프 해적 아크</h1>
+                    </div>
+                </a>
+                <a href="Lara.html">
+                    <div class="item">
+                        <img src="image/라라.webp" alt="라라">
+                        <h1>아니마 마법사 라라</h1>
+                    </div>
+                </a>
+                <a href="Ho%20Young.html">
+                    <div class="item">
+                        <img src="image/호영.webp"
+                            alt="호영">
+                        <h1>아니마 도적 호영</h1>
+                    </div>
+                </a>
+                <a href="Zero.html">
+                    <div class="item">
+                        <img src="image/제로.png" alt="제로">
+                        <h1>초월자 전사 제로</h1>
+                    </div>
+                </a>
+                <a href="Kinesis.html">
+                    <div class="item">
+                        <img src="image/키네시스.webp" alt="키네시스">
+                        <h1>키네시스</h1>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+    </div>
+    <!-- 푸터 -->
+    <footer id="main-footer">
+        <span>ⓒ These photographs and fonts are protected by NEXON Korea Corporation with all rights reserved.</span>
+    </footer>
+</body>
+
+</html>

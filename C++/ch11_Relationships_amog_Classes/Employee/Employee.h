@@ -2,7 +2,7 @@
 #define EMPLOYEE_H
 
 #include <string>
-using namespace std; // string class°¡ std¶ó´Â namespace¿¡ Æ÷ÇÔµÇ¹Ç·Î
+using namespace std; // string classê°€ stdë¼ëŠ” namespaceì— í¬í•¨ë˜ë¯€ë¡œ
 class Employee {
 protected:
 	string name; // std::string name;

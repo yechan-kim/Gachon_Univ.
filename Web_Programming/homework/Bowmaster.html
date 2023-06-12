@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>보우마스터 공략</title>
+    <link rel="stylesheet" href="Style.css"> <!-- 외부 스타일 시트 -->
+    <script src="https://code.jquery.com/jquery-3.7.0.js"></script>
+    <script src="pulldown%20menu.js"></script>
+</head>
+
+<body>
+    <!-- 전체를 감싸는 테그 -->
+    <div id="page-wrapper">
+        <!-- 헤더 -->
+        <header id="main-header">
+            <hgroup>
+                <h1 class="master-title"><a href="Index.html"><img src="image/Logo.png" alt="메이플스토리"></a>
+                </h1>
+                <h2 class="master-description"><a href="Index.html">직업별 공략</a></h2>
+            </hgroup>
+        </header>
+        <!-- 네비게이션 -->
+        <nav id="main-navigation">
+            <div class="pull-left">
+                <ul class="outer-menu">
+
+                    <li class="outer-menu-item">
+                        <span class="menu-title">모험가</span>
+                        <ul class="inner-menu">
+                            <li class="inner-menu-item"><a href="Hero.html">히어로</a></li>
+                            <li class="inner-menu-item"><a href="Paladin.html">팔라딘</a></li>
+                            <li class="inner-menu-item"><a href="Dark%20Knight.html">다크나이트</a></li>
+                            <li class="inner-menu-item"><a href="Arch%20Mage%20(Fire,%20Poison).html">아크메이지(불,독)</a></li>
+                            <li class="inner-menu-item"><a href="Arch%20Mage%20(Ice,%20Lightning).html">아크메이지(썬,콜)</a></li>
+                            <li class="inner-menu-item"><a href="Bishop.html">비숍</a></li>
+                            <li class="inner-menu-item"><a href="Bowmaster.html">보우마스터</a></li>
+                            <li class="inner-menu-item"><a href="Marksman.html">신궁</a></li>
+                            <li class="inner-menu-item"><a href="Pathfinder.html">패스파인더</a></li>
+                            <li class="inner-menu-item"><a href="Night%20Lord.html">나이트로드</a></li>
+                            <li class="inner-menu-item"><a href="Shadower.html">섀도어</a></li>
+                            <li class="inner-menu-item"><a href="Dual%20Blade.html">듀얼블레이드</a></li>
+                            <li class="inner-menu-item"><a href="Viper.html">바이퍼</a></li>
+                            <li class="inner-menu-item"><a href="Captain.html">캡틴</a></li>
+                            <li class="inner-menu-item"><a href="Cannon%20Shooter.html">캐논슈터</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="outer-menu-item">
+                        <span class="menu-title">시그너스 기사단</span>
+                        <ul class="inner-menu">
+                            <li class="inner-menu-item"><a href="Soul%20Master.html">소울마스터</a></li>
+                            <li class="inner-menu-item"><a href="Mihile.html">미하일</a></li>
+                            <li class="inner-menu-item"><a href="Flame%20Wizard.html">플레임위자드</a></li>
+                            <li class="inner-menu-item"><a href="Wind%20Breaker.html">윈드브레이커</a></li>
+                            <li class="inner-menu-item"><a href="Night%20Walker.html">나이트워커</a></li>
+                            <li class="inner-menu-item"><a href="Striker.html">스트라이커</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="outer-menu-item">
+                        <span class="menu-title">영웅</span>
+                        <ul class="inner-menu">
+                            <li class="inner-menu-item"><a href="Aran.html">아란</a></li>
+                            <li class="inner-menu-item"><a href="Evan.html">에반</a></li>
+                            <li class="inner-menu-item"><a href="Luminous.html">루미너스</a></li>
+                            <li class="inner-menu-item"><a href="Mercedes.html">메르세데스</a></li>
+                            <li class="inner-menu-item"><a href="Phantom.html">팬텀</a></li>
+                            <li class="inner-menu-item"><a href="Eunwol.html">은월</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="outer-menu-item">
+                        <span class="menu-title">레지스탕스</span>
+                        <ul class="inner-menu">
+                            <li class="inner-menu-item"><a href="Blaster.html">블래스터</a></li>
+                            <li class="inner-menu-item"><a href="Battle%20Mage.html">배틀메이지</a></li>
+                            <li class="inner-menu-item"><a href="Wild%20Hunter.html">와일드헌터</a></li>
+                            <li class="inner-menu-item"><a href="Mechanic.html">메카닉</a></li>
+                            <li class="inner-menu-item"><a href="Xenon.html">제논</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="outer-menu-item">
+                        <span class="menu-title">데몬</span>
+                        <ul class="inner-menu">
+                            <li class="inner-menu-item"><a href="Demon%20Slayer.html">데몬슬레이어</a></li>
+                            <li class="inner-menu-item"><a href="Demon%20Avenger.html">데몬어벤져</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="outer-menu-item">
+                        <span class="menu-title">노바</span>
+                        <ul class="inner-menu">
+                            <li class="inner-menu-item"><a href="Kaiser.html">카이저</a></li>
+                            <li class="inner-menu-item"><a href="Kain.html">카인</a></li>
+                            <li class="inner-menu-item"><a href="Cadena.html">카데나</a></li>
+                            <li class="inner-menu-item"><a href="Angelic%20Buster.html">엔젤릭버스터</a></li>
+                        </ul>
+                    </li>
+                    <li class="outer-menu-item">
+                        <span class="menu-title">레프</span>
+                        <ul class="inner-menu">
+                            <li class="inner-menu-item"><a href="Adele.html">아델</a></li>
+                            <li class="inner-menu-item"><a href="Illium.html">일리움</a></li>
+                            <li class="inner-menu-item"><a href="Khali.html">칼리</a></li>
+                            <li class="inner-menu-item"><a href="Ark.html">아크</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="outer-menu-item">
+                        <span class="menu-title">아니마</span>
+                        <ul class="inner-menu">
+                            <li class="inner-menu-item"><a href="Lara.html">라라</a></li>
+                            <li class="inner-menu-item"><a href="Ho%20Young.html">호영</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="outer-menu-item">
+                        <span class="menu-title">초월자</span>
+                        <ul class="inner-menu">
+                            <li class="inner-menu-item"><a href="Zero.html">제로</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="outer-menu-item">
+                        <span class="menu-title">키네시스</span>
+                        <ul class="inner-menu">
+                            <li class="inner-menu-item"><a href="Kinesis.html">키네시스</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <!-- 본문 -->
+        <div id="content">
+            <!-- 본문 좌측 영역 -->
+            <section id="main-section">
+                <article>
+                    <div class="article-header">
+                        <h1 class="article-title">보우마스터(Bowmaster)</h1>
+                    </div>
+                    <div class="article-body">
+                        <img id="c_image" src="image/Bowmaster.webp" alt="보우마스터">
+                        <h1 id="title">장점</h1>
+                        <p>
+                            <strong>높은 크리티컬 확률</strong><br>
+                            리티컬 샷, 샤프 아이즈, 링크 스킬에서 받아오는 크리티컬 확률만 무려 64%나 된다. 기본 크리티컬 확률 5%까지 합치면 69%. 이는 1위인 패스파인더 79%,
+                            공동 2위인 캡틴, 비숍 75%를 잇는 신궁과 공동 3위이다. 나머지는 다른 링크 스킬이나 유니온으로 쉽게 보충할 수 있다. 설령 확률이 초과된다 해도 궁수 공통
+                            5차 스킬인 크리티컬 리인포스가 있으므로 손해는 아니다.
+                            <br><br>
+                            <strong>강력한 흡혈 효과</strong><br>
+                            보우마스터의 최대 장점. 속사기 직업에 걸맞게 타수도 잘 나오는데 여기에 맞물려 퀴버 카트리지의 흡혈 화살로 인해 생존력이 높다. 평딜, 극딜 할 것 없이 상시 적용
+                            받을 수 있는 유틸이라 자잘한 도트딜에 큰 효율을 보인다. 또한 타 직업과 다르게 무한 흡혈이 가능하며, 흡혈량 역시 속사기 특성상 전직업 탑티어에 속한다. 추가타가
+                            유난히 많은 보우마스터의 딜링 매커니즘 역시 흡혈의 효율을 더욱 끌어올리는데, 보우마스터 본체가 직접 타격을 하지 못하는 상황에서도 자동으로 발동되는 추가타 스킬들이
+                            흡혈을 해 생존하는 모습을 보여준다. 상위 보스로 갈수록 스턴 이후 들어오는 각종 피해들로 인해 데카가 날라가는 상황이 자주 일어나기 때문에 보우마스터의 매우
+                            안정적인 흡혈은 가치가 높은 생존 유틸이다. 존 밖에서 포션 회복량이 줄어드는 매그너스를 제외하고 카루타 이하 보스전에서는 포션 제한이 없어 큰 의미가 없지만, 그
+                            위의 보스로 올라가면 포션 제한이 걸려있거나 포션을 사용할 수 없는 상황이 흔하다. 이럴 때 보우마스터의 흡혈이 빛을 발하며 타 직업이 포션 제한시간을 넘기 위해
+                            죽어라 컨트롤을 할 때 보우마스터는 편안하게 안정적인 딜링 포지션을 가져갈 수 있다. 특히 이 흡혈 효과로 매그너스, 듄켈, 검은 마법사 4페이즈에서는 어마어마한
+                            생존력을 자랑한다.
+                            <br><br>
+                            <strong>준수한 기동성</strong><br>
+                            윗점과 더불어 리트리트 샷의 체공 및 응용으로 유사 트리플 점프를 지니고 있다. 리트리트샷은 슈퍼 스탠스 효과를 지닌다. 덕분에 상시 체공이 가능하며, 높은 윗점과
+                            리트리트 샷의 연계로 루시드 1페 소환수, 윌 1페 안경, 듄켈 검격 등 상위보스서 쉬운 파훼가 가능하다. 여기에 퀴버 플로우의 추가로 포탈 이동까지 가능하게 되어
+                            기동성 유틸이 더 강화되었다.
+                            <br><br>
+                            <strong>준수한 딜링능력</strong><br>
+                            보우마스터의 딜사이클은 120초로, 주기마다 크리티컬 리인포스를 걸고 딜링이 가능하며 시드링 스왑에도 용이하다. 또한 5차 스킬 모두 액티브(버프)이기 때문에 모든
+                            스킬이 트리거 스킬인 폭풍의 시에 따라서 발동되는 구조이다. 덕분에 버프 다 켜고 플래터 깔고 폭시만 누르고 있어도 완성된다. 사출기인 퀴버풀버스트, 마법화살,
+                            잔영의시, 플래시 미라주 모두 유도되는 성능이 뛰어나고 타겟이 텔레포트로 사라져도 현 위치에 체공후 유도되기에 딜 효율도 나쁘지 않은 편이다. 평딜도 플래터를
+                            설치하고 폭풍의 시만 쓰면 되니 간편하다. 리마스터 이후 DPM 또한 상위권에 위치하고 있다.
+                            <br><br>
+                            <strong>유동성 있고 좋은 사냥 능력</strong><br>
+                            리마스터 전의 보우마스터는 레인 너프 이후로 언카 사냥에 제약이 많았지만, 리마스터 이후 언카의 후딜이 줄어서 저스펙에서도 준수한 사냥기가 되었다. 고스펙의 경우
+                            마법 화살을 쏟아내는 폭시 사냥도 가능하다. 여기에 퀴버 플로우의 추가로 포탈을 깔 수 있게 되어서 호영처럼 자신만의 빌드를 짤 수 있게 되었으며 플래시 미라주,
+                            마법화살 등 사출기도 챙겼다. 즉 사출기 위주의 사냥도 가능하고 주력기 위주의 사냥도 가능한 데다가 맵의 선택도 넓어져 보우마스터의 사냥은 피로도도 낮고 마릿수도
+                            준수한데 효율도 챙길 수 있다. 리마스터 전과 비교하면 격세지감 수준.
+                            <br><br>
+                            <strong>보스전에서의 쉬운 조작</strong><br>
+                            상술했듯 보우마스터의 딜링은 폭풍의 시를 트리거로 하는 수많은 사출기로 이루어져 있기 때문에 타 직업 대비 보스전에서 신경써야 하는 부분이 압도적으로 적다. 1.
+                            게이지 및 스택이 없고 2. 보스전 딜링기가 나눠져 있지 않으며 3. 보스에게 근접할 필요가 없고 4. 수시로 갱신해야 할 디버프기도 없으며 5. 메용2를
+                            제외한 모든 극딜버프의 재사용 대기시간이 동일하다. 즉 거리를 벌리고 폭풍의 시를 꾹 누르면서 보스 패턴을 피하면 끝이다. 추가로 60초마다 설치 플래터를 갱신하는
+                            정도면 충분하다.
+                            물론 세부적인 컨트롤로 들어가면 퀴버 플로우 설치, 흡혈 화살 스위칭, 실루엣 미라주 온오프, 리트리트 샷을 활용한 제자리 더블점프 같은 생존에 도움이 되는 기술들이
+                            있지만 이를 감안하고서라도 보우마스터의 보스전 조작 난이도는 전 직업을 통틀어 가장 쉽고 간편한 축에 속한다.
+                        </p>
+                        <br>
+                        <br>
+                        <h1 id="title">단점</h1>
+                        <p>
+                            <strong>수동적인 유틸리티</strong><br>
+                            제네시스 무기의 아이온 빼면 아예 무적이 없다. 그나마 무적에 준하는 역할을 맡은 실루엣 미라주는 최대 HP의 50%에 달하는 공격을 받으면 무조건 소모되는데, 막상
+                            필요할 때 쓰지 못하는 온오프 스킬이라 패턴 대처에 취약하다. 게다가 무적이 아니라서 얻어맞는 것 자체가 위험한 패턴에는 대처할 도리가 없다.
+                            <br><br>
+                            <strong>낮은 투자 효율</strong><br>
+                            데미지 및 보공이 낮아 보공의 효율이 높은 대신 기본 공격력%와 방어력 무시%가 높아 이 둘의 투자 효율이 낮다. 보공 달린 무기가 비싼 점은 둘째로 치더라도,
+                            무기류에서 에디셔널 잠재능력은 공격력 n%를 제외하면 사실상 잡옵이기에 고스펙으로 갈수록 효율이 떨어지는 문제가 존재한다. 궁수 특유의 높은 크리티컬 데미지 수치와
+                            맞물려 보마의 투자 효율을 감소시키는 요소이다.
+                        </p>
+                        <br>
+                        <br>
+                        <h1 id="title">사냥 운용</h1>
+                        <p>
+                            다수 공격기인 언카운터블 애로우를 사용하는 빌드와 속사기인 폭풍의 시를 사용하는 빌드로 나뉜다.
+                            <br><br>
+                            언카운터블 애로우 자체는 범위가 준수한 편이나 모험가 궁수 특유의 낮은 더블점프 때문에 몬스터를 흘리는 상황이 가끔씩 발생한다. 따라서 더블점프+주력기 사냥을 하는
+                            다른 직업들처럼 무지성으로 사냥하기엔 무언가 부자연스럽다는 느낌이 들 수 있다. 그래도 리마스터 이후 공속과 범위 모두 상향을 받아 이것만으로도 충분한 사냥을 할 수
+                            있다.
+                            <br><br>
+                            폭풍의 시는 사용중 더블점프가 불가능하기 때문에 주로 하향점프 사냥이 가능한 맵에서 사용하거나 두세발씩 끊어 쏘며 더블점프를 하는 방법으로 사용하게 된다. 물론
+                            속사기 특성상 폭시의 발당 퍼뎀은 극히 낮으므로 원활한 사냥을 위해서는 어느 정도 스펙을 요구하게 되며 잔영의 시, 마법화살, 플래시 미라주, 가이디드 애로우 등
+                            다양한 추가타 스킬들의 대미지를 끌어 올려주어야 효율이 좋다.
+                            <br><br>
+                            언카블 사냥이든 폭시 사냥이든 5차 스킬을 돌려가며 수많은 추가타로 사냥하는 것이 보우마스터의 사냥법이다. 주로 애로우 레인+잔영의 시, 퀴버 풀버스트+이볼브를 묶어
+                            이 둘을 돌려가며 사용한다. 스킬코어 만렙 기준 애로우 레인이 70초, 퀴버 풀버스트가 40초 지속이므로 메르세데스의 유니온 효과와 서버렉을 이용하여 가동률도
+                            100% 가까이 유지할 수 있다. 애로우 레인에는 대미지 증가, 퀴버 풀버스트에는 공격력 증가 버프가 적용되므로 이를 돌려가며 사용함으로써 원킬컷도 낮추는 효과가
+                            있다.
+                            <br><br>
+                            지형의 조건이 맞는다면 특정 사냥터에서는 제자리 사냥도 가능하다. 이 경우 애로우 플레터+사출기가 중심이 된다. 보통 맵의 상단에 애로우 플레터를 설치하고 설치
+                            플레터의 경로에 있지 않은 영역은 플레이어가 직접 애로우 플레터를 시전한다. 폭시를 사용하는 경우도 있으나, 애로우 플레터는 곡사인데다 사거리가 사실상 무한이기
+                            때문에 더 넓은 영역을 커버하기 위해 애로우 플레터를 사용한다. 그 외 몬스터는 각종 사출기가 쓸어담고, 사각지대에는 에르다 파운틴으로 커버하기도 한다. 애로우
+                            플레터 특유의 공간 장악력을 십분 활용하는 운용으로, 광역기가 주가 아님에도 제자리 사냥을 하는 독특한 사냥법이다. 5차 사출기가 주력 사냥기인 언카블보다 강하기
+                            때문에 세르니움 이후 다른 사출기 직업들이 사출기를 사실상 봉인하는 와중에도 사출기를 이용한 사냥이 가능하다는 장점이 있다. 다만 특정 영역을 확실하게 공격하는
+                            광역기 위주의 사냥이 아니다보니 흘리는 몹이 비교적 있는편이며 그로 인해 마리수에서 손해를 본다. 플레터 역시 속사류이기 때문에 발당 퍼뎀이 높지 않고 관통이
+                            되지 않기에 스펙이 뒷받침되지 않으면 플레터 경로에 있는 몬스터들은 젠컷이 되지 않는다.
+                            <br><br>
+                            보우마스터는 가이디드 애로우의 덕을 많이 보는데, 가이디드 애로우가 애로우 레인의 트리거 역할을 해주기 때문이다. 애로우 플레터가 애로우 레인을 발생시키지 않는 대신
+                            가이디드 애로우에는 애로우 레인이 발동되므로 애로우 플레터가 가이디드 애로우를 유도시키고, 유도된 가이디드 애로우가 애로우 레인을 유도시켜 결과적으로 애로우 플레터가
+                            닿는 영역에는 애로우 레인이 발생하게 된다. 폭시 사냥 스펙까지 올라가면 가이디드 애로우 자체가 잡는 몬스터 수도 유의미하게 늘어나기 때문에 사냥에서는 필수로
+                            채용한다.
+                            <br><br>
+                            순간이동형 포탈인 퀴버 플로우는 자유롭게 설치, 이동이 가능하기 때문에 사냥 빌드를 짜는데 있어 자유도를 크게 올려준다.
+                        </p>
+                        <br>
+                        <br>
+                        <h1 id="title">보스전 운용</h1>
+                        <p>
+                            폭풍의 시 카이팅을 중심으로, 위험한 패턴을 고도의 컨트롤로 극복하며 꾸준히 화력을 욱여넣는 방식으로 운영한다. 흡혈, 슈퍼 스탠스, 순간이동, 받는 피해 감소 등
+                            유용한 보조 스킬들은 많지만, 해방된 제네시스 무기 외의 자체 무적이 없기 때문에 안정성은 다소 떨어질 수 있다.
+                        </p>
+                        <br>
+                        <br>
+                        <h1 id="title">어빌리티</h1>
+                        <p>
+                            <strong>보스 몬스터 공격 시 데미지 증가</strong><br>
+                            대부분의 직업에 유효한 무난한 어빌리티. 보우마스터는 어빌리티 선택이 자유롭고 또 기본 데미지%와 보스 데미지%가 낮은 편이라 효율이 높아 이 어빌리티를 선택한다.
+                            <br><br>
+                            <strong>크리티컬 확률 증가</strong><br>
+                            크리티컬 확률이 부족하진 않지만 궁수 공용 5차 스킬인 크리티컬 리인포스의 효과를 받기 때문에 딜 상승에 크게 기여한다. 하지만 첫째 줄은 보공 옵션을 사용하므로
+                            2~3번째 줄에 뽑는다. 그래도 크확의 효율은 아무래도 다른 직업에 비해 낮고, 무엇보다 뽑기가 워낙 힘들어서 반드시 뽑아야 하는 것은 아니다.
+                            <br><br>
+                            <strong>상태 이상에 걸린 대상 공격 시 데미지 증가</strong><br>
+                            상태 이상 스킬을 보유한 직업이나 모험가 법사 링크를 적용하면 사실상 데미지 영구 증가나 다름 없다. 보우마스터 역시 상태 이상을 거는 스킬을 보유하고 있다. 단,
+                            첫째 줄에 뽑아도 10% 증가가 최대기 때문에 보공에 밀린다. 따라서 2~3번째 줄에 뽑는다.
+                            <br><br>
+                            <strong>아이템 드롭률 증가 or 메소 획득량 증가</strong><br>
+                            둘 다 무난하고 사냥 시 메소를 버는데 도움을 주는 옵션이다. 사냥이 매우 좋은 직업은 아니기 때문에 2~3번째 줄에 뽑는다.
+                        </p>
+                        <br>
+                        <br>
+                        <h1 id="title">코어강화</h1>
+                        <p>
+                            <strong>1순위</strong><br>
+                            폭풍의 시, 퀴버 카트리지, 애로우 플래터/플레시 미라주
+                            <br><br>
+                            <strong>2순위</strong><br>
+                            언카운터블 애로우, 파이널 어택 : 활, 피닉스, 윈드 오브 프레이
+                        </p>
+                    </div>
+                </article>
+            </section>
+
+            <!-- 본문 우측 영역 -->
+            <aside id="main-aside">
+                <div class="aside-list">
+                    <h3>모험가</h3>
+                    <ul>
+                        <li><a href="Hero.html">히어로</a></li>
+                        <li><a href="Paladin.html">팔라딘</a></li>
+                        <li><a href="Dark%20Knight.html">다크나이트</a></li>
+                        <li><a href="Arch%20Mage%20(Fire,%20Poison).html">아크메이지(불,독)</a></li>
+                        <li><a href="Arch%20Mage%20(Ice,%20Lightning).html">아크메이지(썬,콜)</a></li>
+                        <li><a href="Bishop.html">비숍</a></li>
+                        <li><a href="Bowmaster.html">보우마스터</a></li>
+                        <li><a href="Marksman.html">신궁</a></li>
+                        <li><a href="Pathfinder.html">패스파인더</a></li>
+                        <li><a href="Night%20Lord.html">나이트로드</a></li>
+                        <li><a href="Shadower.html">섀도어</a></li>
+                        <li><a href="Dual%20Blade.html">듀얼블레이드</a></li>
+                        <li><a href="Viper.html">바이퍼</a></li>
+                        <li><a href="Captain.html">캡틴</a></li>
+                        <li><a href="Cannon%20Shooter.html">캐논슈터</a></li>
+                    </ul>
+                </div>
+            </aside>
+        </div>
+    </div>
+    <!-- 푸터 -->
+    <footer id="main-footer">
+        <span>ⓒ These photographs and fonts are protected by NEXON Korea Corporation with all rights reserved.</span>
+    </footer>
+</body>
+
+</html>

@@ -7,7 +7,7 @@ using namespace std;
 class Permanent : public Employee
 {
 protected:
-	int salary; // ¿ù±Þ±â¹Ý
+	int salary; // ì›”ê¸‰ê¸°ë°˜
 public:
 	Permanent(string name, int sal);
 	Permanent(const Permanent& p);

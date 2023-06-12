@@ -32,16 +32,16 @@ int main()
 	cout << t1.GetName() << endl;
 	cout << t1.GetPay() << endl;
 
-	cout << "°´Ã¼°£ Çüº¯È¯: " << endl;
+	cout << "ê°ì²´ê°„ í˜•ë³€í™˜: " << endl;
 */
-	Employee* C[10]; // °´Ã¼Æ÷ÀÎÅÍ ¹è¿­
+	Employee* C[10]; // ê°ì²´í¬ì¸í„° ë°°ì—´
 	char choice;
 	int index=0;
 
 	while(true)
 	{
 		ShowMenu();
-		cout << " ¸Þ´º¸¦ ¼±ÅÃÇÏ¼¼¿ä : ";
+		cout << " ë©”ë‰´ë¥¼ ì„ íƒí•˜ì„¸ìš” : ";
 		cin >> choice;
 		cout << endl;
 
@@ -63,7 +63,7 @@ int main()
 				MemRelease(C, index);
 				return 0;
 			default:
-				cout << "Àß¸ø ¼±ÅÃ ÇÏ¼Ì½À´Ï´Ù." << endl;
+				cout << "ìž˜ëª» ì„ íƒ í•˜ì…¨ìŠµë‹ˆë‹¤." << endl;
 				break;
 		}
 	}
@@ -73,8 +73,8 @@ int main()
 void ShowList(Employee** C, int index) {
 	for(int i=0; i<index; i++)
 	{
-		cout << "ÀÌ¸§ : " << C[i]->GetName() << endl;
-		cout << "¿ù±Þ : " << C[i]->GetPay() << "¿ø" << endl << endl;
+		cout << "ì´ë¦„ : " << C[i]->GetName() << endl;
+		cout << "ì›”ê¸‰ : " << C[i]->GetPay() << "ì›" << endl << endl;
 	}
 }
 void MemRelease(Employee** C, int index) {
@@ -84,21 +84,21 @@ void MemRelease(Employee** C, int index) {
 	}
 }
 void ShowMenu() {
-	cout << "========== ¸Þ´º ==========" << endl;
-	cout << " 1. Á÷¿ø ÀÔ·Â [Permanent]" << endl;
-	cout << " 2. Á÷¿ø ÀÔ·Â [Temporary]" << endl;
-	cout << " 3. Á÷¿ø ÀÔ·Â [SalesPerson]" << endl;
-	cout << " 4. ¸ðµç Á÷¿ø ±Þ¿© º¸±â" << endl;
-	cout << " 5. Á¾ ·á" << endl;
+	cout << "========== ë©”ë‰´ ==========" << endl;
+	cout << " 1. ì§ì› ìž…ë ¥ [Permanent]" << endl;
+	cout << " 2. ì§ì› ìž…ë ¥ [Temporary]" << endl;
+	cout << " 3. ì§ì› ìž…ë ¥ [SalesPerson]" << endl;
+	cout << " 4. ëª¨ë“  ì§ì› ê¸‰ì—¬ ë³´ê¸°" << endl;
+	cout << " 5. ì¢… ë£Œ" << endl;
 	cout << "--------------------------" << endl;
 }
 void AddPermanent(Employee** C, int& index) {
 	int sal;
     char name[20];
 
-	cout << "ÀÌ¸§ : ";
+	cout << "ì´ë¦„ : ";
 	cin >> name;
-	cout << "¿ù±Þ : ";
+	cout << "ì›”ê¸‰ : ";
 	cin >> sal;
 
 	C[index++] = new Permanent(name, sal);
@@ -107,11 +107,11 @@ void AddTemporary(Employee** C, int& index) {
 	int time, hourpay;
 	char name[20];
 
-	cout << "ÀÌ¸§ : ";
+	cout << "ì´ë¦„ : ";
 	cin >> name;
-	cout << "½Ã°£ : ";
+	cout << "ì‹œê°„ : ";
 	cin >> time;
-	cout << "½Ã±Þ : ";
+	cout << "ì‹œê¸‰ : ";
 	cin >> hourpay;
 
 	C[index++] = new Temporary(name, time, hourpay);
@@ -121,12 +121,11 @@ void AddSalesPerson(Employee** C, int& index) {
 	int rev;
     string name;
 
-	cout << "ÀÌ¸§ : ";
+	cout << "ì´ë¦„ : ";
 	cin >> name;
-	cout << "±âº»±Þ : ";
+	cout << "ê¸°ë³¸ê¸‰ : ";
 	cin >> bpay;
-	cout << "¸ÅÃâ¾× : ";
+	cout << "ë§¤ì¶œì•¡ : ";
 	cin >> rev;
 	C[index++] = new SalesPerson(name, bpay, rev);
 }
-

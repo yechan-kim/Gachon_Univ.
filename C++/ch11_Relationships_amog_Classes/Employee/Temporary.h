@@ -7,7 +7,7 @@ using namespace std;
 class Temporary : public Employee
 {
 	int hours;
-	int hourlyWage; // �ñޱ��
+	int hourlyWage; // 시급기반
 public:
 	Temporary(string _name, int _hours, int _hourlyWage);
 	Temporary(const Temporary& t);

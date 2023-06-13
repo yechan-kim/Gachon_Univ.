@@ -156,6 +156,4 @@ void CleanUp(Employee **E, int &CurrentIndex) // 메모리 해제 함수
         delete E[i];
         E[i] = nullptr;
     }
-    delete[] E; // E 배열의 메모리 해제
-    E = NULL;
 }

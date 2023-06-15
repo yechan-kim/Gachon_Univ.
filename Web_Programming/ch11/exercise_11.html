@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+    <div class="drawer">
+        <h1>Logo</h1>
+        <div class="drawer-menu">
+            <p>Esse pariatur</p>
+        </div>
+    </div>
+    <div class="content">
+        <h1>Velit ipsum</h1>
+        <p>Sunt nostrud consequat</p>
+        <p>Aute do et ullamco</p>
+        <p>Deserunt irure Lorem</p>
+        <p>Velit ipsum ullamco et</p>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.7.0.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('.drawer').click(function () {
+                $('.drawer-menu').slideToggle();
+            });
+        });
+    </script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        p {
+            margin: 10px 0;
+        }
+
+        .drawer {
+            position: fixed;
+            width: 100%;
+            text-align: center;
+            color: white;
+            background-color: red;
+        }
+
+        .drawer h1 {
+            height: 50px;
+            line-height: 50px;
+        }
+
+        .drawer-menu {
+            display: none;
+        }
+
+        .content {
+            padding: 10px;
+            padding-top: 60px;
+        }
+    </style>
+</body>
+
+</html>

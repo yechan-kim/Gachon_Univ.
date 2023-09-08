@@ -10,7 +10,7 @@ typedef struct
     int key;
     int index;
 } itable;
-itable index_list[INDEX_SIZE] = {{3, 0}, {15, 3}, {67, 6}};
+itable index_list[INDEX_SIZE] = {{3, 0}, {15, 2}, {67, 6}};
 
 int seq_search(int key, int low, int high)
 {

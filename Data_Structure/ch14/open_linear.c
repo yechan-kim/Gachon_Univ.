@@ -1,8 +1,6 @@
 #include <stdio.h>
 #include<stdlib.h> 
 #include <string.h>
-#define _CRT_SECURE_NO_WARNINGS
-#pragma warning(disable:4996)
 
 #define KEY_SIZE	10	// 탐색키의 최대길이  
 #define TABLE_SIZE	13	// 해싱 테이블의 크기=소수 

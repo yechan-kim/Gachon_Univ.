@@ -1,3 +1,5 @@
+package org;
+
 public class HelloWorld {
     String name;
     String snum;

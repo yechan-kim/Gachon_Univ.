@@ -5,7 +5,6 @@ import java.util.List;
 public class Menu {
     private String name;
     private int price;
-
     private List<Option> options; // List<parameter> => type parameter: 리스트의 타입을 지정
 
     public String getName() {

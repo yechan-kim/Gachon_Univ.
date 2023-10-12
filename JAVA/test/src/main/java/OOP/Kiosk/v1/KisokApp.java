@@ -1,13 +1,12 @@
 package OOP.Kiosk.v1;
 
-import java.util.ArrayList;
+import java.util.ArrayList; // API or Library
 import java.util.List;
 import java.util.Scanner;
 
 public class KisokApp {
-    boolean VALID = false;
-    protected List<Menu> menus = new ArrayList<>();
-    Scanner scan = new Scanner(System.in);
+    protected List<Menu> menus = new ArrayList<>(); // protected => 상속받은 클래스에서만 접근 가능, ArryList => 동적 배열(구현된 클래스), List => 인터페이스 타입(규격을 제공)
+    Scanner scan = new Scanner(System.in); // Scanner => InputStream으로부터 데이터를 읽어오는 클래스
     Order order = new Order();
 
     public KisokApp() {
@@ -64,13 +63,24 @@ public class KisokApp {
             order.getSelOptions().add(menu.getOptions().get(Integer.valueOf(op)));
     }
 
-    protected void checkOrder() { //주문 내역 출력 선택메뉴, 옵션, 총액 확인
-        System.out.println("주문하신 메뉴는 " + order.getMenu().getName() + "입니다.");
-        System.out.println("선택하신 옵션은 " + order.getSelOptions() + "입니다.");
-        int optionPrice = 0;
+    //    protected void checkOrder() { //주문 내역 출력 선택메뉴, 옵션, 총액 확인
+//        System.out.println("주문하신 메뉴는 " + order.getMenu().getName() + "입니다.");
+//        System.out.println("선택하신 옵션은 " + order.getSelOptions() + "입니다.");
+//        int optionPrice = 0;
+//        for (Option op : order.getSelOptions())
+//            optionPrice += op.getPrice();
+//        System.out.println("총액은 " + (order.getMenu().getPrice() * order.getSelOptions().size() + optionPrice) + "원 입니다.");
+//    }
+    private void checkOrder() {
+        System.out.println("## " + order.getMenu() + " 주문 내역 확인 ##");
+        System.out.println("====================");
+        order.getSelOptions().forEach(System.out::println);
+
+        int total = order.getMenu().getPrice();
         for (Option op : order.getSelOptions())
-            optionPrice += op.getPrice();
-        System.out.println("총액은 " + (order.getMenu().getPrice() * order.getSelOptions().size() + optionPrice) + "원 입니다.");
+            total += op.getPrice();
+
+        System.out.println("## 결제 금액: " + total + "원 ##");
     }
 
     public static void main(String[] args) {

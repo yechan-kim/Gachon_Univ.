@@ -4,12 +4,12 @@ import java.util.ArrayList; // API or Library
 import java.util.List;
 import java.util.Scanner;
 
-public class KisokApp {
+public class KioskApp {
     protected List<Menu> menus = new ArrayList<>(); // protected => 상속받은 클래스에서만 접근 가능, ArryList => 동적 배열(구현된 클래스), List => 인터페이스 타입(규격을 제공)
     Scanner scan = new Scanner(System.in); // Scanner => InputStream으로부터 데이터를 읽어오는 클래스
     Order order = new Order();
 
-    public KisokApp() {
+    public KioskApp() {
         loadData();
         showMenu();
 
@@ -84,6 +84,6 @@ public class KisokApp {
     }
 
     public static void main(String[] args) {
-        KisokApp app = new KisokApp();
+        KioskApp app = new KioskApp();
     }
 }

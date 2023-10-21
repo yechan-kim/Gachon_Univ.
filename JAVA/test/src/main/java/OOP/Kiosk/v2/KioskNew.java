@@ -14,7 +14,7 @@ import java.util.List;
 public class KioskNew extends KioskApp {
 
     public KioskNew() {
-        super();
+        super(); //main에서 생성될때 부모클래스를 생성자를 호출, 오버라이딩된 메서드가 있다면 자식클래스의 메소드의 메서드가 호출
     }
 
     @Override

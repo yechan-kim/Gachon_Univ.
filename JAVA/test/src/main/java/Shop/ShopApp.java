@@ -19,8 +19,10 @@ public class ShopApp {
     // 상품 목록을 출력하고 사용자 입력에 따라 동작하는 메인 메서드
     public void start() {
         while (true) {
-            for (Map.Entry entry : ProductRepo.findAll())
-                System.out.printf("[%s] %s\n", entry.getKey().toString(), entry.getValue());
+            System.out.println("\n# 상품 목록");
+            System.out.println("====================================");
+            for (Map.Entry<Integer, Product> entry : ProductRepo.findAll())
+                System.out.printf("[%d] %s\n", entry.getKey(), entry.getValue());
             System.out.println("-----------------------------------------------------------------");
             System.out.print("제품 번호를 입력 하세요(결제: c, 종료:q): ");
             String order = scan.next();

@@ -1,4 +1,4 @@
---���� 21: ��� ����� ���ؼ� �����ȣ, �̸�, �޿�, �μ���ȣ, �Ҽ� �μ��� ��� �޿��� �˻��϶�. 
+--질의 21: 모든 사원에 대해서 사원번호, 이름, 급여, 부서번호, 소속 부서의 평균 급여를 검색하라. 
 SELECT E.EMPNO, E.EMPNAME, E.SALARY, E.DNO, ( SELECT AVG(SALARY)
 FROM EMPLOYEE
 WHERE DNO = E.DNO) AS DEPARTMENT_AVG_SALARY

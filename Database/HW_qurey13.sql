@@ -1,8 +1,6 @@
---ÁúÀÇ 13: Á÷±ÞÀÌ ´ë¸®ÀÎ »ç¿øÀÌ Àû¾îµµ 2¸í ÀÌ»ó ¼ÓÇÑ ºÎ¼­ÀÇ ÀÌ¸§À» °Ë»öÇÏ¶ó.
+--ì§ˆì˜ 13: ì§ê¸‰ì´ ëŒ€ë¦¬ì¸ ì‚¬ì›ì´ ì ì–´ë„ 2ëª… ì´ìƒ ì†í•œ ë¶€ì„œì˜ ì´ë¦„ì„ ê²€ìƒ‰í•˜ë¼.
 SELECT DEPTNAME
 FROM DEPARTMENT, EMPLOYEE
-WHERE TITLE = '´ë¸®' AND DNO = DEPTNO
+WHERE TITLE = 'ëŒ€ë¦¬' AND DNO = DEPTNO
 GROUP BY DEPTNAME
 HAVING COUNT(*) >= 2;
-
-

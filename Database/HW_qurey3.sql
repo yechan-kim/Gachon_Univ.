@@ -1,3 +1,3 @@
---ÁúÀÇ 3: È¸»çÀÇ ÀüÃ¼ »ç¿ø ¼ö¸¦ °Ë»öÇÏ¶ó. 
+--ì§ˆì˜ 3: íšŒì‚¬ì˜ ì „ì²´ ì‚¬ì› ìˆ˜ë¥¼ ê²€ìƒ‰í•˜ë¼. 
 SELECT COUNT(*)
 FROM EMPLOYEE;

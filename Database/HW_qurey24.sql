@@ -1,2 +1,2 @@
---ÁúÀÇ 24: DEPARTMENT ¸±·¹ÀÌ¼Ç¿¡ ÅõÇÃ (5, 'È«º¸', 8) À» »ðÀÔÇÏ¶ó.
-INSERT INTO DEPARTMENT VALUES(5, 'È«º¸', 8);
+--ì§ˆì˜ 24: DEPARTMENT ë¦´ë ˆì´ì…˜ì— íˆ¬í”Œ (5, 'í™ë³´', 8) ì„ ì‚½ìž…í•˜ë¼.
+INSERT INTO DEPARTMENT VALUES(5, 'í™ë³´', 8);

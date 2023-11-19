@@ -1,4 +1,4 @@
---ÁúÀÇ 18: ¼Ò¼Ó »ç¿ø ¼ö°¡ 4¸í ÀÌÇÏÀÎ ºÎ¼­ÀÇ ÀÌ¸§°ú »ç¿ø ¼ö¸¦ °Ë»öÇÏ¶ó. 
+--ì§ˆì˜ 18: ì†Œì† ì‚¬ì› ìˆ˜ê°€ 4ëª… ì´í•˜ì¸ ë¶€ì„œì˜ ì´ë¦„ê³¼ ì‚¬ì› ìˆ˜ë¥¼ ê²€ìƒ‰í•˜ë¼. 
 SELECT DEPTNAME, COUNT(EMPNO)
 FROM DEPARTMENT
 LEFT JOIN EMPLOYEE ON DEPTNO = DNO

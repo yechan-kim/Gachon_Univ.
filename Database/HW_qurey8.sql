@@ -1,4 +1,4 @@
---ÁúÀÇ 8: »ç¿øÀÌ ÇÑ ¸í ÀÌ»ó ¼ÓÇÑ ºÎ¼­¿¡ ´ëÇØ¼­ Æò±Õ ±Þ¿©¸¦ °Ë»öÇÏ¶ó. 
+--ì§ˆì˜ 8: ì‚¬ì›ì´ í•œ ëª… ì´ìƒ ì†í•œ ë¶€ì„œì— ëŒ€í•´ì„œ í‰ê·  ê¸‰ì—¬ë¥¼ ê²€ìƒ‰í•˜ë¼. 
 SELECT DEPTNAME, AVG(SALARY)
 FROM EMPLOYEE
 JOIN DEPARTMENT ON DNO = DEPTNO

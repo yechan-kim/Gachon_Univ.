@@ -1,4 +1,4 @@
---ÁúÀÇ 17: Æò±Õ ±Þ¿©°¡ °¡Àå ³ôÀº ºÎ¼­ÀÇ ºÎ¼­¹øÈ£¿Í ÀÌ ºÎ¼­ÀÇ ÃÖÀú ±Þ¿©¸¦ °Ë»öÇÏ¶ó. 
+--ì§ˆì˜ 17: í‰ê·  ê¸‰ì—¬ê°€ ê°€ìž¥ ë†’ì€ ë¶€ì„œì˜ ë¶€ì„œë²ˆí˜¸ì™€ ì´ ë¶€ì„œì˜ ìµœì € ê¸‰ì—¬ë¥¼ ê²€ìƒ‰í•˜ë¼. 
 SELECT DNO, MIN(SALARY) AS MIN_SALARY
 FROM EMPLOYEE
 GROUP BY DNO

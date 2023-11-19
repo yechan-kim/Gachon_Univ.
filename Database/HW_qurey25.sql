@@ -1,4 +1,4 @@
---ÁúÀÇ 25: EMPLOYEE ¸±·¹ÀÌ¼Ç¿¡¼­ ºÎ¼­¹øÈ£ 3¿¡ ±Ù¹«ÇÏ´Â »ç¿øµéÀ» »èÁ¦ÇÏ¶ó. 
+--ì§ˆì˜ 25: EMPLOYEE ë¦´ë ˆì´ì…˜ì—ì„œ ë¶€ì„œë²ˆí˜¸ 3ì— ê·¼ë¬´í•˜ëŠ” ì‚¬ì›ë“¤ì„ ì‚­ì œí•˜ë¼. 
 UPDATE EMPLOYEE
 SET MANAGER = NULL
 WHERE MANAGER IN (SELECT EMPNO

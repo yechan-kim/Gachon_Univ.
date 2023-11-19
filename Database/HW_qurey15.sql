@@ -1,4 +1,4 @@
---ÁúÀÇ 15: ºÎ¼­ 1, 2, 3 ¿¡ °øÅëÀ¸·Î ÀÖ´Â Á÷±ÞÀ» °Ë»öÇÏ¶ó.
+--ì§ˆì˜ 15: ë¶€ì„œ 1, 2, 3 ì— ê³µí†µìœ¼ë¡œ ìžˆëŠ” ì§ê¸‰ì„ ê²€ìƒ‰í•˜ë¼.
 SELECT TITLE
 FROM EMPLOYEE
 WHERE DNO IN (1, 2, 3)

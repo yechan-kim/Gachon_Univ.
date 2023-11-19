@@ -1,7 +1,5 @@
---ÁúÀÇ 19: ÀÚ½ÅÀÌ ¼ÓÇÑ ºÎ¼­ÀÇ Æò±Õ ±Þ¿©º¸´Ù ¸¹ÀÌ ¹Þ´Â »ç¿øÀÇ ÀÌ¸§, ºÎ¼­¹øÈ£, ±Þ¿©¸¦ °Ë»öÇÏ¶ó.
+--ì§ˆì˜ 19: ìžì‹ ì´ ì†í•œ ë¶€ì„œì˜ í‰ê·  ê¸‰ì—¬ë³´ë‹¤ ë§Žì´ ë°›ëŠ” ì‚¬ì›ì˜ ì´ë¦„, ë¶€ì„œë²ˆí˜¸, ê¸‰ì—¬ë¥¼ ê²€ìƒ‰í•˜ë¼.
 SELECT DISTINCT E1.EMPNAME, E1.DNO, E1.SALARY
 FROM EMPLOYEE E1, EMPLOYEE E2 
 WHERE E1.DNO = E2.DNO
 AND E1.SALARY > (SELECT AVG(SALARY) FROM EMPLOYEE WHERE DNO = E1.DNO);
-
-

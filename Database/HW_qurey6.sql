@@ -1,4 +1,4 @@
---ÁúÀÇ 6: ÇÑ ¸í ÀÌ»óÀÇ »ç¿øÀÌ ±Ù¹«ÇÏ´Â ºÎ¼­ÀÇ °³¼ö¸¦ °Ë»öÇÏ¶ó. 
+--ì§ˆì˜ 6: í•œ ëª… ì´ìƒì˜ ì‚¬ì›ì´ ê·¼ë¬´í•˜ëŠ” ë¶€ì„œì˜ ê°œìˆ˜ë¥¼ ê²€ìƒ‰í•˜ë¼. 
 SELECT COUNT(DISTINCT DNO)
 FROM EMPLOYEE
 WHERE DNO IN (SELECT DNO

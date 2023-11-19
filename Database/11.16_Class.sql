@@ -1,5 +1,5 @@
---HW: RA 4.5±îÁö
---JOHN SMITH°¡ ¼ÓÇÑ ºÎ¼­¹øÈ£ÀÌ°Å³ª, ADMINISTRATIONºÎ¼­ÀÇ ºÎ¼­¹øÈ£¸¦ °Ë»öÇÏ¶ó.
+--HW: RA 4.5ê¹Œì§€
+--JOHN SMITHê°€ ì†í•œ ë¶€ì„œë²ˆí˜¸ì´ê±°ë‚˜, ADMINISTRATIONë¶€ì„œì˜ ë¶€ì„œë²ˆí˜¸ë¥¼ ê²€ìƒ‰í•˜ë¼.
 (SELECT DNO
 FROM EMPLOYEE
 WHERE UPPER(Fname)='JOHN' AND UPPER(Lname)='SMITH')
@@ -8,15 +8,15 @@ UNION
 FROM DEPARTMENT
 WHERE UPPER(Dname)='ADMINISTRATION');
 
---¸ðµç »ç¿øµé¿¡ ´ëÇØ¼­ »ç¿øµéÀÌ ¼ÓÇÑ ºÎ¼­¹øÈ£¿Í ±× »ç¿øÀÌ ¼ÓÇÑ ºÎ¼­ÀÇ Æò±Õ ±Þ¿©, ÃÖ´ë ±Þ¿©¸¦ °Ë»öÇÏ¶ó.
---´Ü, ±× ºÎ¼­ÀÇ ¹øÈ£´Â 2º¸´Ù Ä¿¾ßÇÑ´Ù.
+--ëª¨ë“  ì‚¬ì›ë“¤ì— ëŒ€í•´ì„œ ì‚¬ì›ë“¤ì´ ì†í•œ ë¶€ì„œë²ˆí˜¸ì™€ ê·¸ ì‚¬ì›ì´ ì†í•œ ë¶€ì„œì˜ í‰ê·  ê¸‰ì—¬, ìµœëŒ€ ê¸‰ì—¬ë¥¼ ê²€ìƒ‰í•˜ë¼.
+--ë‹¨, ê·¸ ë¶€ì„œì˜ ë²ˆí˜¸ëŠ” 2ë³´ë‹¤ ì»¤ì•¼í•œë‹¤.
 SELECT DNO, ROUND(AVG(SALARY)), MAX(SALARY)
 FROM EMPLOYEE
 GROUP BY DNO
 HAVING DNO > 2;
 
---¸ðµç »ç¿øµé¿¡ ´ëÇØ¼­ »ç¿øµéÀÌ ¼ÓÇÑ ºÎ¼­¹øÈ£¿Í ±× »ç¿øÀÌ ¼ÓÇÑ ºÎ¼­ÀÇ Æò±Õ ±Þ¿©, ÃÖ´ë ±Þ¿©¸¦ °Ë»öÇÏ¶ó.
---´Ü, ±× ºÎ¼­ÀÇ Æò±Õ ±Þ¿©´Â 5¸¸¿ø ÀÌ»ó ÀÌ¾î¾ßÇÑ´Ù.
+--ëª¨ë“  ì‚¬ì›ë“¤ì— ëŒ€í•´ì„œ ì‚¬ì›ë“¤ì´ ì†í•œ ë¶€ì„œë²ˆí˜¸ì™€ ê·¸ ì‚¬ì›ì´ ì†í•œ ë¶€ì„œì˜ í‰ê·  ê¸‰ì—¬, ìµœëŒ€ ê¸‰ì—¬ë¥¼ ê²€ìƒ‰í•˜ë¼.
+--ë‹¨, ê·¸ ë¶€ì„œì˜ í‰ê·  ê¸‰ì—¬ëŠ” 5ë§Œì› ì´ìƒ ì´ì–´ì•¼í•œë‹¤.
 SELECT DNO, AVG(SALARY), MAX(SALARY)
 FROM EMPLOYEE
 GROUP BY DNO
@@ -27,14 +27,14 @@ HAVING AVG(SALARY) >= 50000;
 SELECT Pnumber, Pname, COUNT(*)
 FROM PROJECT, WORKS_ON
 WHERE Pnumber = Pno
-GROUP BY Pnumber, Pname -- Err: GROUP BY Ç¥Çö½ÄÀÌ ¾Æ´Õ´Ï´Ù. -> GROUP BY¿¡ Pname ´©¶ôÀÌ ¿øÀÎ
+GROUP BY Pnumber, Pname -- Err: GROUP BY í‘œí˜„ì‹ì´ ì•„ë‹™ë‹ˆë‹¤. -> GROUP BYì— Pname ëˆ„ë½ì´ ì›ì¸
 HAVING COUNT(*) > 2;
 
 -- For each department, retrieve the department number,
 --the number of employees in the department, and their average salary. 
 SELECT DNO, COUNT(*), AVG(SALARY)
 FROM EMPLOYEE
-GROUP BY DNO; --¼Ò¼öÁ¡ ¿Ã¸² or ¹ö¸² ÇÔ¼ö -> ROUND()
+GROUP BY DNO; --ì†Œìˆ˜ì  ì˜¬ë¦¼ or ë²„ë¦¼ í•¨ìˆ˜ -> ROUND()
 
 SELECT SSN, AVG(SALARY) FROM EMPLOYEE;
 

@@ -9,10 +9,10 @@
 
 int buffer[BUFFER_SIZE];
 volatile int count = 0;
-int cnt = 0;
-int cnt_A = 0;
-int cnt_B = 0;
-int cnt_C = 0;
+long cnt = 0;
+long cnt_A = 0;
+long cnt_B = 0;
+long cnt_C = 0;
 pthread_cond_t empty = PTHREAD_COND_INITIALIZER;
 pthread_cond_t fill = PTHREAD_COND_INITIALIZER;
 pthread_mutex_t mutex = PTHREAD_MUTEX_INITIALIZER;
@@ -103,7 +103,7 @@ void *D(void *arg)
 
 void *timer(void *arg)
 {
-    sleep(5);
+    sleep(300);
     printf("\nAtoZ: %d\n", cnt_A);
     printf("atoz: %d\n", cnt_B);
     printf("1to50: %d\n", cnt_C);

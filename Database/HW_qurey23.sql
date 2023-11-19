@@ -1,0 +1,6 @@
+--질의 23: 기획 또는 총무 부서에 근무하지 않는 모든 사원들의 이름을 검색하라.
+SELECT EMPNAME
+FROM EMPLOYEE
+WHERE DNO NOT IN (SELECT DEPTNO
+FROM DEPARTMENT
+WHERE DEPTNAME = '기획' OR DEPTNAME = '총무');

@@ -1,0 +1,8 @@
+--질의 13: 직급이 대리인 사원이 적어도 2명 이상 속한 부서의 이름을 검색하라.
+SELECT DEPTNAME
+FROM DEPARTMENT, EMPLOYEE
+WHERE TITLE = '대리' AND DNO = DEPTNO
+GROUP BY DEPTNAME
+HAVING COUNT(*) >= 2;
+
+

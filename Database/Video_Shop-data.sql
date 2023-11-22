@@ -9,6 +9,7 @@ INSERT INTO VIDEO VALUES(2, 'Thor: Love and Thunder', 'Action');
 INSERT INTO VIDEO VALUES(3, 'Harry Potter And The Goblet Of Fire', 'Science Fantasy');
 INSERT INTO VIDEO VALUES(4, 'AlphaGo', 'Documentary');
 INSERT INTO VIDEO VALUES(5, 'Avengers: Endgame', 'Action');
+INSERT INTO VIDEO VALUES(6, 'The Lord Of The Rings', 'Fantasy');
 
 INSERT INTO RESERVED VALUES(1, 5, '2023-04-24');
 INSERT INTO RESERVED VALUES(2, 3, '2022-12-01');

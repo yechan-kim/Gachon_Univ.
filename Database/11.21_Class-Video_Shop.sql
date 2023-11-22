@@ -1,0 +1,17 @@
+-- 장르가 Action인 비디오 테이프를 예약한 고객의 이름을 검색하라.
+SELECT NAME
+FROM CUSTOMER C, VIDEO V, RESERVED R
+WHERE C.CUSTOMER_ID = R.CUSTOMER_ID AND R.VIDEO_ID = V.VIDEO_ID AND UPPER(GENRE) = 'ACTION';
+
+-- 장르가 Action인 비디오 테이프를 모두 예약한 고객의 이름을 검색하라.
+SELECT NAME
+FROM CUSTOMER C
+WHERE NOT EXISTS (
+    (SELECT VIDEO_ID
+    FROM VIDEO
+    WHERE UPPER(GENRE) ='ACTION') -- 장르가 Action인 VIDEO_ID, Uncorelated inner query
+    MINUS
+    (SELECT VIDEO_ID
+    FROM RESERVED
+    WHERE CUSTOMER_ID = C.CUSTOMER_ID) -- Each CUSTOMER가 RESERVED한 VIDEO_ID, Corelated inner query
+);

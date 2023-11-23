@@ -1,0 +1,7 @@
+-- 예약되지 않은 비디오 테이프의 ID 를 검색하라. 
+SELECT DISTINCT(V.VIDEO_ID)
+FROM VIDEO V
+WHERE V.VIDEO_ID NOT IN (
+    SELECT R.VIDEO_ID
+    FROM RESERVED R
+);

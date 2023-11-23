@@ -1,0 +1,7 @@
+-- 예약된 모든 비디오 데이프의 제목을 검색하라.
+SELECT V.TITLE
+FROM VIDEO V
+WHERE V.VIDEO_ID IN (
+    SELECT DISTINCT(R. VIDEO_ID)
+    FROM RESERVED R
+);

@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:shrinkColumns="*">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/my_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="24dp"
+            android:background="?attr/colorPrimary"
+            android:elevation="4dp"
+            android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+            tools:ignore="MissingConstraints" />
+
+        <TableRow>
+
+            <EditText
+                android:id="@+id/Edit1"
+                android:layout_span="5"
+                android:autofillHints=""
+                android:ems="10"
+                android:hint="숫자1 입력"
+                android:inputType="number"
+                tools:ignore="HardcodedText" />
+        </TableRow>
+
+        <TableRow>
+
+            <EditText
+                android:id="@+id/Edit2"
+                android:layout_span="5"
+                android:autofillHints=""
+                android:ems="10"
+                android:hint="숫자2 입력"
+                android:inputType="number"
+                tools:ignore="HardcodedText" />
+        </TableRow>
+
+        <TableRow>
+
+            <Button
+                android:id="@+id/BtnNum0"
+                style="@style/Widget.AppCompat.Button"
+                android:text="0"
+                android:textColor="#000000"
+                app:backgroundTint="@android:color/darker_gray"
+                tools:ignore="HardcodedText" />
+
+            <Button
+                android:id="@+id/BtnNum1"
+                style="@style/Widget.AppCompat.Button"
+                android:text="1"
+                android:textColor="#000000"
+                app:backgroundTint="@android:color/darker_gray"
+                tools:ignore="HardcodedText" />
+
+            <Button
+                android:id="@+id/BtnNum2"
+                style="@style/Widget.AppCompat.Button"
+                android:text="2"
+                android:textColor="#000000"
+                app:backgroundTint="@android:color/darker_gray"
+                tools:ignore="HardcodedText" />
+
+            <Button
+                android:id="@+id/BtnNum3"
+                style="@style/Widget.AppCompat.Button"
+                android:text="3"
+                android:textColor="#000000"
+                app:backgroundTint="@android:color/darker_gray"
+                tools:ignore="HardcodedText" />
+
+            <Button
+                android:id="@+id/BtnNum4"
+                style="@style/Widget.AppCompat.Button"
+                android:text="4"
+                android:textColor="#000000"
+                app:backgroundTint="@android:color/darker_gray"
+                tools:ignore="HardcodedText" />
+        </TableRow>
+
+        <TableRow>
+
+            <Button
+                android:id="@+id/BtnNum5"
+                style="@style/Widget.AppCompat.Button"
+                android:text="5"
+                android:textColor="#000000"
+                app:backgroundTint="@android:color/darker_gray"
+                tools:ignore="HardcodedText" />
+
+            <Button
+                android:id="@+id/BtnNum6"
+                style="@style/Widget.AppCompat.Button"
+                android:text="6"
+                android:textColor="#000000"
+                app:backgroundTint="@android:color/darker_gray"
+                tools:ignore="HardcodedText" />
+
+            <Button
+                android:id="@+id/BtnNum7"
+                style="@style/Widget.AppCompat.Button"
+                android:text="7"
+                android:textColor="#000000"
+                app:backgroundTint="@android:color/darker_gray"
+                tools:ignore="HardcodedText" />
+
+            <Button
+                android:id="@+id/BtnNum8"
+                style="@style/Widget.AppCompat.Button"
+                android:text="8"
+                android:textColor="#000000"
+                app:backgroundTint="@android:color/darker_gray"
+                tools:ignore="HardcodedText" />
+
+            <Button
+                android:id="@+id/BtnNum9"
+                style="@style/Widget.AppCompat.Button"
+                android:text="9"
+                android:textColor="#000000"
+                app:backgroundTint="@android:color/darker_gray"
+                tools:ignore="HardcodedText" />
+        </TableRow>
+
+        <TableRow>
+
+            <Button
+                android:id="@+id/BtnAdd"
+                style="@style/Widget.AppCompat.Button"
+                android:layout_margin="5dp"
+                android:layout_span="5"
+                android:text="더하기"
+                android:textColor="#000000"
+                app:backgroundTint="@android:color/darker_gray"
+                tools:ignore="HardcodedText,VisualLintButtonSize" />
+        </TableRow>
+
+        <TableRow>
+
+            <Button
+                android:id="@+id/BtnSub"
+                style="@style/Widget.AppCompat.Button"
+                android:layout_margin="5dp"
+                android:layout_span="5"
+                android:text="빼기"
+                android:textColor="#000000"
+                app:backgroundTint="@android:color/darker_gray"
+                tools:ignore="HardcodedText,VisualLintButtonSize" />
+        </TableRow>
+
+        <TableRow>
+
+            <Button
+                android:id="@+id/BtnMul"
+                style="@style/Widget.AppCompat.Button"
+                android:layout_margin="5dp"
+                android:layout_span="5"
+                android:text="곱하기"
+                android:textColor="#000000"
+                app:backgroundTint="@android:color/darker_gray"
+                tools:ignore="HardcodedText,VisualLintButtonSize" />
+        </TableRow>
+
+        <TableRow>
+
+            <Button
+                android:id="@+id/BtnDiv"
+                style="@style/Widget.AppCompat.Button"
+                android:layout_margin="5dp"
+                android:layout_span="5"
+                android:text="나누기"
+                android:textColor="#000000"
+                app:backgroundTint="@android:color/darker_gray"
+                tools:ignore="HardcodedText,UnknownId,VisualLintButtonSize" />
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:id="@+id/TextResult"
+                android:layout_margin="5dp"
+                android:layout_span="5"
+                android:text="계산 결과 : "
+                android:textColor="#FF0000"
+                android:textSize="20dp"
+                tools:ignore="HardcodedText,SpUsage" />
+        </TableRow>
+    </TableLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

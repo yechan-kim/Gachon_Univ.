@@ -1,2 +1,5 @@
-package pattern;public interface Vehicle {
+package pattern;
+
+public interface Vehicle {
+    void go();
 }

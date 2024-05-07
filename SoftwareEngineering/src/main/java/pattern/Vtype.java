@@ -1,2 +1,5 @@
-package pattern;public class Vtype {
+package pattern;
+
+public enum Vtype {
+    CAR, TRUCK
 }

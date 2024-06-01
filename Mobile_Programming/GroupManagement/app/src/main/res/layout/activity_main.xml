@@ -81,7 +81,7 @@
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:background="#00FF00"
+            android:background="#FFFFFF"
             android:padding="20dp" />
 
         <EditText
@@ -89,7 +89,7 @@
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:background="#00FF00"
+            android:background="#FFFFFF"
             android:padding="20dp" />
     </LinearLayout>
 

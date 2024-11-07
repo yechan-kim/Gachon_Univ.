@@ -6,6 +6,7 @@ const {
   getContact,
   updateContact,
   deleteContact,
+  addContactForm,
 } = require("../controllers/contactController");
 
 /**
@@ -124,5 +125,17 @@ router.route("/").get(getAllContacts).post(createContact);
  *         description: Contact not found
  */
 router.route("/:id").get(getContact).put(updateContact).delete(deleteContact);
+
+/**
+ * @swagger
+ * /contacts/add:
+ *   get:
+ *     summary: Display form to add a new contact
+ *     tags: [Contacts]
+ *     responses:
+ *       200:
+ *         description: Form displayed successfully
+ */
+router.route("/add").get(addContactForm);
 
 module.exports = router;

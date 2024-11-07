@@ -12,13 +12,19 @@ const getAllContacts = asyncHandler(async (req, res) => {
     if (results.length > 0) {       // db에서의 반환값이 있으면 로그인 성공
       // console.log(results);
       // res.render("getAll");  // 1차
-      res.render("getAll-2", { heading: "User List", users: results });  // 2차
-      // res.render("index", { contacts: results });
+      // res.render("getAll-2", { heading: "User List", users: results });  // 2차
+      res.render("index", { heading: "User List", contacts: results });  // 2차
     } else {
       console.log('연락처 없음');
     }
   });
 });
+
+// @desc View add contact form
+// @route GET /contacts/add
+const addContactForm = (req, res) => {
+  res.render("add");
+};
 
 // @desc Create a contact
 // @route POST /contacts
@@ -94,4 +100,5 @@ module.exports = {
   getContact,
   updateContact,
   deleteContact,
+  addContactForm,
 };

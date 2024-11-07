@@ -36,8 +36,13 @@ const swaggerDocs = swaggerJsDoc(swaggerOptions);
 // Swagger UI 라우트 설정
 app.use("/api-docs", swaggerUi.serve, swaggerUi.setup(swaggerDocs));
 
+app.use(express.json());
+app.use(express.urlencoded({ extended: true }));
+
 // 컨택트 라우터 설정
 app.use("/contacts", require("./routes/contactRoutes"));
+
+app.use(express.static("./public"))
 
 // 서버 실행
 app.listen(port, () => {

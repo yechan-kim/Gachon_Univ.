@@ -1,7 +1,6 @@
 const express = require("express");
 const methodOverride = require("method-override");
-
-const port = 3000;
+//const cookieParser = require("cookie-parser");
 
 const app = express();
 
@@ -9,8 +8,10 @@ app.set("view engine", "ejs");
 app.set("views", "./views");
 
 app.use(express.static("./public"));
-
 app.use(methodOverride("_method"));
+//app.use(cookieParser());
+
+const port = 3000;
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));

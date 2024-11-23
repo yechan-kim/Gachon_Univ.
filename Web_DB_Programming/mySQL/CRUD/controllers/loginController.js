@@ -32,6 +32,24 @@ const loginUser = asyncHandler(async (req, res) => {
   });
 });
 
+const getRegister = (req, res) => {
+  res.render("register");
+};
+
+const registerUser = asyncHandler(async (req, res) => {
+  const {username, password, password2} = req.body;
+  if (password === password2) {
+    const hashedPassword = crypto.createHash('sha256').update(password).digest('hex');
+
+    dbConnect.query('INSERT INTO Users (username, password) VALUES (?, ?)', [username, hashedPassword], function (error, results) {
+      if (error) throw new Error("User not created");
+      res.redirect("/");
+    });
+  } else {
+    res.status(400).json({message: "비밀번호가 일치하지 않습니다."});
+  }
+});
+
 // @desc Logout
 // @route GET /logout
 const logout = (req, res) => {
@@ -40,4 +58,4 @@ const logout = (req, res) => {
   res.redirect("/");
 };
 
-module.exports = { getLogin, loginUser, logout };
+module.exports = { getLogin, loginUser, getRegister, registerUser, logout };
